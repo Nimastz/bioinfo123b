@@ -1,0 +1,5 @@
+out: data/viroporins_balanced_ncbi.fasta
+dir: data/viroporin_families_ncbi
+entrez_email: seyednima.morsali@sjsu.edu
+ncbi_api_key: 087f8ba753422869d5961bdc75edc5efb609
+ncbi_retmax: 200000

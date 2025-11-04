@@ -1,0 +1,6 @@
+torch>=2.2
+fair-esm
+PeptideBuilder
+biopython
+numpy
+tqdm

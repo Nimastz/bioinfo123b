@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run test_build",
+      "type": "shell",
+      "command": "python",
+      "args": ["-m", "tests.test_build"],
+      "group": "build",
+      "presentation": { "reveal": "always" }
+    }
+  ]
+}
