@@ -1,13 +1,16 @@
-# viroporinaf_mini (Recommended tier)
+# First step dependencies setup
 
-Minimal AF-style scaffold for viroporin oligomers:
+All dependecies are listed in requirments.txt. First time you running his project, you need to make a local venv, activate it and install dependencies locally on you loptop, so in terminal run this code:
 
-- Evoformer-lite (single + pair)
-- IPA structure module
-- Distogram + torsion + pLDDT/PAE heads
-- Viroporin priors (membrane slab, interface, clash, pore)
-- Cn assembly utilities
+git pull
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 
-## Data
+In case, you add new library to dependencies, just update the requirments.txt by running this code:
 
-Prepare `data/train.jsonl` and `data/val.jsonl`. Each line:
+pip freeze > requirements.txt
+
+git add requirements.txt
+git commit -m "Update dependencies"
+git pushviroporinaf_mini
