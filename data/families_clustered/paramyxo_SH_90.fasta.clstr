@@ -1,0 +1,1181 @@
+>Cluster 0
+0	117aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 1
+0	115aa, >WWU04178.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 2
+0	112aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 3
+0	112aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 4
+0	109aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 5
+0	107aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 6
+0	103aa, >XHB07679.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 7
+0	92aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	92aa, >tr|paramyxo_SH|SRC:UniProt... at 98.91%
+2	92aa, >tr|paramyxo_SH|SRC:UniProt... at 97.83%
+>Cluster 8
+0	85aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 9
+0	82aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	82aa, >UQM99554.1|paramyxo_SH|SRC:NCBI... at 92.68%
+>Cluster 10
+0	81aa, >WJL29494.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 11
+0	78aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	78aa, >WPV62554.1|paramyxo_SH|SRC:NCBI... at 91.03%
+>Cluster 12
+0	78aa, >XBN89666.1|paramyxo_SH|SRC:NCBI... *
+1	76aa, >WJL29512.1|paramyxo_SH|SRC:NCBI... at 98.68%
+>Cluster 13
+0	77aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 14
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	76aa, >WPF45712.1|paramyxo_SH|SRC:NCBI... at 96.05%
+2	76aa, >WGF23674.1|paramyxo_SH|SRC:NCBI... at 97.37%
+>Cluster 15
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	76aa, >tr|paramyxo_SH|SRC:UniProt... at 93.42%
+2	76aa, >XFO97534.1|paramyxo_SH|SRC:NCBI... at 92.11%
+3	76aa, >WPF45799.1|paramyxo_SH|SRC:NCBI... at 92.11%
+4	76aa, >WGF23445.1|paramyxo_SH|SRC:NCBI... at 90.79%
+5	76aa, >UCZ37567.1|paramyxo_SH|SRC:NCBI... at 92.11%
+>Cluster 16
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 17
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	76aa, >tr|paramyxo_SH|SRC:UniProt... at 98.68%
+>Cluster 18
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	76aa, >tr|paramyxo_SH|SRC:UniProt... at 97.37%
+2	76aa, >tr|paramyxo_SH|SRC:UniProt... at 96.05%
+3	76aa, >tr|paramyxo_SH|SRC:UniProt... at 98.68%
+4	76aa, >tr|paramyxo_SH|SRC:UniProt... at 97.37%
+5	76aa, >tr|paramyxo_SH|SRC:UniProt... at 93.42%
+6	76aa, >XXQ18334.1|paramyxo_SH|SRC:NCBI... at 90.79%
+7	76aa, >XXM94793.1|paramyxo_SH|SRC:NCBI... at 90.79%
+8	76aa, >WPV62367.1|paramyxo_SH|SRC:NCBI... at 92.11%
+>Cluster 19
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 20
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 21
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	76aa, >WPV62529.1|paramyxo_SH|SRC:NCBI... at 98.68%
+>Cluster 22
+0	76aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 23
+0	76aa, >WJL29485.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 24
+0	76aa, >WGU24245.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 25
+0	76aa, >UAY98805.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 26
+0	74aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 27
+0	74aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 28
+0	71aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 29
+0	69aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 30
+0	69aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 31
+0	64aa, >UDF54474.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 32
+0	57aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	57aa, >sp|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >sp|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >sp|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	52aa, >tr|paramyxo_SH|SRC:UniProt... at 94.23%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 33
+0	57aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	57aa, >sp|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >sp|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >sp|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+11	50aa, >tr|paramyxo_SH|SRC:UniProt... at 92.00%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+27	57aa, >BCU92848.1|paramyxo_SH|SRC:NCBI... at 91.23%
+28	57aa, >BCU92839.1|paramyxo_SH|SRC:NCBI... at 96.49%
+29	57aa, >BCU92833.1|paramyxo_SH|SRC:NCBI... at 92.98%
+30	57aa, >BCU92830.1|paramyxo_SH|SRC:NCBI... at 92.98%
+31	57aa, >BCU92829.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 34
+0	57aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	57aa, >sp|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+13	54aa, >tr|paramyxo_SH|SRC:UniProt... at 92.59%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+18	52aa, >tr|paramyxo_SH|SRC:UniProt... at 92.31%
+19	52aa, >tr|paramyxo_SH|SRC:UniProt... at 94.23%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+33	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+40	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+41	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+42	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+43	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+44	57aa, >XFO63525.1|paramyxo_SH|SRC:NCBI... at 91.23%
+45	57aa, >WCF97529.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 35
+0	57aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	57aa, >sp|paramyxo_SH|SRC:UniProt... at 98.25%
+>Cluster 36
+0	57aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+26	57aa, >YAI73255.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 37
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+8	54aa, >tr|paramyxo_SH|SRC:UniProt... at 92.59%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+30	52aa, >tr|paramyxo_SH|SRC:UniProt... at 94.23%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+33	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+40	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+41	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+42	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+43	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+44	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+45	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+46	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+47	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+48	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+49	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+50	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+51	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+52	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+53	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+54	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+55	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+56	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+57	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+58	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+59	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+60	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+61	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+62	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+63	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+64	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+65	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+66	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+67	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+68	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+69	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+70	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+71	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+72	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+73	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+74	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+75	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+76	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+77	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+78	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+79	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+80	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+81	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+82	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+83	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+84	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+85	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+86	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+87	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+88	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+89	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+90	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+91	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+92	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+93	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+94	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+95	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+96	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+97	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+98	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+99	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+100	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+101	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+102	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+103	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+104	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+105	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+106	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+107	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+108	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+109	50aa, >tr|paramyxo_SH|SRC:UniProt... at 92.00%
+110	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+111	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+112	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+113	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+114	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+115	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+116	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+117	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+118	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+119	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+120	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+121	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+122	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+123	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+124	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+125	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+126	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+127	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+128	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+129	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+130	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+131	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+132	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+133	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+134	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+135	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+136	50aa, >tr|paramyxo_SH|SRC:UniProt... at 94.00%
+137	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+138	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+139	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+140	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+141	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+142	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+143	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+144	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+145	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+146	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+147	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+148	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+149	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+150	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+151	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+152	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+153	52aa, >tr|paramyxo_SH|SRC:UniProt... at 96.15%
+154	52aa, >tr|paramyxo_SH|SRC:UniProt... at 92.31%
+155	52aa, >tr|paramyxo_SH|SRC:UniProt... at 92.31%
+156	52aa, >tr|paramyxo_SH|SRC:UniProt... at 92.31%
+157	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+158	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+159	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+160	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+161	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+162	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+163	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+164	57aa, >XKT67173.1|paramyxo_SH|SRC:NCBI... at 91.23%
+165	57aa, >XKT67083.1|paramyxo_SH|SRC:NCBI... at 94.74%
+166	57aa, >XFO96229.1|paramyxo_SH|SRC:NCBI... at 91.23%
+167	57aa, >WWZ24888.1|paramyxo_SH|SRC:NCBI... at 96.49%
+168	57aa, >WQF70804.1|paramyxo_SH|SRC:NCBI... at 91.23%
+169	57aa, >WHO55920.1|paramyxo_SH|SRC:NCBI... at 91.23%
+170	57aa, >WHO55289.1|paramyxo_SH|SRC:NCBI... at 91.23%
+171	57aa, >WGU24249.1|paramyxo_SH|SRC:NCBI... at 91.23%
+172	57aa, >WGU24246.1|paramyxo_SH|SRC:NCBI... at 91.23%
+173	57aa, >WGF23610.1|paramyxo_SH|SRC:NCBI... at 91.23%
+174	57aa, >WGF23346.1|paramyxo_SH|SRC:NCBI... at 91.23%
+175	57aa, >UAY98916.1|paramyxo_SH|SRC:NCBI... at 91.23%
+176	57aa, >UAY98831.1|paramyxo_SH|SRC:NCBI... at 91.23%
+177	57aa, >QMW50412.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 38
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+33	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+40	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+41	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+42	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+43	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+44	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+45	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+46	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+47	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+48	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+49	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+50	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+51	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+52	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+53	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+54	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+55	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+56	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+57	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+58	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+59	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+60	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+61	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+62	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+63	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+64	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+65	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+66	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+67	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+68	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+69	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+70	57aa, >YAI73234.1|paramyxo_SH|SRC:NCBI... at 92.98%
+71	57aa, >XKT67170.1|paramyxo_SH|SRC:NCBI... at 92.98%
+72	57aa, >BCU93029.1|paramyxo_SH|SRC:NCBI... at 91.23%
+73	57aa, >BCU93027.1|paramyxo_SH|SRC:NCBI... at 92.98%
+74	57aa, >BCU92994.1|paramyxo_SH|SRC:NCBI... at 94.74%
+75	57aa, >BCU92991.1|paramyxo_SH|SRC:NCBI... at 91.23%
+76	57aa, >BCU92973.1|paramyxo_SH|SRC:NCBI... at 96.49%
+77	57aa, >BCU92970.1|paramyxo_SH|SRC:NCBI... at 92.98%
+78	57aa, >BCU92964.1|paramyxo_SH|SRC:NCBI... at 96.49%
+79	57aa, >BCU92953.1|paramyxo_SH|SRC:NCBI... at 94.74%
+80	57aa, >BCU92952.1|paramyxo_SH|SRC:NCBI... at 96.49%
+81	57aa, >BCU92950.1|paramyxo_SH|SRC:NCBI... at 96.49%
+82	57aa, >BCU92945.1|paramyxo_SH|SRC:NCBI... at 92.98%
+83	57aa, >BCU92940.1|paramyxo_SH|SRC:NCBI... at 92.98%
+84	57aa, >BCU92927.1|paramyxo_SH|SRC:NCBI... at 96.49%
+85	57aa, >BCU92925.1|paramyxo_SH|SRC:NCBI... at 96.49%
+86	57aa, >BCU92880.1|paramyxo_SH|SRC:NCBI... at 96.49%
+87	57aa, >WOZ50427.1|paramyxo_SH|SRC:NCBI... at 92.98%
+88	57aa, >WVI56870.1|paramyxo_SH|SRC:NCBI... at 92.98%
+89	57aa, >WQF70806.1|paramyxo_SH|SRC:NCBI... at 91.23%
+90	57aa, >WQF70796.1|paramyxo_SH|SRC:NCBI... at 91.23%
+91	57aa, >WMZ16707.1|paramyxo_SH|SRC:NCBI... at 91.23%
+92	57aa, >WGU24239.1|paramyxo_SH|SRC:NCBI... at 94.74%
+93	57aa, >WGF23713.1|paramyxo_SH|SRC:NCBI... at 92.98%
+94	57aa, >WGF23646.1|paramyxo_SH|SRC:NCBI... at 92.98%
+95	57aa, >UYF11925.1|paramyxo_SH|SRC:NCBI... at 92.98%
+96	57aa, >UYF11924.1|paramyxo_SH|SRC:NCBI... at 91.23%
+97	57aa, >UWX36901.1|paramyxo_SH|SRC:NCBI... at 92.98%
+98	57aa, >UVB79293.1|paramyxo_SH|SRC:NCBI... at 92.98%
+99	57aa, >QNL23730.1|paramyxo_SH|SRC:NCBI... at 92.98%
+100	57aa, >QNL23495.1|paramyxo_SH|SRC:NCBI... at 92.98%
+101	57aa, >UBT24314.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 39
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+3	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+6	50aa, >tr|paramyxo_SH|SRC:UniProt... at 98.00%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+22	52aa, >tr|paramyxo_SH|SRC:UniProt... at 98.08%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+32	50aa, >tr|paramyxo_SH|SRC:UniProt... at 98.00%
+33	57aa, >BDG51324.1|paramyxo_SH|SRC:NCBI... at 96.49%
+34	57aa, >BCW91674.1|paramyxo_SH|SRC:NCBI... at 94.74%
+35	57aa, >BCU93048.1|paramyxo_SH|SRC:NCBI... at 96.49%
+36	57aa, >BCU93032.1|paramyxo_SH|SRC:NCBI... at 94.74%
+37	57aa, >BCU93025.1|paramyxo_SH|SRC:NCBI... at 96.49%
+38	57aa, >BCU93022.1|paramyxo_SH|SRC:NCBI... at 91.23%
+39	57aa, >BCU93018.1|paramyxo_SH|SRC:NCBI... at 92.98%
+40	57aa, >BCU93017.1|paramyxo_SH|SRC:NCBI... at 94.74%
+41	57aa, >BCU93015.1|paramyxo_SH|SRC:NCBI... at 96.49%
+42	57aa, >BCU93011.1|paramyxo_SH|SRC:NCBI... at 96.49%
+43	57aa, >BCU93010.1|paramyxo_SH|SRC:NCBI... at 91.23%
+44	57aa, >BCU93006.1|paramyxo_SH|SRC:NCBI... at 96.49%
+45	57aa, >BCU93004.1|paramyxo_SH|SRC:NCBI... at 96.49%
+46	57aa, >BCU92993.1|paramyxo_SH|SRC:NCBI... at 96.49%
+47	57aa, >BCU92990.1|paramyxo_SH|SRC:NCBI... at 96.49%
+48	57aa, >BCU92982.1|paramyxo_SH|SRC:NCBI... at 96.49%
+49	57aa, >BCU92976.1|paramyxo_SH|SRC:NCBI... at 96.49%
+50	57aa, >BCU92969.1|paramyxo_SH|SRC:NCBI... at 96.49%
+51	57aa, >BCU92962.1|paramyxo_SH|SRC:NCBI... at 94.74%
+52	57aa, >BCU92958.1|paramyxo_SH|SRC:NCBI... at 96.49%
+53	57aa, >BCU92951.1|paramyxo_SH|SRC:NCBI... at 96.49%
+54	57aa, >BCU92947.1|paramyxo_SH|SRC:NCBI... at 94.74%
+55	57aa, >BCU92938.1|paramyxo_SH|SRC:NCBI... at 94.74%
+56	57aa, >BCU92933.1|paramyxo_SH|SRC:NCBI... at 94.74%
+57	57aa, >BCU92932.1|paramyxo_SH|SRC:NCBI... at 94.74%
+58	57aa, >BCU92929.1|paramyxo_SH|SRC:NCBI... at 94.74%
+59	57aa, >BCU92922.1|paramyxo_SH|SRC:NCBI... at 96.49%
+60	57aa, >BCU92916.1|paramyxo_SH|SRC:NCBI... at 96.49%
+61	57aa, >BCU92911.1|paramyxo_SH|SRC:NCBI... at 96.49%
+62	57aa, >BCU92908.1|paramyxo_SH|SRC:NCBI... at 96.49%
+63	57aa, >BCU92899.1|paramyxo_SH|SRC:NCBI... at 94.74%
+64	57aa, >BCU92897.1|paramyxo_SH|SRC:NCBI... at 96.49%
+65	57aa, >BCU92891.1|paramyxo_SH|SRC:NCBI... at 96.49%
+66	57aa, >BCU92869.1|paramyxo_SH|SRC:NCBI... at 96.49%
+67	57aa, >BCU92864.1|paramyxo_SH|SRC:NCBI... at 96.49%
+68	57aa, >BCU92858.1|paramyxo_SH|SRC:NCBI... at 96.49%
+69	57aa, >WPO27304.1|paramyxo_SH|SRC:NCBI... at 98.25%
+70	57aa, >WHO55285.1|paramyxo_SH|SRC:NCBI... at 94.74%
+>Cluster 40
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+25	57aa, >YAI73256.1|paramyxo_SH|SRC:NCBI... at 92.98%
+26	57aa, >XJO53584.1|paramyxo_SH|SRC:NCBI... at 94.74%
+27	57aa, >XXP87573.1|paramyxo_SH|SRC:NCBI... at 92.98%
+28	57aa, >XXP87572.1|paramyxo_SH|SRC:NCBI... at 94.74%
+29	57aa, >XXP87571.1|paramyxo_SH|SRC:NCBI... at 92.98%
+30	57aa, >XXP87569.1|paramyxo_SH|SRC:NCBI... at 91.23%
+31	47aa, >XOE79335.1|paramyxo_SH|SRC:NCBI... at 97.87%
+32	47aa, >XOE79333.1|paramyxo_SH|SRC:NCBI... at 100.00%
+33	57aa, >WVW91036.1|paramyxo_SH|SRC:NCBI... at 96.49%
+34	57aa, >XHY08844.1|paramyxo_SH|SRC:NCBI... at 91.23%
+35	57aa, >XHY08842.1|paramyxo_SH|SRC:NCBI... at 96.49%
+36	57aa, >XHY08840.1|paramyxo_SH|SRC:NCBI... at 94.74%
+37	57aa, >XHP13125.1|paramyxo_SH|SRC:NCBI... at 94.74%
+>Cluster 41
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+>Cluster 42
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >BCW91656.1|paramyxo_SH|SRC:NCBI... at 96.49%
+10	57aa, >BCU93049.1|paramyxo_SH|SRC:NCBI... at 91.23%
+11	57aa, >BCU92998.1|paramyxo_SH|SRC:NCBI... at 94.74%
+12	57aa, >BCU92983.1|paramyxo_SH|SRC:NCBI... at 94.74%
+13	57aa, >BCU92979.1|paramyxo_SH|SRC:NCBI... at 96.49%
+14	57aa, >BCU92978.1|paramyxo_SH|SRC:NCBI... at 92.98%
+15	57aa, >BCU92918.1|paramyxo_SH|SRC:NCBI... at 96.49%
+>Cluster 43
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+33	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+40	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+41	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+42	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+43	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+44	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+45	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+46	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+47	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+48	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+49	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+50	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+51	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+52	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+53	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+54	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+55	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+56	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+57	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+58	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+59	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+60	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+61	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+62	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+63	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+64	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+65	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+66	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+67	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+68	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+69	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+70	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+71	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+72	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+73	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+74	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+75	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+76	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+77	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+78	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+79	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+80	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+81	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+82	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+83	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+84	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+85	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+86	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+87	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+88	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+89	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+90	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+91	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+92	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+93	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+94	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+95	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+96	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+97	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+98	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+99	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+100	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+101	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+102	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+103	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+104	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+105	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+106	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+107	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+108	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+109	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+110	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+111	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+112	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+113	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+114	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+115	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+116	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+117	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+118	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+119	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+120	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+121	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+122	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+123	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+124	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+125	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+126	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+127	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+128	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+129	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+130	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+131	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+132	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+133	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+134	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+135	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+136	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+137	57aa, >WLD09910.1|paramyxo_SH|SRC:NCBI... at 91.23%
+138	57aa, >WLD09907.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 44
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+>Cluster 45
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+11	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+22	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+33	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+40	57aa, >YAI73233.1|paramyxo_SH|SRC:NCBI... at 91.23%
+41	57aa, >XZG42876.1|paramyxo_SH|SRC:NCBI... at 92.98%
+42	57aa, >QNL23418.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 46
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+16	57aa, >YAI73253.1|paramyxo_SH|SRC:NCBI... at 92.98%
+17	57aa, >UAY98893.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 47
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+17	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+18	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+19	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+20	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+21	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+22	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+23	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+24	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+25	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+26	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+27	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+28	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+29	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+30	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+31	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+32	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+33	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+34	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+35	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+36	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+37	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+38	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+39	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+40	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+41	52aa, >tr|paramyxo_SH|SRC:UniProt... at 90.38%
+42	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+43	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+44	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+45	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+46	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+47	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+48	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+49	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+50	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+51	57aa, >YAI73239.1|paramyxo_SH|SRC:NCBI... at 91.23%
+52	57aa, >WGF23647.1|paramyxo_SH|SRC:NCBI... at 96.49%
+53	57aa, >UYF11926.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 48
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+>Cluster 49
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 50
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >BCW91728.1|paramyxo_SH|SRC:NCBI... at 91.23%
+8	57aa, >BCU93046.1|paramyxo_SH|SRC:NCBI... at 91.23%
+9	57aa, >BCU93014.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 51
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 52
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 53
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+5	52aa, >tr|paramyxo_SH|SRC:UniProt... at 100.00%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	52aa, >tr|paramyxo_SH|SRC:UniProt... at 96.15%
+8	52aa, >tr|paramyxo_SH|SRC:UniProt... at 98.08%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+11	57aa, >QMW50391.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 54
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 55
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 56
+0	52aa, >tr|paramyxo_SH|SRC:UniProt... at 100.00%
+1	52aa, >tr|paramyxo_SH|SRC:UniProt... at 96.15%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+7	52aa, >tr|paramyxo_SH|SRC:UniProt... at 98.08%
+8	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+9	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+10	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+11	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+12	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+13	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+14	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+15	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+16	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 57
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >BCU92852.1|paramyxo_SH|SRC:NCBI... at 91.23%
+8	57aa, >BCU92851.1|paramyxo_SH|SRC:NCBI... at 94.74%
+9	57aa, >BCU92844.1|paramyxo_SH|SRC:NCBI... at 98.25%
+10	57aa, >BCU92842.1|paramyxo_SH|SRC:NCBI... at 98.25%
+11	57aa, >BCU92841.1|paramyxo_SH|SRC:NCBI... at 94.74%
+>Cluster 58
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 59
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 60
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 61
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+3	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+4	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+5	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+6	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+7	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+8	57aa, >BCU93059.1|paramyxo_SH|SRC:NCBI... at 92.98%
+9	57aa, >BCU93057.1|paramyxo_SH|SRC:NCBI... at 92.98%
+10	57aa, >BCU93055.1|paramyxo_SH|SRC:NCBI... at 92.98%
+>Cluster 62
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 63
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 64
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 65
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+>Cluster 66
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 67
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 96.49%
+>Cluster 68
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 69
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+>Cluster 70
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 71
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 72
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 73
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 74
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 75
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 76
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 77
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 78
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 79
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 80
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 81
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 82
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 94.74%
+3	57aa, >XHY08839.1|paramyxo_SH|SRC:NCBI... at 94.74%
+>Cluster 83
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 84
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 85
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+2	57aa, >tr|paramyxo_SH|SRC:UniProt... at 91.23%
+>Cluster 86
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >QNL23411.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 87
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 88
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 89
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 90
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 91
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 92
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 93
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 92.98%
+>Cluster 94
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 95
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 96
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >WQF70778.1|paramyxo_SH|SRC:NCBI... at 98.25%
+>Cluster 97
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 98
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 99
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 100
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+>Cluster 101
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 102
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 103
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 104
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 105
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >WVI56868.1|paramyxo_SH|SRC:NCBI... at 92.98%
+2	57aa, >QNL23391.1|paramyxo_SH|SRC:NCBI... at 91.23%
+>Cluster 106
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 107
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 108
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 109
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 110
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 111
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+1	57aa, >tr|paramyxo_SH|SRC:UniProt... at 98.25%
+>Cluster 112
+0	57aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 113
+0	57aa, >YAI73248.1|paramyxo_SH|SRC:NCBI... *
+1	57aa, >XKT67208.1|paramyxo_SH|SRC:NCBI... at 98.25%
+2	57aa, >XKT67161.1|paramyxo_SH|SRC:NCBI... at 98.25%
+3	57aa, >XKT67150.1|paramyxo_SH|SRC:NCBI... at 98.25%
+4	57aa, >XKT67131.1|paramyxo_SH|SRC:NCBI... at 98.25%
+5	57aa, >XKT67112.1|paramyxo_SH|SRC:NCBI... at 98.25%
+6	57aa, >XKT67105.1|paramyxo_SH|SRC:NCBI... at 98.25%
+7	57aa, >XKT67050.1|paramyxo_SH|SRC:NCBI... at 98.25%
+8	57aa, >XKT67017.1|paramyxo_SH|SRC:NCBI... at 96.49%
+>Cluster 114
+0	57aa, >BDG51468.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 115
+0	57aa, >BCW91683.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 116
+0	57aa, >BCW91611.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 117
+0	57aa, >BCU93040.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 118
+0	57aa, >BCU92955.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 119
+0	57aa, >BCU92882.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 120
+0	57aa, >WMD01956.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 121
+0	57aa, >WKD80499.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 122
+0	57aa, >WGF23580.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 123
+0	57aa, >QNL23682.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 124
+0	57aa, >UAY98874.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 125
+0	44aa, >tr|paramyxo_SH|SRC:UniProt... at 97.73%
+1	48aa, >tr|paramyxo_SH|SRC:UniProt... *
+2	48aa, >tr|paramyxo_SH|SRC:UniProt... at 97.92%
+>Cluster 126
+0	45aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 127
+0	45aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 128
+0	44aa, >sp|paramyxo_SH|SRC:UniProt... *
+1	44aa, >tr|paramyxo_SH|SRC:UniProt... at 93.18%
+2	44aa, >tr|paramyxo_SH|SRC:UniProt... at 93.18%
+3	44aa, >tr|paramyxo_SH|SRC:UniProt... at 97.73%
+>Cluster 129
+0	44aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 130
+0	44aa, >tr|paramyxo_SH|SRC:UniProt... *
+>Cluster 131
+0	44aa, >BCU92870.1|paramyxo_SH|SRC:NCBI... *
+>Cluster 132
+0	44aa, >WZW61033.1|paramyxo_SH|SRC:NCBI... *
+1	44aa, >WVR21639.1|paramyxo_SH|SRC:NCBI... at 97.73%

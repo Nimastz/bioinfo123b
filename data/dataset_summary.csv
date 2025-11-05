@@ -1,0 +1,12 @@
+family,train,test,total
+HCV_p7,54,13,67
+HIV_Vpu,1445,361,1806
+alphavirus_6K,20,5,25
+coronavirus_E,264,65,329
+coronavirus_ORF3a,157,39,196
+influenza_M2,137,34,171
+paramyxo_SH,20,4,24
+picorna_2B,54,13,67
+polyoma_VP4,4,1,5
+rotavirus_NSP4,1,0,1
+sum,2156,535,2691

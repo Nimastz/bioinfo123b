@@ -1,0 +1,64 @@
+>Cluster 0
+0	94aa, >QHF16121.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 1
+0	92aa, >QHF16119.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 2
+0	91aa, >QHF16118.1|alphavirus_6K|SRC:NCBI... *
+1	91aa, >QHF16109.1|alphavirus_6K|SRC:NCBI... at 93.41%
+2	91aa, >QHF16048.1|alphavirus_6K|SRC:NCBI... at 91.21%
+>Cluster 3
+0	75aa, >YP_006390079.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 4
+0	68aa, >NP_740642.1|alphavirus_6K|SRC:NCBI... *
+1	68aa, >NP_740660.1|alphavirus_6K|SRC:NCBI... at 92.65%
+>Cluster 5
+0	66aa, >CAA55000.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 6
+0	64aa, >tr|alphavirus_6K|SRC:UniProt... *
+1	56aa, >YP_010806456.1|alphavirus_6K|SRC:NCBI... at 96.43%
+2	56aa, >NP_818994.1|alphavirus_6K|SRC:NCBI... at 92.86%
+>Cluster 7
+0	61aa, >tr|alphavirus_6K|SRC:UniProt... *
+>Cluster 8
+0	61aa, >YP_010806399.1|alphavirus_6K|SRC:NCBI... *
+1	61aa, >NP_740710.1|alphavirus_6K|SRC:NCBI... at 96.72%
+>Cluster 9
+0	61aa, >AKC92520.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 10
+0	60aa, >tr|alphavirus_6K|SRC:UniProt... *
+>Cluster 11
+0	60aa, >YP_010806446.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 12
+0	60aa, >NP_740695.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 13
+0	60aa, >NP_740685.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 14
+0	58aa, >NP_819001.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 15
+0	57aa, >YP_010806427.1|alphavirus_6K|SRC:NCBI... *
+1	57aa, >NP_740647.1|alphavirus_6K|SRC:NCBI... at 98.25%
+>Cluster 16
+0	56aa, >YP_009509072.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 17
+0	56aa, >YP_009509057.1|alphavirus_6K|SRC:NCBI... *
+1	56aa, >YP_009509030.1|alphavirus_6K|SRC:NCBI... at 94.64%
+>Cluster 18
+0	56aa, >YP_009509048.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 19
+0	56aa, >YP_009509039.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 20
+0	56aa, >YP_009509021.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 21
+0	56aa, >YP_009509012.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 22
+0	55aa, >YP_003324598.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 23
+0	55aa, >YP_002802308.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 24
+0	55aa, >NP_818941.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 25
+0	55aa, >NP_740676.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 26
+0	54aa, >NP_819018.1|alphavirus_6K|SRC:NCBI... *
+>Cluster 27
+0	43aa, >tr|alphavirus_6K|SRC:UniProt... *

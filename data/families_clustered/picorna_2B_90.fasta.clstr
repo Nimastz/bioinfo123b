@@ -1,0 +1,265 @@
+>Cluster 0
+0	176aa, >QIS88193.1|picorna_2B|SRC:NCBI... *
+>Cluster 1
+0	166aa, >QIN91508.1|picorna_2B|SRC:NCBI... *
+1	136aa, >QIN91504.1|picorna_2B|SRC:NCBI... at 91.18%
+>Cluster 2
+0	164aa, >UCX56985.1|picorna_2B|SRC:NCBI... *
+>Cluster 3
+0	150aa, >QIN91503.1|picorna_2B|SRC:NCBI... *
+1	128aa, >CAC39016.1|picorna_2B|SRC:NCBI... at 90.62%
+2	131aa, >CAC39014.1|picorna_2B|SRC:NCBI... at 90.84%
+>Cluster 4
+0	145aa, >QBJ01656.1|picorna_2B|SRC:NCBI... *
+>Cluster 5
+0	139aa, >QIS88198.1|picorna_2B|SRC:NCBI... *
+>Cluster 6
+0	139aa, >ABB76923.1|picorna_2B|SRC:NCBI... *
+1	139aa, >ABB76922.1|picorna_2B|SRC:NCBI... at 95.68%
+2	139aa, >ABB76921.1|picorna_2B|SRC:NCBI... at 94.96%
+3	139aa, >ABB76920.1|picorna_2B|SRC:NCBI... at 99.28%
+4	139aa, >ABB76918.1|picorna_2B|SRC:NCBI... at 94.96%
+5	139aa, >ABB76917.1|picorna_2B|SRC:NCBI... at 95.68%
+6	139aa, >ABB76916.1|picorna_2B|SRC:NCBI... at 94.96%
+7	139aa, >ABB76913.1|picorna_2B|SRC:NCBI... at 95.68%
+8	139aa, >ABB76912.1|picorna_2B|SRC:NCBI... at 96.40%
+9	139aa, >ABB76910.1|picorna_2B|SRC:NCBI... at 95.68%
+10	139aa, >ABB76904.1|picorna_2B|SRC:NCBI... at 97.84%
+>Cluster 7
+0	121aa, >WMP24331.1|picorna_2B|SRC:NCBI... *
+>Cluster 8
+0	121aa, >QBJ01670.1|picorna_2B|SRC:NCBI... *
+>Cluster 9
+0	120aa, >AWY94235.1|picorna_2B|SRC:NCBI... *
+>Cluster 10
+0	119aa, >AWY94236.1|picorna_2B|SRC:NCBI... *
+>Cluster 11
+0	114aa, >AAK59962.1|picorna_2B|SRC:NCBI... *
+>Cluster 12
+0	114aa, >BAE44109.1|picorna_2B|SRC:NCBI... *
+1	114aa, >BAE44098.1|picorna_2B|SRC:NCBI... at 90.35%
+2	114aa, >BAE44097.1|picorna_2B|SRC:NCBI... at 92.98%
+3	114aa, >BAE44095.1|picorna_2B|SRC:NCBI... at 94.74%
+4	114aa, >BAE44094.1|picorna_2B|SRC:NCBI... at 92.11%
+5	114aa, >BAE44093.1|picorna_2B|SRC:NCBI... at 92.11%
+6	114aa, >BAE44091.1|picorna_2B|SRC:NCBI... at 94.74%
+7	114aa, >BAE44089.1|picorna_2B|SRC:NCBI... at 93.86%
+8	114aa, >BAE44088.1|picorna_2B|SRC:NCBI... at 92.11%
+9	114aa, >BAE44087.1|picorna_2B|SRC:NCBI... at 92.98%
+10	114aa, >BAE44086.1|picorna_2B|SRC:NCBI... at 95.61%
+11	114aa, >BAE44085.1|picorna_2B|SRC:NCBI... at 93.86%
+12	114aa, >BAE44084.1|picorna_2B|SRC:NCBI... at 94.74%
+13	114aa, >BAE44082.1|picorna_2B|SRC:NCBI... at 96.49%
+14	114aa, >BAE44081.1|picorna_2B|SRC:NCBI... at 93.86%
+15	114aa, >BAE44080.1|picorna_2B|SRC:NCBI... at 97.37%
+16	114aa, >BAE44079.1|picorna_2B|SRC:NCBI... at 97.37%
+17	114aa, >BAE44077.1|picorna_2B|SRC:NCBI... at 95.61%
+18	114aa, >BAE44068.1|picorna_2B|SRC:NCBI... at 92.98%
+>Cluster 13
+0	114aa, >BAE44103.1|picorna_2B|SRC:NCBI... *
+1	114aa, >BAE44101.1|picorna_2B|SRC:NCBI... at 99.12%
+2	114aa, >BAE44075.1|picorna_2B|SRC:NCBI... at 97.37%
+>Cluster 14
+0	114aa, >BAE44096.1|picorna_2B|SRC:NCBI... *
+1	114aa, >BAE44092.1|picorna_2B|SRC:NCBI... at 92.11%
+2	114aa, >BAE44090.1|picorna_2B|SRC:NCBI... at 94.74%
+>Cluster 15
+0	114aa, >BAE44083.1|picorna_2B|SRC:NCBI... *
+>Cluster 16
+0	114aa, >BAE44066.1|picorna_2B|SRC:NCBI... *
+>Cluster 17
+0	112aa, >AHW46264.1|picorna_2B|SRC:NCBI... *
+>Cluster 18
+0	112aa, >BAE44108.1|picorna_2B|SRC:NCBI... *
+1	112aa, >BAE44107.1|picorna_2B|SRC:NCBI... at 99.11%
+2	112aa, >BAE44104.1|picorna_2B|SRC:NCBI... at 96.43%
+3	112aa, >BAE44078.1|picorna_2B|SRC:NCBI... at 98.21%
+4	112aa, >BAE44067.1|picorna_2B|SRC:NCBI... at 98.21%
+5	112aa, >BAE44063.1|picorna_2B|SRC:NCBI... at 97.32%
+6	112aa, >BAE44062.1|picorna_2B|SRC:NCBI... at 95.54%
+>Cluster 19
+0	112aa, >BAE44106.1|picorna_2B|SRC:NCBI... *
+1	112aa, >BAE44105.1|picorna_2B|SRC:NCBI... at 97.32%
+2	112aa, >BAE44100.1|picorna_2B|SRC:NCBI... at 95.54%
+3	112aa, >BAE44076.1|picorna_2B|SRC:NCBI... at 96.43%
+4	112aa, >BAE44074.1|picorna_2B|SRC:NCBI... at 94.64%
+5	112aa, >BAE44069.1|picorna_2B|SRC:NCBI... at 96.43%
+>Cluster 20
+0	112aa, >BAE44073.1|picorna_2B|SRC:NCBI... *
+>Cluster 21
+0	112aa, >BAE44071.1|picorna_2B|SRC:NCBI... *
+>Cluster 22
+0	112aa, >BAE44070.1|picorna_2B|SRC:NCBI... *
+>Cluster 23
+0	109aa, >YP_007353733.1|picorna_2B|SRC:NCBI... *
+>Cluster 24
+0	106aa, >AAU06259.1|picorna_2B|SRC:NCBI... at 98.11%
+1	108aa, >AAU06239.1|picorna_2B|SRC:NCBI... *
+>Cluster 25
+0	102aa, >AAU06256.1|picorna_2B|SRC:NCBI... at 96.08%
+1	103aa, >AAU06255.1|picorna_2B|SRC:NCBI... at 99.03%
+2	102aa, >AAU06254.1|picorna_2B|SRC:NCBI... at 98.04%
+3	103aa, >AAU06252.1|picorna_2B|SRC:NCBI... at 96.12%
+4	103aa, >AAU06237.1|picorna_2B|SRC:NCBI... at 95.15%
+5	102aa, >AAU06236.1|picorna_2B|SRC:NCBI... at 97.06%
+6	107aa, >AAU06235.1|picorna_2B|SRC:NCBI... *
+7	103aa, >AAU06234.1|picorna_2B|SRC:NCBI... at 96.12%
+8	103aa, >AAU06233.1|picorna_2B|SRC:NCBI... at 93.20%
+9	102aa, >AAU06232.1|picorna_2B|SRC:NCBI... at 97.06%
+10	103aa, >AAT99674.1|picorna_2B|SRC:NCBI... at 97.09%
+>Cluster 26
+0	95aa, >AAU06242.1|picorna_2B|SRC:NCBI... at 100.00%
+1	106aa, >AAU06241.1|picorna_2B|SRC:NCBI... *
+>Cluster 27
+0	105aa, >YP_009483882.1|picorna_2B|SRC:NCBI... *
+>Cluster 28
+0	104aa, >AAU06257.1|picorna_2B|SRC:NCBI... *
+>Cluster 29
+0	104aa, >AAU06240.1|picorna_2B|SRC:NCBI... *
+1	101aa, >AAT99671.1|picorna_2B|SRC:NCBI... at 91.09%
+>Cluster 30
+0	104aa, >AAT99673.1|picorna_2B|SRC:NCBI... *
+>Cluster 31
+0	102aa, >AAU06251.1|picorna_2B|SRC:NCBI... *
+1	101aa, >AAT99672.1|picorna_2B|SRC:NCBI... at 95.05%
+>Cluster 32
+0	99aa, >AAU06258.1|picorna_2B|SRC:NCBI... at 100.00%
+1	102aa, >AAU06238.1|picorna_2B|SRC:NCBI... *
+2	97aa, >AAV69742.1|picorna_2B|SRC:NCBI... at 92.78%
+>Cluster 33
+0	101aa, >AAP43079.1|picorna_2B|SRC:NCBI... *
+>Cluster 34
+0	101aa, >AAP43073.1|picorna_2B|SRC:NCBI... *
+1	101aa, >AAP43064.1|picorna_2B|SRC:NCBI... at 97.03%
+2	101aa, >AAP43063.1|picorna_2B|SRC:NCBI... at 98.02%
+3	101aa, >AAP43061.1|picorna_2B|SRC:NCBI... at 95.05%
+>Cluster 35
+0	101aa, >AAP43066.1|picorna_2B|SRC:NCBI... *
+>Cluster 36
+0	101aa, >AAP43060.1|picorna_2B|SRC:NCBI... *
+>Cluster 37
+0	99aa, >O91734|picorna_2B|SRC:UniProt... at 96.97%
+1	99aa, >P08292|picorna_2B|SRC:UniProt... at 95.96%
+2	99aa, >Q66474|picorna_2B|SRC:UniProt... at 94.95%
+3	99aa, >Q66575|picorna_2B|SRC:UniProt... at 94.95%
+4	99aa, >Q9YLG5|picorna_2B|SRC:UniProt... at 94.95%
+5	99aa, >P08291|picorna_2B|SRC:UniProt... at 94.95%
+6	99aa, >P16604|picorna_2B|SRC:UniProt... at 91.92%
+7	99aa, >Q66577|picorna_2B|SRC:UniProt... at 92.93%
+8	99aa, >P21404|picorna_2B|SRC:UniProt... at 95.96%
+9	99aa, >Q66849|picorna_2B|SRC:UniProt... at 94.95%
+10	99aa, >Q86887|picorna_2B|SRC:UniProt... at 91.92%
+11	99aa, >Q9WN78|picorna_2B|SRC:UniProt... at 93.94%
+12	99aa, >P13900|picorna_2B|SRC:UniProt... at 90.91%
+13	99aa, >Q03053|picorna_2B|SRC:UniProt... at 94.95%
+14	99aa, >Q9QL88|picorna_2B|SRC:UniProt... at 94.95%
+15	100aa, >QIN91507.1|picorna_2B|SRC:NCBI... *
+16	100aa, >AFV34555.1|picorna_2B|SRC:NCBI... at 95.00%
+17	100aa, >AFV34553.1|picorna_2B|SRC:NCBI... at 92.00%
+18	99aa, >AFV34543.1|picorna_2B|SRC:NCBI... at 92.93%
+>Cluster 38
+0	100aa, >QIN91506.1|picorna_2B|SRC:NCBI... *
+>Cluster 39
+0	100aa, >AFV34552.1|picorna_2B|SRC:NCBI... *
+1	100aa, >AFV34551.1|picorna_2B|SRC:NCBI... at 92.00%
+2	100aa, >AFV34550.1|picorna_2B|SRC:NCBI... at 93.00%
+3	100aa, >AFV34549.1|picorna_2B|SRC:NCBI... at 93.00%
+4	100aa, >AFV34548.1|picorna_2B|SRC:NCBI... at 94.00%
+5	100aa, >AFV34547.1|picorna_2B|SRC:NCBI... at 95.00%
+6	100aa, >AFV34546.1|picorna_2B|SRC:NCBI... at 94.00%
+7	100aa, >AFV34544.1|picorna_2B|SRC:NCBI... at 94.00%
+>Cluster 40
+0	99aa, >O41174|picorna_2B|SRC:UniProt... *
+>Cluster 41
+0	99aa, >Q66479|picorna_2B|SRC:UniProt... *
+1	99aa, >Q66478|picorna_2B|SRC:UniProt... at 93.94%
+2	99aa, >Q9QF31|picorna_2B|SRC:UniProt... at 93.94%
+3	99aa, >B9VUU3|picorna_2B|SRC:UniProt... at 95.96%
+4	99aa, >Q65900|picorna_2B|SRC:UniProt... at 97.98%
+5	85aa, >ABW98537.1|picorna_2B|SRC:NCBI... at 91.76%
+6	85aa, >ABW98534.1|picorna_2B|SRC:NCBI... at 96.47%
+7	85aa, >ABW98532.1|picorna_2B|SRC:NCBI... at 95.29%
+8	85aa, >ABW98523.1|picorna_2B|SRC:NCBI... at 98.82%
+9	85aa, >ABW98522.1|picorna_2B|SRC:NCBI... at 100.00%
+10	85aa, >ABW98520.1|picorna_2B|SRC:NCBI... at 98.82%
+11	85aa, >ABW98515.1|picorna_2B|SRC:NCBI... at 97.65%
+12	85aa, >ABW98514.1|picorna_2B|SRC:NCBI... at 98.82%
+13	85aa, >ABW98507.1|picorna_2B|SRC:NCBI... at 97.65%
+14	99aa, >YP_009508935.1|picorna_2B|SRC:NCBI... at 94.95%
+>Cluster 42
+0	99aa, >P12915|picorna_2B|SRC:UniProt... *
+>Cluster 43
+0	99aa, >Q68T42|picorna_2B|SRC:UniProt... *
+>Cluster 44
+0	99aa, >E5D8F2|picorna_2B|SRC:UniProt... *
+>Cluster 45
+0	99aa, >P32537|picorna_2B|SRC:UniProt... *
+>Cluster 46
+0	99aa, >YP_009020979.1|picorna_2B|SRC:NCBI... *
+>Cluster 47
+0	99aa, >YP_009508957.1|picorna_2B|SRC:NCBI... *
+1	99aa, >NP_714934.1|picorna_2B|SRC:NCBI... at 92.93%
+>Cluster 48
+0	99aa, >YP_009508968.1|picorna_2B|SRC:NCBI... *
+>Cluster 49
+0	99aa, >YP_009249468.1|picorna_2B|SRC:NCBI... *
+>Cluster 50
+0	99aa, >YP_009020967.1|picorna_2B|SRC:NCBI... *
+>Cluster 51
+0	99aa, >YP_003359171.1|picorna_2B|SRC:NCBI... *
+>Cluster 52
+0	99aa, >YP_001718581.1|picorna_2B|SRC:NCBI... *
+>Cluster 53
+0	99aa, >YP_001552437.1|picorna_2B|SRC:NCBI... *
+>Cluster 54
+0	97aa, >P06209|picorna_2B|SRC:UniProt... *
+1	97aa, >P03302|picorna_2B|SRC:UniProt... at 91.75%
+2	97aa, >AAF35125.1|picorna_2B|SRC:NCBI... at 90.72%
+3	97aa, >AAF35124.1|picorna_2B|SRC:NCBI... at 90.72%
+4	97aa, >AAF35123.1|picorna_2B|SRC:NCBI... at 91.75%
+5	97aa, >AAF35119.1|picorna_2B|SRC:NCBI... at 90.72%
+6	97aa, >AAF35118.1|picorna_2B|SRC:NCBI... at 91.75%
+7	97aa, >AAF35116.1|picorna_2B|SRC:NCBI... at 90.72%
+8	97aa, >AAF35115.1|picorna_2B|SRC:NCBI... at 91.75%
+9	97aa, >AAF35106.1|picorna_2B|SRC:NCBI... at 90.72%
+>Cluster 55
+0	97aa, >P23069|picorna_2B|SRC:UniProt... *
+1	97aa, >AAF35126.1|picorna_2B|SRC:NCBI... at 92.78%
+2	97aa, >AAF35120.1|picorna_2B|SRC:NCBI... at 92.78%
+3	97aa, >AAF35117.1|picorna_2B|SRC:NCBI... at 92.78%
+4	97aa, >AAF35114.1|picorna_2B|SRC:NCBI... at 92.78%
+5	97aa, >AAF35113.1|picorna_2B|SRC:NCBI... at 91.75%
+6	97aa, >AAF35112.1|picorna_2B|SRC:NCBI... at 91.75%
+7	97aa, >AAF35111.1|picorna_2B|SRC:NCBI... at 90.72%
+8	97aa, >AAF35107.1|picorna_2B|SRC:NCBI... at 90.72%
+9	97aa, >AAF35105.1|picorna_2B|SRC:NCBI... at 92.78%
+>Cluster 56
+0	97aa, >P03303|picorna_2B|SRC:UniProt... *
+1	97aa, >Q82081|picorna_2B|SRC:UniProt... at 92.78%
+>Cluster 57
+0	97aa, >P22055|picorna_2B|SRC:UniProt... *
+>Cluster 58
+0	97aa, >P36290|picorna_2B|SRC:UniProt... *
+>Cluster 59
+0	97aa, >P03300|picorna_2B|SRC:UniProt... *
+1	97aa, >P03301|picorna_2B|SRC:UniProt... at 97.94%
+2	97aa, >AAF35102.1|picorna_2B|SRC:NCBI... at 90.72%
+3	97aa, >AAF35101.1|picorna_2B|SRC:NCBI... at 92.78%
+4	97aa, >AAF35100.1|picorna_2B|SRC:NCBI... at 91.75%
+>Cluster 60
+0	97aa, >AAF35121.1|picorna_2B|SRC:NCBI... *
+1	97aa, >AAF35103.1|picorna_2B|SRC:NCBI... at 91.75%
+>Cluster 61
+0	97aa, >AAF35104.1|picorna_2B|SRC:NCBI... *
+>Cluster 62
+0	95aa, >P07210|picorna_2B|SRC:UniProt... *
+>Cluster 63
+0	95aa, >P12916|picorna_2B|SRC:UniProt... *
+1	95aa, >P23008|picorna_2B|SRC:UniProt... at 98.95%
+2	95aa, >Q82122|picorna_2B|SRC:UniProt... at 91.58%
+>Cluster 64
+0	95aa, >P04936|picorna_2B|SRC:UniProt... *
+>Cluster 65
+0	80aa, >QIN91505.1|picorna_2B|SRC:NCBI... *
+>Cluster 66
+0	73aa, >QBJ01612.1|picorna_2B|SRC:NCBI... *

@@ -1,0 +1,2901 @@
+>Cluster 0
+0	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+1	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+3	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+4	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+5	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+6	109aa, >tr|coronavirus_E|SRC:UniProt... at 93.58%
+7	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+8	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+9	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+10	118aa, >tr|coronavirus_E|SRC:UniProt... at 99.15%
+11	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+12	118aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+13	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+14	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+15	118aa, >tr|coronavirus_E|SRC:UniProt... at 99.15%
+16	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+17	110aa, >tr|coronavirus_E|SRC:UniProt... at 93.64%
+18	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+19	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+20	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+21	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+22	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+23	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+24	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+25	109aa, >tr|coronavirus_E|SRC:UniProt... at 93.58%
+26	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+27	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+28	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+29	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+30	102aa, >tr|coronavirus_E|SRC:UniProt... at 90.20%
+31	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+32	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+33	118aa, >tr|coronavirus_E|SRC:UniProt... at 98.31%
+34	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+35	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+36	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+37	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+38	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+39	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+40	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+41	119aa, >tr|coronavirus_E|SRC:UniProt... *
+42	106aa, >tr|coronavirus_E|SRC:UniProt... at 90.57%
+43	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+44	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+45	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+46	109aa, >tr|coronavirus_E|SRC:UniProt... at 93.58%
+47	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+48	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+49	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+50	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+51	109aa, >tr|coronavirus_E|SRC:UniProt... at 98.17%
+52	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+53	110aa, >tr|coronavirus_E|SRC:UniProt... at 91.82%
+54	110aa, >tr|coronavirus_E|SRC:UniProt... at 93.64%
+55	110aa, >tr|coronavirus_E|SRC:UniProt... at 94.55%
+56	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+57	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+58	109aa, >tr|coronavirus_E|SRC:UniProt... at 93.58%
+59	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+60	117aa, >tr|coronavirus_E|SRC:UniProt... at 99.15%
+61	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+62	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+63	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+64	110aa, >tr|coronavirus_E|SRC:UniProt... at 93.64%
+65	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+66	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+67	105aa, >tr|coronavirus_E|SRC:UniProt... at 90.48%
+68	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+69	109aa, >tr|coronavirus_E|SRC:UniProt... at 98.17%
+70	111aa, >tr|coronavirus_E|SRC:UniProt... at 90.09%
+71	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+72	106aa, >tr|coronavirus_E|SRC:UniProt... at 90.57%
+73	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+74	108aa, >tr|coronavirus_E|SRC:UniProt... at 90.74%
+75	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+76	110aa, >tr|coronavirus_E|SRC:UniProt... at 91.82%
+77	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+78	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+79	102aa, >tr|coronavirus_E|SRC:UniProt... at 91.18%
+80	110aa, >XLM37628.1|coronavirus_E|SRC:NCBI... at 90.91%
+81	109aa, >XLM37623.1|coronavirus_E|SRC:NCBI... at 90.83%
+82	109aa, >XLM37606.1|coronavirus_E|SRC:NCBI... at 90.83%
+83	105aa, >XRL86987.1|coronavirus_E|SRC:NCBI... at 91.43%
+84	108aa, >XRL86969.1|coronavirus_E|SRC:NCBI... at 91.67%
+85	108aa, >XRL86951.1|coronavirus_E|SRC:NCBI... at 90.74%
+86	108aa, >XRL86933.1|coronavirus_E|SRC:NCBI... at 91.67%
+87	110aa, >XRL86906.1|coronavirus_E|SRC:NCBI... at 90.91%
+88	110aa, >XRL86600.1|coronavirus_E|SRC:NCBI... at 90.91%
+89	109aa, >XRL86456.1|coronavirus_E|SRC:NCBI... at 96.33%
+90	109aa, >XQY99081.1|coronavirus_E|SRC:NCBI... at 91.74%
+91	109aa, >XIF71467.1|coronavirus_E|SRC:NCBI... at 91.74%
+92	109aa, >BFV33310.1|coronavirus_E|SRC:NCBI... at 95.41%
+>Cluster 1
+0	109aa, >sp|coronavirus_E|SRC:UniProt... at 92.66%
+1	93aa, >sp|coronavirus_E|SRC:UniProt... at 91.40%
+2	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+3	93aa, >tr|coronavirus_E|SRC:UniProt... at 90.32%
+4	110aa, >tr|coronavirus_E|SRC:UniProt... at 91.82%
+5	93aa, >tr|coronavirus_E|SRC:UniProt... at 93.55%
+6	100aa, >tr|coronavirus_E|SRC:UniProt... at 94.00%
+7	100aa, >tr|coronavirus_E|SRC:UniProt... at 94.00%
+8	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+9	99aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+10	107aa, >tr|coronavirus_E|SRC:UniProt... at 91.59%
+11	94aa, >tr|coronavirus_E|SRC:UniProt... at 94.68%
+12	93aa, >tr|coronavirus_E|SRC:UniProt... at 91.40%
+13	107aa, >tr|coronavirus_E|SRC:UniProt... at 91.59%
+14	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+15	110aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+16	93aa, >tr|coronavirus_E|SRC:UniProt... at 94.62%
+17	93aa, >tr|coronavirus_E|SRC:UniProt... at 92.47%
+18	107aa, >tr|coronavirus_E|SRC:UniProt... at 92.52%
+19	99aa, >tr|coronavirus_E|SRC:UniProt... at 93.94%
+20	93aa, >tr|coronavirus_E|SRC:UniProt... at 93.55%
+21	92aa, >tr|coronavirus_E|SRC:UniProt... at 94.57%
+22	93aa, >tr|coronavirus_E|SRC:UniProt... at 93.55%
+23	103aa, >tr|coronavirus_E|SRC:UniProt... at 92.23%
+24	111aa, >XLM37596.1|coronavirus_E|SRC:NCBI... *
+25	93aa, >XRL86978.1|coronavirus_E|SRC:NCBI... at 91.40%
+26	110aa, >BFV33336.1|coronavirus_E|SRC:NCBI... at 91.82%
+27	100aa, >BFV33297.1|coronavirus_E|SRC:NCBI... at 93.00%
+>Cluster 2
+0	110aa, >tr|coronavirus_E|SRC:UniProt... *
+1	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+2	110aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+3	106aa, >tr|coronavirus_E|SRC:UniProt... at 90.57%
+4	110aa, >tr|coronavirus_E|SRC:UniProt... at 99.09%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+>Cluster 3
+0	110aa, >tr|coronavirus_E|SRC:UniProt... *
+1	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+>Cluster 4
+0	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+1	107aa, >tr|coronavirus_E|SRC:UniProt... at 91.59%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+3	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+4	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+6	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+7	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+8	110aa, >tr|coronavirus_E|SRC:UniProt... *
+9	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+10	98aa, >tr|coronavirus_E|SRC:UniProt... at 90.82%
+11	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+>Cluster 5
+0	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+1	106aa, >tr|coronavirus_E|SRC:UniProt... at 92.45%
+2	106aa, >tr|coronavirus_E|SRC:UniProt... at 92.45%
+3	106aa, >tr|coronavirus_E|SRC:UniProt... at 92.45%
+4	110aa, >BFV33349.1|coronavirus_E|SRC:NCBI... *
+>Cluster 6
+0	109aa, >sp|coronavirus_E|SRC:UniProt... *
+1	108aa, >sp|coronavirus_E|SRC:UniProt... at 100.00%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+3	108aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+4	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 99.08%
+6	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+7	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+8	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+9	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+10	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+11	108aa, >tr|coronavirus_E|SRC:UniProt... at 98.15%
+12	109aa, >tr|coronavirus_E|SRC:UniProt... at 92.66%
+13	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+14	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+15	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+16	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+17	108aa, >tr|coronavirus_E|SRC:UniProt... at 99.07%
+18	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+19	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+20	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+21	109aa, >tr|coronavirus_E|SRC:UniProt... at 98.17%
+22	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+23	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+24	103aa, >tr|coronavirus_E|SRC:UniProt... at 90.29%
+25	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+26	102aa, >tr|coronavirus_E|SRC:UniProt... at 93.14%
+27	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+28	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+29	108aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+30	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+31	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+32	109aa, >tr|coronavirus_E|SRC:UniProt... at 98.17%
+33	109aa, >XRL86546.1|coronavirus_E|SRC:NCBI... at 94.50%
+34	109aa, >XQY99114.1|coronavirus_E|SRC:NCBI... at 94.50%
+35	109aa, >XNO13175.1|coronavirus_E|SRC:NCBI... at 93.58%
+>Cluster 7
+0	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+1	109aa, >tr|coronavirus_E|SRC:UniProt... *
+2	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+3	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+4	108aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+6	92aa, >tr|coronavirus_E|SRC:UniProt... at 90.22%
+7	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+8	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+9	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+10	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+11	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+12	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+13	109aa, >tr|coronavirus_E|SRC:UniProt... at 93.58%
+14	108aa, >tr|coronavirus_E|SRC:UniProt... at 94.44%
+15	108aa, >tr|coronavirus_E|SRC:UniProt... at 94.44%
+16	102aa, >tr|coronavirus_E|SRC:UniProt... at 96.08%
+17	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+18	108aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+19	109aa, >tr|coronavirus_E|SRC:UniProt... at 98.17%
+20	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+21	108aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+22	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+23	108aa, >tr|coronavirus_E|SRC:UniProt... at 98.15%
+24	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+25	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+26	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+27	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+28	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+29	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+30	102aa, >tr|coronavirus_E|SRC:UniProt... at 96.08%
+31	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+32	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+33	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+34	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+35	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+36	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+37	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+38	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+39	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+40	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+41	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+42	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+43	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+44	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+45	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+46	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+47	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+48	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+49	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+50	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+51	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+52	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+53	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+54	102aa, >tr|coronavirus_E|SRC:UniProt... at 96.08%
+55	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+56	108aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+57	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+58	108aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+59	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+60	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+61	108aa, >tr|coronavirus_E|SRC:UniProt... at 96.30%
+62	108aa, >XRL86879.1|coronavirus_E|SRC:NCBI... at 95.37%
+63	109aa, >XRL86825.1|coronavirus_E|SRC:NCBI... at 99.08%
+64	109aa, >XRL86771.1|coronavirus_E|SRC:NCBI... at 97.25%
+65	108aa, >XRL86744.1|coronavirus_E|SRC:NCBI... at 95.37%
+66	108aa, >XRL86726.1|coronavirus_E|SRC:NCBI... at 93.52%
+67	109aa, >XRL86717.1|coronavirus_E|SRC:NCBI... at 97.25%
+68	108aa, >XRL86636.1|coronavirus_E|SRC:NCBI... at 95.37%
+69	108aa, >XRL86564.1|coronavirus_E|SRC:NCBI... at 93.52%
+70	108aa, >XRL86510.1|coronavirus_E|SRC:NCBI... at 96.30%
+71	102aa, >XRL86420.1|coronavirus_E|SRC:NCBI... at 95.10%
+72	109aa, >XQY99092.1|coronavirus_E|SRC:NCBI... at 98.17%
+73	108aa, >XQY99070.1|coronavirus_E|SRC:NCBI... at 96.30%
+74	109aa, >XQY99048.1|coronavirus_E|SRC:NCBI... at 95.41%
+75	109aa, >XQY99015.1|coronavirus_E|SRC:NCBI... at 93.58%
+76	109aa, >XQY98993.1|coronavirus_E|SRC:NCBI... at 96.33%
+77	108aa, >XQY98916.1|coronavirus_E|SRC:NCBI... at 96.30%
+78	108aa, >XIF71485.1|coronavirus_E|SRC:NCBI... at 96.30%
+79	108aa, >XNX39334.1|coronavirus_E|SRC:NCBI... at 95.37%
+>Cluster 8
+0	109aa, >tr|coronavirus_E|SRC:UniProt... *
+1	107aa, >tr|coronavirus_E|SRC:UniProt... at 92.52%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+3	107aa, >tr|coronavirus_E|SRC:UniProt... at 91.59%
+4	100aa, >tr|coronavirus_E|SRC:UniProt... at 92.00%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 95.41%
+6	99aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+7	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+8	109aa, >tr|coronavirus_E|SRC:UniProt... at 94.50%
+9	99aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+10	99aa, >tr|coronavirus_E|SRC:UniProt... at 91.92%
+11	107aa, >tr|coronavirus_E|SRC:UniProt... at 92.52%
+>Cluster 9
+0	109aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 10
+0	109aa, >tr|coronavirus_E|SRC:UniProt... *
+1	108aa, >tr|coronavirus_E|SRC:UniProt... at 93.52%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+3	109aa, >tr|coronavirus_E|SRC:UniProt... at 99.08%
+4	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+5	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+6	109aa, >tr|coronavirus_E|SRC:UniProt... at 90.83%
+>Cluster 11
+0	109aa, >tr|coronavirus_E|SRC:UniProt... *
+1	109aa, >tr|coronavirus_E|SRC:UniProt... at 97.25%
+2	109aa, >tr|coronavirus_E|SRC:UniProt... at 96.33%
+>Cluster 12
+0	109aa, >tr|coronavirus_E|SRC:UniProt... *
+1	109aa, >tr|coronavirus_E|SRC:UniProt... at 91.74%
+>Cluster 13
+0	109aa, >XRL86429.1|coronavirus_E|SRC:NCBI... *
+>Cluster 14
+0	108aa, >tr|coronavirus_E|SRC:UniProt... *
+1	108aa, >tr|coronavirus_E|SRC:UniProt... at 95.37%
+2	108aa, >tr|coronavirus_E|SRC:UniProt... at 99.07%
+>Cluster 15
+0	108aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 16
+0	108aa, >tr|coronavirus_E|SRC:UniProt... *
+1	108aa, >XRL86753.1|coronavirus_E|SRC:NCBI... at 91.67%
+>Cluster 17
+0	107aa, >sp|coronavirus_E|SRC:UniProt... *
+1	106aa, >sp|coronavirus_E|SRC:UniProt... at 90.57%
+2	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+3	107aa, >tr|coronavirus_E|SRC:UniProt... at 90.65%
+4	106aa, >tr|coronavirus_E|SRC:UniProt... at 90.57%
+5	107aa, >tr|coronavirus_E|SRC:UniProt... at 91.59%
+>Cluster 18
+0	107aa, >tr|coronavirus_E|SRC:UniProt... *
+1	95aa, >tr|coronavirus_E|SRC:UniProt... at 91.58%
+>Cluster 19
+0	107aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 20
+0	103aa, >tr|coronavirus_E|SRC:UniProt... at 91.26%
+1	95aa, >tr|coronavirus_E|SRC:UniProt... at 93.68%
+2	103aa, >tr|coronavirus_E|SRC:UniProt... at 92.23%
+3	107aa, >tr|coronavirus_E|SRC:UniProt... *
+4	107aa, >tr|coronavirus_E|SRC:UniProt... at 92.52%
+>Cluster 21
+0	107aa, >tr|coronavirus_E|SRC:UniProt... *
+1	106aa, >tr|coronavirus_E|SRC:UniProt... at 90.57%
+2	101aa, >tr|coronavirus_E|SRC:UniProt... at 91.09%
+>Cluster 22
+0	106aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 23
+0	106aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 24
+0	106aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 25
+0	105aa, >XRL86942.1|coronavirus_E|SRC:NCBI... *
+>Cluster 26
+0	103aa, >tr|coronavirus_E|SRC:UniProt... *
+1	102aa, >tr|coronavirus_E|SRC:UniProt... at 99.02%
+2	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+3	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+4	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+5	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+6	103aa, >tr|coronavirus_E|SRC:UniProt... at 98.06%
+7	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+8	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+9	103aa, >tr|coronavirus_E|SRC:UniProt... at 98.06%
+10	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+11	103aa, >tr|coronavirus_E|SRC:UniProt... at 97.09%
+12	102aa, >tr|coronavirus_E|SRC:UniProt... at 99.02%
+13	102aa, >tr|coronavirus_E|SRC:UniProt... at 99.02%
+14	102aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+15	103aa, >tr|coronavirus_E|SRC:UniProt... at 99.03%
+16	102aa, >XRL86870.1|coronavirus_E|SRC:NCBI... at 98.04%
+17	102aa, >XRL86852.1|coronavirus_E|SRC:NCBI... at 97.06%
+18	103aa, >XRL86411.1|coronavirus_E|SRC:NCBI... at 98.06%
+>Cluster 27
+0	83aa, >sp|coronavirus_E|SRC:UniProt... at 95.18%
+1	88aa, >sp|coronavirus_E|SRC:UniProt... at 98.86%
+2	88aa, >sp|coronavirus_E|SRC:UniProt... at 95.45%
+3	88aa, >sp|coronavirus_E|SRC:UniProt... at 95.45%
+4	88aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+5	83aa, >tr|coronavirus_E|SRC:UniProt... at 93.98%
+6	88aa, >tr|coronavirus_E|SRC:UniProt... at 94.32%
+7	102aa, >tr|coronavirus_E|SRC:UniProt... *
+8	88aa, >tr|coronavirus_E|SRC:UniProt... at 92.05%
+9	83aa, >tr|coronavirus_E|SRC:UniProt... at 95.18%
+10	88aa, >tr|coronavirus_E|SRC:UniProt... at 96.59%
+11	88aa, >tr|coronavirus_E|SRC:UniProt... at 97.73%
+12	88aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+13	88aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+14	88aa, >tr|coronavirus_E|SRC:UniProt... at 94.32%
+15	88aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+16	88aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+17	83aa, >tr|coronavirus_E|SRC:UniProt... at 97.59%
+18	83aa, >XRQ53907.1|coronavirus_E|SRC:NCBI... at 98.80%
+>Cluster 28
+0	102aa, >tr|coronavirus_E|SRC:UniProt... *
+1	102aa, >tr|coronavirus_E|SRC:UniProt... at 96.08%
+2	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+3	102aa, >tr|coronavirus_E|SRC:UniProt... at 94.12%
+>Cluster 29
+0	82aa, >sp|coronavirus_E|SRC:UniProt... at 98.78%
+1	102aa, >tr|coronavirus_E|SRC:UniProt... *
+2	102aa, >tr|coronavirus_E|SRC:UniProt... at 98.04%
+3	82aa, >XUA31446.1|coronavirus_E|SRC:NCBI... at 98.78%
+4	82aa, >XUA31437.1|coronavirus_E|SRC:NCBI... at 100.00%
+5	82aa, >XUA31410.1|coronavirus_E|SRC:NCBI... at 96.34%
+6	82aa, >XUA31392.1|coronavirus_E|SRC:NCBI... at 97.56%
+7	82aa, >XUA31347.1|coronavirus_E|SRC:NCBI... at 97.56%
+8	82aa, >XUA31302.1|coronavirus_E|SRC:NCBI... at 96.34%
+9	82aa, >XUA31068.1|coronavirus_E|SRC:NCBI... at 97.56%
+>Cluster 30
+0	100aa, >XYW66603.1|coronavirus_E|SRC:NCBI... *
+>Cluster 31
+0	100aa, >XXN26582.1|coronavirus_E|SRC:NCBI... *
+>Cluster 32
+0	100aa, >XRL86861.1|coronavirus_E|SRC:NCBI... *
+>Cluster 33
+0	80aa, >tr|coronavirus_E|SRC:UniProt... at 97.50%
+1	91aa, >tr|coronavirus_E|SRC:UniProt... *
+2	91aa, >tr|coronavirus_E|SRC:UniProt... at 97.80%
+>Cluster 34
+0	84aa, >sp|coronavirus_E|SRC:UniProt... at 96.43%
+1	84aa, >sp|coronavirus_E|SRC:UniProt... at 95.24%
+2	84aa, >sp|coronavirus_E|SRC:UniProt... at 96.43%
+3	84aa, >sp|coronavirus_E|SRC:UniProt... at 97.62%
+4	89aa, >tr|coronavirus_E|SRC:UniProt... *
+5	84aa, >tr|coronavirus_E|SRC:UniProt... at 96.43%
+6	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+7	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+8	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+9	84aa, >tr|coronavirus_E|SRC:UniProt... at 90.48%
+10	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+11	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+12	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+13	84aa, >tr|coronavirus_E|SRC:UniProt... at 91.67%
+14	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+15	84aa, >tr|coronavirus_E|SRC:UniProt... at 96.43%
+16	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+17	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+18	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+19	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+20	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+21	83aa, >tr|coronavirus_E|SRC:UniProt... at 93.98%
+22	83aa, >tr|coronavirus_E|SRC:UniProt... at 92.77%
+23	83aa, >tr|coronavirus_E|SRC:UniProt... at 91.57%
+24	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+25	83aa, >tr|coronavirus_E|SRC:UniProt... at 93.98%
+26	84aa, >tr|coronavirus_E|SRC:UniProt... at 96.43%
+27	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+28	83aa, >tr|coronavirus_E|SRC:UniProt... at 95.18%
+29	88aa, >tr|coronavirus_E|SRC:UniProt... at 94.32%
+30	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+31	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+32	88aa, >tr|coronavirus_E|SRC:UniProt... at 94.32%
+33	84aa, >tr|coronavirus_E|SRC:UniProt... at 90.48%
+34	85aa, >tr|coronavirus_E|SRC:UniProt... at 96.47%
+35	84aa, >tr|coronavirus_E|SRC:UniProt... at 94.05%
+36	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+37	85aa, >tr|coronavirus_E|SRC:UniProt... at 94.12%
+38	85aa, >tr|coronavirus_E|SRC:UniProt... at 94.12%
+39	85aa, >tr|coronavirus_E|SRC:UniProt... at 94.12%
+40	85aa, >tr|coronavirus_E|SRC:UniProt... at 95.29%
+41	88aa, >tr|coronavirus_E|SRC:UniProt... at 95.45%
+42	85aa, >tr|coronavirus_E|SRC:UniProt... at 95.29%
+43	84aa, >tr|coronavirus_E|SRC:UniProt... at 95.24%
+44	83aa, >tr|coronavirus_E|SRC:UniProt... at 95.18%
+45	85aa, >XXH79966.1|coronavirus_E|SRC:NCBI... at 96.47%
+46	88aa, >XXH79333.1|coronavirus_E|SRC:NCBI... at 94.32%
+47	85aa, >WDE18390.1|coronavirus_E|SRC:NCBI... at 94.12%
+48	84aa, >XUX57128.1|coronavirus_E|SRC:NCBI... at 95.24%
+49	84aa, >XOD40884.1|coronavirus_E|SRC:NCBI... at 95.24%
+50	87aa, >XPL78222.1|coronavirus_E|SRC:NCBI... at 100.00%
+>Cluster 35
+0	89aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 36
+0	88aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 37
+0	88aa, >tr|coronavirus_E|SRC:UniProt... *
+1	84aa, >tr|coronavirus_E|SRC:UniProt... at 96.43%
+2	88aa, >tr|coronavirus_E|SRC:UniProt... at 98.86%
+3	84aa, >XOB75845.1|coronavirus_E|SRC:NCBI... at 100.00%
+>Cluster 38
+0	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+2	87aa, >tr|coronavirus_E|SRC:UniProt... *
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+4	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+5	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+>Cluster 39
+0	86aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 40
+0	85aa, >WDE18376.1|coronavirus_E|SRC:NCBI... *
+>Cluster 41
+0	84aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 42
+0	84aa, >XYW66700.1|coronavirus_E|SRC:NCBI... *
+>Cluster 43
+0	83aa, >YAB43076.1|coronavirus_E|SRC:NCBI... *
+1	83aa, >XZP31993.1|coronavirus_E|SRC:NCBI... at 98.80%
+2	83aa, >XXQ18301.1|coronavirus_E|SRC:NCBI... at 93.98%
+3	83aa, >XXJ43399.1|coronavirus_E|SRC:NCBI... at 98.80%
+4	83aa, >XUM38529.1|coronavirus_E|SRC:NCBI... at 92.77%
+5	83aa, >WCS91568.1|coronavirus_E|SRC:NCBI... at 98.80%
+6	83aa, >WCS91551.1|coronavirus_E|SRC:NCBI... at 98.80%
+>Cluster 44
+0	83aa, >XZP31941.1|coronavirus_E|SRC:NCBI... *
+1	83aa, >XZP31923.1|coronavirus_E|SRC:NCBI... at 98.80%
+>Cluster 45
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+4	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+5	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+6	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+7	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+8	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+9	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+10	82aa, >tr|coronavirus_E|SRC:UniProt... at 90.24%
+11	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+12	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+13	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+>Cluster 46
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+4	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+5	81aa, >tr|coronavirus_E|SRC:UniProt... at 98.77%
+6	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+7	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+8	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+9	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+10	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+11	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+12	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+13	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+14	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+15	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+16	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+17	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+18	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+19	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+20	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+21	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+22	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+23	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+24	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+25	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+26	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+27	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+28	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+29	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+30	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+31	82aa, >tr|coronavirus_E|SRC:UniProt... at 91.46%
+32	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+33	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+34	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+35	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+36	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+37	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+38	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+39	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+40	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+41	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+42	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+43	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+44	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+45	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+46	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+47	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+48	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+49	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+50	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+51	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+52	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+53	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+54	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+55	82aa, >YAJ21158.1|coronavirus_E|SRC:NCBI... at 90.24%
+56	82aa, >YAJ21148.1|coronavirus_E|SRC:NCBI... at 90.24%
+57	82aa, >YAJ21138.1|coronavirus_E|SRC:NCBI... at 96.34%
+58	82aa, >YAJ21058.1|coronavirus_E|SRC:NCBI... at 92.68%
+59	82aa, >WPD49414.1|coronavirus_E|SRC:NCBI... at 97.56%
+60	82aa, >XXH79765.1|coronavirus_E|SRC:NCBI... at 92.68%
+61	82aa, >XWS90721.1|coronavirus_E|SRC:NCBI... at 95.12%
+62	82aa, >XWS90689.1|coronavirus_E|SRC:NCBI... at 92.68%
+63	82aa, >BGO69936.1|coronavirus_E|SRC:NCBI... at 93.90%
+64	82aa, >BFU66018.1|coronavirus_E|SRC:NCBI... at 95.12%
+65	82aa, >XQE70498.1|coronavirus_E|SRC:NCBI... at 96.34%
+66	82aa, >XQE70481.1|coronavirus_E|SRC:NCBI... at 95.12%
+67	82aa, >XQE70477.1|coronavirus_E|SRC:NCBI... at 93.90%
+68	82aa, >XQE70472.1|coronavirus_E|SRC:NCBI... at 95.12%
+69	82aa, >XQE70467.1|coronavirus_E|SRC:NCBI... at 96.34%
+70	82aa, >XQE70438.1|coronavirus_E|SRC:NCBI... at 95.12%
+71	82aa, >XQE70402.1|coronavirus_E|SRC:NCBI... at 95.12%
+72	82aa, >XQE70368.1|coronavirus_E|SRC:NCBI... at 96.34%
+73	82aa, >XQE70350.1|coronavirus_E|SRC:NCBI... at 95.12%
+>Cluster 47
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	81aa, >sp|coronavirus_E|SRC:UniProt... at 91.36%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 91.46%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+4	81aa, >tr|coronavirus_E|SRC:UniProt... at 90.12%
+5	81aa, >tr|coronavirus_E|SRC:UniProt... at 92.59%
+>Cluster 48
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	82aa, >sp|coronavirus_E|SRC:UniProt... at 92.68%
+2	82aa, >sp|coronavirus_E|SRC:UniProt... at 96.34%
+3	81aa, >tr|coronavirus_E|SRC:UniProt... at 93.83%
+4	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+5	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+6	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+7	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+8	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+9	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+10	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+11	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+12	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+13	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+14	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+15	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+16	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+17	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+18	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+19	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+20	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+21	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+22	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+23	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+24	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+25	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+26	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+27	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+28	82aa, >XQE70571.1|coronavirus_E|SRC:NCBI... at 96.34%
+29	82aa, >XEQ83938.1|coronavirus_E|SRC:NCBI... at 95.12%
+>Cluster 49
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	82aa, >sp|coronavirus_E|SRC:UniProt... at 97.56%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+>Cluster 50
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	80aa, >tr|coronavirus_E|SRC:UniProt... at 98.75%
+2	80aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+>Cluster 51
+0	82aa, >sp|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+2	81aa, >BFM37563.1|coronavirus_E|SRC:NCBI... at 98.77%
+3	72aa, >XUM36703.1|coronavirus_E|SRC:NCBI... at 100.00%
+>Cluster 52
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+>Cluster 53
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 92.68%
+>Cluster 54
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+4	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+5	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+6	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+7	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+8	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+9	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+10	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+11	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+>Cluster 55
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 93.90%
+>Cluster 56
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+>Cluster 57
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 58
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 91.46%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+3	82aa, >XUA30996.1|coronavirus_E|SRC:NCBI... at 91.46%
+>Cluster 59
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 97.56%
+3	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+>Cluster 60
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 95.12%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 96.34%
+3	82aa, >XQP08656.1|coronavirus_E|SRC:NCBI... at 91.46%
+4	82aa, >XQP08628.1|coronavirus_E|SRC:NCBI... at 90.24%
+>Cluster 61
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 98.78%
+>Cluster 62
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+1	82aa, >tr|coronavirus_E|SRC:UniProt... at 91.46%
+2	82aa, >tr|coronavirus_E|SRC:UniProt... at 91.46%
+>Cluster 63
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 64
+0	82aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 65
+0	82aa, >XYR84394.1|coronavirus_E|SRC:NCBI... *
+>Cluster 66
+0	82aa, >XWV29650.1|coronavirus_E|SRC:NCBI... *
+1	82aa, >WDE18116.2|coronavirus_E|SRC:NCBI... at 90.24%
+>Cluster 67
+0	82aa, >XUM36739.1|coronavirus_E|SRC:NCBI... *
+>Cluster 68
+0	82aa, >XBS50343.1|coronavirus_E|SRC:NCBI... *
+>Cluster 69
+0	80aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 70
+0	74aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+1	80aa, >XUA30693.1|coronavirus_E|SRC:NCBI... *
+>Cluster 71
+0	80aa, >XUA30680.1|coronavirus_E|SRC:NCBI... *
+>Cluster 72
+0	79aa, >sp|coronavirus_E|SRC:UniProt... *
+>Cluster 73
+0	76aa, >sp|coronavirus_E|SRC:UniProt... at 97.37%
+1	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+2	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+3	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+4	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+5	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+6	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+7	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+8	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+9	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+10	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+11	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+12	72aa, >tr|coronavirus_E|SRC:UniProt... at 98.61%
+13	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+14	76aa, >tr|coronavirus_E|SRC:UniProt... at 97.37%
+15	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+16	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+17	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+18	79aa, >tr|coronavirus_E|SRC:UniProt... *
+19	72aa, >tr|coronavirus_E|SRC:UniProt... at 97.22%
+20	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+21	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+22	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+23	76aa, >tr|coronavirus_E|SRC:UniProt... at 97.37%
+24	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+25	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+26	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+27	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+28	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+29	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+30	76aa, >tr|coronavirus_E|SRC:UniProt... at 98.68%
+31	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+32	76aa, >tr|coronavirus_E|SRC:UniProt... at 98.68%
+33	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+34	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+35	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+36	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+37	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+38	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+39	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+40	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+41	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+42	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+43	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+44	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+45	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+46	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+47	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+48	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+49	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+50	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+51	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+52	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+53	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+54	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+55	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+56	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+57	78aa, >tr|coronavirus_E|SRC:UniProt... at 92.31%
+58	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+59	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+60	76aa, >tr|coronavirus_E|SRC:UniProt... at 97.37%
+61	76aa, >tr|coronavirus_E|SRC:UniProt... at 98.68%
+62	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+63	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+64	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+65	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+66	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+67	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+68	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+69	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+70	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+71	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+72	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+73	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+74	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+75	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+76	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+77	76aa, >tr|coronavirus_E|SRC:UniProt... at 98.68%
+78	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+79	75aa, >tr|coronavirus_E|SRC:UniProt... at 96.00%
+80	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+81	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+82	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+83	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+84	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+85	76aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+86	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+87	76aa, >XZF43848.1|coronavirus_E|SRC:NCBI... at 94.74%
+88	76aa, >XSG40398.1|coronavirus_E|SRC:NCBI... at 94.74%
+89	76aa, >XSG40314.1|coronavirus_E|SRC:NCBI... at 94.74%
+90	76aa, >XSG40308.1|coronavirus_E|SRC:NCBI... at 94.74%
+91	76aa, >XSG40272.1|coronavirus_E|SRC:NCBI... at 94.74%
+92	76aa, >XAV44401.1|coronavirus_E|SRC:NCBI... at 94.74%
+93	76aa, >XXC22773.1|coronavirus_E|SRC:NCBI... at 93.42%
+94	76aa, >XQT75940.1|coronavirus_E|SRC:NCBI... at 94.74%
+95	76aa, >XQT75935.1|coronavirus_E|SRC:NCBI... at 93.42%
+96	76aa, >UNE55873.1|coronavirus_E|SRC:NCBI... at 94.74%
+97	76aa, >UNE55813.1|coronavirus_E|SRC:NCBI... at 94.74%
+98	76aa, >XPR31938.1|coronavirus_E|SRC:NCBI... at 93.42%
+99	76aa, >XPB75785.1|coronavirus_E|SRC:NCBI... at 94.74%
+100	76aa, >XPB75755.1|coronavirus_E|SRC:NCBI... at 93.42%
+>Cluster 74
+0	76aa, >sp|coronavirus_E|SRC:UniProt... at 93.42%
+1	75aa, >sp|coronavirus_E|SRC:UniProt... at 98.67%
+2	76aa, >sp|coronavirus_E|SRC:UniProt... at 92.11%
+3	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+4	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+5	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+6	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+7	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+8	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+9	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+10	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+11	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+12	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+13	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+14	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+15	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+16	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+17	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+18	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+19	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+20	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+21	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+22	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+23	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+24	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+25	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+26	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+27	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+28	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+29	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+30	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+31	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+32	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+33	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+34	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+35	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+36	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+37	75aa, >tr|coronavirus_E|SRC:UniProt... at 96.00%
+38	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+39	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+40	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+41	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+42	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+43	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+44	75aa, >tr|coronavirus_E|SRC:UniProt... at 100.00%
+45	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+46	76aa, >tr|coronavirus_E|SRC:UniProt... at 93.42%
+47	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+48	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+49	75aa, >YAN95042.1|coronavirus_E|SRC:NCBI... at 98.67%
+50	75aa, >YAN94355.1|coronavirus_E|SRC:NCBI... at 98.67%
+51	75aa, >YAL15709.1|coronavirus_E|SRC:NCBI... at 98.67%
+52	68aa, >YAJ85437.1|coronavirus_E|SRC:NCBI... at 100.00%
+53	75aa, >YAJ84283.1|coronavirus_E|SRC:NCBI... at 98.67%
+54	75aa, >YAJ83311.1|coronavirus_E|SRC:NCBI... at 98.67%
+55	75aa, >YAJ63936.1|coronavirus_E|SRC:NCBI... at 98.67%
+56	75aa, >YAJ61580.1|coronavirus_E|SRC:NCBI... at 98.67%
+57	75aa, >YAJ60876.1|coronavirus_E|SRC:NCBI... at 98.67%
+58	75aa, >YAJ60638.1|coronavirus_E|SRC:NCBI... at 98.67%
+59	75aa, >YAI80174.1|coronavirus_E|SRC:NCBI... at 94.67%
+60	75aa, >YAI79505.1|coronavirus_E|SRC:NCBI... at 98.67%
+61	75aa, >YAG32175.1|coronavirus_E|SRC:NCBI... at 98.67%
+62	75aa, >YAG32020.1|coronavirus_E|SRC:NCBI... at 94.67%
+63	75aa, >YAG31890.1|coronavirus_E|SRC:NCBI... at 97.33%
+64	75aa, >YAE84641.1|coronavirus_E|SRC:NCBI... at 93.33%
+65	75aa, >YAE07419.1|coronavirus_E|SRC:NCBI... at 98.67%
+66	75aa, >YAD81908.1|coronavirus_E|SRC:NCBI... at 98.67%
+67	75aa, >YAD79004.1|coronavirus_E|SRC:NCBI... at 98.67%
+68	75aa, >YAB89846.1|coronavirus_E|SRC:NCBI... at 93.33%
+69	75aa, >YAB66515.1|coronavirus_E|SRC:NCBI... at 96.00%
+70	75aa, >YAB59032.1|coronavirus_E|SRC:NCBI... at 93.33%
+71	75aa, >YAB50884.1|coronavirus_E|SRC:NCBI... at 98.67%
+72	75aa, >YAB46639.1|coronavirus_E|SRC:NCBI... at 98.67%
+73	75aa, >YAB46377.1|coronavirus_E|SRC:NCBI... at 92.00%
+74	75aa, >YAB44571.1|coronavirus_E|SRC:NCBI... at 93.33%
+75	75aa, >YAB44511.1|coronavirus_E|SRC:NCBI... at 93.33%
+76	75aa, >YAB44452.1|coronavirus_E|SRC:NCBI... at 90.67%
+77	75aa, >YAA54918.1|coronavirus_E|SRC:NCBI... at 98.67%
+78	75aa, >XZY20438.1|coronavirus_E|SRC:NCBI... at 98.67%
+79	75aa, >XZY13543.1|coronavirus_E|SRC:NCBI... at 98.67%
+80	72aa, >XZY12366.1|coronavirus_E|SRC:NCBI... at 90.28%
+81	75aa, >XZY12244.1|coronavirus_E|SRC:NCBI... at 94.67%
+82	68aa, >XZX73631.1|coronavirus_E|SRC:NCBI... at 98.53%
+83	79aa, >XZS38003.1|coronavirus_E|SRC:NCBI... *
+84	75aa, >XZP72931.1|coronavirus_E|SRC:NCBI... at 98.67%
+85	75aa, >XZP72488.1|coronavirus_E|SRC:NCBI... at 98.67%
+86	75aa, >XZP68835.1|coronavirus_E|SRC:NCBI... at 96.00%
+87	72aa, >XZP68823.1|coronavirus_E|SRC:NCBI... at 100.00%
+88	75aa, >XZP68775.1|coronavirus_E|SRC:NCBI... at 98.67%
+89	76aa, >XUA30811.1|coronavirus_E|SRC:NCBI... at 92.11%
+90	75aa, >XZF49968.1|coronavirus_E|SRC:NCBI... at 97.33%
+91	75aa, >XZF43808.1|coronavirus_E|SRC:NCBI... at 97.33%
+92	75aa, >XZE12959.1|coronavirus_E|SRC:NCBI... at 97.33%
+93	75aa, >XZC82716.1|coronavirus_E|SRC:NCBI... at 98.67%
+94	75aa, >XYZ96292.1|coronavirus_E|SRC:NCBI... at 98.67%
+95	75aa, >XYW64235.1|coronavirus_E|SRC:NCBI... at 98.67%
+96	75aa, >XYW56223.1|coronavirus_E|SRC:NCBI... at 98.67%
+97	76aa, >WEG19443.1|coronavirus_E|SRC:NCBI... at 94.74%
+98	75aa, >XYO67774.1|coronavirus_E|SRC:NCBI... at 98.67%
+99	75aa, >XYO67558.1|coronavirus_E|SRC:NCBI... at 98.67%
+100	75aa, >XYO67546.1|coronavirus_E|SRC:NCBI... at 98.67%
+101	75aa, >XYI77555.1|coronavirus_E|SRC:NCBI... at 92.00%
+102	75aa, >XYI77223.1|coronavirus_E|SRC:NCBI... at 96.00%
+103	75aa, >XYI77200.1|coronavirus_E|SRC:NCBI... at 97.33%
+104	74aa, >XYI77105.1|coronavirus_E|SRC:NCBI... at 95.95%
+105	75aa, >XYI76890.1|coronavirus_E|SRC:NCBI... at 93.33%
+106	75aa, >XYI76716.1|coronavirus_E|SRC:NCBI... at 97.33%
+107	75aa, >XYI25976.1|coronavirus_E|SRC:NCBI... at 98.67%
+108	75aa, >XYI25318.1|coronavirus_E|SRC:NCBI... at 98.67%
+109	75aa, >XYI16798.1|coronavirus_E|SRC:NCBI... at 97.33%
+110	70aa, >XYI16775.1|coronavirus_E|SRC:NCBI... at 98.57%
+111	75aa, >XYI16585.1|coronavirus_E|SRC:NCBI... at 93.33%
+112	74aa, >XYI16525.1|coronavirus_E|SRC:NCBI... at 98.65%
+113	75aa, >XYI16024.1|coronavirus_E|SRC:NCBI... at 97.33%
+114	75aa, >XYI15869.1|coronavirus_E|SRC:NCBI... at 97.33%
+115	68aa, >XYI14840.1|coronavirus_E|SRC:NCBI... at 98.53%
+116	75aa, >XYI14804.1|coronavirus_E|SRC:NCBI... at 97.33%
+117	75aa, >XYI12392.1|coronavirus_E|SRC:NCBI... at 93.33%
+118	75aa, >XYI11607.1|coronavirus_E|SRC:NCBI... at 93.33%
+119	75aa, >XYI10941.1|coronavirus_E|SRC:NCBI... at 96.00%
+120	75aa, >XYH83384.1|coronavirus_E|SRC:NCBI... at 98.67%
+121	75aa, >XYC80990.1|coronavirus_E|SRC:NCBI... at 97.33%
+122	75aa, >XYC75789.1|coronavirus_E|SRC:NCBI... at 94.67%
+123	75aa, >XYC74999.1|coronavirus_E|SRC:NCBI... at 98.67%
+124	75aa, >XXQ29294.1|coronavirus_E|SRC:NCBI... at 96.00%
+125	75aa, >XXQ29183.1|coronavirus_E|SRC:NCBI... at 97.33%
+126	75aa, >XXQ29119.1|coronavirus_E|SRC:NCBI... at 97.33%
+127	75aa, >XXQ28403.1|coronavirus_E|SRC:NCBI... at 97.33%
+128	75aa, >XXQ28314.1|coronavirus_E|SRC:NCBI... at 98.67%
+129	75aa, >XXQ28093.1|coronavirus_E|SRC:NCBI... at 97.33%
+130	75aa, >XXQ25491.1|coronavirus_E|SRC:NCBI... at 98.67%
+131	75aa, >XXQ25479.1|coronavirus_E|SRC:NCBI... at 98.67%
+132	75aa, >XXQ23558.1|coronavirus_E|SRC:NCBI... at 97.33%
+133	75aa, >XXQ23311.1|coronavirus_E|SRC:NCBI... at 97.33%
+134	75aa, >XXQ23263.1|coronavirus_E|SRC:NCBI... at 97.33%
+135	75aa, >XXQ20579.1|coronavirus_E|SRC:NCBI... at 97.33%
+136	75aa, >XXQ20091.1|coronavirus_E|SRC:NCBI... at 98.67%
+137	64aa, >XXQ20055.1|coronavirus_E|SRC:NCBI... at 100.00%
+138	75aa, >XXQ02731.1|coronavirus_E|SRC:NCBI... at 98.67%
+139	75aa, >XXP59745.1|coronavirus_E|SRC:NCBI... at 98.67%
+140	75aa, >XXN27668.1|coronavirus_E|SRC:NCBI... at 97.33%
+141	75aa, >XXM69768.1|coronavirus_E|SRC:NCBI... at 98.67%
+142	75aa, >XXL77330.1|coronavirus_E|SRC:NCBI... at 98.67%
+143	75aa, >XXK87618.1|coronavirus_E|SRC:NCBI... at 94.67%
+144	75aa, >XXI55494.1|coronavirus_E|SRC:NCBI... at 98.67%
+145	75aa, >XXC35543.1|coronavirus_E|SRC:NCBI... at 94.67%
+146	67aa, >XWK97370.1|coronavirus_E|SRC:NCBI... at 100.00%
+147	75aa, >XVY23020.1|coronavirus_E|SRC:NCBI... at 98.67%
+148	75aa, >XVO62173.1|coronavirus_E|SRC:NCBI... at 98.67%
+149	75aa, >XVM40164.1|coronavirus_E|SRC:NCBI... at 92.00%
+150	75aa, >XVM39792.1|coronavirus_E|SRC:NCBI... at 97.33%
+151	75aa, >XVJ28284.1|coronavirus_E|SRC:NCBI... at 98.67%
+152	75aa, >XUU14800.1|coronavirus_E|SRC:NCBI... at 94.67%
+153	75aa, >XUS49820.1|coronavirus_E|SRC:NCBI... at 98.67%
+154	75aa, >XUQ99463.1|coronavirus_E|SRC:NCBI... at 98.67%
+155	75aa, >XUK98789.1|coronavirus_E|SRC:NCBI... at 96.00%
+156	75aa, >XUK98059.1|coronavirus_E|SRC:NCBI... at 97.33%
+157	75aa, >XUK97121.1|coronavirus_E|SRC:NCBI... at 98.67%
+158	75aa, >XPB70123.2|coronavirus_E|SRC:NCBI... at 97.33%
+159	75aa, >XPB69852.1|coronavirus_E|SRC:NCBI... at 97.33%
+160	75aa, >XPB69764.1|coronavirus_E|SRC:NCBI... at 97.33%
+161	75aa, >XTQ05782.1|coronavirus_E|SRC:NCBI... at 97.33%
+162	72aa, >XTQ05638.1|coronavirus_E|SRC:NCBI... at 100.00%
+163	75aa, >XTQ05350.1|coronavirus_E|SRC:NCBI... at 98.67%
+164	75aa, >XTQ05110.1|coronavirus_E|SRC:NCBI... at 97.33%
+165	69aa, >XTQ04834.1|coronavirus_E|SRC:NCBI... at 94.20%
+166	75aa, >WWT46496.1|coronavirus_E|SRC:NCBI... at 98.67%
+167	75aa, >XTP04382.1|coronavirus_E|SRC:NCBI... at 98.67%
+168	75aa, >XTP02765.1|coronavirus_E|SRC:NCBI... at 98.67%
+169	75aa, >XTP00057.1|coronavirus_E|SRC:NCBI... at 98.67%
+170	75aa, >XTO97878.1|coronavirus_E|SRC:NCBI... at 98.67%
+171	75aa, >XTK86784.1|coronavirus_E|SRC:NCBI... at 96.00%
+172	75aa, >XTJ51117.1|coronavirus_E|SRC:NCBI... at 98.67%
+173	75aa, >XSG70621.1|coronavirus_E|SRC:NCBI... at 98.67%
+174	75aa, >XSG69446.1|coronavirus_E|SRC:NCBI... at 96.00%
+175	75aa, >XSG64106.1|coronavirus_E|SRC:NCBI... at 98.67%
+176	75aa, >XSB31478.1|coronavirus_E|SRC:NCBI... at 98.67%
+177	75aa, >XRX07541.1|coronavirus_E|SRC:NCBI... at 98.67%
+178	75aa, >XRT71403.1|coronavirus_E|SRC:NCBI... at 97.33%
+179	74aa, >XRO57040.1|coronavirus_E|SRC:NCBI... at 100.00%
+180	75aa, >XRO56179.1|coronavirus_E|SRC:NCBI... at 98.67%
+181	75aa, >XRO45712.1|coronavirus_E|SRC:NCBI... at 92.00%
+182	69aa, >XRL76650.1|coronavirus_E|SRC:NCBI... at 95.65%
+183	75aa, >XRL76425.1|coronavirus_E|SRC:NCBI... at 93.33%
+184	75aa, >XRL57551.1|coronavirus_E|SRC:NCBI... at 98.67%
+185	75aa, >XRH95725.1|coronavirus_E|SRC:NCBI... at 98.67%
+186	75aa, >XRH90892.1|coronavirus_E|SRC:NCBI... at 93.33%
+187	75aa, >XRB74638.1|coronavirus_E|SRC:NCBI... at 97.33%
+188	75aa, >XRB72378.1|coronavirus_E|SRC:NCBI... at 94.67%
+189	75aa, >XRB71944.1|coronavirus_E|SRC:NCBI... at 97.33%
+190	69aa, >XRB71532.1|coronavirus_E|SRC:NCBI... at 98.55%
+191	75aa, >XRB71046.1|coronavirus_E|SRC:NCBI... at 92.00%
+192	74aa, >XRB70856.1|coronavirus_E|SRC:NCBI... at 98.65%
+193	75aa, >XRB70777.1|coronavirus_E|SRC:NCBI... at 97.33%
+194	75aa, >XRB69810.1|coronavirus_E|SRC:NCBI... at 96.00%
+195	75aa, >XRB69788.1|coronavirus_E|SRC:NCBI... at 93.33%
+196	75aa, >XRB69099.1|coronavirus_E|SRC:NCBI... at 93.33%
+197	75aa, >XRB67289.1|coronavirus_E|SRC:NCBI... at 97.33%
+198	64aa, >XRB66480.1|coronavirus_E|SRC:NCBI... at 100.00%
+199	75aa, >XRB65137.1|coronavirus_E|SRC:NCBI... at 90.67%
+200	75aa, >XRB64505.1|coronavirus_E|SRC:NCBI... at 93.33%
+201	75aa, >XRB61159.1|coronavirus_E|SRC:NCBI... at 98.67%
+202	75aa, >XRA44060.1|coronavirus_E|SRC:NCBI... at 96.00%
+203	75aa, >XRA43976.1|coronavirus_E|SRC:NCBI... at 94.67%
+204	75aa, >XRA43436.1|coronavirus_E|SRC:NCBI... at 96.00%
+205	75aa, >XRA42838.1|coronavirus_E|SRC:NCBI... at 92.00%
+206	75aa, >XRA39020.1|coronavirus_E|SRC:NCBI... at 97.33%
+207	66aa, >XQW64674.1|coronavirus_E|SRC:NCBI... at 98.48%
+208	66aa, >XQW61346.1|coronavirus_E|SRC:NCBI... at 100.00%
+209	75aa, >XQW60886.1|coronavirus_E|SRC:NCBI... at 97.33%
+210	75aa, >XQW57674.1|coronavirus_E|SRC:NCBI... at 97.33%
+211	75aa, >XQW06694.1|coronavirus_E|SRC:NCBI... at 98.67%
+212	75aa, >XQW03112.1|coronavirus_E|SRC:NCBI... at 96.00%
+213	75aa, >XQW02700.1|coronavirus_E|SRC:NCBI... at 97.33%
+214	75aa, >XQW00174.1|coronavirus_E|SRC:NCBI... at 97.33%
+215	75aa, >XQU56608.1|coronavirus_E|SRC:NCBI... at 90.67%
+216	75aa, >XQU56560.1|coronavirus_E|SRC:NCBI... at 98.67%
+217	75aa, >XQU56273.1|coronavirus_E|SRC:NCBI... at 98.67%
+218	75aa, >XQU54986.1|coronavirus_E|SRC:NCBI... at 98.67%
+219	75aa, >XQT72955.1|coronavirus_E|SRC:NCBI... at 94.67%
+220	75aa, >XQT60459.1|coronavirus_E|SRC:NCBI... at 98.67%
+221	75aa, >XQP17166.1|coronavirus_E|SRC:NCBI... at 92.00%
+222	75aa, >XQP16149.1|coronavirus_E|SRC:NCBI... at 98.67%
+223	75aa, >XQP14059.1|coronavirus_E|SRC:NCBI... at 98.67%
+224	75aa, >XQL07744.1|coronavirus_E|SRC:NCBI... at 97.33%
+225	75aa, >XQJ36897.1|coronavirus_E|SRC:NCBI... at 93.33%
+226	75aa, >XQJ36813.1|coronavirus_E|SRC:NCBI... at 98.67%
+227	75aa, >XKB82425.1|coronavirus_E|SRC:NCBI... at 97.33%
+228	74aa, >XQH04510.1|coronavirus_E|SRC:NCBI... at 98.65%
+229	75aa, >XQD71214.1|coronavirus_E|SRC:NCBI... at 98.67%
+230	75aa, >XKD21107.1|coronavirus_E|SRC:NCBI... at 98.67%
+231	75aa, >XPU84106.1|coronavirus_E|SRC:NCBI... at 97.33%
+232	75aa, >XPU83964.1|coronavirus_E|SRC:NCBI... at 98.67%
+233	75aa, >XPU83608.1|coronavirus_E|SRC:NCBI... at 98.67%
+234	75aa, >XPT10804.1|coronavirus_E|SRC:NCBI... at 98.67%
+235	75aa, >XPT09040.1|coronavirus_E|SRC:NCBI... at 97.33%
+236	75aa, >XPR44456.1|coronavirus_E|SRC:NCBI... at 98.67%
+237	75aa, >XPR40251.1|coronavirus_E|SRC:NCBI... at 97.33%
+238	70aa, >XPQ59534.1|coronavirus_E|SRC:NCBI... at 100.00%
+239	74aa, >XPO66529.1|coronavirus_E|SRC:NCBI... at 98.65%
+240	74aa, >XPO66505.1|coronavirus_E|SRC:NCBI... at 100.00%
+241	75aa, >XPO66433.1|coronavirus_E|SRC:NCBI... at 96.00%
+242	75aa, >XPO55608.1|coronavirus_E|SRC:NCBI... at 98.67%
+243	75aa, >XPN36048.1|coronavirus_E|SRC:NCBI... at 97.33%
+244	75aa, >XPM52010.1|coronavirus_E|SRC:NCBI... at 98.67%
+245	75aa, >XPK37005.1|coronavirus_E|SRC:NCBI... at 98.67%
+246	75aa, >QWB14527.1|coronavirus_E|SRC:NCBI... at 97.33%
+247	75aa, >QWB14299.1|coronavirus_E|SRC:NCBI... at 97.33%
+248	75aa, >QWB13603.1|coronavirus_E|SRC:NCBI... at 97.33%
+249	67aa, >XPD14828.1|coronavirus_E|SRC:NCBI... at 97.01%
+250	75aa, >XPD12087.1|coronavirus_E|SRC:NCBI... at 98.67%
+251	75aa, >XPD04634.1|coronavirus_E|SRC:NCBI... at 90.67%
+252	75aa, >XPC84677.1|coronavirus_E|SRC:NCBI... at 98.67%
+253	72aa, >XPC84377.1|coronavirus_E|SRC:NCBI... at 91.67%
+254	72aa, >XPC83947.1|coronavirus_E|SRC:NCBI... at 97.22%
+255	75aa, >XPB70079.1|coronavirus_E|SRC:NCBI... at 97.33%
+256	75aa, >XOX26682.1|coronavirus_E|SRC:NCBI... at 96.00%
+257	75aa, >XOX26203.1|coronavirus_E|SRC:NCBI... at 94.67%
+258	75aa, >XOX24383.1|coronavirus_E|SRC:NCBI... at 97.33%
+259	75aa, >XOX23549.1|coronavirus_E|SRC:NCBI... at 97.33%
+260	75aa, >XOU17473.1|coronavirus_E|SRC:NCBI... at 98.67%
+261	75aa, >XOT88714.1|coronavirus_E|SRC:NCBI... at 98.67%
+262	75aa, >XOT65045.1|coronavirus_E|SRC:NCBI... at 98.67%
+263	75aa, >XOT63214.1|coronavirus_E|SRC:NCBI... at 97.33%
+264	74aa, >XOP75174.1|coronavirus_E|SRC:NCBI... at 98.65%
+265	75aa, >XOL57614.1|coronavirus_E|SRC:NCBI... at 98.67%
+266	75aa, >XOL11582.1|coronavirus_E|SRC:NCBI... at 97.33%
+267	75aa, >XOK23960.1|coronavirus_E|SRC:NCBI... at 98.67%
+268	75aa, >XOK22670.1|coronavirus_E|SRC:NCBI... at 97.33%
+269	75aa, >XOF07333.1|coronavirus_E|SRC:NCBI... at 98.67%
+270	75aa, >XOD44521.1|coronavirus_E|SRC:NCBI... at 98.67%
+271	73aa, >XOD43843.1|coronavirus_E|SRC:NCBI... at 97.26%
+272	75aa, >XLZ38007.1|coronavirus_E|SRC:NCBI... at 98.67%
+273	75aa, >XLQ96771.1|coronavirus_E|SRC:NCBI... at 98.67%
+274	75aa, >XHJ95833.1|coronavirus_E|SRC:NCBI... at 98.67%
+275	75aa, >XHG97254.1|coronavirus_E|SRC:NCBI... at 98.67%
+276	70aa, >XHG95486.1|coronavirus_E|SRC:NCBI... at 95.71%
+277	75aa, >XGW82673.1|coronavirus_E|SRC:NCBI... at 97.33%
+278	75aa, >XEO33555.1|coronavirus_E|SRC:NCBI... at 98.67%
+279	75aa, >XDR92632.1|coronavirus_E|SRC:NCBI... at 98.67%
+280	75aa, >XDR90683.1|coronavirus_E|SRC:NCBI... at 98.67%
+281	75aa, >XDB70213.1|coronavirus_E|SRC:NCBI... at 92.00%
+282	75aa, >XCM76362.1|coronavirus_E|SRC:NCBI... at 98.67%
+283	75aa, >XCH58635.1|coronavirus_E|SRC:NCBI... at 98.67%
+284	75aa, >XCH06782.1|coronavirus_E|SRC:NCBI... at 98.67%
+285	75aa, >XCH04149.1|coronavirus_E|SRC:NCBI... at 98.67%
+286	74aa, >XBE46374.1|coronavirus_E|SRC:NCBI... at 98.65%
+287	75aa, >XAM89484.1|coronavirus_E|SRC:NCBI... at 98.67%
+288	70aa, >XAH01138.1|coronavirus_E|SRC:NCBI... at 91.43%
+289	75aa, >WZU93016.1|coronavirus_E|SRC:NCBI... at 98.67%
+290	75aa, >WWV60501.1|coronavirus_E|SRC:NCBI... at 98.67%
+291	75aa, >WWQ16293.1|coronavirus_E|SRC:NCBI... at 98.67%
+292	75aa, >WWP50793.1|coronavirus_E|SRC:NCBI... at 97.33%
+293	75aa, >WWB29508.1|coronavirus_E|SRC:NCBI... at 96.00%
+294	75aa, >WWB26601.1|coronavirus_E|SRC:NCBI... at 97.33%
+295	75aa, >WVN35257.1|coronavirus_E|SRC:NCBI... at 98.67%
+296	75aa, >WVN35031.1|coronavirus_E|SRC:NCBI... at 97.33%
+297	75aa, >WVN34995.1|coronavirus_E|SRC:NCBI... at 98.67%
+298	75aa, >WVH25591.1|coronavirus_E|SRC:NCBI... at 97.33%
+299	75aa, >WVH21036.1|coronavirus_E|SRC:NCBI... at 98.67%
+300	75aa, >WVH21000.1|coronavirus_E|SRC:NCBI... at 98.67%
+301	75aa, >WVE72868.1|coronavirus_E|SRC:NCBI... at 97.33%
+302	75aa, >WSP20346.1|coronavirus_E|SRC:NCBI... at 97.33%
+303	75aa, >WSP09643.1|coronavirus_E|SRC:NCBI... at 98.67%
+304	75aa, >WSO52628.1|coronavirus_E|SRC:NCBI... at 98.67%
+305	75aa, >WRW15501.1|coronavirus_E|SRC:NCBI... at 97.33%
+306	75aa, >WRV06177.1|coronavirus_E|SRC:NCBI... at 97.33%
+307	75aa, >WRU48402.1|coronavirus_E|SRC:NCBI... at 98.67%
+308	75aa, >WRU47070.1|coronavirus_E|SRC:NCBI... at 97.33%
+309	75aa, >WRU33291.1|coronavirus_E|SRC:NCBI... at 97.33%
+310	75aa, >WRQ61575.1|coronavirus_E|SRC:NCBI... at 97.33%
+311	75aa, >WRQ53967.1|coronavirus_E|SRC:NCBI... at 97.33%
+312	75aa, >WRL93585.1|coronavirus_E|SRC:NCBI... at 97.33%
+313	75aa, >WRL89878.1|coronavirus_E|SRC:NCBI... at 97.33%
+314	75aa, >WRL83711.1|coronavirus_E|SRC:NCBI... at 97.33%
+315	75aa, >WRI41195.1|coronavirus_E|SRC:NCBI... at 97.33%
+316	75aa, >WRI36847.1|coronavirus_E|SRC:NCBI... at 97.33%
+317	69aa, >WRH09844.1|coronavirus_E|SRC:NCBI... at 98.55%
+318	75aa, >WRH04807.1|coronavirus_E|SRC:NCBI... at 97.33%
+319	74aa, >WRH04739.1|coronavirus_E|SRC:NCBI... at 97.30%
+320	75aa, >WRH03023.1|coronavirus_E|SRC:NCBI... at 97.33%
+321	75aa, >WQQ57139.1|coronavirus_E|SRC:NCBI... at 96.00%
+322	75aa, >WQN78549.1|coronavirus_E|SRC:NCBI... at 97.33%
+323	75aa, >WQH24001.1|coronavirus_E|SRC:NCBI... at 97.33%
+324	75aa, >WQG43531.1|coronavirus_E|SRC:NCBI... at 97.33%
+325	75aa, >WQG42682.1|coronavirus_E|SRC:NCBI... at 97.33%
+326	75aa, >WQG41425.1|coronavirus_E|SRC:NCBI... at 97.33%
+327	75aa, >WQG37261.1|coronavirus_E|SRC:NCBI... at 97.33%
+328	75aa, >WPL91122.1|coronavirus_E|SRC:NCBI... at 97.33%
+329	75aa, >WPL89224.1|coronavirus_E|SRC:NCBI... at 98.67%
+330	75aa, >WPD99277.1|coronavirus_E|SRC:NCBI... at 97.33%
+331	75aa, >WFJ60482.1|coronavirus_E|SRC:NCBI... at 97.33%
+332	74aa, >UZS58813.1|coronavirus_E|SRC:NCBI... at 98.65%
+333	75aa, >UZS52818.1|coronavirus_E|SRC:NCBI... at 98.67%
+334	75aa, >UZS44706.1|coronavirus_E|SRC:NCBI... at 92.00%
+335	75aa, >UZS43324.1|coronavirus_E|SRC:NCBI... at 98.67%
+336	75aa, >UZC63365.1|coronavirus_E|SRC:NCBI... at 98.67%
+337	75aa, >UZC26983.1|coronavirus_E|SRC:NCBI... at 97.33%
+338	75aa, >UZC13542.1|coronavirus_E|SRC:NCBI... at 98.67%
+339	75aa, >UZC10669.1|coronavirus_E|SRC:NCBI... at 97.33%
+340	75aa, >UZC08423.1|coronavirus_E|SRC:NCBI... at 97.33%
+341	75aa, >UZC05620.1|coronavirus_E|SRC:NCBI... at 97.33%
+342	75aa, >UTS38343.1|coronavirus_E|SRC:NCBI... at 98.67%
+343	75aa, >UTS33108.1|coronavirus_E|SRC:NCBI... at 98.67%
+344	75aa, >UTS04111.1|coronavirus_E|SRC:NCBI... at 98.67%
+345	75aa, >UTK02328.1|coronavirus_E|SRC:NCBI... at 98.67%
+346	68aa, >URW55190.1|coronavirus_E|SRC:NCBI... at 100.00%
+347	75aa, >URW53119.1|coronavirus_E|SRC:NCBI... at 97.33%
+348	66aa, >URW50548.1|coronavirus_E|SRC:NCBI... at 100.00%
+349	75aa, >URW40424.1|coronavirus_E|SRC:NCBI... at 93.33%
+350	75aa, >URW35204.1|coronavirus_E|SRC:NCBI... at 98.67%
+351	75aa, >URW29077.1|coronavirus_E|SRC:NCBI... at 98.67%
+352	75aa, >URW26412.1|coronavirus_E|SRC:NCBI... at 97.33%
+353	66aa, >UNP94013.1|coronavirus_E|SRC:NCBI... at 93.94%
+354	75aa, >UJQ83541.1|coronavirus_E|SRC:NCBI... at 96.00%
+355	75aa, >UJQ83193.1|coronavirus_E|SRC:NCBI... at 93.33%
+356	75aa, >UJQ82953.1|coronavirus_E|SRC:NCBI... at 94.67%
+357	75aa, >UJQ82417.1|coronavirus_E|SRC:NCBI... at 94.67%
+358	75aa, >UJQ81796.1|coronavirus_E|SRC:NCBI... at 92.00%
+359	75aa, >UJQ81628.1|coronavirus_E|SRC:NCBI... at 98.67%
+360	71aa, >UJQ81258.1|coronavirus_E|SRC:NCBI... at 90.14%
+361	75aa, >UJQ80863.1|coronavirus_E|SRC:NCBI... at 92.00%
+362	75aa, >UJQ80025.1|coronavirus_E|SRC:NCBI... at 92.00%
+363	75aa, >UJQ79989.1|coronavirus_E|SRC:NCBI... at 98.67%
+364	75aa, >UJQ79882.1|coronavirus_E|SRC:NCBI... at 90.67%
+365	75aa, >UJQ79140.1|coronavirus_E|SRC:NCBI... at 93.33%
+366	72aa, >UJQ79092.1|coronavirus_E|SRC:NCBI... at 93.06%
+367	75aa, >UJQ78373.1|coronavirus_E|SRC:NCBI... at 92.00%
+368	75aa, >UJQ76604.1|coronavirus_E|SRC:NCBI... at 90.67%
+369	75aa, >UJQ76257.1|coronavirus_E|SRC:NCBI... at 94.67%
+370	75aa, >UJQ76005.1|coronavirus_E|SRC:NCBI... at 93.33%
+371	75aa, >UJQ75790.1|coronavirus_E|SRC:NCBI... at 96.00%
+372	75aa, >UJQ75288.1|coronavirus_E|SRC:NCBI... at 97.33%
+373	75aa, >UJQ74666.1|coronavirus_E|SRC:NCBI... at 96.00%
+374	75aa, >UJQ74583.1|coronavirus_E|SRC:NCBI... at 98.67%
+375	75aa, >UJQ73734.1|coronavirus_E|SRC:NCBI... at 96.00%
+376	75aa, >UJQ72942.1|coronavirus_E|SRC:NCBI... at 92.00%
+377	75aa, >UJQ71961.1|coronavirus_E|SRC:NCBI... at 92.00%
+378	75aa, >UJN84286.1|coronavirus_E|SRC:NCBI... at 97.33%
+379	75aa, >UJN70867.1|coronavirus_E|SRC:NCBI... at 97.33%
+380	75aa, >UJN61460.1|coronavirus_E|SRC:NCBI... at 90.67%
+381	70aa, >UJN54089.1|coronavirus_E|SRC:NCBI... at 92.86%
+382	75aa, >UJN49487.1|coronavirus_E|SRC:NCBI... at 90.67%
+383	70aa, >UJN39771.1|coronavirus_E|SRC:NCBI... at 95.71%
+384	75aa, >UJN29820.1|coronavirus_E|SRC:NCBI... at 98.67%
+385	75aa, >UJN26052.1|coronavirus_E|SRC:NCBI... at 97.33%
+386	75aa, >UJN25733.1|coronavirus_E|SRC:NCBI... at 97.33%
+387	75aa, >UJE60297.1|coronavirus_E|SRC:NCBI... at 90.67%
+388	71aa, >UJD24387.1|coronavirus_E|SRC:NCBI... at 100.00%
+389	70aa, >UIQ71622.1|coronavirus_E|SRC:NCBI... at 98.57%
+390	75aa, >UIQ69871.1|coronavirus_E|SRC:NCBI... at 97.33%
+391	70aa, >UIQ39806.1|coronavirus_E|SRC:NCBI... at 98.57%
+392	70aa, >UIQ38953.1|coronavirus_E|SRC:NCBI... at 92.86%
+393	75aa, >UIQ38030.1|coronavirus_E|SRC:NCBI... at 94.67%
+394	75aa, >UIQ37388.1|coronavirus_E|SRC:NCBI... at 97.33%
+395	70aa, >UIG76356.1|coronavirus_E|SRC:NCBI... at 95.71%
+396	75aa, >UIG71314.1|coronavirus_E|SRC:NCBI... at 97.33%
+397	71aa, >UIG68403.1|coronavirus_E|SRC:NCBI... at 98.59%
+398	70aa, >UIG62070.1|coronavirus_E|SRC:NCBI... at 98.57%
+399	75aa, >UIG61998.1|coronavirus_E|SRC:NCBI... at 97.33%
+400	75aa, >UIE25453.1|coronavirus_E|SRC:NCBI... at 97.33%
+401	75aa, >UHY35913.1|coronavirus_E|SRC:NCBI... at 97.33%
+402	75aa, >UHY33523.1|coronavirus_E|SRC:NCBI... at 96.00%
+403	75aa, >UHY32261.1|coronavirus_E|SRC:NCBI... at 97.33%
+404	75aa, >UHY32034.1|coronavirus_E|SRC:NCBI... at 97.33%
+405	75aa, >UHY30928.1|coronavirus_E|SRC:NCBI... at 98.67%
+406	75aa, >UHY29927.1|coronavirus_E|SRC:NCBI... at 97.33%
+407	75aa, >UHY25189.1|coronavirus_E|SRC:NCBI... at 97.33%
+408	75aa, >UHS08382.1|coronavirus_E|SRC:NCBI... at 97.33%
+409	75aa, >UHS02201.1|coronavirus_E|SRC:NCBI... at 97.33%
+410	75aa, >UHR98861.1|coronavirus_E|SRC:NCBI... at 97.33%
+411	75aa, >UHR97697.1|coronavirus_E|SRC:NCBI... at 97.33%
+412	75aa, >UHR92532.1|coronavirus_E|SRC:NCBI... at 97.33%
+413	68aa, >UHR91810.1|coronavirus_E|SRC:NCBI... at 98.53%
+414	75aa, >UHR81840.1|coronavirus_E|SRC:NCBI... at 97.33%
+415	70aa, >UHR74337.1|coronavirus_E|SRC:NCBI... at 97.14%
+416	75aa, >UHR73563.1|coronavirus_E|SRC:NCBI... at 96.00%
+417	75aa, >UHN98758.1|coronavirus_E|SRC:NCBI... at 97.33%
+418	75aa, >UHN94579.1|coronavirus_E|SRC:NCBI... at 97.33%
+419	75aa, >UHF91517.1|coronavirus_E|SRC:NCBI... at 94.67%
+420	75aa, >UHF85120.1|coronavirus_E|SRC:NCBI... at 97.33%
+421	75aa, >UHF79193.1|coronavirus_E|SRC:NCBI... at 97.33%
+422	75aa, >UHF77553.1|coronavirus_E|SRC:NCBI... at 97.33%
+423	75aa, >UHF76962.1|coronavirus_E|SRC:NCBI... at 97.33%
+424	75aa, >UHF75562.1|coronavirus_E|SRC:NCBI... at 97.33%
+425	75aa, >UHF74978.1|coronavirus_E|SRC:NCBI... at 97.33%
+426	75aa, >UHF70908.1|coronavirus_E|SRC:NCBI... at 97.33%
+427	75aa, >UHF70872.1|coronavirus_E|SRC:NCBI... at 97.33%
+428	75aa, >UHF70037.1|coronavirus_E|SRC:NCBI... at 97.33%
+429	75aa, >UHF68706.1|coronavirus_E|SRC:NCBI... at 90.67%
+430	75aa, >UHF68528.1|coronavirus_E|SRC:NCBI... at 90.67%
+431	75aa, >UHF67907.1|coronavirus_E|SRC:NCBI... at 92.00%
+432	75aa, >UHF65568.1|coronavirus_E|SRC:NCBI... at 94.67%
+433	75aa, >UHF63402.1|coronavirus_E|SRC:NCBI... at 94.67%
+434	71aa, >UHF62593.1|coronavirus_E|SRC:NCBI... at 98.59%
+435	75aa, >UHF62331.1|coronavirus_E|SRC:NCBI... at 92.00%
+436	75aa, >UHF61781.1|coronavirus_E|SRC:NCBI... at 97.33%
+437	75aa, >UHG01369.1|coronavirus_E|SRC:NCBI... at 97.33%
+438	75aa, >UHG01358.1|coronavirus_E|SRC:NCBI... at 97.33%
+439	75aa, >UHG00676.1|coronavirus_E|SRC:NCBI... at 97.33%
+440	75aa, >UHB26935.1|coronavirus_E|SRC:NCBI... at 97.33%
+441	75aa, >UHB25347.1|coronavirus_E|SRC:NCBI... at 97.33%
+442	75aa, >UHB20314.1|coronavirus_E|SRC:NCBI... at 97.33%
+443	75aa, >UHB19331.1|coronavirus_E|SRC:NCBI... at 96.00%
+444	75aa, >UHB17813.1|coronavirus_E|SRC:NCBI... at 97.33%
+445	75aa, >UGZ34772.1|coronavirus_E|SRC:NCBI... at 97.33%
+446	75aa, >UGZ34726.1|coronavirus_E|SRC:NCBI... at 97.33%
+447	75aa, >UGZ33043.1|coronavirus_E|SRC:NCBI... at 96.00%
+448	75aa, >UGZ28803.1|coronavirus_E|SRC:NCBI... at 97.33%
+449	75aa, >UGZ28564.1|coronavirus_E|SRC:NCBI... at 96.00%
+450	67aa, >UGU99051.1|coronavirus_E|SRC:NCBI... at 98.51%
+451	75aa, >UGU78394.1|coronavirus_E|SRC:NCBI... at 97.33%
+452	75aa, >UGU76289.1|coronavirus_E|SRC:NCBI... at 96.00%
+453	75aa, >UGU69915.1|coronavirus_E|SRC:NCBI... at 97.33%
+454	70aa, >UGU67202.1|coronavirus_E|SRC:NCBI... at 97.14%
+455	75aa, >UGU65481.1|coronavirus_E|SRC:NCBI... at 92.00%
+456	75aa, >UGU45938.1|coronavirus_E|SRC:NCBI... at 97.33%
+457	70aa, >UGU40799.1|coronavirus_E|SRC:NCBI... at 95.71%
+458	75aa, >UGU39956.1|coronavirus_E|SRC:NCBI... at 97.33%
+459	75aa, >UFY85098.1|coronavirus_E|SRC:NCBI... at 93.33%
+460	75aa, >UFY84991.1|coronavirus_E|SRC:NCBI... at 90.67%
+461	75aa, >UFY84895.1|coronavirus_E|SRC:NCBI... at 92.00%
+462	75aa, >UFY84647.1|coronavirus_E|SRC:NCBI... at 94.67%
+463	75aa, >UFY84468.1|coronavirus_E|SRC:NCBI... at 90.67%
+464	75aa, >UFY84304.1|coronavirus_E|SRC:NCBI... at 92.00%
+465	75aa, >UFY84116.1|coronavirus_E|SRC:NCBI... at 97.33%
+466	75aa, >UFY83936.1|coronavirus_E|SRC:NCBI... at 93.33%
+467	75aa, >UFY83889.1|coronavirus_E|SRC:NCBI... at 96.00%
+468	75aa, >UFY83865.1|coronavirus_E|SRC:NCBI... at 90.67%
+469	75aa, >UFY83746.1|coronavirus_E|SRC:NCBI... at 96.00%
+470	75aa, >UFY83734.1|coronavirus_E|SRC:NCBI... at 93.33%
+471	75aa, >UFY83305.1|coronavirus_E|SRC:NCBI... at 92.00%
+472	75aa, >UFY82902.1|coronavirus_E|SRC:NCBI... at 92.00%
+473	75aa, >UFY82498.1|coronavirus_E|SRC:NCBI... at 92.00%
+474	75aa, >UFY82416.1|coronavirus_E|SRC:NCBI... at 90.67%
+475	75aa, >UFY81881.1|coronavirus_E|SRC:NCBI... at 92.00%
+476	75aa, >UFY81464.1|coronavirus_E|SRC:NCBI... at 96.00%
+477	75aa, >UFY81238.1|coronavirus_E|SRC:NCBI... at 90.67%
+478	75aa, >UFY81168.1|coronavirus_E|SRC:NCBI... at 94.67%
+479	75aa, >UFY81086.1|coronavirus_E|SRC:NCBI... at 93.33%
+480	75aa, >UFY80512.1|coronavirus_E|SRC:NCBI... at 97.33%
+481	75aa, >UFY79243.1|coronavirus_E|SRC:NCBI... at 92.00%
+482	75aa, >UFY77577.1|coronavirus_E|SRC:NCBI... at 93.33%
+483	75aa, >UFY76923.1|coronavirus_E|SRC:NCBI... at 92.00%
+484	75aa, >UFY76641.1|coronavirus_E|SRC:NCBI... at 94.67%
+485	75aa, >UFY76486.1|coronavirus_E|SRC:NCBI... at 92.00%
+486	75aa, >UFY76475.1|coronavirus_E|SRC:NCBI... at 94.67%
+487	75aa, >UFY76428.1|coronavirus_E|SRC:NCBI... at 92.00%
+488	75aa, >UFY76405.1|coronavirus_E|SRC:NCBI... at 97.33%
+489	75aa, >UFY76201.1|coronavirus_E|SRC:NCBI... at 97.33%
+490	75aa, >UFY74486.1|coronavirus_E|SRC:NCBI... at 92.00%
+491	75aa, >UFY74141.1|coronavirus_E|SRC:NCBI... at 90.67%
+492	74aa, >UFY73819.1|coronavirus_E|SRC:NCBI... at 90.54%
+493	75aa, >UFY73807.1|coronavirus_E|SRC:NCBI... at 93.33%
+494	75aa, >UFY73795.1|coronavirus_E|SRC:NCBI... at 93.33%
+495	75aa, >UFY60976.1|coronavirus_E|SRC:NCBI... at 92.00%
+496	75aa, >UFY56488.1|coronavirus_E|SRC:NCBI... at 94.67%
+497	75aa, >UFY56464.1|coronavirus_E|SRC:NCBI... at 94.67%
+498	75aa, >UFY55735.1|coronavirus_E|SRC:NCBI... at 90.67%
+499	75aa, >UFY55724.1|coronavirus_E|SRC:NCBI... at 94.67%
+500	75aa, >UFY55642.1|coronavirus_E|SRC:NCBI... at 93.33%
+501	75aa, >UFY55597.1|coronavirus_E|SRC:NCBI... at 90.67%
+502	74aa, >UFY55471.1|coronavirus_E|SRC:NCBI... at 90.54%
+503	75aa, >UFY55269.1|coronavirus_E|SRC:NCBI... at 92.00%
+504	75aa, >UFY55257.1|coronavirus_E|SRC:NCBI... at 90.67%
+505	75aa, >UFY55245.1|coronavirus_E|SRC:NCBI... at 92.00%
+506	75aa, >UFY55233.1|coronavirus_E|SRC:NCBI... at 90.67%
+507	75aa, >UFY55197.1|coronavirus_E|SRC:NCBI... at 90.67%
+508	75aa, >UFY55057.1|coronavirus_E|SRC:NCBI... at 90.67%
+509	75aa, >UFY54268.1|coronavirus_E|SRC:NCBI... at 97.33%
+510	75aa, >UFY54232.1|coronavirus_E|SRC:NCBI... at 96.00%
+511	75aa, >UFY53496.1|coronavirus_E|SRC:NCBI... at 92.00%
+512	75aa, >UFY53353.1|coronavirus_E|SRC:NCBI... at 93.33%
+513	75aa, >UFY52794.1|coronavirus_E|SRC:NCBI... at 90.67%
+514	75aa, >UFY52411.1|coronavirus_E|SRC:NCBI... at 97.33%
+515	75aa, >UFY51454.1|coronavirus_E|SRC:NCBI... at 92.00%
+516	75aa, >UFY51312.1|coronavirus_E|SRC:NCBI... at 92.00%
+517	75aa, >UFY51063.1|coronavirus_E|SRC:NCBI... at 90.67%
+518	75aa, >UFY43444.1|coronavirus_E|SRC:NCBI... at 96.00%
+519	75aa, >UFY39310.1|coronavirus_E|SRC:NCBI... at 96.00%
+520	75aa, >UFY38609.1|coronavirus_E|SRC:NCBI... at 93.33%
+521	74aa, >UFY38516.1|coronavirus_E|SRC:NCBI... at 91.89%
+522	75aa, >UFV97880.1|coronavirus_E|SRC:NCBI... at 90.67%
+523	75aa, >UFV80318.1|coronavirus_E|SRC:NCBI... at 97.33%
+524	75aa, >UFV76701.1|coronavirus_E|SRC:NCBI... at 96.00%
+525	75aa, >UFV70998.1|coronavirus_E|SRC:NCBI... at 97.33%
+526	75aa, >UFV65706.1|coronavirus_E|SRC:NCBI... at 97.33%
+527	75aa, >UFV60320.1|coronavirus_E|SRC:NCBI... at 97.33%
+528	75aa, >UFV59538.1|coronavirus_E|SRC:NCBI... at 97.33%
+529	75aa, >UFV42504.1|coronavirus_E|SRC:NCBI... at 92.00%
+530	75aa, >UFV38868.1|coronavirus_E|SRC:NCBI... at 97.33%
+531	75aa, >UFV35857.1|coronavirus_E|SRC:NCBI... at 94.67%
+532	75aa, >UFV31172.1|coronavirus_E|SRC:NCBI... at 97.33%
+533	75aa, >UFV13059.1|coronavirus_E|SRC:NCBI... at 97.33%
+534	75aa, >UFV23417.1|coronavirus_E|SRC:NCBI... at 92.00%
+535	75aa, >UFV22765.1|coronavirus_E|SRC:NCBI... at 93.33%
+536	75aa, >UFV20925.1|coronavirus_E|SRC:NCBI... at 92.00%
+537	75aa, >UFV07495.1|coronavirus_E|SRC:NCBI... at 97.33%
+538	70aa, >UFP56713.1|coronavirus_E|SRC:NCBI... at 97.14%
+539	75aa, >UEZ14268.1|coronavirus_E|SRC:NCBI... at 97.33%
+540	75aa, >UEZ05431.1|coronavirus_E|SRC:NCBI... at 97.33%
+541	75aa, >UEY97467.1|coronavirus_E|SRC:NCBI... at 97.33%
+542	66aa, >UEY97116.1|coronavirus_E|SRC:NCBI... at 98.48%
+543	75aa, >UEY93152.1|coronavirus_E|SRC:NCBI... at 96.00%
+544	75aa, >UEY86488.1|coronavirus_E|SRC:NCBI... at 97.33%
+545	75aa, >UEY85425.1|coronavirus_E|SRC:NCBI... at 97.33%
+546	75aa, >UEY82913.1|coronavirus_E|SRC:NCBI... at 96.00%
+547	75aa, >UEV60884.1|coronavirus_E|SRC:NCBI... at 97.33%
+548	75aa, >UEU32981.1|coronavirus_E|SRC:NCBI... at 97.33%
+549	75aa, >UEU31563.1|coronavirus_E|SRC:NCBI... at 97.33%
+550	75aa, >UEU28574.1|coronavirus_E|SRC:NCBI... at 97.33%
+551	75aa, >UEU27827.1|coronavirus_E|SRC:NCBI... at 96.00%
+552	75aa, >UEU12395.1|coronavirus_E|SRC:NCBI... at 97.33%
+553	75aa, >UEU11014.1|coronavirus_E|SRC:NCBI... at 97.33%
+554	75aa, >UET51155.1|coronavirus_E|SRC:NCBI... at 92.00%
+555	75aa, >UET51144.1|coronavirus_E|SRC:NCBI... at 94.67%
+556	75aa, >UET41042.1|coronavirus_E|SRC:NCBI... at 92.00%
+557	75aa, >UET75014.1|coronavirus_E|SRC:NCBI... at 97.33%
+558	75aa, >UET52998.1|coronavirus_E|SRC:NCBI... at 96.00%
+559	75aa, >UET32513.1|coronavirus_E|SRC:NCBI... at 97.33%
+560	75aa, >UET21625.1|coronavirus_E|SRC:NCBI... at 92.00%
+561	75aa, >UET08489.1|coronavirus_E|SRC:NCBI... at 97.33%
+562	75aa, >UES85179.1|coronavirus_E|SRC:NCBI... at 97.33%
+563	75aa, >UER31161.1|coronavirus_E|SRC:NCBI... at 92.00%
+564	75aa, >UER27736.1|coronavirus_E|SRC:NCBI... at 97.33%
+565	75aa, >UER25267.1|coronavirus_E|SRC:NCBI... at 97.33%
+566	75aa, >UER15714.1|coronavirus_E|SRC:NCBI... at 96.00%
+567	75aa, >UER14084.1|coronavirus_E|SRC:NCBI... at 97.33%
+568	75aa, >UER13088.1|coronavirus_E|SRC:NCBI... at 96.00%
+569	75aa, >UER12758.1|coronavirus_E|SRC:NCBI... at 90.67%
+570	75aa, >UER12406.1|coronavirus_E|SRC:NCBI... at 90.67%
+571	75aa, >UER09614.1|coronavirus_E|SRC:NCBI... at 90.67%
+572	75aa, >UER08465.1|coronavirus_E|SRC:NCBI... at 93.33%
+573	75aa, >UER06812.1|coronavirus_E|SRC:NCBI... at 94.67%
+574	75aa, >UER04796.1|coronavirus_E|SRC:NCBI... at 97.33%
+575	75aa, >UER03765.1|coronavirus_E|SRC:NCBI... at 90.67%
+576	75aa, >UEQ62479.1|coronavirus_E|SRC:NCBI... at 97.33%
+577	75aa, >UEQ61900.1|coronavirus_E|SRC:NCBI... at 97.33%
+578	75aa, >UEP12946.1|coronavirus_E|SRC:NCBI... at 96.00%
+579	75aa, >UEP04492.1|coronavirus_E|SRC:NCBI... at 97.33%
+580	75aa, >UEO92259.1|coronavirus_E|SRC:NCBI... at 97.33%
+581	75aa, >UEO88241.1|coronavirus_E|SRC:NCBI... at 96.00%
+582	75aa, >UEN58534.1|coronavirus_E|SRC:NCBI... at 97.33%
+583	75aa, >UEN56364.1|coronavirus_E|SRC:NCBI... at 93.33%
+584	75aa, >UEN54686.1|coronavirus_E|SRC:NCBI... at 97.33%
+585	75aa, >UEN53019.1|coronavirus_E|SRC:NCBI... at 97.33%
+586	75aa, >UEN37408.1|coronavirus_E|SRC:NCBI... at 97.33%
+587	75aa, >UEN35127.1|coronavirus_E|SRC:NCBI... at 97.33%
+588	75aa, >UEN08293.1|coronavirus_E|SRC:NCBI... at 93.33%
+589	75aa, >UEN05428.1|coronavirus_E|SRC:NCBI... at 90.67%
+590	75aa, >UEN00206.1|coronavirus_E|SRC:NCBI... at 96.00%
+591	75aa, >UEM96328.1|coronavirus_E|SRC:NCBI... at 92.00%
+592	75aa, >UEM90581.1|coronavirus_E|SRC:NCBI... at 97.33%
+593	75aa, >UEM89452.1|coronavirus_E|SRC:NCBI... at 97.33%
+594	75aa, >UEM67957.1|coronavirus_E|SRC:NCBI... at 97.33%
+595	75aa, >UEM67263.1|coronavirus_E|SRC:NCBI... at 97.33%
+596	75aa, >UEM61079.1|coronavirus_E|SRC:NCBI... at 93.33%
+597	75aa, >UEM55748.1|coronavirus_E|SRC:NCBI... at 93.33%
+598	71aa, >UEL83494.1|coronavirus_E|SRC:NCBI... at 98.59%
+599	75aa, >UEL77554.1|coronavirus_E|SRC:NCBI... at 97.33%
+600	70aa, >UEL76983.1|coronavirus_E|SRC:NCBI... at 97.14%
+601	75aa, >UEJ70043.1|coronavirus_E|SRC:NCBI... at 97.33%
+602	75aa, >UEJ69321.1|coronavirus_E|SRC:NCBI... at 92.00%
+603	75aa, >UEJ35942.1|coronavirus_E|SRC:NCBI... at 92.00%
+604	75aa, >UEJ61101.1|coronavirus_E|SRC:NCBI... at 92.00%
+605	75aa, >UEJ33222.1|coronavirus_E|SRC:NCBI... at 97.33%
+606	75aa, >UEJ48240.1|coronavirus_E|SRC:NCBI... at 97.33%
+607	75aa, >UEJ47548.1|coronavirus_E|SRC:NCBI... at 97.33%
+608	75aa, >UEJ28448.1|coronavirus_E|SRC:NCBI... at 92.00%
+609	75aa, >UEJ17607.1|coronavirus_E|SRC:NCBI... at 92.00%
+610	75aa, >UEJ12241.1|coronavirus_E|SRC:NCBI... at 97.33%
+611	75aa, >UEI78756.1|coronavirus_E|SRC:NCBI... at 96.00%
+612	75aa, >UEI60089.1|coronavirus_E|SRC:NCBI... at 98.67%
+613	75aa, >UEI49901.1|coronavirus_E|SRC:NCBI... at 97.33%
+614	75aa, >UEI45826.1|coronavirus_E|SRC:NCBI... at 96.00%
+615	75aa, >UEI35211.1|coronavirus_E|SRC:NCBI... at 97.33%
+616	75aa, >UEI26484.1|coronavirus_E|SRC:NCBI... at 97.33%
+617	75aa, >UEI03169.1|coronavirus_E|SRC:NCBI... at 92.00%
+618	75aa, >UEI02075.1|coronavirus_E|SRC:NCBI... at 96.00%
+619	75aa, >UEI01988.1|coronavirus_E|SRC:NCBI... at 93.33%
+620	74aa, >UEI01748.1|coronavirus_E|SRC:NCBI... at 94.59%
+621	75aa, >UEI00962.1|coronavirus_E|SRC:NCBI... at 93.33%
+622	75aa, >UEH93742.1|coronavirus_E|SRC:NCBI... at 92.00%
+623	75aa, >UEH85087.1|coronavirus_E|SRC:NCBI... at 94.67%
+624	75aa, >UEI09263.1|coronavirus_E|SRC:NCBI... at 97.33%
+625	75aa, >UEH71011.1|coronavirus_E|SRC:NCBI... at 97.33%
+626	75aa, >UEH70659.1|coronavirus_E|SRC:NCBI... at 90.67%
+627	75aa, >UEH67767.1|coronavirus_E|SRC:NCBI... at 93.33%
+628	75aa, >UEI03947.1|coronavirus_E|SRC:NCBI... at 94.67%
+629	75aa, >UEH57512.1|coronavirus_E|SRC:NCBI... at 90.67%
+630	75aa, >UEH55726.1|coronavirus_E|SRC:NCBI... at 94.67%
+631	75aa, >UEH54350.1|coronavirus_E|SRC:NCBI... at 90.67%
+632	75aa, >UEH54339.1|coronavirus_E|SRC:NCBI... at 96.00%
+633	75aa, >UEH51057.1|coronavirus_E|SRC:NCBI... at 93.33%
+634	75aa, >UEH46012.1|coronavirus_E|SRC:NCBI... at 93.33%
+635	75aa, >UEF96591.1|coronavirus_E|SRC:NCBI... at 97.33%
+636	75aa, >UEF42971.1|coronavirus_E|SRC:NCBI... at 94.67%
+637	75aa, >UEF41117.1|coronavirus_E|SRC:NCBI... at 97.33%
+638	75aa, >UEE71382.1|coronavirus_E|SRC:NCBI... at 97.33%
+639	75aa, >UEE64415.1|coronavirus_E|SRC:NCBI... at 97.33%
+640	75aa, >UEE61639.1|coronavirus_E|SRC:NCBI... at 97.33%
+641	75aa, >UEE53200.1|coronavirus_E|SRC:NCBI... at 97.33%
+>Cluster 75
+0	78aa, >XBU76560.1|coronavirus_E|SRC:NCBI... *
+1	78aa, >XBU76530.1|coronavirus_E|SRC:NCBI... at 98.72%
+2	78aa, >XOL31586.1|coronavirus_E|SRC:NCBI... at 92.31%
+3	78aa, >XOB75834.1|coronavirus_E|SRC:NCBI... at 97.44%
+4	78aa, >XOB75816.1|coronavirus_E|SRC:NCBI... at 92.31%
+>Cluster 76
+0	77aa, >sp|coronavirus_E|SRC:UniProt... *
+1	77aa, >XZG20625.1|coronavirus_E|SRC:NCBI... at 98.70%
+2	77aa, >XZE11601.1|coronavirus_E|SRC:NCBI... at 93.51%
+3	77aa, >WDE18290.1|coronavirus_E|SRC:NCBI... at 93.51%
+4	77aa, >WDE18283.1|coronavirus_E|SRC:NCBI... at 92.21%
+5	77aa, >XPR31488.1|coronavirus_E|SRC:NCBI... at 98.70%
+6	77aa, >XPR31464.1|coronavirus_E|SRC:NCBI... at 98.70%
+>Cluster 77
+0	77aa, >sp|coronavirus_E|SRC:UniProt... *
+1	77aa, >tr|coronavirus_E|SRC:UniProt... at 94.81%
+2	77aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+3	77aa, >tr|coronavirus_E|SRC:UniProt... at 90.91%
+4	77aa, >tr|coronavirus_E|SRC:UniProt... at 98.70%
+5	77aa, >tr|coronavirus_E|SRC:UniProt... at 98.70%
+6	77aa, >tr|coronavirus_E|SRC:UniProt... at 97.40%
+7	77aa, >tr|coronavirus_E|SRC:UniProt... at 96.10%
+8	77aa, >XYR84376.1|coronavirus_E|SRC:NCBI... at 92.21%
+9	73aa, >XYR84369.1|coronavirus_E|SRC:NCBI... at 95.89%
+10	77aa, >XOD40852.1|coronavirus_E|SRC:NCBI... at 97.40%
+>Cluster 78
+0	77aa, >tr|coronavirus_E|SRC:UniProt... *
+1	77aa, >tr|coronavirus_E|SRC:UniProt... at 98.70%
+2	77aa, >tr|coronavirus_E|SRC:UniProt... at 98.70%
+3	77aa, >tr|coronavirus_E|SRC:UniProt... at 98.70%
+>Cluster 79
+0	77aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 80
+0	77aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 81
+0	77aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 82
+0	77aa, >XZE11671.1|coronavirus_E|SRC:NCBI... *
+1	77aa, >XZE11643.1|coronavirus_E|SRC:NCBI... at 98.70%
+2	77aa, >XZE11636.1|coronavirus_E|SRC:NCBI... at 97.40%
+3	77aa, >XZE11615.1|coronavirus_E|SRC:NCBI... at 97.40%
+>Cluster 83
+0	77aa, >XZE11664.1|coronavirus_E|SRC:NCBI... *
+1	77aa, >XZE11657.1|coronavirus_E|SRC:NCBI... at 94.81%
+2	77aa, >XZE11650.1|coronavirus_E|SRC:NCBI... at 98.70%
+>Cluster 84
+0	77aa, >XZE11608.1|coronavirus_E|SRC:NCBI... *
+>Cluster 85
+0	77aa, >XZE11594.1|coronavirus_E|SRC:NCBI... *
+>Cluster 86
+0	77aa, >XZE11587.1|coronavirus_E|SRC:NCBI... *
+>Cluster 87
+0	77aa, >XUM37325.1|coronavirus_E|SRC:NCBI... *
+>Cluster 88
+0	77aa, >XOD40846.1|coronavirus_E|SRC:NCBI... *
+>Cluster 89
+0	76aa, >sp|coronavirus_E|SRC:UniProt... *
+1	76aa, >tr|coronavirus_E|SRC:UniProt... at 97.37%
+2	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+3	76aa, >tr|coronavirus_E|SRC:UniProt... at 90.79%
+4	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+5	74aa, >tr|coronavirus_E|SRC:UniProt... at 98.65%
+6	76aa, >tr|coronavirus_E|SRC:UniProt... at 94.74%
+7	76aa, >tr|coronavirus_E|SRC:UniProt... at 98.68%
+8	76aa, >XUA30706.1|coronavirus_E|SRC:NCBI... at 90.79%
+>Cluster 90
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >tr|coronavirus_E|SRC:UniProt... at 96.05%
+2	76aa, >tr|coronavirus_E|SRC:UniProt... at 97.37%
+3	76aa, >XUA30595.1|coronavirus_E|SRC:NCBI... at 97.37%
+4	76aa, >XUA30567.1|coronavirus_E|SRC:NCBI... at 94.74%
+5	76aa, >XUA30561.1|coronavirus_E|SRC:NCBI... at 97.37%
+>Cluster 91
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >XUA30712.1|coronavirus_E|SRC:NCBI... at 92.11%
+2	76aa, >XTJ86139.1|coronavirus_E|SRC:NCBI... at 90.79%
+>Cluster 92
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 93
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 94
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >tr|coronavirus_E|SRC:UniProt... at 92.11%
+2	76aa, >XUA30724.1|coronavirus_E|SRC:NCBI... at 98.68%
+>Cluster 95
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >XNZ84824.1|coronavirus_E|SRC:NCBI... at 98.68%
+>Cluster 96
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 97
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >XTJ53513.1|coronavirus_E|SRC:NCBI... at 98.68%
+>Cluster 98
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 99
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 100
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+1	76aa, >XTJ86125.1|coronavirus_E|SRC:NCBI... at 90.79%
+2	63aa, >XPO92871.1|coronavirus_E|SRC:NCBI... at 92.06%
+3	61aa, >XOU05656.1|coronavirus_E|SRC:NCBI... at 91.80%
+4	62aa, >XOL11713.1|coronavirus_E|SRC:NCBI... at 90.32%
+>Cluster 101
+0	75aa, >tr|coronavirus_E|SRC:UniProt... at 96.00%
+1	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 102
+0	76aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 103
+0	76aa, >XTJ86133.1|coronavirus_E|SRC:NCBI... *
+>Cluster 104
+0	76aa, >XPR31530.1|coronavirus_E|SRC:NCBI... *
+1	63aa, >XPR31524.1|coronavirus_E|SRC:NCBI... at 93.65%
+>Cluster 105
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+1	75aa, >tr|coronavirus_E|SRC:UniProt... at 94.67%
+2	75aa, >tr|coronavirus_E|SRC:UniProt... at 96.00%
+3	75aa, >tr|coronavirus_E|SRC:UniProt... at 94.67%
+4	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+5	75aa, >tr|coronavirus_E|SRC:UniProt... at 98.67%
+6	75aa, >tr|coronavirus_E|SRC:UniProt... at 94.67%
+7	75aa, >tr|coronavirus_E|SRC:UniProt... at 96.00%
+>Cluster 106
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+1	75aa, >tr|coronavirus_E|SRC:UniProt... at 98.67%
+2	75aa, >tr|coronavirus_E|SRC:UniProt... at 97.33%
+>Cluster 107
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 108
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+1	75aa, >tr|coronavirus_E|SRC:UniProt... at 90.67%
+2	75aa, >XUA30772.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 109
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+1	75aa, >XTJ86157.1|coronavirus_E|SRC:NCBI... at 98.67%
+>Cluster 110
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 111
+0	75aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 112
+0	75aa, >YAL65187.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >YAE84357.1|coronavirus_E|SRC:NCBI... at 98.67%
+2	75aa, >YAB44583.1|coronavirus_E|SRC:NCBI... at 94.67%
+3	75aa, >XZF42541.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	75aa, >XYA32674.1|coronavirus_E|SRC:NCBI... at 93.33%
+5	75aa, >XUU14860.1|coronavirus_E|SRC:NCBI... at 94.67%
+6	75aa, >XUJ58515.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >XUJ58150.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >XRB69443.1|coronavirus_E|SRC:NCBI... at 96.00%
+9	75aa, >XRB69131.1|coronavirus_E|SRC:NCBI... at 92.00%
+10	75aa, >XRB67476.1|coronavirus_E|SRC:NCBI... at 94.67%
+11	75aa, >XRB66767.1|coronavirus_E|SRC:NCBI... at 94.67%
+12	75aa, >XRB65258.1|coronavirus_E|SRC:NCBI... at 93.33%
+13	75aa, >XQW04720.1|coronavirus_E|SRC:NCBI... at 96.00%
+14	75aa, >XQU55429.1|coronavirus_E|SRC:NCBI... at 92.00%
+15	60aa, >XQP16581.1|coronavirus_E|SRC:NCBI... at 95.00%
+16	75aa, >XQJ37650.1|coronavirus_E|SRC:NCBI... at 92.00%
+17	75aa, >XPR45314.1|coronavirus_E|SRC:NCBI... at 92.00%
+18	72aa, >XPN36167.1|coronavirus_E|SRC:NCBI... at 93.06%
+19	75aa, >XOU04977.1|coronavirus_E|SRC:NCBI... at 90.67%
+20	75aa, >URW42942.1|coronavirus_E|SRC:NCBI... at 90.67%
+21	75aa, >UJQ82357.1|coronavirus_E|SRC:NCBI... at 92.00%
+22	75aa, >UHF65460.1|coronavirus_E|SRC:NCBI... at 92.00%
+23	75aa, >UET27915.1|coronavirus_E|SRC:NCBI... at 92.00%
+24	75aa, >UER29692.1|coronavirus_E|SRC:NCBI... at 90.67%
+25	74aa, >UER26625.1|coronavirus_E|SRC:NCBI... at 91.89%
+26	75aa, >UER11758.1|coronavirus_E|SRC:NCBI... at 92.00%
+27	75aa, >UEM76708.1|coronavirus_E|SRC:NCBI... at 90.67%
+28	75aa, >UEM74737.1|coronavirus_E|SRC:NCBI... at 92.00%
+29	75aa, >UEM53626.1|coronavirus_E|SRC:NCBI... at 90.67%
+30	75aa, >UEM51533.1|coronavirus_E|SRC:NCBI... at 90.67%
+31	75aa, >UEH92963.1|coronavirus_E|SRC:NCBI... at 92.00%
+32	75aa, >UEH90078.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 113
+0	75aa, >YAJ55328.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >YAG31949.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	60aa, >XZF42924.1|coronavirus_E|SRC:NCBI... at 95.00%
+3	69aa, >XZF42304.1|coronavirus_E|SRC:NCBI... at 95.65%
+4	75aa, >XVB07663.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	69aa, >XUU14956.1|coronavirus_E|SRC:NCBI... at 97.10%
+6	75aa, >XRB71314.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UJQ82847.1|coronavirus_E|SRC:NCBI... at 97.33%
+8	75aa, >UJQ81317.1|coronavirus_E|SRC:NCBI... at 98.67%
+9	66aa, >UJQ79643.1|coronavirus_E|SRC:NCBI... at 92.42%
+10	66aa, >UFY82759.1|coronavirus_E|SRC:NCBI... at 93.94%
+11	64aa, >UFY79350.1|coronavirus_E|SRC:NCBI... at 92.19%
+12	67aa, >UFY59891.1|coronavirus_E|SRC:NCBI... at 92.54%
+13	75aa, >UEV60666.1|coronavirus_E|SRC:NCBI... at 98.67%
+>Cluster 114
+0	75aa, >YAJ17331.1|coronavirus_E|SRC:NCBI... *
+1	69aa, >XRL77462.1|coronavirus_E|SRC:NCBI... at 91.30%
+2	75aa, >XRH93916.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >XRB63951.1|coronavirus_E|SRC:NCBI... at 96.00%
+4	74aa, >UJN33292.1|coronavirus_E|SRC:NCBI... at 91.89%
+5	68aa, >UIG81866.1|coronavirus_E|SRC:NCBI... at 92.65%
+6	69aa, >UIG75924.1|coronavirus_E|SRC:NCBI... at 91.30%
+7	68aa, >UEG81900.1|coronavirus_E|SRC:NCBI... at 91.18%
+>Cluster 115
+0	75aa, >YAG32520.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >YAB44858.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >YAB44739.1|coronavirus_E|SRC:NCBI... at 94.67%
+3	75aa, >YAB44703.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >XZF42661.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >XYC79726.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >XYC79570.1|coronavirus_E|SRC:NCBI... at 93.33%
+7	69aa, >XYA32949.1|coronavirus_E|SRC:NCBI... at 94.20%
+8	62aa, >XXN60933.1|coronavirus_E|SRC:NCBI... at 90.32%
+9	75aa, >XVB07963.1|coronavirus_E|SRC:NCBI... at 94.67%
+10	72aa, >XUU14848.1|coronavirus_E|SRC:NCBI... at 94.44%
+11	75aa, >XUJ53176.1|coronavirus_E|SRC:NCBI... at 93.33%
+12	62aa, >XTQ05578.1|coronavirus_E|SRC:NCBI... at 91.94%
+13	75aa, >XTQ04480.1|coronavirus_E|SRC:NCBI... at 90.67%
+14	75aa, >XRI65713.1|coronavirus_E|SRC:NCBI... at 94.67%
+15	75aa, >XRH92453.1|coronavirus_E|SRC:NCBI... at 90.67%
+16	75aa, >XRB74143.1|coronavirus_E|SRC:NCBI... at 98.67%
+17	75aa, >XRB71134.1|coronavirus_E|SRC:NCBI... at 92.00%
+18	75aa, >XRB65985.1|coronavirus_E|SRC:NCBI... at 90.67%
+19	75aa, >XRB64406.1|coronavirus_E|SRC:NCBI... at 94.67%
+20	70aa, >XQP16867.1|coronavirus_E|SRC:NCBI... at 92.86%
+21	71aa, >XQP16593.1|coronavirus_E|SRC:NCBI... at 91.55%
+22	75aa, >XPC83864.1|coronavirus_E|SRC:NCBI... at 90.67%
+23	67aa, >XOU05871.1|coronavirus_E|SRC:NCBI... at 91.04%
+24	70aa, >URW39876.1|coronavirus_E|SRC:NCBI... at 94.29%
+25	75aa, >UIQ74151.1|coronavirus_E|SRC:NCBI... at 98.67%
+26	75aa, >UEI69889.1|coronavirus_E|SRC:NCBI... at 96.00%
+>Cluster 116
+0	75aa, >YAG32319.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XUJ58162.1|coronavirus_E|SRC:NCBI... at 98.67%
+2	75aa, >XRH90881.1|coronavirus_E|SRC:NCBI... at 93.33%
+3	75aa, >XRB71302.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >XRB70696.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >XRB64428.1|coronavirus_E|SRC:NCBI... at 92.00%
+6	75aa, >XRB63831.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >XPR44730.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 117
+0	75aa, >YAE84665.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XXW11539.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >XUH89640.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >XPD15001.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UJQ74488.1|coronavirus_E|SRC:NCBI... at 93.33%
+5	75aa, >UHF76927.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UFV19460.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 118
+0	75aa, >YAE84081.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >YAE83591.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	72aa, >XZP68692.1|coronavirus_E|SRC:NCBI... at 95.83%
+3	75aa, >XQH04582.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 119
+0	75aa, >YAE83974.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XXK88788.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >XXK88107.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >XUE00570.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >XSF94820.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >XPY82977.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UJN28159.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 120
+0	75aa, >YAB66204.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XZF42505.1|coronavirus_E|SRC:NCBI... at 98.67%
+2	75aa, >XZF42482.1|coronavirus_E|SRC:NCBI... at 98.67%
+3	75aa, >XXC35639.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	75aa, >XRX07864.1|coronavirus_E|SRC:NCBI... at 94.67%
+5	75aa, >XRX06727.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >XRO45251.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >XRB69732.1|coronavirus_E|SRC:NCBI... at 98.67%
+8	75aa, >XPR44838.1|coronavirus_E|SRC:NCBI... at 97.33%
+9	75aa, >XPR44540.1|coronavirus_E|SRC:NCBI... at 98.67%
+10	75aa, >XOU05001.1|coronavirus_E|SRC:NCBI... at 93.33%
+11	75aa, >XOD43749.1|coronavirus_E|SRC:NCBI... at 93.33%
+12	75aa, >UJQ82047.1|coronavirus_E|SRC:NCBI... at 90.67%
+13	75aa, >UJQ74368.1|coronavirus_E|SRC:NCBI... at 92.00%
+14	75aa, >UFV91929.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 121
+0	75aa, >YAB46495.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >YAB46365.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >XXH78992.1|coronavirus_E|SRC:NCBI... at 97.33%
+3	75aa, >XRB70515.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	75aa, >XPD01111.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	70aa, >UEL72442.1|coronavirus_E|SRC:NCBI... at 95.71%
+6	70aa, >UEG86216.1|coronavirus_E|SRC:NCBI... at 94.29%
+>Cluster 122
+0	75aa, >XUA30730.1|coronavirus_E|SRC:NCBI... *
+>Cluster 123
+0	75aa, >XZE13944.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XVM39840.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	75aa, >XUH90071.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >XCM75707.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	70aa, >URW46231.1|coronavirus_E|SRC:NCBI... at 92.86%
+5	75aa, >URW38139.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UGV00644.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	68aa, >UFV69099.1|coronavirus_E|SRC:NCBI... at 91.18%
+8	75aa, >UEU15638.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 124
+0	75aa, >XZE12995.1|coronavirus_E|SRC:NCBI... *
+>Cluster 125
+0	75aa, >XYC78616.1|coronavirus_E|SRC:NCBI... *
+1	67aa, >XWK98519.1|coronavirus_E|SRC:NCBI... at 91.04%
+2	67aa, >XWK97598.1|coronavirus_E|SRC:NCBI... at 95.52%
+3	75aa, >XWK97358.1|coronavirus_E|SRC:NCBI... at 96.00%
+4	68aa, >XVO61478.1|coronavirus_E|SRC:NCBI... at 91.18%
+5	75aa, >XTK86038.1|coronavirus_E|SRC:NCBI... at 92.00%
+6	75aa, >XQN20007.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	69aa, >XOU05728.1|coronavirus_E|SRC:NCBI... at 95.65%
+8	75aa, >UJQ83865.1|coronavirus_E|SRC:NCBI... at 92.00%
+9	70aa, >UJN54078.1|coronavirus_E|SRC:NCBI... at 94.29%
+10	75aa, >UGZ34355.1|coronavirus_E|SRC:NCBI... at 93.33%
+11	75aa, >UGZ33746.1|coronavirus_E|SRC:NCBI... at 92.00%
+12	75aa, >UGU58907.1|coronavirus_E|SRC:NCBI... at 96.00%
+13	70aa, >UGU55054.1|coronavirus_E|SRC:NCBI... at 92.86%
+14	75aa, >UFV80505.1|coronavirus_E|SRC:NCBI... at 96.00%
+15	75aa, >UEQ64143.1|coronavirus_E|SRC:NCBI... at 93.33%
+16	75aa, >UEO88219.1|coronavirus_E|SRC:NCBI... at 92.00%
+17	70aa, >UEI67219.1|coronavirus_E|SRC:NCBI... at 97.14%
+18	75aa, >UEI46410.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 126
+0	75aa, >XYC76731.1|coronavirus_E|SRC:NCBI... *
+>Cluster 127
+0	75aa, >XXP60872.1|coronavirus_E|SRC:NCBI... *
+>Cluster 128
+0	75aa, >XTJ86145.1|coronavirus_E|SRC:NCBI... *
+>Cluster 129
+0	75aa, >XVO64168.1|coronavirus_E|SRC:NCBI... *
+>Cluster 130
+0	75aa, >XVM40211.1|coronavirus_E|SRC:NCBI... *
+1	72aa, >XUK98765.1|coronavirus_E|SRC:NCBI... at 95.83%
+2	75aa, >XTQ04457.1|coronavirus_E|SRC:NCBI... at 96.00%
+3	72aa, >XTK86048.1|coronavirus_E|SRC:NCBI... at 98.61%
+4	75aa, >XRB72092.1|coronavirus_E|SRC:NCBI... at 93.33%
+5	72aa, >XRA43520.1|coronavirus_E|SRC:NCBI... at 97.22%
+6	75aa, >XPU84321.1|coronavirus_E|SRC:NCBI... at 97.33%
+7	69aa, >XPO93264.1|coronavirus_E|SRC:NCBI... at 98.55%
+8	71aa, >XPC83373.1|coronavirus_E|SRC:NCBI... at 90.14%
+9	68aa, >XOD44866.1|coronavirus_E|SRC:NCBI... at 92.65%
+10	75aa, >WWV91575.1|coronavirus_E|SRC:NCBI... at 92.00%
+11	75aa, >UEO90323.1|coronavirus_E|SRC:NCBI... at 94.67%
+>Cluster 131
+0	75aa, >XUE02679.1|coronavirus_E|SRC:NCBI... *
+>Cluster 132
+0	75aa, >XTZ49350.1|coronavirus_E|SRC:NCBI... *
+>Cluster 133
+0	60aa, >XXN61280.1|coronavirus_E|SRC:NCBI... at 91.67%
+1	75aa, >XTQ04740.1|coronavirus_E|SRC:NCBI... *
+>Cluster 134
+0	70aa, >XYI15606.1|coronavirus_E|SRC:NCBI... at 91.43%
+1	75aa, >XTK86688.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >XQU56704.1|coronavirus_E|SRC:NCBI... at 93.33%
+3	73aa, >XQP17654.1|coronavirus_E|SRC:NCBI... at 91.78%
+4	75aa, >UJN59008.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	70aa, >UIG69983.1|coronavirus_E|SRC:NCBI... at 92.86%
+6	70aa, >UEG84168.1|coronavirus_E|SRC:NCBI... at 97.14%
+7	70aa, >UEF97865.1|coronavirus_E|SRC:NCBI... at 97.14%
+>Cluster 135
+0	75aa, >XED52612.1|coronavirus_E|SRC:NCBI... *
+>Cluster 136
+0	75aa, >XSF94257.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XQD69285.1|coronavirus_E|SRC:NCBI... at 94.67%
+2	75aa, >XBQ72296.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UHR93313.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UET18478.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 137
+0	75aa, >XRO46044.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XRH91857.1|coronavirus_E|SRC:NCBI... at 96.00%
+2	75aa, >XRB65762.1|coronavirus_E|SRC:NCBI... at 98.67%
+>Cluster 138
+0	75aa, >XRB73894.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XRB67355.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >XQN95199.1|coronavirus_E|SRC:NCBI... at 94.67%
+3	75aa, >XPR45409.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >XPR45102.1|coronavirus_E|SRC:NCBI... at 94.67%
+>Cluster 139
+0	75aa, >XRB72598.1|coronavirus_E|SRC:NCBI... *
+>Cluster 140
+0	75aa, >XRB71223.1|coronavirus_E|SRC:NCBI... *
+>Cluster 141
+0	75aa, >XRB71212.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XRB70572.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	75aa, >XOU05312.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 142
+0	75aa, >XRB70979.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XRB64362.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	60aa, >WWQ17742.1|coronavirus_E|SRC:NCBI... at 96.67%
+3	60aa, >UGU52938.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 143
+0	75aa, >XRB68780.1|coronavirus_E|SRC:NCBI... *
+>Cluster 144
+0	75aa, >XRB66756.1|coronavirus_E|SRC:NCBI... *
+>Cluster 145
+0	75aa, >XRB65566.1|coronavirus_E|SRC:NCBI... *
+>Cluster 146
+0	75aa, >XRB64230.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >XRB63910.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 147
+0	75aa, >XRA44012.1|coronavirus_E|SRC:NCBI... *
+>Cluster 148
+0	75aa, >XQP16485.1|coronavirus_E|SRC:NCBI... *
+>Cluster 149
+0	75aa, >XQJ37326.1|coronavirus_E|SRC:NCBI... *
+1	70aa, >URW55982.1|coronavirus_E|SRC:NCBI... at 94.29%
+2	70aa, >URW22990.1|coronavirus_E|SRC:NCBI... at 95.71%
+3	70aa, >UJN42746.1|coronavirus_E|SRC:NCBI... at 92.86%
+4	75aa, >UHY35074.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	70aa, >UEI35708.1|coronavirus_E|SRC:NCBI... at 91.43%
+>Cluster 150
+0	75aa, >XPR45362.1|coronavirus_E|SRC:NCBI... *
+>Cluster 151
+0	75aa, >XPC84761.1|coronavirus_E|SRC:NCBI... *
+>Cluster 152
+0	69aa, >XQP17882.1|coronavirus_E|SRC:NCBI... at 97.10%
+1	75aa, >XPC84413.1|coronavirus_E|SRC:NCBI... *
+>Cluster 153
+0	63aa, >XYC77520.1|coronavirus_E|SRC:NCBI... at 90.48%
+1	75aa, >XOX26382.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >URW60819.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UJN40220.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 154
+0	75aa, >XOP75613.1|coronavirus_E|SRC:NCBI... *
+1	72aa, >UET72337.1|coronavirus_E|SRC:NCBI... at 91.67%
+>Cluster 155
+0	75aa, >XOP74615.1|coronavirus_E|SRC:NCBI... *
+>Cluster 156
+0	75aa, >XOL11641.1|coronavirus_E|SRC:NCBI... *
+>Cluster 157
+0	75aa, >XOL10854.1|coronavirus_E|SRC:NCBI... *
+>Cluster 158
+0	67aa, >XQN19184.1|coronavirus_E|SRC:NCBI... at 95.52%
+1	69aa, >WRW57119.1|coronavirus_E|SRC:NCBI... at 100.00%
+2	75aa, >WRH10792.1|coronavirus_E|SRC:NCBI... *
+3	70aa, >URW55096.1|coronavirus_E|SRC:NCBI... at 92.86%
+>Cluster 159
+0	75aa, >UJQ84141.1|coronavirus_E|SRC:NCBI... *
+1	73aa, >UJQ83805.1|coronavirus_E|SRC:NCBI... at 90.41%
+2	71aa, >UJQ81831.1|coronavirus_E|SRC:NCBI... at 91.55%
+3	73aa, >UJQ81508.1|coronavirus_E|SRC:NCBI... at 90.41%
+4	75aa, >UJQ77215.1|coronavirus_E|SRC:NCBI... at 93.33%
+5	74aa, >UJQ75909.1|coronavirus_E|SRC:NCBI... at 94.59%
+6	74aa, >UJQ75801.1|coronavirus_E|SRC:NCBI... at 90.54%
+7	75aa, >UJQ75312.1|coronavirus_E|SRC:NCBI... at 90.67%
+8	75aa, >UJQ74500.1|coronavirus_E|SRC:NCBI... at 90.67%
+9	75aa, >UHF67243.1|coronavirus_E|SRC:NCBI... at 90.67%
+10	75aa, >UFY84150.1|coronavirus_E|SRC:NCBI... at 92.00%
+11	74aa, >UFY78135.1|coronavirus_E|SRC:NCBI... at 91.89%
+12	73aa, >UFY76900.1|coronavirus_E|SRC:NCBI... at 90.41%
+13	75aa, >UFY56595.1|coronavirus_E|SRC:NCBI... at 90.67%
+14	75aa, >UFY55758.1|coronavirus_E|SRC:NCBI... at 90.67%
+15	75aa, >UFY55618.1|coronavirus_E|SRC:NCBI... at 90.67%
+16	75aa, >UFY55185.1|coronavirus_E|SRC:NCBI... at 92.00%
+17	68aa, >UFY49538.1|coronavirus_E|SRC:NCBI... at 92.65%
+18	74aa, >UFY49336.1|coronavirus_E|SRC:NCBI... at 90.54%
+19	75aa, >UFY43515.1|coronavirus_E|SRC:NCBI... at 92.00%
+20	74aa, >UFV45061.1|coronavirus_E|SRC:NCBI... at 94.59%
+21	74aa, >UFV31387.1|coronavirus_E|SRC:NCBI... at 93.24%
+22	75aa, >UFV28738.1|coronavirus_E|SRC:NCBI... at 90.67%
+23	75aa, >UFV14725.1|coronavirus_E|SRC:NCBI... at 93.33%
+24	75aa, >UFV23629.1|coronavirus_E|SRC:NCBI... at 94.67%
+25	75aa, >UFV23475.1|coronavirus_E|SRC:NCBI... at 90.67%
+26	75aa, >UFV20007.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 160
+0	75aa, >UJQ82882.1|coronavirus_E|SRC:NCBI... *
+1	71aa, >UJQ82249.1|coronavirus_E|SRC:NCBI... at 92.96%
+2	74aa, >UJQ76484.1|coronavirus_E|SRC:NCBI... at 93.24%
+3	75aa, >UJQ72081.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	75aa, >UHF78531.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UHF70109.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UHF64395.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	68aa, >UFY82486.1|coronavirus_E|SRC:NCBI... at 91.18%
+8	75aa, >UFY81310.1|coronavirus_E|SRC:NCBI... at 94.67%
+9	75aa, >UFY80763.1|coronavirus_E|SRC:NCBI... at 90.67%
+10	75aa, >UFY76416.1|coronavirus_E|SRC:NCBI... at 90.67%
+11	75aa, >UFY61234.1|coronavirus_E|SRC:NCBI... at 92.00%
+12	75aa, >UFY59628.1|coronavirus_E|SRC:NCBI... at 92.00%
+13	74aa, >UFY55495.1|coronavirus_E|SRC:NCBI... at 90.54%
+14	75aa, >UFY55305.1|coronavirus_E|SRC:NCBI... at 90.67%
+15	73aa, >UFY55104.1|coronavirus_E|SRC:NCBI... at 90.41%
+16	73aa, >UFY52996.1|coronavirus_E|SRC:NCBI... at 90.41%
+17	75aa, >UER21724.1|coronavirus_E|SRC:NCBI... at 90.67%
+18	73aa, >UER14978.1|coronavirus_E|SRC:NCBI... at 91.78%
+19	69aa, >UER10606.1|coronavirus_E|SRC:NCBI... at 91.30%
+20	75aa, >UER08388.1|coronavirus_E|SRC:NCBI... at 92.00%
+21	75aa, >UER04358.1|coronavirus_E|SRC:NCBI... at 92.00%
+22	75aa, >UEN39929.1|coronavirus_E|SRC:NCBI... at 92.00%
+23	75aa, >UEJ46061.1|coronavirus_E|SRC:NCBI... at 90.67%
+24	75aa, >UEH93500.1|coronavirus_E|SRC:NCBI... at 90.67%
+25	75aa, >UEH58161.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 161
+0	75aa, >UJQ82059.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UJQ81760.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	73aa, >UJQ80516.1|coronavirus_E|SRC:NCBI... at 94.52%
+3	75aa, >UJQ80301.1|coronavirus_E|SRC:NCBI... at 94.67%
+4	75aa, >UJQ77503.1|coronavirus_E|SRC:NCBI... at 96.00%
+5	75aa, >UJQ76161.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UJQ75849.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UJQ71721.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >UJQ71481.1|coronavirus_E|SRC:NCBI... at 94.67%
+9	75aa, >UJE59770.1|coronavirus_E|SRC:NCBI... at 96.00%
+10	75aa, >UHF84524.1|coronavirus_E|SRC:NCBI... at 93.33%
+11	75aa, >UHF80924.1|coronavirus_E|SRC:NCBI... at 96.00%
+12	75aa, >UHF79599.1|coronavirus_E|SRC:NCBI... at 93.33%
+13	75aa, >UHF72276.1|coronavirus_E|SRC:NCBI... at 90.67%
+14	75aa, >UHF64836.1|coronavirus_E|SRC:NCBI... at 94.67%
+15	75aa, >UHF64776.1|coronavirus_E|SRC:NCBI... at 90.67%
+16	75aa, >UHF64419.1|coronavirus_E|SRC:NCBI... at 96.00%
+17	75aa, >UFY84635.1|coronavirus_E|SRC:NCBI... at 94.67%
+18	75aa, >UFY84421.1|coronavirus_E|SRC:NCBI... at 93.33%
+19	75aa, >UFY82451.1|coronavirus_E|SRC:NCBI... at 90.67%
+20	74aa, >UFY81571.1|coronavirus_E|SRC:NCBI... at 97.30%
+21	75aa, >UFY81452.1|coronavirus_E|SRC:NCBI... at 92.00%
+22	75aa, >UFY81440.1|coronavirus_E|SRC:NCBI... at 93.33%
+23	75aa, >UFY81179.1|coronavirus_E|SRC:NCBI... at 94.67%
+24	72aa, >UFY78327.1|coronavirus_E|SRC:NCBI... at 94.44%
+25	75aa, >UFY78219.1|coronavirus_E|SRC:NCBI... at 90.67%
+26	75aa, >UFY78123.1|coronavirus_E|SRC:NCBI... at 96.00%
+27	74aa, >UFY76958.1|coronavirus_E|SRC:NCBI... at 91.89%
+28	74aa, >UFY76947.1|coronavirus_E|SRC:NCBI... at 91.89%
+29	75aa, >UFY76852.1|coronavirus_E|SRC:NCBI... at 94.67%
+30	74aa, >UFY76629.1|coronavirus_E|SRC:NCBI... at 91.89%
+31	74aa, >UFY74165.1|coronavirus_E|SRC:NCBI... at 94.59%
+32	75aa, >UFY73357.1|coronavirus_E|SRC:NCBI... at 93.33%
+33	75aa, >UFY70324.1|coronavirus_E|SRC:NCBI... at 92.00%
+34	75aa, >UFY60188.1|coronavirus_E|SRC:NCBI... at 94.67%
+35	75aa, >UFY56536.1|coronavirus_E|SRC:NCBI... at 92.00%
+36	74aa, >UFY55459.1|coronavirus_E|SRC:NCBI... at 91.89%
+37	75aa, >UFY55329.1|coronavirus_E|SRC:NCBI... at 92.00%
+38	75aa, >UFY55080.1|coronavirus_E|SRC:NCBI... at 94.67%
+39	75aa, >UFY52960.1|coronavirus_E|SRC:NCBI... at 90.67%
+40	75aa, >UFY52937.1|coronavirus_E|SRC:NCBI... at 94.67%
+41	75aa, >UFY52901.1|coronavirus_E|SRC:NCBI... at 92.00%
+42	75aa, >UFY50434.1|coronavirus_E|SRC:NCBI... at 92.00%
+43	74aa, >UFY44024.1|coronavirus_E|SRC:NCBI... at 97.30%
+44	75aa, >UFY39787.1|coronavirus_E|SRC:NCBI... at 90.67%
+45	75aa, >UFV48412.1|coronavirus_E|SRC:NCBI... at 93.33%
+46	75aa, >UFV27641.1|coronavirus_E|SRC:NCBI... at 94.67%
+47	75aa, >UFV27037.1|coronavirus_E|SRC:NCBI... at 90.67%
+48	75aa, >UFV14497.1|coronavirus_E|SRC:NCBI... at 92.00%
+49	74aa, >UFV23451.1|coronavirus_E|SRC:NCBI... at 98.65%
+50	75aa, >UFV23381.1|coronavirus_E|SRC:NCBI... at 96.00%
+51	75aa, >UER28644.1|coronavirus_E|SRC:NCBI... at 92.00%
+52	75aa, >UER07361.1|coronavirus_E|SRC:NCBI... at 97.33%
+53	75aa, >UEM60267.1|coronavirus_E|SRC:NCBI... at 90.67%
+54	75aa, >UEJ49849.1|coronavirus_E|SRC:NCBI... at 92.00%
+55	75aa, >UEJ44064.1|coronavirus_E|SRC:NCBI... at 93.33%
+56	75aa, >UEJ43570.1|coronavirus_E|SRC:NCBI... at 90.67%
+57	75aa, >UEH83512.1|coronavirus_E|SRC:NCBI... at 90.67%
+58	75aa, >UEH81191.1|coronavirus_E|SRC:NCBI... at 92.00%
+59	75aa, >UEH75058.1|coronavirus_E|SRC:NCBI... at 93.33%
+60	75aa, >UEH43500.1|coronavirus_E|SRC:NCBI... at 94.67%
+61	75aa, >UEF40974.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 162
+0	75aa, >UJQ81999.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UHF64253.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UFY83602.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UFY83579.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UFY42121.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >UFU89658.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UET48504.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UET46169.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >UET39268.1|coronavirus_E|SRC:NCBI... at 92.00%
+9	75aa, >UET37943.1|coronavirus_E|SRC:NCBI... at 90.67%
+10	75aa, >UET56519.1|coronavirus_E|SRC:NCBI... at 93.33%
+11	75aa, >UET33629.1|coronavirus_E|SRC:NCBI... at 90.67%
+12	75aa, >UET31166.1|coronavirus_E|SRC:NCBI... at 92.00%
+13	75aa, >UET22666.1|coronavirus_E|SRC:NCBI... at 92.00%
+14	75aa, >UET18861.1|coronavirus_E|SRC:NCBI... at 90.67%
+15	74aa, >UET14883.1|coronavirus_E|SRC:NCBI... at 90.54%
+16	75aa, >UET12158.1|coronavirus_E|SRC:NCBI... at 90.67%
+17	75aa, >UET09431.1|coronavirus_E|SRC:NCBI... at 90.67%
+18	75aa, >UER31294.1|coronavirus_E|SRC:NCBI... at 90.67%
+19	75aa, >UER26122.1|coronavirus_E|SRC:NCBI... at 90.67%
+20	75aa, >UER18265.1|coronavirus_E|SRC:NCBI... at 90.67%
+21	75aa, >UER09503.1|coronavirus_E|SRC:NCBI... at 96.00%
+22	75aa, >UEN07425.1|coronavirus_E|SRC:NCBI... at 92.00%
+23	75aa, >UEN07171.1|coronavirus_E|SRC:NCBI... at 90.67%
+24	75aa, >UEM86364.1|coronavirus_E|SRC:NCBI... at 92.00%
+25	75aa, >UEM79478.1|coronavirus_E|SRC:NCBI... at 92.00%
+26	75aa, >UEM68723.1|coronavirus_E|SRC:NCBI... at 90.67%
+27	75aa, >UEJ52355.1|coronavirus_E|SRC:NCBI... at 90.67%
+28	75aa, >UEJ43790.1|coronavirus_E|SRC:NCBI... at 92.00%
+29	75aa, >UEI03047.1|coronavirus_E|SRC:NCBI... at 90.67%
+30	75aa, >UEH93149.1|coronavirus_E|SRC:NCBI... at 90.67%
+31	75aa, >UEH81476.1|coronavirus_E|SRC:NCBI... at 93.33%
+32	75aa, >UEH76465.1|coronavirus_E|SRC:NCBI... at 92.00%
+33	75aa, >UEF40907.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 163
+0	75aa, >UJQ81951.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UJQ81175.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UFY85086.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UFY76581.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UFY55092.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >UFY39596.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UEN45555.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UEJ49356.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >UEJ14964.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 164
+0	75aa, >UJQ81915.1|coronavirus_E|SRC:NCBI... *
+>Cluster 165
+0	75aa, >UJQ80755.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY84244.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	72aa, >UFY47577.1|coronavirus_E|SRC:NCBI... at 91.67%
+3	74aa, >UET41152.1|coronavirus_E|SRC:NCBI... at 91.89%
+>Cluster 166
+0	75aa, >UJQ79774.1|coronavirus_E|SRC:NCBI... *
+1	71aa, >UFY84480.1|coronavirus_E|SRC:NCBI... at 91.55%
+2	75aa, >UFY55447.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 167
+0	75aa, >UJQ79595.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UJQ76400.1|coronavirus_E|SRC:NCBI... at 97.33%
+2	75aa, >UHF85262.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	74aa, >UFY84979.1|coronavirus_E|SRC:NCBI... at 91.89%
+4	75aa, >UFY84931.1|coronavirus_E|SRC:NCBI... at 94.67%
+5	74aa, >UFY84139.1|coronavirus_E|SRC:NCBI... at 95.95%
+6	75aa, >UFY82594.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UFY81560.1|coronavirus_E|SRC:NCBI... at 93.33%
+8	74aa, >UFY80583.1|coronavirus_E|SRC:NCBI... at 93.24%
+9	74aa, >UFY76533.1|coronavirus_E|SRC:NCBI... at 91.89%
+10	75aa, >UFY74581.1|coronavirus_E|SRC:NCBI... at 92.00%
+11	75aa, >UFY57428.1|coronavirus_E|SRC:NCBI... at 94.67%
+12	75aa, >UFY56347.1|coronavirus_E|SRC:NCBI... at 94.67%
+13	75aa, >UFY55317.1|coronavirus_E|SRC:NCBI... at 94.67%
+14	75aa, >UFY55163.1|coronavirus_E|SRC:NCBI... at 93.33%
+15	75aa, >UFY55139.1|coronavirus_E|SRC:NCBI... at 94.67%
+16	75aa, >UFY55127.1|coronavirus_E|SRC:NCBI... at 92.00%
+17	75aa, >UFY53912.1|coronavirus_E|SRC:NCBI... at 96.00%
+18	75aa, >UFY53472.1|coronavirus_E|SRC:NCBI... at 90.67%
+19	75aa, >UFY45793.1|coronavirus_E|SRC:NCBI... at 94.67%
+20	75aa, >UFY44225.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 168
+0	75aa, >UJQ77859.1|coronavirus_E|SRC:NCBI... *
+>Cluster 169
+0	66aa, >WWP50782.1|coronavirus_E|SRC:NCBI... at 93.94%
+1	75aa, >UJO01236.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UJN23633.1|coronavirus_E|SRC:NCBI... at 97.33%
+3	75aa, >UGU92537.1|coronavirus_E|SRC:NCBI... at 94.67%
+4	75aa, >UGU86903.1|coronavirus_E|SRC:NCBI... at 98.67%
+5	75aa, >UGU79092.1|coronavirus_E|SRC:NCBI... at 94.67%
+6	75aa, >UFV97337.1|coronavirus_E|SRC:NCBI... at 97.33%
+>Cluster 170
+0	75aa, >UJN48574.1|coronavirus_E|SRC:NCBI... *
+>Cluster 171
+0	75aa, >UJN43276.1|coronavirus_E|SRC:NCBI... *
+1	60aa, >UHR81347.1|coronavirus_E|SRC:NCBI... at 91.67%
+2	72aa, >UEI04806.1|coronavirus_E|SRC:NCBI... at 90.28%
+3	73aa, >UEE81018.1|coronavirus_E|SRC:NCBI... at 93.15%
+4	71aa, >UEE80255.1|coronavirus_E|SRC:NCBI... at 90.14%
+>Cluster 172
+0	70aa, >XCV19526.1|coronavirus_E|SRC:NCBI... at 94.29%
+1	69aa, >WWV91304.1|coronavirus_E|SRC:NCBI... at 95.65%
+2	75aa, >UJN39865.1|coronavirus_E|SRC:NCBI... *
+3	68aa, >UHR94788.1|coronavirus_E|SRC:NCBI... at 100.00%
+>Cluster 173
+0	65aa, >UJQ79403.1|coronavirus_E|SRC:NCBI... at 96.92%
+1	75aa, >UJN33870.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UIQ74294.1|coronavirus_E|SRC:NCBI... at 98.67%
+3	70aa, >UIG80498.1|coronavirus_E|SRC:NCBI... at 92.86%
+4	70aa, >UIG75732.1|coronavirus_E|SRC:NCBI... at 92.86%
+5	70aa, >UIG73625.1|coronavirus_E|SRC:NCBI... at 94.29%
+6	75aa, >UFY50625.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UFV84918.1|coronavirus_E|SRC:NCBI... at 98.67%
+8	75aa, >UFP51814.1|coronavirus_E|SRC:NCBI... at 97.33%
+9	70aa, >UES83897.1|coronavirus_E|SRC:NCBI... at 91.43%
+10	70aa, >UES80496.1|coronavirus_E|SRC:NCBI... at 92.86%
+11	69aa, >UEL70893.1|coronavirus_E|SRC:NCBI... at 94.20%
+12	75aa, >UEI18387.1|coronavirus_E|SRC:NCBI... at 92.00%
+13	70aa, >UEG02283.1|coronavirus_E|SRC:NCBI... at 94.29%
+>Cluster 174
+0	75aa, >UHN97893.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UHN97042.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	75aa, >UHN95299.1|coronavirus_E|SRC:NCBI... at 98.67%
+3	75aa, >UHN92447.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	70aa, >UHB27771.1|coronavirus_E|SRC:NCBI... at 92.86%
+5	66aa, >UEJ06822.1|coronavirus_E|SRC:NCBI... at 92.42%
+>Cluster 175
+0	70aa, >UJQ81556.1|coronavirus_E|SRC:NCBI... at 92.86%
+1	74aa, >UJQ80121.1|coronavirus_E|SRC:NCBI... at 90.54%
+2	74aa, >UJQ75742.1|coronavirus_E|SRC:NCBI... at 93.24%
+3	73aa, >UJQ73038.1|coronavirus_E|SRC:NCBI... at 90.41%
+4	75aa, >UHF87721.1|coronavirus_E|SRC:NCBI... *
+5	75aa, >UHF85156.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	72aa, >UFY76780.1|coronavirus_E|SRC:NCBI... at 91.67%
+7	75aa, >UFY55389.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	66aa, >UFY45804.1|coronavirus_E|SRC:NCBI... at 92.42%
+>Cluster 176
+0	75aa, >UHF85655.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY84173.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	74aa, >UFY55688.1|coronavirus_E|SRC:NCBI... at 90.54%
+3	75aa, >UER06156.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEM69384.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEM64568.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UEH81927.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UEH77052.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 177
+0	73aa, >UJQ75133.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UHF72287.1|coronavirus_E|SRC:NCBI... *
+2	71aa, >UHF67101.1|coronavirus_E|SRC:NCBI... at 92.96%
+3	70aa, >UFV47483.1|coronavirus_E|SRC:NCBI... at 91.43%
+4	67aa, >UFV22119.1|coronavirus_E|SRC:NCBI... at 94.03%
+>Cluster 178
+0	75aa, >UHF69157.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY81690.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UFY55552.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	74aa, >UFY55530.1|coronavirus_E|SRC:NCBI... at 91.89%
+>Cluster 179
+0	75aa, >UHF64620.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH60444.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 180
+0	70aa, >UJN33162.1|coronavirus_E|SRC:NCBI... at 91.43%
+1	75aa, >UGZ32900.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UFS23275.1|coronavirus_E|SRC:NCBI... at 98.67%
+>Cluster 181
+0	74aa, >UJQ75885.1|coronavirus_E|SRC:NCBI... at 93.24%
+1	74aa, >UHF72489.1|coronavirus_E|SRC:NCBI... at 90.54%
+2	75aa, >UFY84943.1|coronavirus_E|SRC:NCBI... *
+3	74aa, >UFY84444.1|coronavirus_E|SRC:NCBI... at 93.24%
+4	75aa, >UFY84185.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	74aa, >UFY82085.1|coronavirus_E|SRC:NCBI... at 90.54%
+6	75aa, >UFY81893.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UFY80099.1|coronavirus_E|SRC:NCBI... at 90.67%
+8	75aa, >UFY78577.1|coronavirus_E|SRC:NCBI... at 93.33%
+9	74aa, >UFY76273.1|coronavirus_E|SRC:NCBI... at 90.54%
+10	75aa, >UFY58692.1|coronavirus_E|SRC:NCBI... at 90.67%
+11	75aa, >UFY56703.1|coronavirus_E|SRC:NCBI... at 93.33%
+12	74aa, >UFY54459.1|coronavirus_E|SRC:NCBI... at 90.54%
+13	75aa, >UEM69960.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 182
+0	74aa, >UFY85679.1|coronavirus_E|SRC:NCBI... at 91.89%
+1	75aa, >UFY84764.1|coronavirus_E|SRC:NCBI... *
+2	74aa, >UFY81428.1|coronavirus_E|SRC:NCBI... at 91.89%
+3	75aa, >UFY80466.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UFY77553.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UFY76569.1|coronavirus_E|SRC:NCBI... at 97.33%
+6	72aa, >UFY76521.1|coronavirus_E|SRC:NCBI... at 93.06%
+7	75aa, >UFY55116.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >UFY42597.1|coronavirus_E|SRC:NCBI... at 92.00%
+9	75aa, >UEQ62359.1|coronavirus_E|SRC:NCBI... at 92.00%
+10	75aa, >UEN37843.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 183
+0	75aa, >UFY84729.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY78183.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	71aa, >UFY76876.1|coronavirus_E|SRC:NCBI... at 90.14%
+3	75aa, >UFY52877.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEM57465.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 184
+0	75aa, >UFY84623.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY56452.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UFY55377.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	71aa, >UFY42394.1|coronavirus_E|SRC:NCBI... at 90.14%
+4	75aa, >UET38974.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	74aa, >UET60512.1|coronavirus_E|SRC:NCBI... at 90.54%
+6	75aa, >UER31415.1|coronavirus_E|SRC:NCBI... at 93.33%
+7	75aa, >UER24972.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	74aa, >UER21989.1|coronavirus_E|SRC:NCBI... at 91.89%
+9	69aa, >UEN53729.1|coronavirus_E|SRC:NCBI... at 91.30%
+10	75aa, >UEJ46554.1|coronavirus_E|SRC:NCBI... at 94.67%
+>Cluster 185
+0	75aa, >UFY84611.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY39620.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 186
+0	75aa, >UFY84316.1|coronavirus_E|SRC:NCBI... *
+1	73aa, >UFY76816.1|coronavirus_E|SRC:NCBI... at 93.15%
+2	75aa, >UFV31411.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UFV28440.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEJ13700.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEH98354.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UEH70726.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 187
+0	75aa, >UFY82463.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFY55563.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 188
+0	75aa, >UFY80500.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFV29215.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	75aa, >UET45908.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UET44837.1|coronavirus_E|SRC:NCBI... at 93.33%
+4	75aa, >UET42023.1|coronavirus_E|SRC:NCBI... at 94.67%
+5	75aa, >UET39696.1|coronavirus_E|SRC:NCBI... at 90.67%
+6	75aa, >UET17691.1|coronavirus_E|SRC:NCBI... at 93.33%
+7	73aa, >UET12193.1|coronavirus_E|SRC:NCBI... at 90.41%
+8	75aa, >UER21362.1|coronavirus_E|SRC:NCBI... at 93.33%
+9	75aa, >UER06133.1|coronavirus_E|SRC:NCBI... at 90.67%
+10	75aa, >UEN12018.1|coronavirus_E|SRC:NCBI... at 90.67%
+11	75aa, >UEN07183.1|coronavirus_E|SRC:NCBI... at 90.67%
+12	75aa, >UEM78296.1|coronavirus_E|SRC:NCBI... at 90.67%
+13	75aa, >UEM68932.1|coronavirus_E|SRC:NCBI... at 90.67%
+14	75aa, >UEM68527.1|coronavirus_E|SRC:NCBI... at 94.67%
+15	75aa, >UEM66648.1|coronavirus_E|SRC:NCBI... at 92.00%
+16	75aa, >UEM51752.1|coronavirus_E|SRC:NCBI... at 94.67%
+17	75aa, >UEJ49838.1|coronavirus_E|SRC:NCBI... at 93.33%
+18	74aa, >UEJ23817.1|coronavirus_E|SRC:NCBI... at 93.24%
+19	75aa, >UEH98421.1|coronavirus_E|SRC:NCBI... at 90.67%
+20	75aa, >UEH69914.1|coronavirus_E|SRC:NCBI... at 90.67%
+21	74aa, >UEF43373.1|coronavirus_E|SRC:NCBI... at 90.54%
+22	75aa, >UEF42217.1|coronavirus_E|SRC:NCBI... at 94.67%
+>Cluster 189
+0	75aa, >UFY76664.1|coronavirus_E|SRC:NCBI... *
+>Cluster 190
+0	75aa, >UFY76345.1|coronavirus_E|SRC:NCBI... *
+>Cluster 191
+0	75aa, >UFY75854.1|coronavirus_E|SRC:NCBI... *
+>Cluster 192
+0	75aa, >UFY57368.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UER24916.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 193
+0	71aa, >UFY81109.1|coronavirus_E|SRC:NCBI... at 90.14%
+1	75aa, >UFY56750.1|coronavirus_E|SRC:NCBI... *
+>Cluster 194
+0	75aa, >UFY56655.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFV23440.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UET16377.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 195
+0	75aa, >UFY55574.1|coronavirus_E|SRC:NCBI... *
+>Cluster 196
+0	75aa, >UFY55174.1|coronavirus_E|SRC:NCBI... *
+>Cluster 197
+0	74aa, >UHF67860.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UFY53377.1|coronavirus_E|SRC:NCBI... *
+>Cluster 198
+0	75aa, >UFY51478.1|coronavirus_E|SRC:NCBI... *
+>Cluster 199
+0	75aa, >UFY51348.1|coronavirus_E|SRC:NCBI... *
+>Cluster 200
+0	75aa, >UFY50992.1|coronavirus_E|SRC:NCBI... *
+>Cluster 201
+0	75aa, >UFV56923.1|coronavirus_E|SRC:NCBI... *
+>Cluster 202
+0	75aa, >UFV31028.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UFV05583.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 203
+0	74aa, >UJQ73494.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UFV26859.1|coronavirus_E|SRC:NCBI... *
+>Cluster 204
+0	75aa, >UFV04450.1|coronavirus_E|SRC:NCBI... *
+1	70aa, >UFU91063.1|coronavirus_E|SRC:NCBI... at 92.86%
+2	75aa, >UET84046.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	74aa, >UET15322.1|coronavirus_E|SRC:NCBI... at 95.95%
+4	75aa, >UET14360.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >UER16319.1|coronavirus_E|SRC:NCBI... at 94.67%
+6	75aa, >UER15682.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UEM50514.1|coronavirus_E|SRC:NCBI... at 90.67%
+8	75aa, >UEJ73730.1|coronavirus_E|SRC:NCBI... at 93.33%
+9	72aa, >UEJ40853.1|coronavirus_E|SRC:NCBI... at 91.67%
+10	71aa, >UEI03969.1|coronavirus_E|SRC:NCBI... at 90.14%
+11	75aa, >UEH53717.1|coronavirus_E|SRC:NCBI... at 96.00%
+>Cluster 205
+0	75aa, >UFV01475.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UET43996.1|coronavirus_E|SRC:NCBI... at 90.54%
+2	75aa, >UER21374.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UER20834.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UEJ45910.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >UEH93764.1|coronavirus_E|SRC:NCBI... at 92.00%
+6	75aa, >UEH93095.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UEH82148.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 206
+0	75aa, >UFU91051.1|coronavirus_E|SRC:NCBI... *
+>Cluster 207
+0	75aa, >UEY96371.1|coronavirus_E|SRC:NCBI... *
+>Cluster 208
+0	75aa, >UEY87017.1|coronavirus_E|SRC:NCBI... *
+>Cluster 209
+0	75aa, >UET51132.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH84201.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 210
+0	75aa, >UET49498.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET25587.1|coronavirus_E|SRC:NCBI... at 93.33%
+2	75aa, >UEH64066.1|coronavirus_E|SRC:NCBI... at 94.67%
+>Cluster 211
+0	75aa, >UET47126.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET12261.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UER28206.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	74aa, >UEN30348.1|coronavirus_E|SRC:NCBI... at 90.54%
+4	75aa, >UEJ59585.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEJ59258.1|coronavirus_E|SRC:NCBI... at 93.33%
+6	75aa, >UEJ24135.1|coronavirus_E|SRC:NCBI... at 93.33%
+7	75aa, >UEJ14167.1|coronavirus_E|SRC:NCBI... at 92.00%
+8	75aa, >UEH52085.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 212
+0	75aa, >UET46180.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET43405.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	74aa, >UET32347.1|coronavirus_E|SRC:NCBI... at 90.54%
+3	75aa, >UET25598.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UET10001.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEH82376.1|coronavirus_E|SRC:NCBI... at 92.00%
+6	75aa, >UEH58337.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 213
+0	75aa, >UET44815.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH47695.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 214
+0	75aa, >UET84192.1|coronavirus_E|SRC:NCBI... *
+>Cluster 215
+0	75aa, >UET84168.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET43197.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UET40122.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEJ20341.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 216
+0	75aa, >UET84156.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET56772.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	74aa, >UEH56741.1|coronavirus_E|SRC:NCBI... at 91.89%
+3	75aa, >UEF42731.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 217
+0	74aa, >UET46124.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UET84057.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UET16246.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UEJ69266.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEJ43779.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 218
+0	75aa, >UET43898.1|coronavirus_E|SRC:NCBI... *
+1	69aa, >UEH49862.1|coronavirus_E|SRC:NCBI... at 91.30%
+>Cluster 219
+0	75aa, >UET42847.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET16188.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UEM50457.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	74aa, >UEJ56951.1|coronavirus_E|SRC:NCBI... at 90.54%
+4	75aa, >UEH68416.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 220
+0	74aa, >UET46214.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UET42791.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UET18894.1|coronavirus_E|SRC:NCBI... at 93.33%
+3	75aa, >UET17295.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	74aa, >UER36687.1|coronavirus_E|SRC:NCBI... at 90.54%
+5	75aa, >UEN20594.1|coronavirus_E|SRC:NCBI... at 92.00%
+6	75aa, >UEN11001.1|coronavirus_E|SRC:NCBI... at 90.67%
+7	75aa, >UEM96361.1|coronavirus_E|SRC:NCBI... at 90.67%
+8	75aa, >UEI02626.1|coronavirus_E|SRC:NCBI... at 92.00%
+9	75aa, >UEH89629.1|coronavirus_E|SRC:NCBI... at 90.67%
+10	75aa, >UEH75069.1|coronavirus_E|SRC:NCBI... at 92.00%
+11	75aa, >UEH55541.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 221
+0	75aa, >UET80357.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UER20636.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 222
+0	73aa, >UET41935.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UET38885.1|coronavirus_E|SRC:NCBI... *
+2	68aa, >UER25651.1|coronavirus_E|SRC:NCBI... at 91.18%
+>Cluster 223
+0	75aa, >UET78081.1|coronavirus_E|SRC:NCBI... *
+>Cluster 224
+0	75aa, >UET36714.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UER05968.1|coronavirus_E|SRC:NCBI... at 94.67%
+2	75aa, >UEN08435.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEM67427.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEH43020.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 225
+0	75aa, >UET36034.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEJ30677.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 226
+0	75aa, >UET36000.1|coronavirus_E|SRC:NCBI... *
+>Cluster 227
+0	75aa, >UET70157.1|coronavirus_E|SRC:NCBI... *
+>Cluster 228
+0	75aa, >UET62114.1|coronavirus_E|SRC:NCBI... *
+>Cluster 229
+0	75aa, >UET61445.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEN33814.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UEN12811.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEM97164.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 230
+0	75aa, >UET60861.1|coronavirus_E|SRC:NCBI... *
+1	68aa, >UEH61891.1|coronavirus_E|SRC:NCBI... at 91.18%
+>Cluster 231
+0	75aa, >UET60141.1|coronavirus_E|SRC:NCBI... *
+>Cluster 232
+0	75aa, >UET60043.1|coronavirus_E|SRC:NCBI... *
+>Cluster 233
+0	75aa, >UET52737.1|coronavirus_E|SRC:NCBI... *
+>Cluster 234
+0	75aa, >UET33751.1|coronavirus_E|SRC:NCBI... *
+>Cluster 235
+0	72aa, >UFY55607.1|coronavirus_E|SRC:NCBI... at 90.28%
+1	75aa, >UET23751.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UEN15905.1|coronavirus_E|SRC:NCBI... at 93.33%
+3	75aa, >UEM99734.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	74aa, >UEM69484.1|coronavirus_E|SRC:NCBI... at 91.89%
+5	75aa, >UEJ22538.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 236
+0	75aa, >UET18949.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UET12373.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UEI02684.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEI02672.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UEI02649.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 237
+0	75aa, >UET17679.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UET16211.1|coronavirus_E|SRC:NCBI... at 90.54%
+2	75aa, >UER26077.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEM47134.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UEJ77140.1|coronavirus_E|SRC:NCBI... at 90.67%
+5	75aa, >UEH39352.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 238
+0	75aa, >UET17527.1|coronavirus_E|SRC:NCBI... *
+>Cluster 239
+0	75aa, >UET17515.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UER26111.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UEL87726.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEI03610.1|coronavirus_E|SRC:NCBI... at 92.00%
+4	75aa, >UEH94938.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 240
+0	73aa, >UFY59285.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UET16234.1|coronavirus_E|SRC:NCBI... *
+>Cluster 241
+0	75aa, >UET16078.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEE72750.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 242
+0	75aa, >UET14030.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UER20332.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	75aa, >UEJ50078.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UEI02384.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 243
+0	75aa, >UET11612.1|coronavirus_E|SRC:NCBI... *
+>Cluster 244
+0	75aa, >UET08511.1|coronavirus_E|SRC:NCBI... *
+>Cluster 245
+0	75aa, >UER36424.1|coronavirus_E|SRC:NCBI... *
+>Cluster 246
+0	75aa, >UER36009.1|coronavirus_E|SRC:NCBI... *
+1	72aa, >UEE74643.1|coronavirus_E|SRC:NCBI... at 90.28%
+2	72aa, >UEE74160.1|coronavirus_E|SRC:NCBI... at 91.67%
+3	69aa, >UEE73962.1|coronavirus_E|SRC:NCBI... at 91.30%
+>Cluster 247
+0	75aa, >UER35454.1|coronavirus_E|SRC:NCBI... *
+>Cluster 248
+0	73aa, >UFY48568.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UER34577.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UER17301.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEM90658.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEJ36131.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEH92666.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 249
+0	75aa, >UER31404.1|coronavirus_E|SRC:NCBI... *
+>Cluster 250
+0	75aa, >UER25234.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEN32325.1|coronavirus_E|SRC:NCBI... at 90.67%
+2	71aa, >UEH73090.1|coronavirus_E|SRC:NCBI... at 90.14%
+3	66aa, >UEE76246.1|coronavirus_E|SRC:NCBI... at 90.91%
+>Cluster 251
+0	73aa, >UET38786.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UER24498.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UEJ58885.1|coronavirus_E|SRC:NCBI... at 96.00%
+>Cluster 252
+0	75aa, >UER24367.1|coronavirus_E|SRC:NCBI... *
+>Cluster 253
+0	75aa, >UER19861.1|coronavirus_E|SRC:NCBI... *
+>Cluster 254
+0	75aa, >UER18419.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEN51335.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	73aa, >UEJ23992.1|coronavirus_E|SRC:NCBI... at 90.41%
+3	73aa, >UEH53990.1|coronavirus_E|SRC:NCBI... at 94.52%
+>Cluster 255
+0	75aa, >UER08410.1|coronavirus_E|SRC:NCBI... *
+>Cluster 256
+0	69aa, >UET20506.1|coronavirus_E|SRC:NCBI... at 92.75%
+1	75aa, >UER05507.1|coronavirus_E|SRC:NCBI... *
+>Cluster 257
+0	74aa, >UET12181.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UER04446.1|coronavirus_E|SRC:NCBI... *
+2	75aa, >UEN01233.1|coronavirus_E|SRC:NCBI... at 92.00%
+3	75aa, >UEM67671.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	75aa, >UEM64458.1|coronavirus_E|SRC:NCBI... at 92.00%
+5	75aa, >UEJ67011.1|coronavirus_E|SRC:NCBI... at 93.33%
+6	75aa, >UEJ65575.1|coronavirus_E|SRC:NCBI... at 92.00%
+7	75aa, >UEH70386.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 258
+0	75aa, >UEP07329.1|coronavirus_E|SRC:NCBI... *
+>Cluster 259
+0	75aa, >UEN41831.1|coronavirus_E|SRC:NCBI... *
+>Cluster 260
+0	75aa, >UEN40911.1|coronavirus_E|SRC:NCBI... *
+1	73aa, >UEJ42979.1|coronavirus_E|SRC:NCBI... at 90.41%
+>Cluster 261
+0	75aa, >UEN38497.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEE77633.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	75aa, >UEE76127.1|coronavirus_E|SRC:NCBI... at 90.67%
+3	75aa, >UEE74610.1|coronavirus_E|SRC:NCBI... at 98.67%
+4	65aa, >UEE72651.1|coronavirus_E|SRC:NCBI... at 90.77%
+>Cluster 262
+0	75aa, >UEN37276.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH78274.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 263
+0	75aa, >UEN34635.1|coronavirus_E|SRC:NCBI... *
+>Cluster 264
+0	75aa, >UEN31394.1|coronavirus_E|SRC:NCBI... *
+>Cluster 265
+0	72aa, >UER10343.1|coronavirus_E|SRC:NCBI... at 90.28%
+1	75aa, >UEN27294.1|coronavirus_E|SRC:NCBI... *
+>Cluster 266
+0	75aa, >UEN24170.1|coronavirus_E|SRC:NCBI... *
+>Cluster 267
+0	75aa, >UEN22576.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH60149.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 268
+0	75aa, >UEN11722.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEJ47285.1|coronavirus_E|SRC:NCBI... at 90.67%
+>Cluster 269
+0	75aa, >UEN03285.1|coronavirus_E|SRC:NCBI... *
+>Cluster 270
+0	75aa, >UEM80410.1|coronavirus_E|SRC:NCBI... *
+>Cluster 271
+0	74aa, >UER06475.1|coronavirus_E|SRC:NCBI... at 90.54%
+1	75aa, >UEM79030.1|coronavirus_E|SRC:NCBI... *
+2	74aa, >UEM49758.1|coronavirus_E|SRC:NCBI... at 91.89%
+3	75aa, >UEJ58982.1|coronavirus_E|SRC:NCBI... at 90.67%
+4	74aa, >UEJ14266.1|coronavirus_E|SRC:NCBI... at 91.89%
+>Cluster 272
+0	75aa, >UEM78810.1|coronavirus_E|SRC:NCBI... *
+>Cluster 273
+0	75aa, >UEM78798.1|coronavirus_E|SRC:NCBI... *
+>Cluster 274
+0	75aa, >UEM70061.1|coronavirus_E|SRC:NCBI... *
+>Cluster 275
+0	75aa, >UEM54863.1|coronavirus_E|SRC:NCBI... *
+>Cluster 276
+0	74aa, >UER06222.1|coronavirus_E|SRC:NCBI... at 93.24%
+1	75aa, >UEM53812.1|coronavirus_E|SRC:NCBI... *
+>Cluster 277
+0	75aa, >UEM49518.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEJ43481.1|coronavirus_E|SRC:NCBI... at 92.00%
+2	74aa, >UEH76719.1|coronavirus_E|SRC:NCBI... at 90.54%
+>Cluster 278
+0	75aa, >UEM48137.1|coronavirus_E|SRC:NCBI... *
+>Cluster 279
+0	75aa, >UEM47307.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UEJ59915.1|coronavirus_E|SRC:NCBI... at 91.89%
+>Cluster 280
+0	75aa, >UEM47100.1|coronavirus_E|SRC:NCBI... *
+>Cluster 281
+0	75aa, >UEJ80075.1|coronavirus_E|SRC:NCBI... *
+>Cluster 282
+0	75aa, >UEJ72323.1|coronavirus_E|SRC:NCBI... *
+>Cluster 283
+0	75aa, >UEJ72029.1|coronavirus_E|SRC:NCBI... *
+>Cluster 284
+0	75aa, >UEJ70193.1|coronavirus_E|SRC:NCBI... *
+>Cluster 285
+0	75aa, >UEJ68914.1|coronavirus_E|SRC:NCBI... *
+>Cluster 286
+0	75aa, >UEJ38842.1|coronavirus_E|SRC:NCBI... *
+>Cluster 287
+0	75aa, >UEJ38418.1|coronavirus_E|SRC:NCBI... *
+>Cluster 288
+0	75aa, >UEJ35908.1|coronavirus_E|SRC:NCBI... *
+1	73aa, >UEH61104.1|coronavirus_E|SRC:NCBI... at 90.41%
+>Cluster 289
+0	75aa, >UEJ61089.1|coronavirus_E|SRC:NCBI... *
+1	75aa, >UEH98738.1|coronavirus_E|SRC:NCBI... at 92.00%
+>Cluster 290
+0	75aa, >UEJ60825.1|coronavirus_E|SRC:NCBI... *
+>Cluster 291
+0	75aa, >UEJ60245.1|coronavirus_E|SRC:NCBI... *
+>Cluster 292
+0	73aa, >UEM54295.1|coronavirus_E|SRC:NCBI... at 90.41%
+1	75aa, >UEJ60013.1|coronavirus_E|SRC:NCBI... *
+>Cluster 293
+0	75aa, >UEJ33791.1|coronavirus_E|SRC:NCBI... *
+>Cluster 294
+0	75aa, >UEJ57302.1|coronavirus_E|SRC:NCBI... *
+>Cluster 295
+0	75aa, >UEJ55759.1|coronavirus_E|SRC:NCBI... *
+>Cluster 296
+0	74aa, >UER24904.1|coronavirus_E|SRC:NCBI... at 93.24%
+1	75aa, >UEJ52916.1|coronavirus_E|SRC:NCBI... *
+>Cluster 297
+0	75aa, >UEJ50923.1|coronavirus_E|SRC:NCBI... *
+>Cluster 298
+0	75aa, >UEJ46391.1|coronavirus_E|SRC:NCBI... *
+>Cluster 299
+0	75aa, >UEJ25231.1|coronavirus_E|SRC:NCBI... *
+>Cluster 300
+0	75aa, >UEJ10718.1|coronavirus_E|SRC:NCBI... *
+>Cluster 301
+0	75aa, >UEJ08657.1|coronavirus_E|SRC:NCBI... *
+>Cluster 302
+0	75aa, >UEJ07203.1|coronavirus_E|SRC:NCBI... *
+>Cluster 303
+0	75aa, >UEI97824.1|coronavirus_E|SRC:NCBI... *
+>Cluster 304
+0	75aa, >UEI01061.1|coronavirus_E|SRC:NCBI... *
+>Cluster 305
+0	75aa, >UEI00502.1|coronavirus_E|SRC:NCBI... *
+>Cluster 306
+0	75aa, >UEH94006.1|coronavirus_E|SRC:NCBI... *
+>Cluster 307
+0	75aa, >UEH92425.1|coronavirus_E|SRC:NCBI... *
+>Cluster 308
+0	75aa, >UEH80215.1|coronavirus_E|SRC:NCBI... *
+>Cluster 309
+0	75aa, >UEH79952.1|coronavirus_E|SRC:NCBI... *
+>Cluster 310
+0	75aa, >UEH79271.1|coronavirus_E|SRC:NCBI... *
+>Cluster 311
+0	75aa, >UEH78515.1|coronavirus_E|SRC:NCBI... *
+>Cluster 312
+0	75aa, >UEH66983.1|coronavirus_E|SRC:NCBI... *
+1	69aa, >UEH66029.1|coronavirus_E|SRC:NCBI... at 92.75%
+>Cluster 313
+0	75aa, >UEH54317.1|coronavirus_E|SRC:NCBI... *
+>Cluster 314
+0	75aa, >UEH50771.1|coronavirus_E|SRC:NCBI... *
+>Cluster 315
+0	75aa, >UEF43691.1|coronavirus_E|SRC:NCBI... *
+>Cluster 316
+0	75aa, >UEF41469.1|coronavirus_E|SRC:NCBI... *
+>Cluster 317
+0	70aa, >UEL93967.1|coronavirus_E|SRC:NCBI... at 97.14%
+1	72aa, >UEI08222.1|coronavirus_E|SRC:NCBI... at 98.61%
+2	72aa, >UEI07630.1|coronavirus_E|SRC:NCBI... at 100.00%
+3	70aa, >UEI06334.1|coronavirus_E|SRC:NCBI... at 97.14%
+4	73aa, >UEE79957.1|coronavirus_E|SRC:NCBI... at 93.15%
+5	75aa, >UEE79173.1|coronavirus_E|SRC:NCBI... *
+6	72aa, >UEE76193.1|coronavirus_E|SRC:NCBI... at 94.44%
+7	75aa, >UEE74786.1|coronavirus_E|SRC:NCBI... at 93.33%
+>Cluster 318
+0	75aa, >UEE77326.1|coronavirus_E|SRC:NCBI... *
+>Cluster 319
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+1	74aa, >tr|coronavirus_E|SRC:UniProt... at 94.59%
+2	74aa, >XOU03402.1|coronavirus_E|SRC:NCBI... at 95.95%
+>Cluster 320
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 321
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 322
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+1	74aa, >tr|coronavirus_E|SRC:UniProt... at 90.54%
+2	74aa, >tr|coronavirus_E|SRC:UniProt... at 97.30%
+3	74aa, >tr|coronavirus_E|SRC:UniProt... at 98.65%
+>Cluster 323
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+1	74aa, >tr|coronavirus_E|SRC:UniProt... at 98.65%
+2	74aa, >XTJ86151.1|coronavirus_E|SRC:NCBI... at 97.30%
+>Cluster 324
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 325
+0	74aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 326
+0	74aa, >XUA30686.1|coronavirus_E|SRC:NCBI... *
+>Cluster 327
+0	74aa, >UJQ77347.1|coronavirus_E|SRC:NCBI... *
+>Cluster 328
+0	74aa, >UJQ77323.1|coronavirus_E|SRC:NCBI... *
+>Cluster 329
+0	69aa, >UJE69702.1|coronavirus_E|SRC:NCBI... at 91.30%
+1	74aa, >UJE64584.1|coronavirus_E|SRC:NCBI... *
+>Cluster 330
+0	74aa, >UFY83853.1|coronavirus_E|SRC:NCBI... *
+>Cluster 331
+0	74aa, >UFY76912.1|coronavirus_E|SRC:NCBI... *
+>Cluster 332
+0	74aa, >UFY76261.1|coronavirus_E|SRC:NCBI... *
+>Cluster 333
+0	74aa, >UFY55400.1|coronavirus_E|SRC:NCBI... *
+>Cluster 334
+0	74aa, >UFY47399.1|coronavirus_E|SRC:NCBI... *
+>Cluster 335
+0	74aa, >UFV49640.1|coronavirus_E|SRC:NCBI... *
+>Cluster 336
+0	74aa, >UFV23463.1|coronavirus_E|SRC:NCBI... *
+>Cluster 337
+0	74aa, >UET46191.1|coronavirus_E|SRC:NCBI... *
+>Cluster 338
+0	74aa, >UET46146.1|coronavirus_E|SRC:NCBI... *
+>Cluster 339
+0	74aa, >UET35519.1|coronavirus_E|SRC:NCBI... *
+>Cluster 340
+0	74aa, >UET66622.1|coronavirus_E|SRC:NCBI... *
+>Cluster 341
+0	74aa, >UET18872.1|coronavirus_E|SRC:NCBI... *
+>Cluster 342
+0	74aa, >UET15585.1|coronavirus_E|SRC:NCBI... *
+>Cluster 343
+0	74aa, >UET12362.1|coronavirus_E|SRC:NCBI... *
+>Cluster 344
+0	74aa, >UER26089.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UEJ60957.1|coronavirus_E|SRC:NCBI... at 90.54%
+>Cluster 345
+0	74aa, >UER21350.1|coronavirus_E|SRC:NCBI... *
+>Cluster 346
+0	74aa, >UER16077.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UEJ22340.1|coronavirus_E|SRC:NCBI... at 90.54%
+>Cluster 347
+0	74aa, >UEN01364.1|coronavirus_E|SRC:NCBI... *
+>Cluster 348
+0	74aa, >UEM98315.1|coronavirus_E|SRC:NCBI... *
+1	73aa, >UEH90605.1|coronavirus_E|SRC:NCBI... at 91.78%
+>Cluster 349
+0	74aa, >UEM95608.1|coronavirus_E|SRC:NCBI... *
+1	74aa, >UEJ65366.1|coronavirus_E|SRC:NCBI... at 91.89%
+>Cluster 350
+0	74aa, >UEJ33386.1|coronavirus_E|SRC:NCBI... *
+>Cluster 351
+0	74aa, >UEJ54214.1|coronavirus_E|SRC:NCBI... *
+>Cluster 352
+0	73aa, >XRH95618.1|coronavirus_E|SRC:NCBI... *
+>Cluster 353
+0	73aa, >UFY76463.1|coronavirus_E|SRC:NCBI... *
+>Cluster 354
+0	73aa, >UFY59295.1|coronavirus_E|SRC:NCBI... *
+>Cluster 355
+0	73aa, >UFY53555.1|coronavirus_E|SRC:NCBI... *
+>Cluster 356
+0	73aa, >UFY52842.1|coronavirus_E|SRC:NCBI... *
+>Cluster 357
+0	73aa, >UET52116.1|coronavirus_E|SRC:NCBI... *
+>Cluster 358
+0	73aa, >UET76415.1|coronavirus_E|SRC:NCBI... *
+>Cluster 359
+0	73aa, >UET19558.1|coronavirus_E|SRC:NCBI... *
+>Cluster 360
+0	73aa, >UEN01809.1|coronavirus_E|SRC:NCBI... *
+>Cluster 361
+0	73aa, >UEJ41969.1|coronavirus_E|SRC:NCBI... *
+>Cluster 362
+0	73aa, >UEH47947.1|coronavirus_E|SRC:NCBI... *
+>Cluster 363
+0	73aa, >UEF40002.1|coronavirus_E|SRC:NCBI... *
+>Cluster 364
+0	72aa, >UFY76545.1|coronavirus_E|SRC:NCBI... *
+>Cluster 365
+0	71aa, >UFY76509.1|coronavirus_E|SRC:NCBI... at 91.55%
+1	72aa, >UFY52687.1|coronavirus_E|SRC:NCBI... *
+>Cluster 366
+0	72aa, >UFU93928.1|coronavirus_E|SRC:NCBI... *
+>Cluster 367
+0	72aa, >UET61147.1|coronavirus_E|SRC:NCBI... *
+>Cluster 368
+0	72aa, >UEJ66924.1|coronavirus_E|SRC:NCBI... *
+>Cluster 369
+0	72aa, >UEJ51960.1|coronavirus_E|SRC:NCBI... *
+>Cluster 370
+0	72aa, >UEH96042.1|coronavirus_E|SRC:NCBI... *
+1	72aa, >UEI06606.1|coronavirus_E|SRC:NCBI... at 91.67%
+>Cluster 371
+0	72aa, >UEH89027.1|coronavirus_E|SRC:NCBI... *
+>Cluster 372
+0	72aa, >UEH78537.1|coronavirus_E|SRC:NCBI... *
+>Cluster 373
+0	72aa, >UEE79991.1|coronavirus_E|SRC:NCBI... *
+1	70aa, >UEE78004.1|coronavirus_E|SRC:NCBI... at 91.43%
+>Cluster 374
+0	72aa, >UEE75150.1|coronavirus_E|SRC:NCBI... *
+>Cluster 375
+0	71aa, >XRA43125.1|coronavirus_E|SRC:NCBI... *
+1	58aa, >XOU05180.1|coronavirus_E|SRC:NCBI... at 96.55%
+>Cluster 376
+0	71aa, >UFY83129.1|coronavirus_E|SRC:NCBI... *
+>Cluster 377
+0	71aa, >UFY82475.1|coronavirus_E|SRC:NCBI... *
+>Cluster 378
+0	71aa, >UFY55665.1|coronavirus_E|SRC:NCBI... *
+>Cluster 379
+0	70aa, >UFY74439.1|coronavirus_E|SRC:NCBI... at 91.43%
+1	71aa, >UFV31566.1|coronavirus_E|SRC:NCBI... *
+>Cluster 380
+0	70aa, >UFY74117.1|coronavirus_E|SRC:NCBI... *
+>Cluster 381
+0	70aa, >UFY55542.1|coronavirus_E|SRC:NCBI... *
+>Cluster 382
+0	70aa, >UET30489.1|coronavirus_E|SRC:NCBI... *
+>Cluster 383
+0	69aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 384
+0	58aa, >XPC84856.1|coronavirus_E|SRC:NCBI... at 91.38%
+1	69aa, >UJE60321.1|coronavirus_E|SRC:NCBI... *
+>Cluster 385
+0	69aa, >UER21108.1|coronavirus_E|SRC:NCBI... *
+>Cluster 386
+0	69aa, >UEN13624.1|coronavirus_E|SRC:NCBI... *
+>Cluster 387
+0	69aa, >UEJ64492.1|coronavirus_E|SRC:NCBI... *
+>Cluster 388
+0	69aa, >UEJ60903.1|coronavirus_E|SRC:NCBI... *
+>Cluster 389
+0	69aa, >UEH99088.1|coronavirus_E|SRC:NCBI... *
+>Cluster 390
+0	68aa, >UJQ77610.1|coronavirus_E|SRC:NCBI... *
+>Cluster 391
+0	58aa, >UTK20434.1|coronavirus_E|SRC:NCBI... at 94.83%
+1	56aa, >UIQ41616.1|coronavirus_E|SRC:NCBI... at 98.21%
+2	68aa, >UET87324.1|coronavirus_E|SRC:NCBI... *
+>Cluster 392
+0	68aa, >UER10759.1|coronavirus_E|SRC:NCBI... *
+>Cluster 393
+0	68aa, >UEJ41654.1|coronavirus_E|SRC:NCBI... *
+>Cluster 394
+0	68aa, >UEH86628.1|coronavirus_E|SRC:NCBI... *
+>Cluster 395
+0	67aa, >UFY78147.1|coronavirus_E|SRC:NCBI... *
+>Cluster 396
+0	67aa, >UET61181.1|coronavirus_E|SRC:NCBI... *
+>Cluster 397
+0	67aa, >UET12239.1|coronavirus_E|SRC:NCBI... *
+>Cluster 398
+0	67aa, >UEJ08351.1|coronavirus_E|SRC:NCBI... *
+>Cluster 399
+0	67aa, >UEH96782.1|coronavirus_E|SRC:NCBI... *
+>Cluster 400
+0	66aa, >tr|coronavirus_E|SRC:UniProt... *
+>Cluster 401
+0	66aa, >XOP75649.1|coronavirus_E|SRC:NCBI... *
+>Cluster 402
+0	65aa, >XUA30673.1|coronavirus_E|SRC:NCBI... *
+>Cluster 403
+0	65aa, >XPC83111.1|coronavirus_E|SRC:NCBI... *
+>Cluster 404
+0	65aa, >UEJ52673.1|coronavirus_E|SRC:NCBI... *
+>Cluster 405
+0	65aa, >UEH63683.1|coronavirus_E|SRC:NCBI... *
+>Cluster 406
+0	62aa, >XRB64164.1|coronavirus_E|SRC:NCBI... *
+>Cluster 407
+0	60aa, >UEI85829.1|coronavirus_E|SRC:NCBI... *
+>Cluster 408
+0	59aa, >UEJ00750.1|coronavirus_E|SRC:NCBI... *
+>Cluster 409
+0	56aa, >XYE82619.1|coronavirus_E|SRC:NCBI... at 100.00%
+1	50aa, >XXK87558.1|coronavirus_E|SRC:NCBI... at 100.00%
+2	56aa, >XWL00971.1|coronavirus_E|SRC:NCBI... at 98.21%
+3	53aa, >XRX07996.1|coronavirus_E|SRC:NCBI... at 100.00%
+4	58aa, >XQP17273.1|coronavirus_E|SRC:NCBI... *
+5	57aa, >XOU05644.1|coronavirus_E|SRC:NCBI... at 96.49%
+6	52aa, >UJN74111.1|coronavirus_E|SRC:NCBI... at 100.00%
+7	52aa, >UHR84951.1|coronavirus_E|SRC:NCBI... at 98.08%
+>Cluster 410
+0	58aa, >XPA12024.1|coronavirus_E|SRC:NCBI... *
+1	53aa, >URW55878.1|coronavirus_E|SRC:NCBI... at 100.00%
+2	58aa, >UJN33966.1|coronavirus_E|SRC:NCBI... at 91.38%
+3	53aa, >UIQ50459.1|coronavirus_E|SRC:NCBI... at 90.57%
+4	58aa, >UIQ43419.1|coronavirus_E|SRC:NCBI... at 91.38%
+5	55aa, >UEU15457.1|coronavirus_E|SRC:NCBI... at 100.00%
+6	55aa, >UEI48105.1|coronavirus_E|SRC:NCBI... at 98.18%
+>Cluster 411
+0	58aa, >URW19533.1|coronavirus_E|SRC:NCBI... *
+1	58aa, >UGU76441.1|coronavirus_E|SRC:NCBI... at 98.28%
+2	58aa, >UEI95608.1|coronavirus_E|SRC:NCBI... at 98.28%
+3	53aa, >UEI27531.1|coronavirus_E|SRC:NCBI... at 98.11%
+>Cluster 412
+0	58aa, >UJN52047.1|coronavirus_E|SRC:NCBI... *
+1	58aa, >UET92946.1|coronavirus_E|SRC:NCBI... at 96.55%
+2	55aa, >UEI36750.1|coronavirus_E|SRC:NCBI... at 100.00%
+>Cluster 413
+0	58aa, >UEJ69222.1|coronavirus_E|SRC:NCBI... *
+>Cluster 414
+0	58aa, >UEI91146.1|coronavirus_E|SRC:NCBI... *
+>Cluster 415
+0	56aa, >XRB66239.1|coronavirus_E|SRC:NCBI... *
+>Cluster 416
+0	56aa, >UEH98804.1|coronavirus_E|SRC:NCBI... *
+>Cluster 417
+0	52aa, >XZG47204.1|coronavirus_E|SRC:NCBI... *
+>Cluster 418
+0	52aa, >XRA43197.1|coronavirus_E|SRC:NCBI... *
+>Cluster 419
+0	52aa, >URW49305.1|coronavirus_E|SRC:NCBI... *

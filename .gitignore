@@ -9,16 +9,6 @@ __pycache__/
 build/
 dist/
 
-# Data & models
-data/
-datasets/
-checkpoints/
-models/
-*.npz
-*.npy
-*.pt
-*.pth
-
 # Logs and temp
 *.log
 *.tmp
@@ -29,10 +19,6 @@ models/
 .DS_Store
 Thumbs.db
 
-# Notebooks
-.ipynb_checkpoints/
-
 # Environment configs
 .env
 .env.*
-
