@@ -1,16 +1,38 @@
-﻿.venv/
+﻿# Environments
+.venv/
 venv/
+
+# Python cache and build
 __pycache__/
 *.py[cod]
-*.npz
-*.npy
-*.pt
-*.pth
+*.egg-info/
+build/
+dist/
+
+# Data & models
 data/
 datasets/
 checkpoints/
 models/
-.DS_Store
-Thumbs.db
+*.npz
+*.npy
+*.pt
+*.pth
+
+# Logs and temp
+*.log
+*.tmp
+
+# IDE / system
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environment configs
+.env
+.env.*
+
