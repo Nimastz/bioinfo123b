@@ -1,4 +1,12 @@
 # train.py
+# Main training script for the ViroporinAFMini model.
+# Loads configuration settings, prepares data loaders, initializes the model, optimizer, and scheduler,
+# and launches the training loop.
+# - Automatically selects CPU or GPU and configures PyTorch performance options.
+# - Optionally enables torch.compile for supported GPUs to accelerate training.
+# - Saves checkpoints and logs progress throughout training.
+# Used to train the viroporin 3D structure prediction model from sequence data using the settings in a YAML config file.
+
 import argparse, os, warnings, yaml, torch
 from src.utils.gpu import pick_device, gpu_caps, configure_backends, should_compile, disable_dynamo_globally
 from src.train.loop import Trainer

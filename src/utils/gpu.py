@@ -1,4 +1,12 @@
 # src/utils/gpu.py
+# Utility functions for GPU detection, configuration, and optimization in PyTorch.
+# - pick_device(): chooses between CPU or CUDA based on system availability or config setting.
+# - gpu_caps(): queries GPU hardware capabilities (compute capability, bf16/tf32 support, etc.).
+# - configure_backends(): enables performance optimizations like cuDNN benchmarking and TF32 math.
+# - should_compile(): checks if torch.compile can be safely used given the GPU and YAML settings.
+# - disable_dynamo_globally(): disables PyTorch Dynamo/Inductor compilation on unsupported GPUs.
+# Used to automatically configure the best GPU settings for training and evaluation.
+
 import os, torch
 
 def pick_device(cfg_device: str | None = None) -> torch.device:

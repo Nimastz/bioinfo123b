@@ -1,9 +1,16 @@
-# build_viroporins_fasta.py
-# Max-recall viroporin downloader that outputs clean FASTA only.
+# scripts/build_viroporins_fasta.py
+# High-recall UniProt downloader that builds a clean FASTA of viroporin sequences.
+# - ENTRY mode: downloads full-length proteins (e.g., coronavirus E, influenza M2, HIV Vpu, ORF3a, SH, 6K, NSP4)
+#   using taxonomy filters, length windows, PE levels, transmembrane flags, and viroporin keywords.
+# - FEATURE mode: slices subsequences (e.g., HCV p7, Polyomavirus VP4, Picornavirus 2B) from annotated UniProt
+#   features (chain/region/peptide), enforcing length ranges and writing per-slice FASTA entries.
+# - Deduplicates sequences, tags headers with FAMILY|LEVEL or FAMILY|b-e, and writes a merged FASTA plus a manifest CSV.
+# Intended to assemble a broad, deduped viroporin dataset from UniProt for downstream modeling/training.
+# 
 # Entry-mode: coronavirus E, influenza M2, HIV Vpu (+ ORF3a, SH, 6K, NSP4)
 # Feature-mode: HCV p7, Polyomavirus VP4 (+ Picornavirus 2B); slices sub-seqs from polyproteins.
 #
-# Usage (PowerShell):
+# Usage:
 #   python build_viroporins_fasta.py `
 #     --out data/viroporins_balanced_uniprot.fasta `
 #     --dir data/viroporin_families `

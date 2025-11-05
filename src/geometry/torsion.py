@@ -1,3 +1,8 @@
+# src/geometry/torsion.py
+# Defines a simple loss function for protein backbone torsion angles (phi, psi, omega).
+# Encourages predicted torsion angles to match an ideal alpha-helix geometry when helix_bias=True.
+# Used during training to promote physically realistic backbone conformations in viroporin models.
+
 import torch
 
 def torsion_loss(pred_rad, helix_bias=True):

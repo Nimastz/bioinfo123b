@@ -1,4 +1,11 @@
 # src/train/loop.py
+# Implements the main training loop for the ViroporinAFMini model.
+# Handles forward passes, loss computation, backpropagation, gradient scaling (AMP), and checkpointing.
+# - step_losses(): computes individual and combined losses (distogram, torsion, FAPE, membrane/pore priors).
+# - fit(): iterates over training steps, updates model weights, logs progress, and saves checkpoints.
+# - save(): safely writes model and optimizer state to disk for resuming or evaluation.
+# Includes automatic mixed precision (AMP) and optional loss warmup for membrane/pore priors.
+
 import torch, os
 from tqdm import trange
 from src.losses.distogram import distogram_loss

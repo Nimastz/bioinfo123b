@@ -1,3 +1,12 @@
+# src/losses/viroporin_priors.py
+# Defines biophysical prior losses that guide viroporin structure prediction toward realistic membrane geometry.
+# - membrane_z_mask(): marks residues that lie within the transmembrane region.
+# - membrane_slab_loss(): penalizes transmembrane residues that drift too far from the membrane center.
+# - interface_contact_loss(): encourages favorable inter-chain contacts between protomers in the membrane.
+# - ca_clash_loss(): penalizes steric clashes (atoms too close between chains).
+# - pore_target_loss(): steers the predicted pore radius toward a target range (Å) for stable ion-channel geometry.
+# These priors act as gentle physical constraints during training to keep predicted oligomeric structures plausible.
+
 import torch
 
 def membrane_z_mask(L, tm_span):

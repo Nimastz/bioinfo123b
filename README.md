@@ -1,4 +1,4 @@
-# First step dependencies setup
+# First time dependencies setup
 
 All dependecies are listed in requirments.txt. First time you running his project, you need to make a local venv, activate it and install dependencies locally on you loptop, so in terminal run this code:
 
@@ -14,3 +14,5 @@ pip freeze > requirements.txt
 git add requirements.txt
 git commit -m "Update dependencies"
 git pushviroporinaf_mini
+
+py eval.py

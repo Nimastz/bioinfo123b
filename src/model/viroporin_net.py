@@ -1,3 +1,13 @@
+# src/model/viroporin_net.py
+# Defines the main neural network architecture (ViroporinAFMini) for viral membrane protein prediction.
+# Combines several key modules:
+# - EvoformerLite: captures sequence and pairwise residue relationships.
+# - IPA: predicts 3D backbone coordinates from residue embeddings.
+# - TorsionHeadSimple: outputs backbone torsion angles (phi, psi, omega).
+# - DistogramHead and ConfidenceHeads: predict residue–residue distances and confidence scores.
+# The model processes amino acid sequences or embeddings to generate full 3D structural predictions
+# and confidence estimates for viroporin proteins.
+
 import torch, torch.nn as nn
 from src.model.evoformer_lite import EvoformerLite
 from src.model.ipa_module import IPA, TorsionHeadSimple

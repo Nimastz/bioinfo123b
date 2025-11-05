@@ -1,3 +1,11 @@
+# src/geometry/assembly.py
+# Geometry utilities for building and analyzing symmetric viroporin assemblies.
+# - rotate_z(): rotates atomic coordinates around the z-axis.
+# - assemble_cn(): arranges one protein subunit into an n-fold (Cn) ring to form an oligomer.
+# - pore_radius_profile_ca(): computes the pore radius along the z-axis from Cα coordinates,
+#   estimating how wide the central channel is at each height.
+# Used for modeling and evaluating viral ion-channel (viroporin) pore geometry.
+
 import torch, math
 
 def rotate_z(xyz, angle):

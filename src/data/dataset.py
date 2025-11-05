@@ -1,4 +1,11 @@
 # src/data/dataset.py
+# Handles dataset loading and preprocessing for viroporin sequence and feature data.
+# - JsonlSet: loads sequence entries from a JSONL index file and retrieves their feature .npz files.
+# - make_loaders(): builds PyTorch DataLoader objects for training and validation sets.
+# - Helper functions (_resolve_features_path, _safe_name, etc.) ensure cross-platform
+#   compatibility and can locate or sanitize feature file paths (useful on Windows/OneDrive).
+# This module provides a reliable way to load sequence features and prepare them for model input.
+
 import json, os, re
 from pathlib import Path
 import torch

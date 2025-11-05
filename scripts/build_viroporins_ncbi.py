@@ -1,7 +1,12 @@
-# build_viroporins_ncbi_fasta.py
-# NCBI-only max-recall viroporin downloader (FASTA out).
+# scripts/build_viroporins_ncbi_fasta.py
+# High-recall sequence downloader for collecting viroporin protein sequences from NCBI.
+# - Queries NCBI protein databases using E-utilities (esearch, efetch) for multiple viral families.
+# - Builds search terms with organism tax IDs, name/synonym filters, and sequence length windows.
+# - Downloads, deduplicates, and merges FASTA files for each family into one master FASTA output.
+# - Supports config-driven execution (config.yaml) specifying email, API key, and output paths.
+# Used to assemble a comprehensive FASTA dataset of viral membrane proteins for model training.
 #
-# Usage (PowerShell):
+# Usage:
 #   python build_viroporins_ncbi_fasta.py `
 #     --config config.yaml
 #
@@ -12,6 +17,9 @@
 #     --entrez_email you@example.com `
 #     --ncbi_retmax 200000 `
 #     --ncbi_api_key YOUR_KEY   # optional
+
+
+
 
 import argparse, sys, time, re, requests
 from pathlib import Path

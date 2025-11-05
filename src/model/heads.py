@@ -1,3 +1,11 @@
+# src/model/heads.py
+# Defines output (head) modules for the ViroporinAFMini model.
+# - DistogramHead: predicts residue–residue distance distributions (distograms) from pair features.
+# - ConfidenceHeads: predicts per-residue (pLDDT) and pairwise (PAE) confidence scores
+#   indicating the reliability of the predicted 3D structure.
+# These heads convert internal model representations into interpretable structural predictions
+# and confidence metrics for evaluation.
+
 import torch.nn as nn
 
 class DistogramHead(nn.Module):

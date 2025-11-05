@@ -1,4 +1,11 @@
 # src/data/featurize.py
+# Generates per-sequence feature files (.npz) from a JSONL index of protein sequences.
+# - Converts amino acid letters to integer indices (0–20, including 'X' for unknowns).
+# - Writes minimal feature files containing encoded sequences for downstream dataset loading.
+# - Ensures Windows-safe file naming and organized output by viral family.
+# - load_npz(): reads a saved feature file and returns sequence indices for model input.
+# Used to preprocess and organize sequence data before training or evaluation.
+
 import argparse, json, sys, re
 from pathlib import Path
 import numpy as np

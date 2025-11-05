@@ -1,3 +1,12 @@
+# src/model/evoformer_lite.py
+# Implements a lightweight version of the Evoformer architecture inspired by AlphaFold.
+# Combines single-sequence (s) and pairwise (z) representations using attention and feed-forward blocks.
+# - PairUpdate: mixes per-residue embeddings into pair features.
+# - TriangleBlock: applies multihead self-attention on pair features to capture residue–residue relations.
+# - SingleBlock: updates per-residue embeddings using self-attention.
+# EvoformerLite enables efficient information exchange between sequence and pair features
+# during protein structure prediction.
+
 import torch, torch.nn as nn
 
 class PairUpdate(nn.Module):

@@ -1,3 +1,10 @@
+# src/model/ipa_module.py
+# Implements simplified versions of AlphaFold's structure module components.
+# - IPA (Invariant Point Attention-like block): refines per-residue embeddings to predict
+#   3D backbone coordinates (xyz) by iteratively updating structure representations.
+# - TorsionHeadSimple: predicts backbone torsion angles (phi, psi, omega) in radians from residue embeddings.
+# These modules convert learned sequence features into explicit 3D geometry for protein structure prediction.
+
 import torch, torch.nn as nn
 from src.geometry.rigid import Rigid
 

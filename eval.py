@@ -1,3 +1,13 @@
+# eval.py
+# Evaluation script for the ViroporinAFMini model.
+# Loads a trained checkpoint and runs it on the validation dataset to measure performance.
+# - load_latest_ckpt(): finds the most recent saved model checkpoint.
+# - eval_one(): computes all relevant losses (distogram, torsion, FAPE, and membrane/pore priors)
+#   for a single sample without updating model weights.
+# - main(): loads configuration, data, and model; evaluates all validation samples; and
+#   prints averaged loss metrics as JSON output.
+# Used to assess how well the trained model predicts 3D viroporin structures after training.
+
 import argparse, yaml, torch, glob, os, json
 from pathlib import Path
 from torch.utils.data import DataLoader
