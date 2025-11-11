@@ -13,6 +13,7 @@ from src.train.loop import Trainer
 from src.train.optim import make_optim
 from src.data.dataset import make_loaders
 from src.model.viroporin_net import ViroporinAFMini
+import yaml
 
 def main():
     ap = argparse.ArgumentParser()

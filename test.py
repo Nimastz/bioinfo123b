@@ -9,7 +9,7 @@
 # Used to assess how well the trained model predicts 3D viroporin structures after training.
 
 import argparse, yaml, torch, glob, os, json
-from pathlib import Path
+import yaml
 from torch.utils.data import DataLoader
 from src.data.dataset import JsonlSet, collate
 from src.model.viroporin_net import ViroporinAFMini
