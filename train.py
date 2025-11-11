@@ -17,6 +17,7 @@ from src.model.viroporin_net import ViroporinAFMini
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True)
+    ap.add_argument("--ckpt", default=None, help="Path to checkpoint to resume from (optional)")
     args = ap.parse_args()
 
     cfg = yaml.safe_load(open(args.config, "r", encoding="utf-8"))
@@ -35,6 +36,14 @@ def main():
     # Data / Model
     train_loader, val_loader = make_loaders(cfg["data"], device=device)
     model = ViroporinAFMini(cfg["model"]).to(device)
+
+    # Optional: load checkpoint if provided
+    if args.ckpt and os.path.exists(args.ckpt):
+        print(f"[info] Loading checkpoint: {args.ckpt}")
+        ckpt = torch.load(args.ckpt, map_location=device)
+        model.load_state_dict(ckpt["model"], strict=False)
+    elif args.ckpt:
+        warnings.warn(f"[warn] Checkpoint not found: {args.ckpt}")
 
     # Optional: torch.compile (Volta/Turing/Ampere+ only, and only if enabled in YAML)
     if use_compile:

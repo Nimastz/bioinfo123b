@@ -21,29 +21,29 @@ model:
   heads:
     distogram_bins: 64
   evoformer:
-    n_blocks: 12       # up from 8
+    n_blocks: 12       
     n_attn_heads: 4
   ipa:
-    n_blocks: 8        # up from 4
+    n_blocks: 8        
     n_points: 4
     dropout: 0.1
 
 priors:
-  use_cn: true         # turn priors ON for real training
+  use_cn: true        
   n_copies: 4
   ring_radius: 5.5
   tm_span: [3, 13]
   pore_target_A: 4.0
 
 train:
-  steps: 60000        # target a longer run
+  steps: 60000        
   log_every: 50
-  eval_every: 1000     # we’ll add an eval script below
+  eval_every: 1000     
   ckpt_dir: checkpoints
   lr: 2.0e-4
   weight_decay: 1.0e-4
   grad_clip: 0.5
-  compile: false       # your GTX 1060 won’t really benefit
+  compile: false       
   priors_warmup_steps: 20000
 
 loss_weights:
