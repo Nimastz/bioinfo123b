@@ -12,7 +12,7 @@ data:
   val_index: data/test.jsonl
   batch_size: 1
   shuffle: true
-  num_workers: 4
+  num_workers: 0
   max_len: 192
 
 model:
@@ -38,13 +38,13 @@ priors:
 train:
   steps: 60000        
   log_every: 50
-  eval_every: 1000     
+  eval_every: 500     
   ckpt_dir: checkpoints
   lr: 2.0e-4
   weight_decay: 1.0e-4
   grad_clip: 0.5
   compile: false       
-  priors_warmup_steps: 20000
+  priors_warmup_steps: 5000
 
 loss_weights:
   distogram: 1.0
