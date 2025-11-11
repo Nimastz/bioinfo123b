@@ -12,7 +12,7 @@ data:
   val_index: data/test.jsonl
   batch_size: 1
   shuffle: true
-  num_workers: 4
+  num_workers: 0
   max_len: 192
 
 model:
