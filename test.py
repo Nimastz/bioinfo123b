@@ -16,7 +16,7 @@ from src.model.viroporin_net import ViroporinAFMini
 from src.losses.distogram import distogram_loss
 from src.losses.fape import fape_loss
 from src.losses.torsion import torsion_l2
-from src.geometry.assembly import assemble_cn1`
+from src.geometry.assembly import assemble_cn
 from src.losses.viroporin_priors import (
     membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
 )
