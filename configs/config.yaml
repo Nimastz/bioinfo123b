@@ -1,4 +1,4 @@
-# config.yaml
+# configs/config.yaml
 # Configuration for the NCBI data download script.
 # Defines where to save retrieved viroporin sequences, the output FASTA file,
 # your NCBI Entrez contact email and API key, and how many records to request.
