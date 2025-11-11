@@ -25,9 +25,9 @@ jobs:
 
       - name: Install deps (CPU)
         run: |
-          pip install pyyaml 
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install pyyaml 
           # install CPU-only torch wheels
           pip uninstall -y torch torchvision torchaudio || true
           pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
