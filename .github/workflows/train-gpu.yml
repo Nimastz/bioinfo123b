@@ -25,6 +25,7 @@ jobs:
 
       - name: Install deps (CPU)
         run: |
+          pip install pyyaml 
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           # install CPU-only torch wheels
