@@ -15,6 +15,8 @@ In case, you add new library to dependencies, just update the requirments.txt by
 git commit -m "Update dependencies"
 git pushviroporinaf_mini**
 
+## **Training**
+
 The training pipeline works like this:
 
 1. train.py reads train.jsonl → gets a list of all sequences and their paths.
@@ -29,5 +31,18 @@ In train.py, the GPU vs CPU decision happens automatically, controlled by this l
 
 **python train.py --config configs\recommended.yaml**
 
+## **Testing**
+
+To test the model, run following:
+
+**.venv\Scripts\Activate.ps1**
+
+**python test.py --config configs\recommended.yaml**
+
+To test the model using a checkpoints, for example 1500, you can run:
+
+**.venv\Scripts\Activate.ps1**
+
+**python test.py --config configs\recommended.yaml --ckpt checkpoints\step_1500.pt**
 
 That loads the test set, restores the model, and prints averaged metrics (distogram/torsion/FAPE and priors, plus the combined loss). It uses the exact same loss composition as training, but with no gradient updates. (our test loop mirrors the training losses: distogram/torsion/FAPE and optional Cn/membrane/pore terms.)
