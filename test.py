@@ -1,4 +1,4 @@
-# eval.py
+# test.py
 # Evaluation script for the ViroporinAFMini model.
 # Loads a trained checkpoint and runs it on the validation dataset to measure performance.
 # - load_latest_ckpt(): finds the most recent saved model checkpoint.
