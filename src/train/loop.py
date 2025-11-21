@@ -134,7 +134,10 @@ class Trainer:
                     self.sched.step()
                 
                 if step % log_every == 0:
-                    pbar.set_postfix({"loss": float(loss.item()), **{k: round(v,3) for k,v in logs.items()}})
+                    pbar.set_postfix_str(
+                        f"loss={loss.item():.2f}, "
+                        + ", ".join([f"{k}={v:.3f}" for k, v in logs.items() if v is not None])
+                    )
 
                 if step and step % eval_every == 0:
                     self.save(step, ckpt_dir)

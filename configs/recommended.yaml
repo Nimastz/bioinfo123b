@@ -22,9 +22,9 @@ model:
 data:
   train_index: data/train.jsonl
   val_index: data/test.jsonl
-  batch_size: 4
+  batch_size: 16
   shuffle: true
-  num_workers: 0
+  num_workers: 4
   max_len: 192
 
 train:
