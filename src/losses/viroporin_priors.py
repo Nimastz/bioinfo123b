@@ -8,6 +8,14 @@
 # These priors act as gentle physical constraints during training to keep predicted oligomeric structures plausible.
 
 import torch
+import torch.nn.functional as F
+
+_EPS = 1e-3
+_MAX_R = 20.0
+
+def _huber(x, delta=1.0):
+    ax = x.abs()
+    return torch.where(ax < delta, 0.5 * ax * ax / max(delta, _EPS), ax - 0.5 * delta)
 
 def membrane_z_mask(L, tm_span):
     m = torch.zeros(L, dtype=torch.float32)
@@ -15,36 +23,56 @@ def membrane_z_mask(L, tm_span):
     return m
 
 def membrane_slab_loss(xyz, tm_mask, z_half_thickness=10.0):
-    # penalize TM residues far from slab center (z=0)
-    z = xyz[:,2]
-    return (tm_mask*(z.abs() - z_half_thickness).relu()).mean()
+    z = xyz[:, 2]
+    off = (z.abs() - float(z_half_thickness))
+    return (tm_mask * off.clamp_min(0.0)).mean()
 
 def interface_contact_loss(olig_xyz, cutoff=8.0):
-    # encourage inter-chain contacts in TM (coarse)
     n, L, _ = olig_xyz.shape
+    if n < 2:
+        return olig_xyz.new_tensor(0.0)
     loss = olig_xyz.new_tensor(0.0)
+    pairs = 0
     for i in range(n):
-        for j in range(i+1, n):
-            D = torch.cdist(olig_xyz[i], olig_xyz[j])
-            loss = loss + (D > cutoff).float().mean()
-    return loss / max(1, n*(n-1)//2)
+        for j in range(i + 1, n):
+            D = torch.cdist(olig_xyz[i], olig_xyz[j], p=2)
+            frac_far = (D > float(cutoff)).float().mean()
+            loss = loss + frac_far
+            pairs += 1
+    return loss / max(1, pairs)
 
 def ca_clash_loss(olig_xyz, min_dist=3.6):
     n, L, _ = olig_xyz.shape
+    if n < 2:
+        return olig_xyz.new_tensor(0.0)
     penalty = olig_xyz.new_tensor(0.0)
+    pairs = 0
     for i in range(n):
-        for j in range(i+1, n):
-            D = torch.cdist(olig_xyz[i], olig_xyz[j])
-            penalty = penalty + (min_dist - D).relu().mean()
-    return penalty / max(1, n*(n-1)//2)
+        for j in range(i + 1, n):
+            D = torch.cdist(olig_xyz[i], olig_xyz[j], p=2)
+            penalty = penalty + (float(min_dist) - D).clamp_min(0.0).mean()
+            pairs += 1
+    return penalty / max(1, pairs)
 
 def pore_target_loss(olig_xyz, target_A=4.0, reduce="mean"):
     from src.geometry.assembly import pore_radius_profile_ca
-    _, rs = pore_radius_profile_ca(olig_xyz)
-    if rs.numel() == 0 or not torch.isfinite(rs).any():
+    z, rs = pore_radius_profile_ca(olig_xyz)
+    if rs.numel() == 0:
         return olig_xyz.new_tensor(0.0)
-    valid = ~torch.isnan(rs)
-    if not valid.any(): return olig_xyz.new_tensor(0.0)
-    r25 = torch.nanquantile(rs[valid], 0.25)
-    low, high = target_A-0.5, target_A+1.0
-    return (low - r25).relu()**2 + (r25 - high).relu()**2
+    valid = torch.isfinite(rs) & (rs > 0)
+    if not valid.any():
+        return olig_xyz.new_tensor(0.0)
+    rs = rs[valid].clamp(min=_EPS, max=_MAX_R)
+    S = rs.shape[0]
+    if S < 3:
+        return olig_xyz.new_tensor(0.0)
+    r25 = torch.quantile(rs, 0.25)
+    main = F.smooth_l1_loss(r25, torch.as_tensor(float(target_A), device=rs.device))
+    dr = rs[1:] - rs[:-1]
+    smooth = _huber(dr, delta=0.5).mean()
+    anti_collapse = _huber(1.0 / rs, delta=1.0).mean()
+    loss = main + 0.1 * smooth + 0.1 * anti_collapse
+    if reduce == "sum":
+        return loss
+    return loss
+

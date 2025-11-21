@@ -37,6 +37,9 @@ def main():
     # Data / Model
     train_loader, val_loader = make_loaders(cfg["data"], device=device)
     model = ViroporinAFMini(cfg["model"]).to(device)
+    
+    num_params = sum(p.numel() for p in model.parameters())
+    print(f"[info] Model parameters: {num_params:,}  (~{num_params/1e6:.2f}M)")
 
     # Optional: load checkpoint if provided
     if args.ckpt and os.path.exists(args.ckpt):

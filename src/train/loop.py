@@ -42,6 +42,10 @@ class Trainer:
                 and self.amp_enabled_cfg
                 and (self.global_step >= self.amp_on_step))
         
+    def huber(x, delta=1.0):
+        absx = torch.abs(x)
+        return torch.where(absx < delta, 0.5*absx*absx/delta, absx - 0.5*delta)
+        
     def step_losses(self, batch, out):
         L = out["xyz"].shape[0]
         loss = out["xyz"].new_tensor(0.0)
@@ -70,7 +74,31 @@ class Trainer:
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
 
-            logs.update(mem=float(mem), intf=float(intf), clash=float(clash), pore=float(pore))
+            # curriculum weights
+            w_mem = w_intf = w_pore = 0.0
+            if 10_000 <= gs < 20_000:
+                w_mem = 0.1
+            elif gs >= 20_000:
+                t = min(1.0, (gs - 20_000) / 10_000.0)
+                w_mem  = 0.3 * t
+                w_intf = 0.4 * t
+                w_pore = 0.05 * t         
+
+            # guard pore to avoid NaN/Inf
+            if not torch.isfinite(pore):
+                pore = torch.tensor(0.0, device=olig.device)
+
+            # add priors ONCE
+            loss = loss + self.w["priors"] * (w_mem*mem + w_intf*intf + w_pore*pore) + 0.1*clash
+
+            # safe logging
+            logs.update(
+                mem=mem.detach().cpu().item(),
+                intf=intf.detach().cpu().item(),
+                clash=clash.detach().cpu().item(),
+                pore=pore.detach().cpu().item(),
+            )
+
 
             # curriculum weights
             w_mem   = 0.0
