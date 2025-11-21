@@ -6,6 +6,19 @@
 seed: 123
 device: auto
 
+model:
+  d_single: 256
+  d_pair: 128
+  heads:
+    distogram_bins: 64
+  evoformer:
+    n_blocks: 12
+    n_attn_heads: 4
+  ipa:
+    n_blocks: 8
+    n_points: 4
+    dropout: 0.1
+
 data:
   train_index: data/train.jsonl
   val_index: data/test.jsonl
@@ -26,11 +39,13 @@ train:
   eval_every: 1000
   log_every: 50
   priors_warmup_steps: 0  
+
 loss_weights:
   distogram: 1.0
   torsion: 0.1
   fape: 0.1
   priors: 1.0
+  
 priors:
   use_cn: true
   n_copies: 4
