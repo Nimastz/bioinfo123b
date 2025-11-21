@@ -51,18 +51,22 @@ class Trainer:
         loss = out["xyz"].new_tensor(0.0)
         logs = {}
 
-
+        # Base structural losses
         loss_dist = distogram_loss(out["dist"], out["xyz"])
         loss_tors = torsion_l2(out["tors"])
         loss_fape = fape_loss(out["xyz"])
-        
+
         for name, val in {"distogram": loss_dist, "torsion": loss_tors, "fape": loss_fape}.items():
             if not torch.isfinite(val):
                 raise RuntimeError(f"[nan-guard] {name} is non-finite @ step {self.global_step}")
 
-        loss = loss + self.w["distogram"]*loss_dist + self.w["torsion"]*loss_tors + self.w["fape"]*loss_fape
+        loss = (
+            self.w["distogram"] * loss_dist
+            + self.w["torsion"] * loss_tors
+            + self.w["fape"] * loss_fape
+        )
 
-        # staged priors
+        # ---- Viroporin priors ----
         gs = self.global_step
         if self.pr.get("use_cn", True):
             n, rr = self.pr["n_copies"], self.pr["ring_radius"]
@@ -74,24 +78,23 @@ class Trainer:
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
 
-            # curriculum weights
-            w_mem = w_intf = w_pore = 0.0
-            if 10_000 <= gs < 20_000:
-                w_mem = 0.1
-            elif gs >= 20_000:
-                t = min(1.0, (gs - 20_000) / 10_000.0)
-                w_mem  = 0.3 * t
-                w_intf = 0.4 * t
-                w_pore = 0.05 * t         
-
             # guard pore to avoid NaN/Inf
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
 
-            # add priors ONCE
-            loss = loss + self.w["priors"] * (w_mem*mem + w_intf*intf + w_pore*pore) + 0.1*clash
+            # ---- Single consistent curriculum ----
+            if gs < 10_000:
+                w_mem = w_intf = w_pore = 0.0
+            elif gs < 20_000:
+                w_mem, w_intf, w_pore = 0.1, 0.0, 0.0
+            else:
+                t = min(1.0, (gs - 20_000) / 10_000.0)
+                w_mem, w_intf, w_pore = 0.3 * t, 0.4 * t, 0.3 * t
 
-            # safe logging
+            # ---- Combine once ----
+            loss = loss + self.w["priors"] * (w_mem * mem + w_intf * intf + w_pore * pore) + 0.1 * clash
+
+            # Logging
             logs.update(
                 mem=mem.detach().cpu().item(),
                 intf=intf.detach().cpu().item(),
@@ -99,22 +102,6 @@ class Trainer:
                 pore=pore.detach().cpu().item(),
             )
 
-
-            # curriculum weights
-            w_mem   = 0.0
-            w_intf  = 0.0
-            w_pore  = 0.0
-            if 10_000 <= gs < 20_000:
-                w_mem = 0.1  # small weight
-            elif gs >= 20_000:
-                # ramp up smoothly after 20k
-                t = min(1.0, (gs - 20_000) / 10_000.0)
-                w_mem  = 0.3 * t
-                w_intf = 0.4 * t
-                w_pore = 0.3 * t
-
-            loss = loss + self.w["priors"]*(w_mem*mem + w_intf*intf + w_pore*pore) + 0.1*clash
-            
         return loss, logs
 
     def fit(self, train_loader, val_loader):
