@@ -28,7 +28,12 @@ class ViroporinAFMini(nn.Module):
     def forward(self, seq_idx, emb=None):
         # s0: prefer provided per-residue embedding; else one-hot
         if emb is not None:
-            s = self.embed(emb) if emb.shape[-1] != self.embed.out_features else emb
+            x = emb
+            # per-feature standardization (safer numerics)
+            m = x.mean(dim=0, keepdim=True)
+            v = x.var(dim=0, unbiased=False, keepdim=True)
+            x = (x - m) / (v.sqrt() + 1e-5)
+            s = self.embed(x) if x.shape[-1] != self.embed.out_features else x
         else:
             s = self.embed_oh(seq_idx)
         L = s.shape[0]
