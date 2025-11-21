@@ -83,12 +83,12 @@ class Trainer:
                 pore = torch.tensor(0.0, device=olig.device)
 
             # ---- Single consistent curriculum ----
-            if gs < 10_000:
+            if gs < 2_000:
                 w_mem = w_intf = w_pore = 0.0
-            elif gs < 20_000:
+            elif gs < 8_000:
                 w_mem, w_intf, w_pore = 0.1, 0.0, 0.0
             else:
-                t = min(1.0, (gs - 20_000) / 10_000.0)
+                t = min(1.0, (gs - 8_000) / 2_000.0)
                 w_mem, w_intf, w_pore = 0.3 * t, 0.4 * t, 0.3 * t
 
             # ---- Combine once ----
