@@ -39,13 +39,14 @@ train:
   eval_every: 1000
   log_every: 50
   priors_warmup_steps: 0  
+  ckpt_dir: checkpoints
 
 loss_weights:
   distogram: 1.0
   torsion: 0.1
   fape: 0.1
   priors: 1.0
-  
+
 priors:
   use_cn: true
   n_copies: 4
