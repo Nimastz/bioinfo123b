@@ -47,14 +47,15 @@ class Trainer:
         loss = out["xyz"].new_tensor(0.0)
         logs = {}
 
+
+        loss_dist = distogram_loss(out["dist"], out["xyz"])
+        loss_tors = torsion_l2(out["tors"])
+        loss_fape = fape_loss(out["xyz"])
+        
         for name, val in {"distogram": loss_dist, "torsion": loss_tors, "fape": loss_fape}.items():
             if not torch.isfinite(val):
                 raise RuntimeError(f"[nan-guard] {name} is non-finite @ step {self.global_step}")
 
-        # base monomer losses (always on)
-        loss_dist = distogram_loss(out["dist"], out["xyz"])
-        loss_tors = torsion_l2(out["tors"])
-        loss_fape = fape_loss(out["xyz"])
         loss = loss + self.w["distogram"]*loss_dist + self.w["torsion"]*loss_tors + self.w["fape"]*loss_fape
 
         # staged priors
