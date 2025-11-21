@@ -1,21 +1,3 @@
-
-# configs/recommended.yaml
-# This file defines all configuration settings for training and evaluating the ViroporinAFMini model.
-# It includes model size, data paths, optimizer and training parameters, loss weights, and priors.
-# Used by train.py and eval.py to load consistent experiment settings (recommended model setup).
-
-seed: 42
-device: auto
-
-data:
-  train_index: data/train.jsonl
-  val_index: data/test.jsonl
-  batch_size: 4
-  shuffle: true
-  num_workers: 0
-  max_len: 192
-
-
 # configs/recommended.yaml
 # This file defines all configuration settings for training and evaluating the ViroporinAFMini model.
 # It includes model size, data paths, optimizer and training parameters, loss weights, and priors.
@@ -39,7 +21,8 @@ train:
   warmup_steps: 5000
   grad_clip: 1.0
   amp_enabled: false      
-  amp_on_step: 10000      
+  amp_on_step: 10000 
+  detect_anomaly: true     
   eval_every: 1000
   log_every: 50
   priors_warmup_steps: 0  
