@@ -182,11 +182,6 @@ class Trainer:
 
 
     def save(self, step, ckpt_dir):
-        """
-        Interrupt-safe save. Writes to a temp file then atomically moves it into place.
-        Includes model + optimizer/scheduler/scaler to allow resuming later,
-        while remaining compatible with eval scripts that only read ['model'].
-        """
         state = {
             "model": self.model.state_dict(),
             "opt": self.opt.state_dict(),
@@ -198,7 +193,7 @@ class Trainer:
         fn = os.path.join(ckpt_dir, f"step_{step}.pt")
         tmp = fn + ".tmp"
         torch.save(state, tmp)
-        os.replace(tmp, fn)  # atomic on Windows & POSIX
+        os.replace(tmp, fn)  
     
     def _priors_weight(self):
         w = float(self.w["priors"])
