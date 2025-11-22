@@ -15,6 +15,7 @@ from src.losses.viroporin_priors import (
     membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
 )
 from src.geometry.assembly import assemble_cn
+from src.utils.logger import CSVLogger
 
 class Trainer:
     def __init__(self, cfg, model, opt, sched, device, start_step=0):
@@ -37,6 +38,14 @@ class Trainer:
         self.global_step = 0
         if bool(self.cfg["train"].get("detect_anomaly", False)):
             torch.autograd.set_detect_anomaly(True)
+        
+        # ---- logging ----
+        log_dir = self.cfg["train"].get("log_dir", "checkpoints/logs")
+        os.makedirs(log_dir, exist_ok=True)
+        self.csv = CSVLogger(os.path.join(log_dir, "train_steps.csv"))
+        self.best_ema = float("inf")
+        self.loss_ema = None
+        self.ema_alpha = float(self.cfg["train"].get("ema_alpha", 0.1))
             
     def _amp_active(self):
         return (self.use_cuda

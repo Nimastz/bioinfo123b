@@ -40,6 +40,8 @@ train:
   log_every: 50
   priors_warmup_steps: 0  
   ckpt_dir: checkpoints
+  log_dir: checkpoints/logs
+  ema_alpha: 0.1
 
 loss_weights:
   distogram: 1.0
