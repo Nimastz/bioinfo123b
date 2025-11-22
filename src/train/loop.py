@@ -17,6 +17,7 @@ from src.losses.viroporin_priors import (
 )
 from src.geometry.assembly import assemble_cn
 from src.utils.logger import CSVLogger
+import json, numpy as np
 
 class Trainer:
     def __init__(self, cfg, model, opt, sched, device, start_step=0):
@@ -44,7 +45,8 @@ class Trainer:
         log_dir = self.cfg["train"].get("log_dir", "checkpoints/logs")
         os.makedirs(log_dir, exist_ok=True)
         csv_path = os.path.join(log_dir, "train_steps.csv")
-        csv_fields = ["step", "loss", "lr", "dist", "tors", "fape", "mem", "intf", "clash", "pore"]
+        csv_fields = ["step","loss","lr","dist","tors","fape",
+              "mem","pore","mem_raw","pore_raw","intf","clash"]
         self.csv = CSVLogger(csv_path, fieldnames=csv_fields)
         self.best_ema = float("inf")
         self.loss_ema = None
@@ -199,8 +201,29 @@ class Trainer:
                 if step and step % eval_every == 10:
                     self.save(step, ckpt_dir)
 
-            # normal end
-            self.save(steps, ckpt_dir)
+                # normal end
+                self.save(steps, ckpt_dir)
+                # ---- Compute summary score for hyperparameter optimization ----
+                ema_loss = self.loss_ema if self.loss_ema is not None else float(loss.item())
+
+                cap = float(self.pr.get("cap_A", 6.0))
+                mem_ratio  = min(1.0, (logs.get("mem", 0.0)) / cap)
+                pore_ratio = min(1.0, (logs.get("pore", 0.0)) / cap)
+
+                # Composite stability-aware score (lower is better)
+                score = ema_loss + 0.2 * max(0.0, mem_ratio - 0.7) + 0.2 * max(0.0, pore_ratio - 0.7)
+
+                summary = {
+                    "score": float(score),
+                    "ema_loss": float(ema_loss),
+                    "mem_ratio": float(mem_ratio),
+                    "pore_ratio": float(pore_ratio),
+                    "steps": int(steps),
+                }
+                summary_path = os.path.join(ckpt_dir, "summary.json")
+                with open(summary_path, "w", encoding="utf-8") as f:
+                    json.dump(summary, f, indent=2)
+                print(f"[info] wrote {summary_path}")
 
         except KeyboardInterrupt:
             # ensure we always save something useful when you hit Ctrl+C
