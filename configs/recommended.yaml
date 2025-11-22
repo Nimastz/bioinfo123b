@@ -14,8 +14,6 @@ model:
   evoformer:
     n_blocks: 12
     n_attn_heads: 4
-    attn_dropout: 0.10     
-    tile_size: 256        
   ipa:
     n_blocks: 8
     n_points: 4
@@ -24,7 +22,7 @@ model:
 data:
   train_index: data/train.jsonl
   val_index: data/test.jsonl
-  batch_size: 4
+  batch_size: 16
   shuffle: true
   num_workers: 4
   max_len: 192
@@ -35,14 +33,12 @@ train:
   weight_decay: 0.01
   warmup_steps: 5000
   grad_clip: 1.0
-  amp_enabled: true 
-  amp_dtype: bf16         
-  grad_accum_steps: 8      
+  amp_enabled: false      
   amp_on_step: 10000 
   detect_anomaly: true     
   eval_every: 1000
-  priors_warmup_steps: 1000
   log_every: 50
+  priors_warmup_steps: 0  
   ckpt_dir: checkpoints
 
 loss_weights:

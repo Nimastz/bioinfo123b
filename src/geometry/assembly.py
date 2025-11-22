@@ -39,12 +39,7 @@ def _finite_max(x: torch.Tensor) -> torch.Tensor:
     return x.new_tensor(float("nan"))
 
 def pore_radius_profile_ca(olig_xyz: torch.Tensor, z_step=0.5, z_pad=2.0, ca_radius=1.9):
-    """
-    olig_xyz: (n, L, 3) CA coordinates (Å) for an n-mer arranged around the pore axis (z).
-    Returns:
-      zs: (K,) z-sample positions
-      rs: (K,) pore radii (Å) at each z (NaN where undefined)
-    """
+
     # Work in float32 to avoid fp16/bf16 edge-cases
     xyz = olig_xyz.to(torch.float32)
     zvals = xyz[..., 2]
@@ -76,3 +71,4 @@ def pore_radius_profile_ca(olig_xyz: torch.Tensor, z_step=0.5, z_pad=2.0, ca_rad
         r = torch.linalg.norm(pts, dim=-1).min()
         rs[i] = r - ca_radius
     return zs, rs
+
