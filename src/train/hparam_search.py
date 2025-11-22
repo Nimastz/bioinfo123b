@@ -66,12 +66,19 @@ def main():
     def objective(trial):
         with tempfile.TemporaryDirectory(dir="search_runs") as tmp:
             cfg_path = suggest_and_dump_cfg(base_cfg, trial, tmp)
+            print(f"\n[trial {trial.number}] Starting run with parameters:")
+            for k, v in trial.params.items():
+                print(f"   {k}: {v}")
             try:
                 score, summ = run_one(cfg_path)
+                print(f"[trial {trial.number}] Finished  → score={score:.4f}")
+                print(f"  ema_loss={summ.get('ema_loss'):.4f}, "
+                    f"mem_ratio={summ.get('mem_ratio'):.3f}, "
+                    f"pore_ratio={summ.get('pore_ratio'):.3f}")
             except Exception as e:
-                # Hard fail → bad trial
+                print(f"[trial {trial.number}] Failed → {e}")
                 return float("inf")
-            # Report intermediate metric for pruning (optional: read a mid-run JSON)
+
             trial.report(score, step=1)
             if trial.should_prune():
                 raise optuna.TrialPruned()
