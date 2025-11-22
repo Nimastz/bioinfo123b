@@ -83,7 +83,6 @@ class Trainer:
         )
 
         # ---- Viroporin priors ----
-        gs = self.global_step
         if self.pr.get("use_cn", True):
             n, rr = self.pr["n_copies"], self.pr["ring_radius"]
             olig = assemble_cn(out["xyz"], n_copies=n, ring_radius=rr)

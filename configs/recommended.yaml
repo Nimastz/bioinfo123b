@@ -4,7 +4,7 @@
 # Used by train.py and eval.py to load consistent experiment settings (recommended model setup).
 
 seed: 123
-device: auto
+device: cuda
 
 model:
   d_single: 256
@@ -24,14 +24,14 @@ data:
   val_index: data/test.jsonl
   batch_size: 16
   shuffle: true
-  num_workers: 2
+  num_workers: 4
   max_len: 192
 
 train:
   steps: 20000
-  lr: 1.0e-3
+  lr: 1.0e-4
   weight_decay: 0.01
-  warmup_steps: 5000
+  warmup_steps: 500
   grad_clip: 1.0
   amp_enabled: true      
   amp_on_step: 1000

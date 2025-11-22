@@ -37,7 +37,7 @@ def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", required=True)
-    ap.add_argument("--ckpt", default=None, help="Path to checkpoint to resume from (optional)")
+    ap.add_argument("--ckpt", default=None, help="Path to checkpoint to resume from")
     args = ap.parse_args()
 
     cfg = yaml.safe_load(open(args.config, "r", encoding="utf-8"))
