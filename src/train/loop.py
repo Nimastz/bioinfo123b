@@ -42,7 +42,9 @@ class Trainer:
         # ---- logging ----
         log_dir = self.cfg["train"].get("log_dir", "checkpoints/logs")
         os.makedirs(log_dir, exist_ok=True)
-        self.csv = CSVLogger(os.path.join(log_dir, "train_steps.csv"))
+        csv_path = os.path.join(log_dir, "train_steps.csv")
+        csv_fields = ["step", "loss", "lr", "mem", "intf", "clash", "pore"]
+        self.csv = CSVLogger(csv_path, fieldnames=csv_fields)
         self.best_ema = float("inf")
         self.loss_ema = None
         self.ema_alpha = float(self.cfg["train"].get("ema_alpha", 0.1))
@@ -157,6 +159,19 @@ class Trainer:
                     self.opt.step()
                 if self.sched is not None:
                     self.sched.step()
+                lr = self.opt.param_groups[0]["lr"]
+                row = {
+                "step": int(step),
+                "loss": float(loss.item()),
+                "lr": float(lr),
+                # logs may or may not contain these keys depending on priors stage
+                "mem": float(logs.get("mem", float("nan"))),
+                "intf": float(logs.get("intf", float("nan"))),
+                "clash": float(logs.get("clash", float("nan"))),
+                "pore": float(logs.get("pore", float("nan"))),
+                }
+                # write every step (or guard with: if step % log_every == 0:)
+                self.csv.log(row)
                 
                 if step % log_every == 0:
                     pbar.set_postfix_str(
@@ -176,6 +191,11 @@ class Trainer:
             print(f"\n[info] interrupted @ step {safe_step} — saving checkpoint")
             self.save(safe_step, ckpt_dir)
             return
+        
+        finally:
+                # make sure file handle is flushed/closed even on errors
+                if hasattr(self, "csv") and self.csv:
+                    self.csv.close()
 
 
     def save(self, step, ckpt_dir):
