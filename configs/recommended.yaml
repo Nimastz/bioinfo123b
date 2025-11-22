@@ -44,7 +44,7 @@ train:
   ema_alpha: 0.1
 
 loss_weights:
-  distogram: 0.1
+  distogram: 0.05
   torsion: 0.05
   fape: 0.05
   priors: 0.05

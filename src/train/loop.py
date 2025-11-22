@@ -92,6 +92,9 @@ class Trainer:
             xyz_centered[:, 2] -= z_center
 
             mem   = membrane_slab_loss(xyz_centered, tm_mask)
+            tm_cov = tm_mask.float().mean()
+            if tm_cov > 0.6 and self.global_step < self.priors_warmup:
+                mem = mem * 0.25 
             intf  = interface_contact_loss(olig, cutoff=9.0)
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
@@ -100,6 +103,8 @@ class Trainer:
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
 
+            mem  = torch.clamp(mem, 0.0, 10.0)
+            pore = torch.clamp(pore, 0.0, 10.0)
             # ---- Smooth prior warmup ----
             pw = self._priors_weight()  # uses cfg.train.priors_warmup_steps
 
