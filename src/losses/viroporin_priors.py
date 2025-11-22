@@ -39,7 +39,7 @@ def membrane_slab_loss(xyz, tm_mask, z_half_thickness=10.0):
         return xyz.new_tensor(0.0)
 
     loss = (tm_mask * off.clamp_min(0.0)).sum() / (valid + 1e-6)
-    return torch.clamp(loss, min=0.0, max=50.0)
+    return torch.clamp(loss, min=0.0, max=1e6)
 
 def interface_contact_loss(olig_xyz, cutoff=8.0):
     n, L, _ = olig_xyz.shape

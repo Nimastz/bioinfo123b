@@ -57,6 +57,7 @@ class Trainer:
                 and self.amp_enabled_cfg
                 and (self.global_step >= self.amp_on_step))
         
+    @staticmethod    
     def huber(x, delta=1.0):
         absx = torch.abs(x)
         return torch.where(absx < delta, 0.5*absx*absx/delta, absx - 0.5*delta)
@@ -88,42 +89,47 @@ class Trainer:
             olig = assemble_cn(out["xyz"], n_copies=n, ring_radius=rr)
             tm_mask = membrane_z_mask(L, self.pr["tm_span"]).to(out["xyz"].device)
 
-            # Z-centering to stabilize membrane penalty
-            z_center = out["xyz"][:, 2].median().detach()
+            # --- robust TM-only centering for mem prior ---
+            z_all = out["xyz"][:, 2]
+            z_tm  = z_all[tm_mask > 0.5]
+            z_center = (z_tm.median() if z_tm.numel() > 0 else z_all.median()).detach()
+
             xyz_centered = out["xyz"].clone()
             xyz_centered[:, 2] -= z_center
 
-            mem   = membrane_slab_loss(xyz_centered, tm_mask)
-            tm_cov = tm_mask.float().mean()
-            if tm_cov > 0.6 and self.global_step < self.priors_warmup:
-                mem = mem * 0.25 
+            # single compute
+            mem_raw  = membrane_slab_loss(xyz_centered, tm_mask)
+            mem_eff  = 5.0 * torch.tanh(mem_raw / 5.0)
+
             intf  = interface_contact_loss(olig, cutoff=9.0)
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
-
-            # guard pore to avoid NaN/Inf
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
+            pore_raw  = pore
+            pore_eff  = 5.0 * torch.tanh(pore_raw / 5.0)
 
-            mem_eff  = 5.0 * torch.tanh(mem  / 5.0)
-            pore_eff = 5.0 * torch.tanh(pore / 5.0)
             # ---- Smooth prior warmup ----
-            pw = self._priors_weight()  # uses cfg.train.priors_warmup_steps
+            pw = self._priors_weight()   # global factor (0..w_priors)
 
-            # Base prior weights (from YAML or defaults)
-            w_mem  = float(self.w.get("membrane", 0.1))
-            w_intf = float(self.w.get("interface", 0.1))
-            w_pore = float(self.w.get("pore", 0.1))
+            base_mem  = float(self.w.get("membrane",  0.1))
+            base_intf = float(self.w.get("interface", 0.1))
+            base_pore = float(self.w.get("pore",     0.1))
 
-            # Apply global prior weight warmup
-            loss = loss + pw * self.w["priors"] * (
-                w_mem * mem_eff + w_intf * intf + w_pore * pore_eff
-            ) + 0.1 * clash
+            t = self.global_step
+            W = max(1, int(self.priors_warmup))
+            w_mem  = base_mem  * min(1.0, t / W)
+            w_intf = base_intf * min(1.0, t / (0.5*W))
+            w_pore = base_pore * min(1.0, max(0.0, (t - 0.5*W) / W))
+
+            loss = loss + pw * (w_mem * mem_eff + w_intf * intf + w_pore * pore_eff) + 0.1 * clash
 
             # Logging
             logs.update(
                 mem=float(mem_eff.detach().cpu()),
+                mem_raw=float(mem_raw.detach().cpu()),
                 pore=float(pore_eff.detach().cpu()),
+                pore_raw=float(pore_raw.detach().cpu()),
                 intf=float(intf.detach().cpu()),
                 clash=float(clash.detach().cpu()),
                 dist=float(loss_dist.detach().cpu()),
@@ -177,41 +183,38 @@ class Trainer:
                 if self.sched is not None:
                     self.sched.step()
                 lr = self.opt.param_groups[0]["lr"]
+                
                 row = {
-                  "step": int(step),
+                    "step": int(step),
                     "loss": float(loss.item()),
                     "lr": float(lr),
                     "dist": float(logs.get("dist", float("nan"))),
                     "tors": float(logs.get("tors", float("nan"))),
                     "fape": float(logs.get("fape", float("nan"))),
                     "mem":  float(logs.get("mem",  float("nan"))),
+                    "pore": float(logs.get("pore", float("nan"))),
+                    "mem_raw":  float(logs.get("mem_raw",  float("nan"))),
+                    "pore_raw": float(logs.get("pore_raw", float("nan"))),
                     "intf": float(logs.get("intf", float("nan"))),
                     "clash":float(logs.get("clash",float("nan"))),
-                    "pore": float(logs.get("pore", float("nan"))),
-                }
+                    }
                 # write every step (or guard with: if step % log_every == 0:)
                 self.csv.log(row)
                 
-                steps_per_epoch = max(1, len(train_loader))
                 if step % log_every == 0:
-                    epoch_idx  = (step // steps_per_epoch) + 1
-                    epoch_step = (step % steps_per_epoch) + 1
                     pbar.set_postfix_str(
-                        f"epoch={epoch_idx} step={epoch_step}/{steps_per_epoch} "
                         f"loss={loss.item():.2f} "
                         + ", ".join([f"{k}={v:.3f}" for k, v in logs.items() if v is not None])
                     )
 
-                if step and step % eval_every == 100:
+                if step and step % eval_every == 0:
                     self.save(step, ckpt_dir)
-
-                # normal end
-                if step % log_every == 10:
-                    self.csv.log(row)
 
                 # ---- end-of-training summary (written once) ----
                 if (step % 200 == 0) or (step == steps - 1):
                     ema_loss = self.loss_ema if self.loss_ema is not None else float(loss.item())
+                    cur = float(loss.item())
+                    self.loss_ema = cur if self.loss_ema is None else (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
                     cap = float(self.pr.get("cap_A", 6.0))
                     mem_ratio  = min(1.0, (logs.get("mem", 0.0)) / cap)
                     pore_ratio = min(1.0, (logs.get("pore", 0.0)) / cap)
