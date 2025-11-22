@@ -1,14 +1,24 @@
 import os, argparse, copy, yaml, optuna, math, subprocess, tempfile, json
-
+import subprocess, sys
+    
 def run_one(cfg_path, max_steps=1500):
     # Launch your existing train.py for a short run and read the final JSON summary
     # Modify your train loop to write a tiny summary JSON after fit() ends or every N steps.
     # Example assumes train.py writes 'summary.json' into ckpt_dir.
     env = os.environ.copy()
-    proc = subprocess.run(
-        ["python", "train.py", "--config", cfg_path],
-        stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env, check=False
+
+    proc = subprocess.Popen(
+        ["python", "-u", "train.py", "--config", cfg_path],
+        stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, env=env
     )
+
+    # Stream stdout line by line to see step progress
+    for line in proc.stdout:
+        sys.stdout.write(line)
+        sys.stdout.flush()
+
+    proc.wait()
+
     # Read the summary the Trainer wrote
     ckpt_dir = yaml.safe_load(open(cfg_path))["train"]["ckpt_dir"]
     summ_path = os.path.join(ckpt_dir, "summary.json")
