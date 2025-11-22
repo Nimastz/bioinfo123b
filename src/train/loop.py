@@ -105,8 +105,8 @@ class Trainer:
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
 
-            mem_eff  = 10.0 * torch.tanh(mem  / 10.0)
-            pore_eff = 10.0 * torch.tanh(pore / 10.0)
+            mem_eff  = 5.0 * torch.tanh(mem  / 5.0)
+            pore_eff = 5.0 * torch.tanh(pore / 5.0)
             # ---- Smooth prior warmup ----
             pw = self._priors_weight()  # uses cfg.train.priors_warmup_steps
 
@@ -202,11 +202,11 @@ class Trainer:
                         + ", ".join([f"{k}={v:.3f}" for k, v in logs.items() if v is not None])
                     )
 
-                if step and step % eval_every == 50:
+                if step and step % eval_every == 100:
                     self.save(step, ckpt_dir)
 
                 # normal end
-                if step % log_every == 50:
+                if step % log_every == 10:
                     self.csv.log(row)
 
                 # ---- end-of-training summary (written once) ----
@@ -227,13 +227,13 @@ class Trainer:
             # ensure we always save something useful when you hit Ctrl+C
             safe_step = step if "step" in locals() else 0
             print(f"\n[info] interrupted @ step {safe_step} — saving checkpoint")
-            #self.save(safe_step, ckpt_dir)
+            self.save(safe_step, ckpt_dir)
             return
         
-        #finally:
+        finally:
                 # make sure file handle is flushed/closed even on errors
-                #if hasattr(self, "csv") and self.csv:
-                #    self.csv.close()
+                if hasattr(self, "csv") and self.csv:
+                    self.csv.close()
 
 
     def save(self, step, ckpt_dir):

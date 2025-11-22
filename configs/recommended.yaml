@@ -58,3 +58,4 @@ priors:
   ring_radius: 5.5
   tm_span: [5, 30]
   pore_target_A: 3.5
+  cap_A: 6.0
