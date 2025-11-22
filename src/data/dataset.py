@@ -98,8 +98,8 @@ def collate(batch):
 def make_loaders(dc, device=None):
     train = JsonlSet(dc["train_index"], dc.get("max_len"))
     val   = JsonlSet(dc["val_index"],   dc.get("max_len"))
-    pin = True  # on Windows it’s fine to keep this True; or key off cuda
-    nw  = int(dc.get("num_workers", 0))
+    pin = torch.cuda.is_available()
+    nw  = min(int(dc.get("num_workers", 2)), 2)
     train_loader = DataLoader(
         train, batch_size=dc["batch_size"], shuffle=dc["shuffle"],
         num_workers=nw, pin_memory=pin, persistent_workers=(nw>0),
