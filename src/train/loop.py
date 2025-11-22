@@ -6,6 +6,7 @@
 # - save(): safely writes model and optimizer state to disk for resuming or evaluation.
 # Includes automatic mixed precision (AMP) and optional loss warmup for membrane/pore priors.
 
+import math
 import torch, os
 from tqdm import trange
 from src.losses.distogram import distogram_loss
@@ -227,5 +228,5 @@ class Trainer:
         w = float(self.w["priors"])
         if self.priors_warmup > 0:
             t = min(1.0, self.global_step / max(1, self.priors_warmup))
-            return w * t
+            return w * 0.5 * (1.0 - math.cos(math.pi * t))
         return w
