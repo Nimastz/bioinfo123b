@@ -103,8 +103,8 @@ class Trainer:
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
 
-            mem  = torch.clamp(mem, 0.0, 10.0)
-            pore = torch.clamp(pore, 0.0, 10.0)
+            mem_eff  = 10.0 * torch.tanh(mem  / 10.0)
+            pore_eff = 10.0 * torch.tanh(pore / 10.0)
             # ---- Smooth prior warmup ----
             pw = self._priors_weight()  # uses cfg.train.priors_warmup_steps
 
@@ -115,18 +115,18 @@ class Trainer:
 
             # Apply global prior weight warmup
             loss = loss + pw * self.w["priors"] * (
-                w_mem * mem + w_intf * intf + w_pore * pore
+                w_mem * mem_eff + w_intf * intf + w_pore * pore_eff
             ) + 0.1 * clash
 
             # Logging
             logs.update(
-                mem=mem.detach().cpu().item(),
-                intf=intf.detach().cpu().item(),
-                clash=clash.detach().cpu().item(),
-                pore=pore.detach().cpu().item(),
-                dist=loss_dist.detach().cpu().item(),
-                tors=loss_tors.detach().cpu().item(),
-                fape=loss_fape.detach().cpu().item(),
+                mem=float(mem_eff.detach().cpu()),
+                pore=float(pore_eff.detach().cpu()),
+                intf=float(intf.detach().cpu()),
+                clash=float(clash.detach().cpu()),
+                dist=float(loss_dist.detach().cpu()),
+                tors=float(loss_tors.detach().cpu()),
+                fape=float(loss_fape.detach().cpu()),
             )
 
         return loss, logs
