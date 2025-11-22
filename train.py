@@ -13,22 +13,19 @@ from src.train.loop import Trainer
 from src.train.optim import make_optim
 from src.data.dataset import make_loaders
 from src.model.viroporin_net import ViroporinAFMini
-import yaml
-from src.optim import create_optimizer, create_scheduler  
-import os
+import yaml  
+import os    
+import copy, torch
+
 os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")
 os.environ.setdefault("TF_ENABLE_ONEDNN_OPTS", "0")
 
+def _rebuild_optimizer_and_scheduler(_cfg, _model):
+    new_opt, new_sched = make_optim(_model, _cfg["train"])
+    return new_opt, new_sched
+    
 def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device="cuda", cfg=None):
-    """
-    Robust checkpoint loader:
-    - Upgrades old model keys (fills evo.pair_proj from older checkpoints)
-    - Loads model with strict=False to allow benign diffs
-    - Tries to load optimizer/scheduler; if groups mismatch, rebuild from cfg
-    - Restores scaler and global step if present
-    Returns: (opt, sched, step)
-    """
-    import copy, torch
+
 
     raw = torch.load(path, map_location=device)
     sd = copy.deepcopy(raw["model"])
@@ -56,10 +53,11 @@ def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device
 
     # ---- Optimizer + Scheduler restore with safety net ----
     def _rebuild_optimizer_and_scheduler(_cfg, _model, _device):
-        # Recreate optimizer/scheduler from your project helper(s).
-        # Adjust imports to your project structure if needed.
-        new_opt = create_optimizer(_cfg, _model)                
-        new_sched = create_scheduler(_cfg, new_opt, start_step=step)
+        new_opt, _ = _rebuild_optimizer_and_scheduler(cfg, model)
+        opt.__dict__.update(new_opt.__dict__)   
+        _, new_sched = _rebuild_optimizer_and_scheduler(cfg, model)
+        sched.__dict__.update(new_sched.__dict__)
+
         return new_opt, new_sched
 
     if opt is not None and raw.get("opt") is not None:
