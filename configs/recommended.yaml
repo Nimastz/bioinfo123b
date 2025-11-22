@@ -29,7 +29,7 @@ data:
 
 train:
   steps: 20000
-  lr: 1.0e-3
+  lr: 1.0e-4
   weight_decay: 0.01
   warmup_steps: 500
   grad_clip: 1.0
