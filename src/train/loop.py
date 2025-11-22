@@ -202,7 +202,9 @@ class Trainer:
                     self.save(step, ckpt_dir)
 
                 # normal end
-                self.save(steps, ckpt_dir)
+                if step % log_every == 100:
+                    self.csv.log(row)
+
                 # ---- Compute summary score for hyperparameter optimization ----
                 ema_loss = self.loss_ema if self.loss_ema is not None else float(loss.item())
 
@@ -229,13 +231,13 @@ class Trainer:
             # ensure we always save something useful when you hit Ctrl+C
             safe_step = step if "step" in locals() else 0
             print(f"\n[info] interrupted @ step {safe_step} — saving checkpoint")
-            self.save(safe_step, ckpt_dir)
+            #self.save(safe_step, ckpt_dir)
             return
         
-        finally:
+        #finally:
                 # make sure file handle is flushed/closed even on errors
-                if hasattr(self, "csv") and self.csv:
-                    self.csv.close()
+                #if hasattr(self, "csv") and self.csv:
+                #    self.csv.close()
 
 
     def save(self, step, ckpt_dir):
