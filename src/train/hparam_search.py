@@ -50,7 +50,7 @@ def suggest_and_dump_cfg(base_cfg, trial, tmp_dir):
     cfg["train"]["grad_clip"]       = trial.suggest_float("train.grad_clip", 0.5, 5.0)
 
     # Short-run budget for search
-    cfg["train"]["steps"]           = trial.suggest_int("train.steps", 1200, 2400, step=300)
+    cfg["train"]["steps"]           = trial.suggest_int("train.steps", 120, 240, step=30)
     cfg["train"]["eval_every"]      = 10
     cfg["train"]["log_every"]       = 10
     cfg["train"]["ckpt_dir"]        = os.path.join(tmp_dir, f"trial_{trial.number:04d}")
