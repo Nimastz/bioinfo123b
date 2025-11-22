@@ -15,6 +15,11 @@ from src.losses.viroporin_priors import (
     membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
 )
 from src.geometry.assembly import assemble_cn
+from torch.utils.tensorboard import SummaryWriter
+import torch.backends
+torch.backends.cuda.matmul.fp32_precision = "high"
+torch.backends.cudnn.conv.fp32_precision  = "medium"
+
 
 class Trainer:
     def __init__(self, cfg, model, opt, sched, device, start_step=0):
@@ -35,9 +40,16 @@ class Trainer:
             self.scaler = torch.cuda.amp.GradScaler(enabled=self.use_cuda)
         
         self.priors_warmup = int(self.cfg["train"].get("priors_warmup_steps", 0))
-        self.global_step = 0
+
         if bool(self.cfg["train"].get("detect_anomaly", False)):
             torch.autograd.set_detect_anomaly(True)
+        
+        self.tb = SummaryWriter(log_dir=self.cfg["train"].get("tb_dir", "runs/exp1"))
+        os.makedirs("logs", exist_ok=True)
+        self._csv_path = os.path.join("logs", "train_steps.csv")
+        if not os.path.exists(self._csv_path):
+            with open(self._csv_path, "w", encoding="utf-8") as f:
+                f.write("step,loss,mem,intf,clash,pore,grad_norm\n")
             
     def _amp_active(self):
         return (self.use_cuda
@@ -80,28 +92,42 @@ class Trainer:
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
 
-            # guard pore to avoid NaN/Inf
+            # ---- safety clamps ----
+            eps = 1e-6
+            mem  = torch.clamp(mem,  min=0.0, max=50.0)
+            pore = torch.clamp(pore, min=0.0, max=20.0)
+            # guard pore NaN/Inf
             if not torch.isfinite(pore):
-                pore = torch.tensor(0.0, device=olig.device)
+                pore = torch.zeros((), device=olig.device)
 
-            # ---- Single consistent curriculum ----
+            # ---- curriculum / warmup with resume awareness ----
+            gs = self.global_step
+            def _ramp(s, dur): 
+                return min(1.0, max(0.0, float(s)/float(max(dur,1))))
+
+            # start priors tiny, ramp to full over 2k steps after 8k
             if gs < 2_000:
-                w_mem = w_intf = w_pore = 0.0
+                wm, wi, wp = 0.0, 0.0, 0.0
             elif gs < 8_000:
-                w_mem, w_intf, w_pore = 0.1, 0.0, 0.0
+                wm, wi, wp = 0.1, 0.0, 0.0
             else:
-                t = min(1.0, (gs - 8_000) / 2_000.0)
-                w_mem, w_intf, w_pore = 0.3 * t, 0.4 * t, 0.3 * t
+                t = _ramp(gs - 8_000, 2_000)
+                wm, wi, wp = 0.3*t, 0.4*t, 0.3*t
 
-            # ---- Combine once ----
-            loss = loss + self.w["priors"] * (w_mem * mem + w_intf * intf + w_pore * pore) + 0.1 * clash
+            # ---- batch/stoichiometry-invariant normalization ----
+            mem_norm  = mem  / (mem.detach().mean()  + eps)
+            pore_norm = pore / (pore.detach().mean() + eps)
+
+            # ---- combine once (use global priors weight) ----
+            priors_w = float(self.w["priors"])
+            loss = loss + priors_w * (wm * mem_norm + wi * intf + wp * pore_norm) + 0.1 * clash
 
             # Logging
             logs.update(
-                mem=mem.detach().cpu().item(),
-                intf=intf.detach().cpu().item(),
-                clash=clash.detach().cpu().item(),
-                pore=pore.detach().cpu().item(),
+                mem=float(mem.detach().item()),
+                intf=float(intf.detach().item()),
+                clash=float(clash.detach().item()),
+                pore=float(pore.detach().item()),
             )
 
         return loss, logs
@@ -135,6 +161,18 @@ class Trainer:
                 with torch.autocast(device_type="cuda", dtype=self.amp_dtype, enabled=use_amp):
                     out = self.model(batch["seq_idx"], batch.get("emb"))
                     loss, logs = self.step_losses(batch, out)
+                    
+                    # ---- NaN/Inf sentry on sublosses ----
+                    for k in ("mem","intf","clash","pore"):
+                        if k in logs:
+                            v = torch.tensor(logs[k], device=self.device)
+                            if not torch.isfinite(v):
+                                # snapshot & bail
+                                torch.save({"step": self.global_step,
+                                            "model": self.model.state_dict(),
+                                            "opt": self.opt.state_dict()},
+                                        os.path.join(ckpt_dir, f"nan_{k}_{self.global_step}.pt"))
+                                raise RuntimeError(f"non-finite {k} at step {self.global_step}")              
 
                 # backward
                 self.opt.zero_grad(set_to_none=True)
@@ -149,7 +187,24 @@ class Trainer:
                     self.opt.step()
                 if self.sched is not None:
                     self.sched.step()
-                
+                    
+                # ---- grad norm for CSV/TB ----
+                gnorm = torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.cfg["train"]["grad_clip"])
+
+                # TensorBoard logging
+                self.tb.add_scalar("train/loss",  float(loss.detach().item()), self.global_step)
+                for k in ("mem", "intf", "clash", "pore"):
+                    if k in logs:
+                        self.tb.add_scalar(f"train/{k}", float(logs[k]), self.global_step)
+                self.tb.add_scalar("train/grad_norm", float(gnorm), self.global_step)
+
+                # CSV logging
+                with open(self._csv_path, "a", encoding="utf-8") as f:
+                    f.write(f"{self.global_step},{float(loss.detach().item())},"
+                            f"{logs.get('mem','')},{logs.get('intf','')},"
+                            f"{logs.get('clash','')},{logs.get('pore','')},"
+                            f"{float(gnorm)}\n")
+
                 if step % log_every == 0:
                     pbar.set_postfix_str(
                         f"loss={loss.item():.2f}, "

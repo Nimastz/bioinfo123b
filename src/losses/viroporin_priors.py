@@ -25,7 +25,13 @@ def membrane_z_mask(L, tm_span):
 def membrane_slab_loss(xyz, tm_mask, z_half_thickness=10.0):
     z = xyz[:, 2]
     off = (z.abs() - float(z_half_thickness))
-    return (tm_mask * off.clamp_min(0.0)).mean()
+    # --- safe averaging and clamping ---
+    valid = tm_mask.float().sum()
+    if valid <= 0:
+        return xyz.new_tensor(0.0)
+
+    loss = (tm_mask * off.clamp_min(0.0)).sum() / (valid + 1e-6)
+    return torch.clamp(loss, min=0.0, max=50.0)
 
 def interface_contact_loss(olig_xyz, cutoff=8.0):
     n, L, _ = olig_xyz.shape
@@ -71,7 +77,7 @@ def pore_target_loss(olig_xyz, target_A=4.0, reduce="mean"):
     dr = rs[1:] - rs[:-1]
     smooth = _huber(dr, delta=0.5).mean()
     anti_collapse = _huber(1.0 / rs, delta=1.0).mean()
-    loss = main + 0.1 * smooth + 0.1 * anti_collapse
+    loss = loss / (float(S) + 1e-6)
     if reduce == "sum":
         return loss
     return loss
