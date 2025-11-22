@@ -192,40 +192,36 @@ class Trainer:
                 # write every step (or guard with: if step % log_every == 0:)
                 self.csv.log(row)
                 
-                if step % log_every == 10:
+                steps_per_epoch = max(1, len(train_loader))
+                if step % log_every == 0:
+                    epoch_idx  = (step // steps_per_epoch) + 1
+                    epoch_step = (step % steps_per_epoch) + 1
                     pbar.set_postfix_str(
-                        f"loss={loss.item():.2f}, "
+                        f"epoch={epoch_idx} step={epoch_step}/{steps_per_epoch} "
+                        f"loss={loss.item():.2f} "
                         + ", ".join([f"{k}={v:.3f}" for k, v in logs.items() if v is not None])
                     )
 
-                if step and step % eval_every == 10:
+                if step and step % eval_every == 50:
                     self.save(step, ckpt_dir)
 
                 # normal end
-                if step % log_every == 100:
+                if step % log_every == 50:
                     self.csv.log(row)
 
-                # ---- Compute summary score for hyperparameter optimization ----
-                ema_loss = self.loss_ema if self.loss_ema is not None else float(loss.item())
-
-                cap = float(self.pr.get("cap_A", 6.0))
-                mem_ratio  = min(1.0, (logs.get("mem", 0.0)) / cap)
-                pore_ratio = min(1.0, (logs.get("pore", 0.0)) / cap)
-
-                # Composite stability-aware score (lower is better)
-                score = ema_loss + 0.2 * max(0.0, mem_ratio - 0.7) + 0.2 * max(0.0, pore_ratio - 0.7)
-
-                summary = {
-                    "score": float(score),
-                    "ema_loss": float(ema_loss),
-                    "mem_ratio": float(mem_ratio),
-                    "pore_ratio": float(pore_ratio),
-                    "steps": int(steps),
-                }
-                summary_path = os.path.join(ckpt_dir, "summary.json")
-                with open(summary_path, "w", encoding="utf-8") as f:
-                    json.dump(summary, f, indent=2)
-                print(f"[info] wrote {summary_path}")
+                # ---- end-of-training summary (written once) ----
+                if (step % 200 == 0) or (step == steps - 1):
+                    ema_loss = self.loss_ema if self.loss_ema is not None else float(loss.item())
+                    cap = float(self.pr.get("cap_A", 6.0))
+                    mem_ratio  = min(1.0, (logs.get("mem", 0.0)) / cap)
+                    pore_ratio = min(1.0, (logs.get("pore", 0.0)) / cap)
+                    score = ema_loss + 0.2 * max(0.0, mem_ratio - 0.7) + 0.2 * max(0.0, pore_ratio - 0.7)
+                    with open(os.path.join(ckpt_dir, "summary.json"), "w", encoding="utf-8") as f:
+                        json.dump({"score": float(score),
+                                "ema_loss": float(ema_loss),
+                                "mem_ratio": float(mem_ratio),
+                                "pore_ratio": float(pore_ratio),
+                                "steps": int(step+1)}, f, indent=2)
 
         except KeyboardInterrupt:
             # ensure we always save something useful when you hit Ctrl+C
