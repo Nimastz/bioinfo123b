@@ -43,7 +43,7 @@ class Trainer:
         log_dir = self.cfg["train"].get("log_dir", "checkpoints/logs")
         os.makedirs(log_dir, exist_ok=True)
         csv_path = os.path.join(log_dir, "train_steps.csv")
-        csv_fields = ["step", "loss", "lr", "mem", "intf", "clash", "pore"]
+        csv_fields = ["step", "loss", "lr", "dist", "tors", "fape", "mem", "intf", "clash", "pore"]
         self.csv = CSVLogger(csv_path, fieldnames=csv_fields)
         self.best_ema = float("inf")
         self.loss_ema = None
@@ -90,7 +90,7 @@ class Trainer:
             xyz_centered = out["xyz"].clone()
             xyz_centered[:, 2] -= z_center
 
-            mem   = membrane_slab_loss(out["xyz"], tm_mask)
+            mem   = membrane_slab_loss(xyz_centered, tm_mask)
             intf  = interface_contact_loss(olig, cutoff=9.0)
             clash = ca_clash_loss(olig, min_dist=3.6)
             pore  = pore_target_loss(olig, target_A=self.pr["pore_target_A"])
@@ -118,6 +118,9 @@ class Trainer:
                 intf=intf.detach().cpu().item(),
                 clash=clash.detach().cpu().item(),
                 pore=pore.detach().cpu().item(),
+                dist=loss_dist.detach().cpu().item(),
+                tors=loss_tors.detach().cpu().item(),
+                fape=loss_fape.detach().cpu().item(),
             )
 
         return loss, logs
@@ -167,14 +170,16 @@ class Trainer:
                     self.sched.step()
                 lr = self.opt.param_groups[0]["lr"]
                 row = {
-                "step": int(step),
-                "loss": float(loss.item()),
-                "lr": float(lr),
-                # logs may or may not contain these keys depending on priors stage
-                "mem": float(logs.get("mem", float("nan"))),
-                "intf": float(logs.get("intf", float("nan"))),
-                "clash": float(logs.get("clash", float("nan"))),
-                "pore": float(logs.get("pore", float("nan"))),
+                  "step": int(step),
+                    "loss": float(loss.item()),
+                    "lr": float(lr),
+                    "dist": float(logs.get("dist", float("nan"))),
+                    "tors": float(logs.get("tors", float("nan"))),
+                    "fape": float(logs.get("fape", float("nan"))),
+                    "mem":  float(logs.get("mem",  float("nan"))),
+                    "intf": float(logs.get("intf", float("nan"))),
+                    "clash":float(logs.get("clash",float("nan"))),
+                    "pore": float(logs.get("pore", float("nan"))),
                 }
                 # write every step (or guard with: if step % log_every == 0:)
                 self.csv.log(row)
