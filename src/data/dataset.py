@@ -88,15 +88,46 @@ class JsonlSet(Dataset):
         return {"id": row.get("id", str(i)), "seq_idx": seq_idx, "emb": emb}
 
 def collate(batch):
-    assert len(batch) == 1, (
-        f"Batch size >1 is not yet supported by this collate(). "
-        f"Got {len(batch)}. Set data.batch_size=1 in your config."
-    )
-    b = batch[0]
-    seq = torch.as_tensor(b["seq_idx"], dtype=torch.long)
-    emb = None if b["emb"] is None else torch.as_tensor(b["emb"], dtype=torch.float32)
-    return {"seq_idx": seq, "emb": emb}
+    import torch
+    # batch: list of {"id":str, "seq_idx": np.ndarray[int64,L], "emb": Optional[np.ndarray[L,D]]}
+    Ls = [len(b["seq_idx"]) for b in batch]
+    Lmax = max(Ls)
 
+    # pad sequences with 20 ("X") to a common length
+    seq_pad = []
+    for b in batch:
+        s = torch.as_tensor(b["seq_idx"], dtype=torch.long)
+        if s.numel() < Lmax:
+            pad = torch.full((Lmax - s.numel(),), 20, dtype=torch.long)  # 20 = 'X'
+            s = torch.cat([s, pad], dim=0)
+        seq_pad.append(s)
+    seq_idx = torch.stack(seq_pad, dim=0)  # [B, L]
+
+    # optional embedding padding/stack (if you later add real per-residue embeddings)
+    emb_list = []
+    have_emb = any(b["emb"] is not None for b in batch)
+    if have_emb:
+        for b in batch:
+            e = b["emb"]
+            if e is None:
+                e = torch.zeros((0, 0))  # will be padded below
+            e = torch.as_tensor(e, dtype=torch.float32)
+            if e.ndim == 1:
+                e = e.unsqueeze(1)
+            D = e.shape[-1] if e.numel() > 0 else 0
+            if e.shape[0] < Lmax:
+                pad = torch.zeros((Lmax - e.shape[0], D), dtype=torch.float32)
+                e = torch.cat([e, pad], dim=0)
+            emb_list.append(e)
+        # If some are None, make a consistent [B, L, D]; else keep None
+        if len(emb_list) > 0 and emb_list[0].numel() > 0:
+            emb = torch.stack(emb_list, dim=0)  # [B, L, D]
+        else:
+            emb = None
+    else:
+        emb = None
+
+    return {"seq_idx": seq_idx, "emb": emb}
 
 def make_loaders(dc, device=None):
     train = JsonlSet(dc["train_index"], dc.get("max_len"))

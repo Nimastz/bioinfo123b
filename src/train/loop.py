@@ -17,8 +17,8 @@ from src.losses.viroporin_priors import (
 from src.geometry.assembly import assemble_cn
 from torch.utils.tensorboard import SummaryWriter
 import torch.backends
-torch.backends.cuda.matmul.fp32_precision = "high"
-torch.backends.cudnn.conv.fp32_precision  = "medium"
+torch.backends.cuda.matmul.fp32_precision = "ieee"
+torch.backends.cudnn.conv.fp32_precision  = "tf32"
 
 
 class Trainer:
