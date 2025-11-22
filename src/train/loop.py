@@ -17,7 +17,8 @@ from src.losses.viroporin_priors import (
 from src.geometry.assembly import assemble_cn
 
 class Trainer:
-    def __init__(self, cfg, model, opt, sched, device):
+    def __init__(self, cfg, model, opt, sched, device, start_step=0):
+        self.start_step = int(start_step)
         self.cfg, self.model, self.opt, self.sched, self.device = cfg, model, opt, sched, device
         self.w = cfg["loss_weights"]; self.pr = cfg["priors"]
         self.use_cuda = (device.type == "cuda")
@@ -110,7 +111,7 @@ class Trainer:
         eval_every = self.cfg["train"]["eval_every"]
         ckpt_dir = self.cfg["train"]["ckpt_dir"]
 
-        pbar = trange(steps, desc="train")
+        pbar = trange(self.start_step, steps, desc="train")
         it = iter(train_loader)
         try:
             for step in pbar:
@@ -155,7 +156,33 @@ class Trainer:
                     )
 
                 if step and step % eval_every == 0:
+                    # save a regular checkpoint
                     self.save(step, ckpt_dir)
+
+                    # run validation
+                    val = self.evaluate(val_loader)
+                    msg = " | ".join([f"{k}={v:.3f}" for k,v in val.items()])
+                    print(f"[val] step={step} | {msg}")
+
+                    # track the best validation loss and save a 'best.pt'
+                    best = getattr(self, "_best_val", float("inf"))
+                    if val["loss_val"] < best:
+                        self._best_val = val["loss_val"]
+                        best_path = os.path.join(ckpt_dir, "best.pt")
+                        self.save(step, ckpt_dir)  # keep step checkpoint
+                        # also write/update a separate best file
+                        state = {
+                            "model": self.model.state_dict(),
+                            "opt": self.opt.state_dict(),
+                            "sched": self.sched.state_dict() if self.sched else None,
+                            "scaler": self.scaler.state_dict(),
+                            "cfg": self.cfg,
+                            "step": int(step),
+                            "best_val": float(self._best_val),
+                        }
+                        tmp = best_path + ".tmp"
+                        torch.save(state, tmp); os.replace(tmp, best_path)
+                        print(f"[val] new best checkpoint → {best_path} (loss_val={self._best_val:.4f})")
 
             # normal end
             self.save(steps, ckpt_dir)
@@ -166,6 +193,31 @@ class Trainer:
             print(f"\n[info] interrupted @ step {safe_step} — saving checkpoint")
             self.save(safe_step, ckpt_dir)
             return
+
+    def evaluate(self, val_loader):
+        self.model.eval()
+        tot, n = 0.0, 0
+        agg = {"mem":0.0,"intf":0.0,"clash":0.0,"pore":0.0}
+        with torch.no_grad():
+            # run eval in full fp32 (more stable)
+            for batch in val_loader:
+                for k in batch:
+                    v = batch[k]
+                    if v is not None and hasattr(v, "to"):
+                        batch[k] = v.to(self.device, non_blocking=True)
+                out = self.model(batch["seq_idx"], batch.get("emb"))
+
+                loss, logs = self.step_losses(batch, out)  # reuses same loss composition
+                tot += float(loss.item()); n += 1
+                for k in agg:
+                    if k in logs:
+                        agg[k] += float(logs[k])
+
+        val = {"loss_val": tot/max(1,n)}
+        for k in agg:
+            if n > 0:
+                val[f"{k}_val"] = agg[k]/n
+        return val
 
 
     def save(self, step, ckpt_dir):

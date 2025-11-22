@@ -18,16 +18,13 @@ import yaml
 def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device="cuda"):
     ckpt = torch.load(path, map_location=device)
 
-    # 1) model
     model.load_state_dict(ckpt["model"], strict=True)
 
-    # 2) opt/sched (if present)
     if opt is not None and ckpt.get("opt"):
         opt.load_state_dict(ckpt["opt"])
     if sched is not None and ckpt.get("sched"):
         sched.load_state_dict(ckpt["sched"])
 
-    # 3) trainer bits (scaler/ema/global_step)
     if trainer is not None:
         if ckpt.get("scaler") and hasattr(trainer, "scaler"):
             trainer.scaler.load_state_dict(ckpt["scaler"])
@@ -46,21 +43,18 @@ def main():
     cfg = yaml.safe_load(open(args.config, "r", encoding="utf-8"))
     torch.manual_seed(cfg["seed"])
 
-    # Device + capability
     device = pick_device(cfg.get("device", "auto"))
     caps = gpu_caps(device)
     configure_backends(caps)
 
-    # Respect YAML compile flag; auto-skip on unsupported GPUs (e.g., GTX 1060 cc=6.1)
     use_compile, compile_mode = should_compile(cfg, caps)
     if not use_compile:
-        disable_dynamo_globally()  # avoid Triton/Inductor try on old GPUs
+        disable_dynamo_globally()  
 
     # Data / Model
     train_loader, val_loader = make_loaders(cfg["data"], device=device)
     model = ViroporinAFMini(cfg["model"]).to(device)
 
-    # optional compile (compile BEFORE creating optimizer is fine)
     if use_compile:
         try:
             model = torch.compile(model, mode=compile_mode)
@@ -68,19 +62,18 @@ def main():
         except Exception as e:
             print(f"[warn] torch.compile disabled: {e}")
 
-    # create opt/sched and trainer BEFORE loading ckpt
     opt, sched = make_optim(model, cfg["train"])
     os.makedirs(cfg["train"]["ckpt_dir"], exist_ok=True)
-    trainer = Trainer(cfg, model, opt, sched, device)
+    trainer = Trainer(cfg, model, opt, sched, device, start_step=start_step)
 
-    # now resume fully (model + opt + sched + scaler + ema + step)
     if args.ckpt and os.path.exists(args.ckpt):
+        ckpt = torch.load(args.ckpt, map_location=device)
+        start_step = int(ckpt.get("step", 0))
         print(f"[info] Loading checkpoint: {args.ckpt}")
         load_full_checkpoint(args.ckpt, model, opt, sched, trainer, device=device)
     elif args.ckpt:
         warnings.warn(f"[warn] Checkpoint not found: {args.ckpt}")
 
-    # train
     trainer.fit(train_loader, val_loader)
 
 if __name__ == "__main__":
