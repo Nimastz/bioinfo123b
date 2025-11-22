@@ -64,7 +64,7 @@ class Trainer:
         logs = {}
 
         # Base structural losses
-        loss_dist = distogram_loss(out["dist"], out["xyz"])
+        loss_dist = distogram_loss(out["dist"], out["xyz"], label_smoothing=0.01)
         loss_tors = torsion_l2(out["tors"])
         loss_fape = fape_loss(out["xyz"])
 
