@@ -77,6 +77,8 @@ def main():
 
     if args.ckpt and os.path.exists(args.ckpt):
         load_full_checkpoint(args.ckpt, model, opt, sched, trainer, device=device)
+        trainer.start_step = start_step 
+        trainer.global_step = start_step  
 
     trainer.fit(train_loader, val_loader)
 

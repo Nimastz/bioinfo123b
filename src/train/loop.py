@@ -19,6 +19,7 @@ from src.geometry.assembly import assemble_cn
 class Trainer:
     def __init__(self, cfg, model, opt, sched, device, start_step=0):
         self.start_step = int(start_step)
+        self.global_step = int(start_step)
         self.cfg, self.model, self.opt, self.sched, self.device = cfg, model, opt, sched, device
         self.w = cfg["loss_weights"]; self.pr = cfg["priors"]
         self.use_cuda = (device.type == "cuda")
@@ -111,7 +112,7 @@ class Trainer:
         eval_every = self.cfg["train"]["eval_every"]
         ckpt_dir = self.cfg["train"]["ckpt_dir"]
 
-        pbar = trange(self.start_step, steps, desc="train")
+        pbar = trange(self.global_step, steps, desc="train")
         it = iter(train_loader)
         try:
             for step in pbar:
