@@ -23,28 +23,54 @@ class PairUpdate(nn.Module):
         return z
 
 class TriangleBlock(nn.Module):
-    def __init__(self, d_pair, n_heads=4):
+    def __init__(self, d_pair, n_heads=4, attn_dropout=0.0, ff_mult=2, tile=None):
         super().__init__()
-        self.self_attn = nn.MultiheadAttention(d_pair, n_heads, batch_first=True)
-        self.ff = nn.Sequential(nn.LayerNorm(d_pair), nn.Linear(d_pair, 4*d_pair),
-                                nn.GELU(), nn.Linear(4*d_pair, d_pair))
+        self.self_attn = nn.MultiheadAttention(
+            embed_dim=d_pair, num_heads=n_heads, dropout=attn_dropout, batch_first=True
+        )
+        self.ff = nn.Sequential(
+            nn.Linear(d_pair, ff_mult * d_pair),
+            nn.GELU(),
+            nn.Linear(ff_mult * d_pair, d_pair),
+        )
+        self.tile = tile
 
+    @torch.cuda.amp.autocast(enabled=True, dtype=torch.bfloat16)
     def forward(self, z):
         if z.dim() == 3:
-            # legacy: treat L as both batch and seq
-            z2, _ = self.self_attn(z, z, z)
-            z = z + z2
-            z = z + self.ff(z)
-            return z
-        else:
-            # batched: z = (B, L, L, d_pair) → fold first L as "batch"
-            B, L, _, D = z.shape
-            z_flat = z.reshape(B * L, L, D)
-            z2, _ = self.self_attn(z_flat, z_flat, z_flat)
+            z = z.unsqueeze(0)
+        if z.dim() == 4:
+            B, L1, L2, D = z.shape
+            assert L1 == L2, "TriangleBlock expects square pair map (L, L)."
+            z_flat = z.reshape(B * L1, L2, D)
+            try:
+                with torch.backends.cuda.sdp_kernel(enable_flash=True, enable_math=False, enable_mem_efficient=True):
+                    if self.tile is None:
+                        z2, _ = self.self_attn(z_flat, z_flat, z_flat, need_weights=False)
+                    else:
+                        z2 = torch.empty_like(z_flat)
+                        step = int(self.tile)
+                        for s in range(0, L2, step):
+                            e = min(s + step, L2)
+                            q = z_flat[:, s:e, :]
+                            chunk_out, _ = self.self_attn(q, z_flat, z_flat, need_weights=False)
+                            z2[:, s:e, :] = chunk_out
+            except Exception:
+                if self.tile is None:
+                    z2, _ = self.self_attn(z_flat, z_flat, z_flat, need_weights=False)
+                else:
+                    z2 = torch.empty_like(z_flat)
+                    step = int(self.tile)
+                    for s in range(0, L2, step):
+                        e = min(s + step, L2)
+                        q = z_flat[:, s:e, :]
+                        chunk_out, _ = self.self_attn(q, z_flat, z_flat, need_weights=False)
+                        z2[:, s:e, :] = chunk_out
             z_flat = z_flat + z2
             z_flat = z_flat + self.ff(z_flat)
-            return z_flat.reshape(B, L, L, D)
-
+            return z_flat.reshape(B, L1, L2, D)
+        else:
+            raise ValueError(f"Unexpected z shape: {tuple(z.shape)}")
 
 class SingleBlock(nn.Module):
     def __init__(self, d_single, n_heads=4):
@@ -65,14 +91,22 @@ class SingleBlock(nn.Module):
 
 
 class EvoformerLite(nn.Module):
-    def __init__(self, d_single=256, d_pair=128, n_blocks=8, n_attn_heads=4):
+    def __init__(self, d_single=256, d_pair=128,
+                 n_blocks=8, n_attn_heads=4,
+                 attn_dropout=0.1, tile_size=256):
         super().__init__()
         self.blocks = nn.ModuleList([
             nn.ModuleDict({
                 "pair_from_single": PairUpdate(d_pair, d_single),
-                "tri": TriangleBlock(d_pair, n_attn_heads),
+                "tri": TriangleBlock(
+                    d_pair,
+                    n_heads=n_attn_heads,
+                    attn_dropout=attn_dropout,
+                    tile=tile_size
+                ),
                 "single": SingleBlock(d_single, n_attn_heads),
-            }) for _ in range(n_blocks)
+            })
+            for _ in range(n_blocks)
         ])
         self.ln_s = nn.LayerNorm(d_single)
         self.ln_z = nn.LayerNorm(d_pair)
@@ -80,6 +114,7 @@ class EvoformerLite(nn.Module):
             nn.LayerNorm(2 * d_single),
             nn.Linear(2 * d_single, d_pair)
         )
+
 
     def forward(self, s, z):
         s = self.ln_s(s)

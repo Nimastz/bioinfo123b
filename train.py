@@ -17,12 +17,12 @@ import yaml
 import os    
 import copy, torch
 
-os.environ.setdefault("TF_CPP_MIN_LOG_LEVEL", "2")
-os.environ.setdefault("TF_ENABLE_ONEDNN_OPTS", "0")
 
-def _rebuild_optimizer_and_scheduler(_cfg, _model):
-    new_opt, new_sched = make_optim(_model, _cfg["train"])
-    return new_opt, new_sched
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"     
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"     
+os.environ["CUDA_VISIBLE_DEVICES"] = os.environ.get("CUDA_VISIBLE_DEVICES", "")  
+os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True,max_split_size_mb:128"
+
     
 def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device="cuda", cfg=None):
 
