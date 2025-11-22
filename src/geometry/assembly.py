@@ -76,27 +76,3 @@ def pore_radius_profile_ca(olig_xyz: torch.Tensor, z_step=0.5, z_pad=2.0, ca_rad
         r = torch.linalg.norm(pts, dim=-1).min()
         rs[i] = r - ca_radius
     return zs, rs
-
-    # olig_xyz: (n, L, 3)
-    zvals = olig_xyz[..., 2]
-    zmin_t = torch.nanmin(zvals)
-    zmax_t = torch.nanmax(zvals)
-    if not torch.isfinite(zmin_t) or not torch.isfinite(zmax_t):
-        return zvals.new_zeros((0,)), zvals.new_full((0,), float("nan"))
-    zmin = (zmin_t - z_pad).item()
-    zmax = (zmax_t + z_pad).item()
-    if not (zmax > zmin + 1e-6):
-        return zvals.new_zeros((0,)), zvals.new_full((0,), float("nan"))
-
-    zs = torch.arange(zmin, zmax + 1e-6, z_step, device=olig_xyz.device)
-    rs = torch.full_like(zs, float("nan"))
-    # Slice-wise min radius
-    half = 0.5 * z_step
-    for i, z in enumerate(zs):
-        mask = (zvals > z - half) & (zvals <= z + half)
-        pts = olig_xyz[mask][..., :2]
-        if pts.numel() == 0:
-            continue
-        r = torch.linalg.norm(pts, dim=-1).min()
-        rs[i] = r - ca_radius
-    return zs, rs

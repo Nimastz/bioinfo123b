@@ -66,7 +66,7 @@ class Trainer:
         logs = {}
 
         # Base structural losses
-        loss_dist = distogram_loss(out["dist"], out["xyz"])
+        loss_dist = distogram_loss(out["dist"], out["xyz"], label_smoothing=0.01)
         loss_tors = torsion_l2(out["tors"])
         loss_fape = fape_loss(out["xyz"])
 
@@ -113,14 +113,15 @@ class Trainer:
             else:
                 t = _ramp(gs - 8_000, 2_000)
                 wm, wi, wp = 0.3*t, 0.4*t, 0.3*t
-
-            # ---- batch/stoichiometry-invariant normalization ----
-            mem_norm  = mem  / (mem.detach().mean()  + eps)
-            pore_norm = pore / (pore.detach().mean() + eps)
+            
+            if gs in (2000, 8000):
+                self.tb.add_text("train/priors_phase", f"switched priors ramp at step {gs}", gs)
 
             # ---- combine once (use global priors weight) ----
             priors_w = float(self.w["priors"])
-            loss = loss + priors_w * (wm * mem_norm + wi * intf + wp * pore_norm) + 0.1 * clash
+            
+            def _h(x, d=1.0): return torch.where(torch.abs(x) < d, 0.5*(x*x)/d, torch.abs(x) - 0.5*d)
+            loss = loss + priors_w * (wm * _h(mem, 5.0) + wi * intf + wp * _h(pore, 5.0)) + 0.1 * clash
 
             # Logging
             logs.update(

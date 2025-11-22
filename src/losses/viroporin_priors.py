@@ -18,9 +18,17 @@ def _huber(x, delta=1.0):
     return torch.where(ax < delta, 0.5 * ax * ax / max(delta, _EPS), ax - 0.5 * delta)
 
 def membrane_z_mask(L, tm_span):
+    a, b = int(tm_span[0]), int(tm_span[1])
+    a = max(0, min(a, L))
+    b = max(0, min(b, L))
+    if b <= a: 
+        w = max(1, int(0.6 * L))
+        a = (L - w) // 2
+        b = a + w
     m = torch.zeros(L, dtype=torch.float32)
-    m[tm_span[0]:tm_span[1]] = 1.0
+    m[a:b] = 1.0
     return m
+
 
 def membrane_slab_loss(xyz, tm_mask, z_half_thickness=10.0):
     z = xyz[:, 2]
@@ -69,16 +77,18 @@ def pore_target_loss(olig_xyz, target_A=4.0, reduce="mean"):
     if not valid.any():
         return olig_xyz.new_tensor(0.0)
     rs = rs[valid].clamp(min=_EPS, max=_MAX_R)
-    S = rs.shape[0]
-    if S < 3:
+    if rs.shape[0] < 3:
         return olig_xyz.new_tensor(0.0)
+
     r25 = torch.quantile(rs, 0.25)
     main = F.smooth_l1_loss(r25, torch.as_tensor(float(target_A), device=rs.device))
     dr = rs[1:] - rs[:-1]
     smooth = _huber(dr, delta=0.5).mean()
     anti_collapse = _huber(1.0 / rs, delta=1.0).mean()
-    loss = loss / (float(S) + 1e-6)
+
+    loss = main + 0.5 * smooth + 0.2 * anti_collapse
     if reduce == "sum":
         return loss
     return loss
+
 
