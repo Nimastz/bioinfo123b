@@ -26,6 +26,7 @@ def _safe_features_path(raw_path: str) -> str:
     else:
         parts = [_safe_name(x) for x in p.parts]
         return str(Path(*parts))
+    
 def _normalize_pat(stem: str) -> re.Pattern:
     # Turn 'AAC40516.1_HCV_p7_SRC:NCBI' into a regex like 'AAC40516.*1.*HCV.*p7.*SRC.*NCBI'
     pat = re.sub(r'[^A-Za-z0-9]+', '.*', stem)
@@ -87,12 +88,15 @@ class JsonlSet(Dataset):
         return {"id": row.get("id", str(i)), "seq_idx": seq_idx, "emb": emb}
 
 def collate(batch):
+    assert len(batch) == 1, (
+        f"Batch size >1 is not yet supported by this collate(). "
+        f"Got {len(batch)}. Set data.batch_size=1 in your config."
+    )
     b = batch[0]
     seq = torch.as_tensor(b["seq_idx"], dtype=torch.long)
-    emb = None
-    if b["emb"] is not None:
-        emb = torch.as_tensor(b["emb"], dtype=torch.float32)
+    emb = None if b["emb"] is None else torch.as_tensor(b["emb"], dtype=torch.float32)
     return {"seq_idx": seq, "emb": emb}
+
 
 def make_loaders(dc, device=None):
     train = JsonlSet(dc["train_index"], dc.get("max_len"))
