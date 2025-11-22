@@ -85,6 +85,11 @@ class Trainer:
             olig = assemble_cn(out["xyz"], n_copies=n, ring_radius=rr)
             tm_mask = membrane_z_mask(L, self.pr["tm_span"]).to(out["xyz"].device)
 
+            # Z-centering to stabilize membrane penalty
+            z_center = out["xyz"][:, 2].median().detach()
+            xyz_centered = out["xyz"].clone()
+            xyz_centered[:, 2] -= z_center
+
             mem   = membrane_slab_loss(out["xyz"], tm_mask)
             intf  = interface_contact_loss(olig, cutoff=9.0)
             clash = ca_clash_loss(olig, min_dist=3.6)
@@ -94,17 +99,18 @@ class Trainer:
             if not torch.isfinite(pore):
                 pore = torch.tensor(0.0, device=olig.device)
 
-            # ---- Single consistent curriculum ----
-            if gs < 2_000:
-                w_mem = w_intf = w_pore = 0.0
-            elif gs < 8_000:
-                w_mem, w_intf, w_pore = 0.1, 0.0, 0.0
-            else:
-                t = min(1.0, (gs - 8_000) / 2_000.0)
-                w_mem, w_intf, w_pore = 0.3 * t, 0.4 * t, 0.3 * t
+            # ---- Smooth prior warmup ----
+            pw = self._priors_weight()  # uses cfg.train.priors_warmup_steps
 
-            # ---- Combine once ----
-            loss = loss + self.w["priors"] * (w_mem * mem + w_intf * intf + w_pore * pore) + 0.1 * clash
+            # Base prior weights (from YAML or defaults)
+            w_mem  = float(self.w.get("membrane", 0.1))
+            w_intf = float(self.w.get("interface", 0.1))
+            w_pore = float(self.w.get("pore", 0.1))
+
+            # Apply global prior weight warmup
+            loss = loss + pw * self.w["priors"] * (
+                w_mem * mem + w_intf * intf + w_pore * pore
+            ) + 0.1 * clash
 
             # Logging
             logs.update(

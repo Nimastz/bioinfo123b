@@ -32,13 +32,14 @@ train:
   lr: 1.0e-4
   weight_decay: 0.01
   warmup_steps: 5000
-  grad_clip: 1.0
+  grad_clip: 0.5
   amp_enabled: false      
   amp_on_step: 10000 
   detect_anomaly: true     
   eval_every: 1000
   log_every: 50
   priors_warmup_steps: 0  
+  priors_warmup_steps: 8000
   ckpt_dir: checkpoints
   log_dir: checkpoints/logs
   ema_alpha: 0.1
@@ -48,6 +49,9 @@ loss_weights:
   torsion: 0.1
   fape: 0.1
   priors: 1.0
+  membrane: 0.05
+  interface: 0.05
+  pore: 0.03
 
 priors:
   use_cn: true
