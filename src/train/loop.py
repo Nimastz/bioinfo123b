@@ -87,6 +87,8 @@ class Trainer:
             n, rr = self.pr["n_copies"], self.pr["ring_radius"]
             olig = assemble_cn(out["xyz"], n_copies=n, ring_radius=rr)
             tm_mask = membrane_z_mask(L, self.pr["tm_span"]).to(out["xyz"].device)
+            tm_frac = float(tm_mask.float().mean().item())
+            logs["tm_frac"] = tm_frac
 
             # --- robust TM-only centering for mem prior ---
             z_all = out["xyz"][:, 2]
@@ -121,7 +123,20 @@ class Trainer:
             w_intf = base_intf * min(1.0, t / (0.5*W))
             w_pore = base_pore * min(1.0, max(0.0, (t - 0.5*W) / W))
 
-            loss = loss + pw * (w_mem * mem_eff + w_intf * intf + w_pore * pore_eff) + 0.1 * clash
+            # ---- Gate priors until backbone geometry is stable ----
+            with torch.no_grad():
+                dist_s = float(loss_dist.item())
+                fape_s = float(loss_fape.item())
+
+            gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  # adjust thresholds as needed
+
+            pw = self._priors_weight() * gate  # warmup * gate
+            loss = loss + pw * (
+                self.w["membrane"] * mem_eff +
+                self.w["interface"] * intf +
+                self.w["pore"] * pore_eff
+            ) + 0.1 * clash
+            logs["gate"] = gate
 
             # Logging
             logs.update(
