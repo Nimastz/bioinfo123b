@@ -49,7 +49,7 @@ def main():
 
     use_compile, compile_mode = should_compile(cfg, caps)
     if not use_compile:
-        disable_dynamo_globally()  
+        disable_dynamo_globally()
 
     # Data / Model
     train_loader, val_loader = make_loaders(cfg["data"], device=device)
@@ -64,15 +64,19 @@ def main():
 
     opt, sched = make_optim(model, cfg["train"])
     os.makedirs(cfg["train"]["ckpt_dir"], exist_ok=True)
+
+    start_step = 0
+    if args.ckpt and os.path.exists(args.ckpt):
+        print(f"[info] Loading checkpoint: {args.ckpt}")
+        ckpt = torch.load(args.ckpt, map_location=device)
+        start_step = int(ckpt.get("step", 0))
+    elif args.ckpt:
+        warnings.warn(f"[warn] Checkpoint not found: {args.ckpt}")
+
     trainer = Trainer(cfg, model, opt, sched, device, start_step=start_step)
 
     if args.ckpt and os.path.exists(args.ckpt):
-        ckpt = torch.load(args.ckpt, map_location=device)
-        start_step = int(ckpt.get("step", 0))
-        print(f"[info] Loading checkpoint: {args.ckpt}")
         load_full_checkpoint(args.ckpt, model, opt, sched, trainer, device=device)
-    elif args.ckpt:
-        warnings.warn(f"[warn] Checkpoint not found: {args.ckpt}")
 
     trainer.fit(train_loader, val_loader)
 
