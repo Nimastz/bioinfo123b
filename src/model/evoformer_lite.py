@@ -76,18 +76,33 @@ class EvoformerLite(nn.Module):
         ])
         self.ln_s = nn.LayerNorm(d_single)
         self.ln_z = nn.LayerNorm(d_pair)
+        self.pair_proj = nn.Sequential(
+            nn.LayerNorm(2 * d_single),
+            nn.Linear(2 * d_single, d_pair)
+        )
 
     def forward(self, s, z):
+        s = self.ln_s(s)
+        z = self.ln_z(z)
+
+        # initial pair injection from single (your current logic)
         if s.dim() == 2:
             L = s.shape[0]
-            a = s.unsqueeze(1).expand(L, L, -1)      # (L,L,ds)
-            b = s.unsqueeze(0).expand(L, L, -1)      # (L,L,ds)
-            z = z + self.proj(torch.cat([a, b], dim=-1))
-            return z
+            a = s.unsqueeze(1).expand(L, L, -1)
+            b = s.unsqueeze(0).expand(L, L, -1)
+            z = z + self.pair_proj(torch.cat([a, b], dim=-1))
         else:
             B, L, ds = s.shape
-            a = s.unsqueeze(2).expand(B, L, L, ds)   # (B,L,L,ds)
-            b = s.unsqueeze(1).expand(B, L, L, ds)   # (B,L,L,ds)
-            z = z + self.proj(torch.cat([a, b], dim=-1))
-            return z
+            a = s.unsqueeze(2).expand(B, L, L, ds)
+            b = s.unsqueeze(1).expand(B, L, L, ds)
+            z = z + self.pair_proj(torch.cat([a, b], dim=-1))
+
+        # iterate lite evoformer blocks
+        for blk in self.blocks:
+            z = blk["pair_from_single"](s, z)
+            z = blk["tri"](z)
+            s = blk["single"](s)
+
+        return s, z
+
 
