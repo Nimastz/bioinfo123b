@@ -179,13 +179,13 @@ class Trainer:
                 # write every step (or guard with: if step % log_every == 0:)
                 self.csv.log(row)
                 
-                if step % log_every == 0:
+                if step % log_every == 10:
                     pbar.set_postfix_str(
                         f"loss={loss.item():.2f}, "
                         + ", ".join([f"{k}={v:.3f}" for k, v in logs.items() if v is not None])
                     )
 
-                if step and step % eval_every == 0:
+                if step and step % eval_every == 10:
                     self.save(step, ckpt_dir)
 
             # normal end
