@@ -16,23 +16,38 @@ from src.model.viroporin_net import ViroporinAFMini
 import yaml
 
 def load_full_checkpoint(path, model, opt=None, sched=None, trainer=None, device="cuda"):
-    ckpt = torch.load(path, map_location=device)
+    import copy, torch
+    raw = torch.load(path, map_location=device)
+    sd = copy.deepcopy(raw["model"])
 
-    model.load_state_dict(ckpt["model"], strict=True)
+    # ---- UPGRADE SHIM for older checkpoints (no evo.pair_proj.*) ----
+    need_ln = ("evo.pair_proj.0.weight" not in sd) or ("evo.pair_proj.0.bias" not in sd)
+    need_fc = ("evo.pair_proj.1.weight" not in sd) or ("evo.pair_proj.1.bias" not in sd)
+    src_w = sd.get("evo.blocks.0.pair_from_single.proj.weight", None)
+    src_b = sd.get("evo.blocks.0.pair_from_single.proj.bias", None)
+    if (need_ln or need_fc) and (src_w is not None) and (src_b is not None):
+        # Initialize LN to identity / zero (matches nn.LayerNorm defaults)
+        ds2 = src_w.shape[1]     # 2*ds
+        sd["evo.pair_proj.0.weight"] = torch.ones(ds2, device=device)
+        sd["evo.pair_proj.0.bias"]   = torch.zeros(ds2, device=device)
+        # Copy the old linear into pair_proj[1]
+        sd["evo.pair_proj.1.weight"] = src_w.clone()
+        sd["evo.pair_proj.1.bias"]   = src_b.clone()
+        print("[upgrade] filled evo.pair_proj from evo.blocks.0.pair_from_single.proj")
 
-    if opt is not None and ckpt.get("opt"):
-        opt.load_state_dict(ckpt["opt"])
-    if sched is not None and ckpt.get("sched"):
-        sched.load_state_dict(ckpt["sched"])
+    # ---- now load (non-strict still allows other benign diffs) ----
+    info = model.load_state_dict(sd, strict=False)
+    if getattr(info, "missing_keys", None) or getattr(info, "unexpected_keys", None):
+        print(f"[warn] relaxed load: missing={list(info.missing_keys)} unexpected={list(info.unexpected_keys)}")
 
+    # Optimizer / sched / scaler / step as before
+    if opt is not None and raw.get("opt"):   opt.load_state_dict(raw["opt"])
+    if sched is not None and raw.get("sched"): sched.load_state_dict(raw["sched"])
     if trainer is not None:
-        if ckpt.get("scaler") and hasattr(trainer, "scaler"):
-            trainer.scaler.load_state_dict(ckpt["scaler"])
-        if ckpt.get("ema") and hasattr(trainer, "ema"):
-            trainer.ema.load_state_dict(ckpt["ema"])
-        trainer.global_step = ckpt.get("step", 0)
+        if raw.get("scaler") and hasattr(trainer, "scaler"): trainer.scaler.load_state_dict(raw["scaler"])
+        trainer.global_step = raw.get("step", 0)
 
-    print(f"[info] Resumed full training state from step {ckpt.get('step', 0)}")
+    print(f"[info] Resumed full training state from step {raw.get('step', 0)}")
 
 def main():
     ap = argparse.ArgumentParser()

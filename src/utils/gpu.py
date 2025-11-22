@@ -37,18 +37,28 @@ def gpu_caps(device: torch.device) -> dict:
     return caps
 
 def configure_backends(caps: dict):
-    if not caps["is_cuda"]:
+    import torch, os
+    if not caps.get("is_cuda", False):
         return
+
+    # cuDNN autotune for speed on fixed shapes
     torch.backends.cudnn.benchmark = True
-    if caps["tf32"]:
+
+    # Use *new* TF32 controls (deprecates allow_tf32 flags)
+    # If the GPU supports TF32 (Ampere+), enable TF32 for convolutions,
+    # and keep matmul in IEEE unless explicitly want TF32 matmul too.
+    if caps.get("tf32", False):
         try:
-            torch.backends.cuda.matmul.allow_tf32 = True
-            torch.backends.cudnn.allow_tf32 = True
-            # torch >= 2.0
-            if hasattr(torch, "set_float32_matmul_precision"):
-                torch.set_float32_matmul_precision("high")
+            # Convolution kernels (cuDNN)
+            torch.backends.cudnn.conv.fp32_precision = "tf32" 
+            # Matmul kernels (CUDA)
+            torch.backends.cuda.matmul.fp32_precision = "ieee" 
         except Exception:
             pass
+
+    # Guard against Dynamo on unsupported stacks unless explicitly requested
+    os.environ.setdefault("TORCHDYNAMO_DISABLE", "1")
+
 
 def should_compile(cfg: dict, caps: dict) -> tuple[bool, str]:
     """Respect YAML flag and GPU capability; return (use_compile, mode)."""
