@@ -30,10 +30,21 @@ class TriangleBlock(nn.Module):
                                 nn.GELU(), nn.Linear(4*d_pair, d_pair))
 
     def forward(self, z):
-        z2, _ = self.self_attn(z, z, z)  # z: (batch=L, seq=L, d_pair) thanks to batch_first=True
-        z = z + z2
-        z = z + self.ff(z)
-        return z
+        if z.dim() == 3:
+            # legacy: treat L as both batch and seq
+            z2, _ = self.self_attn(z, z, z)
+            z = z + z2
+            z = z + self.ff(z)
+            return z
+        else:
+            # batched: z = (B, L, L, d_pair) → fold first L as "batch"
+            B, L, _, D = z.shape
+            z_flat = z.reshape(B * L, L, D)
+            z2, _ = self.self_attn(z_flat, z_flat, z_flat)
+            z_flat = z_flat + z2
+            z_flat = z_flat + self.ff(z_flat)
+            return z_flat.reshape(B, L, L, D)
+
 
 class SingleBlock(nn.Module):
     def __init__(self, d_single, n_heads=4):
@@ -43,10 +54,15 @@ class SingleBlock(nn.Module):
                                 nn.GELU(), nn.Linear(4*d_single, d_single))
 
     def forward(self, s):
-        s2,_ = self.attn(s.unsqueeze(0), s.unsqueeze(0), s.unsqueeze(0))
-        s = s + s2.squeeze(0)
+        if s.dim() == 2:  # (L,ds)
+            s2, _ = self.attn(s.unsqueeze(0), s.unsqueeze(0), s.unsqueeze(0))
+            s = s + s2.squeeze(0)
+        else:             # (B,L,ds)
+            s2, _ = self.attn(s, s, s)
+            s = s + s2
         s = s + self.ff(s)
         return s
+
 
 class EvoformerLite(nn.Module):
     def __init__(self, d_single=256, d_pair=128, n_blocks=8, n_attn_heads=4):
@@ -62,8 +78,16 @@ class EvoformerLite(nn.Module):
         self.ln_z = nn.LayerNorm(d_pair)
 
     def forward(self, s, z):
-        for b in self.blocks:
-            z = b["pair_from_single"](s, z)
-            z = b["tri"](z)
-            s = b["single"](s)
-        return self.ln_s(s), self.ln_z(z)
+        if s.dim() == 2:
+            L = s.shape[0]
+            a = s.unsqueeze(1).expand(L, L, -1)      # (L,L,ds)
+            b = s.unsqueeze(0).expand(L, L, -1)      # (L,L,ds)
+            z = z + self.proj(torch.cat([a, b], dim=-1))
+            return z
+        else:
+            B, L, ds = s.shape
+            a = s.unsqueeze(2).expand(B, L, L, ds)   # (B,L,L,ds)
+            b = s.unsqueeze(1).expand(B, L, L, ds)   # (B,L,L,ds)
+            z = z + self.proj(torch.cat([a, b], dim=-1))
+            return z
+

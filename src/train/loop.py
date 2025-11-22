@@ -160,8 +160,23 @@ class Trainer:
                 # forward
                 use_amp = self._amp_active()
                 with torch.autocast(device_type="cuda", dtype=self.amp_dtype, enabled=use_amp):
-                    out = self.model(batch["seq_idx"], batch.get("emb"))
-                    loss, logs = self.step_losses(batch, out)
+                    seq = batch["seq_idx"]          # [B, L]
+                    emb = batch.get("emb", None)    # [B, L, D] or None
+
+                    if seq.ndim == 2:  # batched → do per-sample forward and average the loss
+                        B = seq.shape[0]
+                        loss = seq.new_tensor(0.0, dtype=torch.float32, device=self.device)
+                        logs_acc = {}  # average logs over batch
+                        for i in range(B):
+                            out_i = self.model(seq[i], None if emb is None else emb[i])
+                            li, logsi = self.step_losses(None, out_i)
+                            loss = loss + li / B
+                            for k, v in logsi.items():
+                                logs_acc[k] = logs_acc.get(k, 0.0) + float(v) / B
+                        logs = logs_acc
+                    else:
+                        out = self.model(seq, emb)  # non-batched path (legacy)
+                        loss, logs = self.step_losses(batch, out)
                     
                     # ---- NaN/Inf sentry on sublosses ----
                     for k in ("mem","intf","clash","pore"):

@@ -22,12 +22,16 @@ class IPA(nn.Module):
         self.to_xyz = nn.Linear(d_single, 3)
 
     def forward(self, s):
-        # frames start at origin; predict deltas
         xyz = []
         h = s
         for blk in self.blocks:
             h = h + blk(h)
-            xyz.append(self.to_xyz(h).cumsum(dim=0))  # crude incremental backbone
+            x = self.to_xyz(h)
+            if x.dim() == 3:     # (B,L,3)
+                x = x.cumsum(dim=1)
+            else:                # (L,3)
+                x = x.cumsum(dim=0)
+            xyz.append(x)
         return xyz[-1]  # (L,3)
 
 class TorsionHeadSimple(nn.Module):

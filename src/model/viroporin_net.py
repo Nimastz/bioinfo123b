@@ -36,8 +36,14 @@ class ViroporinAFMini(nn.Module):
             s = self.embed(x) if x.shape[-1] != self.embed.out_features else x
         else:
             s = self.embed_oh(seq_idx)
-        L = s.shape[0]
-        z = torch.zeros(L, L, self.evo.blocks[0]["tri"].self_attn.embed_dim, device=s.device)
+        if s.dim() == 3:
+            B, L, _ = s.shape
+            dp = self.evo.blocks[0]["tri"].self_attn.embed_dim
+            z = torch.zeros(B, L, L, dp, device=s.device)
+        else:
+            L = s.shape[0]
+            dp = self.evo.blocks[0]["tri"].self_attn.embed_dim
+            z = torch.zeros(L, L, dp, device=s.device)
         s, z = self.evo(s, z)
         xyz = self.ipa(s)               # (L,3)
         dist_logits = self.dist(z)      # (L,L,B)
