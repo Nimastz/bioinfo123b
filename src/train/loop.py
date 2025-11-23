@@ -132,13 +132,13 @@ class Trainer:
                 fape_s = float(loss_fape.item())
 
             gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  # adjust thresholds as needed
-
-            pw = self._priors_weight() * gate  # warmup * gate
-            loss = loss + pw * (
-                self.w["membrane"] * mem_eff +
-                self.w["interface"] * intf +
-                self.w["pore"] * pore_eff
+            
+            loss = loss + (
+                w_mem * mem_eff +
+                w_intf * intf +
+                w_pore * pore_eff
             ) + 0.1 * clash
+
             logs["gate"] = gate
 
             # Logging
