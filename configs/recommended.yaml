@@ -47,10 +47,10 @@ loss_weights:
   distogram: 1.0
   torsion: 0.01
   fape: 0.5
-  priors: 0.005
-  membrane: 0.0005
-  interface: 0.0005
-  pore: 0.0002
+  priors: 0.00001
+  membrane: 0.00005
+  interface: 0.00005
+  pore: 0.00002
 
 priors:
   use_cn: true
