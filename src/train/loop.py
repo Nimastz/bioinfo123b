@@ -131,7 +131,7 @@ class Trainer:
                 dist_s = float(loss_dist.item())
                 fape_s = float(loss_fape.item())
 
-            gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  # adjust thresholds as needed
+            gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  
             
             loss = loss + (
                 w_mem * mem_eff +
