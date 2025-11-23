@@ -90,7 +90,7 @@ class Trainer:
             tm_frac = float(tm_mask.float().mean().item())
             logs["tm_frac"] = tm_frac
             
-            if self.global_step % 100 == 0:
+            if self.global_step % 10 == 0:
                 print(f"[tm] step={self.global_step} tm_frac={tm_frac:.2f}")
 
             # --- robust TM-only centering for mem prior ---
@@ -133,13 +133,19 @@ class Trainer:
 
             gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  
             
-            loss = loss + (
-                w_mem * mem_eff +
-                w_intf * intf +
-                w_pore * pore_eff
-            ) + 0.1 * clash
+            # ---- Gate priors until backbone geometry is stable ----
+            ok_backbone = (loss_dist.item() < 2.0) or (self.global_step > 2000)
+            if ok_backbone:
+                loss = loss + (
+                    w_mem * mem_eff +
+                    w_intf * intf +
+                    w_pore * pore_eff
+                ) + 0.1 * clash
 
-            logs["gate"] = gate
+                logs["gate"] = gate
+            else:
+                logs["gate"] = 0.0
+            
 
             # Logging
             logs.update(
