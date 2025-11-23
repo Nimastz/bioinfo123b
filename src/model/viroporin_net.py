@@ -33,7 +33,8 @@ class ViroporinAFMini(nn.Module):
             m = x.mean(dim=0, keepdim=True)
             v = x.var(dim=0, unbiased=False, keepdim=True)
             x = (x - m) / (v.sqrt() + 1e-5)
-            s = self.embed(x) if x.shape[-1] != self.embed.out_features else x
+            want = self.embed.in_features
+            s = self.embed(x) if x.shape[-1] != want else x
         else:
             s = self.embed_oh(seq_idx)
         L = s.shape[0]
