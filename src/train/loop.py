@@ -89,6 +89,9 @@ class Trainer:
             tm_mask = membrane_z_mask(L, self.pr["tm_span"]).to(out["xyz"].device)
             tm_frac = float(tm_mask.float().mean().item())
             logs["tm_frac"] = tm_frac
+            
+            if self.global_step % 100 == 0:
+                print(f"[tm] step={self.global_step} tm_frac={tm_frac:.2f}")
 
             # --- robust TM-only centering for mem prior ---
             z_all = out["xyz"][:, 2]
