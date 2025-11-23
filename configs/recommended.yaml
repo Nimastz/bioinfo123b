@@ -37,7 +37,7 @@ train:
   amp_on_step: 1000
   detect_anomaly: false    
   eval_every: 1000
-  log_every: 5
+  log_every: 1
   priors_warmup_steps: 8000
   ckpt_dir: checkpoints
   log_dir: checkpoints/logs
