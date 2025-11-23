@@ -37,11 +37,14 @@ train:
   amp_on_step: 1000
   detect_anomaly: false    
   eval_every: 1000
-  log_every: 10
+  log_every: 5
   priors_warmup_steps: 8000
   ckpt_dir: checkpoints
   log_dir: checkpoints/logs
   ema_alpha: 0.1
+  gate_dist_thresh: 0.9
+  gate_fape_thresh: 0.2
+  gate_min_step: 4000
 
 loss_weights:
   distogram: 1.0

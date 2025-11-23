@@ -51,7 +51,7 @@ class Trainer:
         self.best_ema = float("inf")
         self.loss_ema = None
         self.ema_alpha = float(self.cfg["train"].get("ema_alpha", 0.1))
-            
+ 
     def _amp_active(self):
         return (self.use_cuda
                 and self.amp_enabled_cfg
@@ -125,9 +125,17 @@ class Trainer:
             w_pore_lin = base_pore * min(1.0, max(0.0, (t - 0.5*W) / W))  # starts halfway
 
             # Global cosine warmup (from loss_weights.priors) × backbone gate
+            dist_th = float(self.cfg["train"].get("gate_dist_thresh", 2.0))
+            fape_th = float(self.cfg["train"].get("gate_fape_thresh", 0.5))
+            min_step = int(self.cfg["train"].get("gate_min_step", 0))
+               
             pw_global = self._priors_weight()                      
-            gate = 1.0 if ((loss_dist.item() < 2.0) and (loss_fape.item() < 0.5)) else 0.0
-
+            gate = 1.0 if (
+                (loss_dist.item() < dist_th)
+                and (loss_fape.item() < fape_th)
+                and (self.global_step > min_step)
+            ) else 0.0
+            
             # Final effective weights: per-term linear warmup * global cosine * gate
             w_mem_eff  = pw_global * gate * w_mem_lin
             w_intf_eff = pw_global * gate * w_intf_lin
