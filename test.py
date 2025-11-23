@@ -7,7 +7,7 @@
 # - main(): loads configuration, data, and model; evaluates all validation samples; and
 #   prints averaged loss metrics as JSON output.
 # Used to assess how well the trained model predicts 3D viroporin structures after training.
-# try : python test.py --config configs/recommended.yaml --ckpt checkpoints/step_22300.pt --index /mnt/data/test_diverse_subset.jsonl --dump_dir test_results_22300 --dump_n 5 --dump_mode random --dump_olig
+# try : python test.py --config configs/recommended.yaml --ckpt checkpoints/step_22300.pt --index data/test_diverse_subset.jsonl --dump_dir test_results_22300 --dump_n 5 --dump_mode random --dump_olig
 
 
 import argparse, yaml, torch, glob, os, json

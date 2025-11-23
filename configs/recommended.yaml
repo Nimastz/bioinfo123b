@@ -1,0 +1,75 @@
+# configs/recommended.yaml
+# This file defines all configuration settings for training and evaluating the ViroporinAFMini model.
+# It includes model size, data paths, optimizer and training parameters, loss weights, and priors.
+# Used by train.py and eval.py to load consistent experiment settings (recommended model setup).
+
+seed: 123
+device: cuda
+
+model:
+  d_single: 128
+  d_pair: 64
+  heads:
+    distogram_bins: 64
+  evoformer:
+    n_blocks: 12
+    n_attn_heads: 4
+  ipa:
+    n_blocks: 8
+    n_points: 4
+    dropout: 0.1
+
+data:
+  train_index: data/train.jsonl
+  val_index: data/test.jsonl
+  batch_size: 2
+  shuffle: true
+  num_workers: 4
+  max_len: 192
+
+train:
+  steps: 30000
+  lr: 1.0e-4
+  weight_decay: 0.01
+  warmup_steps: 4000
+  grad_clip: 1.0
+  amp_enabled: true     
+  amp_on_step: 1000
+  detect_anomaly: false    
+  eval_every: 100
+  log_every: 1
+  ckpt_dir: checkpoints
+  log_dir: checkpoints/logs
+  ema_alpha: 0.1
+  gate_dist_thresh: 5.0
+  gate_fape_thresh: 2.0
+  gate_min_step: 0
+  priors_warmup_steps: 2000
+  grad_accum_steps: 4
+  val_log_dir: checkpoints/logs
+  early_stop_patience: 10
+
+optimizer:
+  name: adamw
+  betas: [0.9, 0.95]
+  eps: 1.0e-8
+  weight_decay: 0.01
+
+loss_weights:
+  distogram: 1.0
+  torsion: 0.01
+  fape: 0.5
+  priors: 0.01
+  membrane: 0.005
+  interface: 0.005
+  pore: 0.002
+
+priors:
+  z_half_thickness: 10.0
+  mem_inband_pull: 0.05
+  use_cn: true
+  n_copies: 4
+  ring_radius: 7.0
+  tm_span: [8, 28]
+  pore_target_A: 4.0
+  cap_A: 6.0
