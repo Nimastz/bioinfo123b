@@ -113,39 +113,41 @@ class Trainer:
             pore_raw  = pore
             pore_eff  = 5.0 * torch.tanh(pore_raw / 5.0)
 
-            # ---- Smooth prior warmup ----
-            pw = self._priors_weight()   # global factor (0..w_priors)
-
+            # ---- Smooth prior warmup (per-term) ----
             base_mem  = float(self.w.get("membrane",  0.1))
             base_intf = float(self.w.get("interface", 0.1))
             base_pore = float(self.w.get("pore",     0.1))
 
             t = self.global_step
             W = max(1, int(self.priors_warmup))
-            w_mem  = base_mem  * min(1.0, t / W)
-            w_intf = base_intf * min(1.0, t / (0.5*W))
-            w_pore = base_pore * min(1.0, max(0.0, (t - 0.5*W) / W))
+            w_mem_lin  = base_mem  * min(1.0, t / W)                # ramps 0→base over W
+            w_intf_lin = base_intf * min(1.0, t / (0.5 * W))        # ramps twice as fast
+            w_pore_lin = base_pore * min(1.0, max(0.0, (t - 0.5*W) / W))  # starts halfway
 
-            # ---- Gate priors until backbone geometry is stable ----
-            with torch.no_grad():
-                dist_s = float(loss_dist.item())
-                fape_s = float(loss_fape.item())
+            # Global cosine warmup (from loss_weights.priors) × backbone gate
+            pw_global = self._priors_weight()                      
+            gate = 1.0 if ((loss_dist.item() < 2.0) and (loss_fape.item() < 0.5)) else 0.0
 
-            gate = 1.0 if (dist_s < 2.0 and fape_s < 0.5) else 0.0  
-            
-            # ---- Gate priors until backbone geometry is stable ----
-            ok_backbone = (loss_dist.item() < 2.0) or (self.global_step > 2000)
-            if ok_backbone:
-                loss = loss + (
-                    w_mem * mem_eff +
-                    w_intf * intf +
-                    w_pore * pore_eff
-                ) + 0.1 * clash
+            # Final effective weights: per-term linear warmup * global cosine * gate
+            w_mem_eff  = pw_global * gate * w_mem_lin
+            w_intf_eff = pw_global * gate * w_intf_lin
+            w_pore_eff = pw_global * gate * w_pore_lin
 
-                logs["gate"] = gate
-            else:
-                logs["gate"] = 0.0
-            
+            if tm_frac < 0.05 or tm_frac > 0.60:
+                w_mem_eff = 0.0
+                
+            # Clamp safeguards
+            mem_raw  = mem_raw.clamp(-10, 10)
+            pore_raw = pore_raw.clamp(-10, 10)
+            mem_eff  = 5.0 * torch.tanh(mem_raw / 5.0)
+            pore_eff = 5.0 * torch.tanh(pore_raw / 5.0)
+
+            # Cap the total prior contribution this step (prevents outlier spikes)
+            prior_contrib = (w_mem_eff * mem_eff) + (w_intf_eff * intf) + (w_pore_eff * pore_eff)
+            prior_contrib = torch.clamp(prior_contrib, min=-0.5, max=0.5)
+
+            loss = loss + prior_contrib + 0.1 * clash
+            logs["gate"] = float(gate)        
 
             # Logging
             logs.update(
