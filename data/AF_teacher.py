@@ -1,13 +1,4 @@
-# AF_teachers.py
-# 1) Run ColabFold + extract teachers, everything under alphafold/
-# python AF_teacher.py --index train.jsonl --fasta_out alphafold/train.fasta --af_out_dir alphafold/pdb  --teacher_npz_dir alphafold/npz
-
-# regenerate .npz
-# python AF_teacher.py --index train.jsonl --fasta_out alphafold/train.fasta --af_out_dir alphafold/pdb  --teacher_npz_dir alphafold/npz --skip_af
-
-# python AF_teacher.py --index train.jsonl
-
-
+#   python AF_teacher.py --index train.jsonl
 
 import json
 import subprocess
@@ -51,7 +42,7 @@ def run_colabfold(fasta_path, out_dir, model_type="alphafold2"):
 
     cmd = [
         "colabfold_batch",
-        "--model-type", model_type,   # now 'alphafold2' by default
+        "--model-type", model_type,   # 'alphafold2' by default
         "--num-recycle", "3",
         "--num-models", "1",
         str(fasta_path),
@@ -153,19 +144,23 @@ def compute_torsions(N, CA, C):
     return tors  # (L,3)
 
 def extract_teacher_from_pdb_dir(pdb_dir, out_dir):
-    import numpy as np
-    from pathlib import Path
-
+    """
+    Scan pdb_dir for *_rank_001_*.pdb and write one .npz per sequence id
+    into out_dir. This function is idempotent: re-running just overwrites
+    existing .npz files.
+    """
     pdb_dir = Path(pdb_dir)
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Expecting names like:  ID_unrelaxed_rank_001_model_1_seed_000.pdb
+    # Expecting names like: ID_unrelaxed_rank_001_model_1_seed_000.pdb
     pdb_files = list(pdb_dir.glob("*_rank_001_*.pdb"))
 
     if not pdb_files:
         print(f"[warn] No PDBs found in {pdb_dir}, expected *_rank_001_*.pdb")
         return
+
+    print(f"[info] extracting teachers from {len(pdb_files)} PDB files in {pdb_dir}")
 
     for pdb_path in pdb_files:
         name = pdb_path.name
@@ -193,17 +188,57 @@ def main():
     parser.add_argument("--fasta_out", default="alphafold/train.fasta")
     parser.add_argument("--af_out_dir", default="alphafold/pdb")
     parser.add_argument("--teacher_npz_dir", default="alphafold/npz")
-    parser.add_argument("--skip_af", action="store_true",
-                        help="skip running colabfold, just parse existing PDBs")
+    parser.add_argument(
+        "--skip_af",
+        action="store_true",
+        help="skip running colabfold, just parse existing PDBs"
+    )
     args = parser.parse_args()
 
+    # ---- load all sequences ----
     ids, seqs = load_sequences_from_jsonl(args.index)
+    n = len(ids)
+    print(f"[info] loaded {n} sequences from {args.index}")
+
+    # Write a master FASTA with all sequences (for record)
     write_fasta(ids, seqs, args.fasta_out)
 
-    if not args.skip_af:
-        run_colabfold(args.fasta_out, args.af_out_dir)
+    # If we only want to regenerate npz from existing PDBs:
+    if args.skip_af:
+        print("[info] --skip_af set: skipping ColabFold, only extracting teachers")
+        extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
+        return
 
-    extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
+    # ---- process in chunks of 5 sequences ----
+    chunk_size = 5
+    for start in range(0, n, chunk_size):
+        end = min(n, start + chunk_size)
+        batch_ids = ids[start:end]
+        batch_seqs = seqs[start:end]
+        print(f"[info] processing chunk {start}..{end-1} ({end-start} sequences)")
+
+        # Per-chunk FASTA, e.g. alphafold/train_chunk_0000_0004.fasta
+        base = Path(args.fasta_out)
+        chunk_fasta = base.with_name(
+            f"{base.stem}_chunk_{start:04d}_{end-1:04d}{base.suffix}"
+        )
+
+        write_fasta(batch_ids, batch_seqs, chunk_fasta)
+
+        # Run ColabFold on this chunk
+        try:
+            run_colabfold(chunk_fasta, args.af_out_dir)
+        except subprocess.CalledProcessError as e:
+            print(f"[err] ColabFold failed on chunk {start}..{end-1}: {e}")
+            print("[err] stopping early so you can keep partial results.")
+            break
+
+        # After each chunk, immediately extract teachers for all PDBs so far
+        extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
+        print(f"[info] finished chunk {start}..{end-1}")
+
+    print("[info] done. You can rerun with --skip_af to regenerate .npz from any PDBs.")
+
 
 if __name__ == "__main__":
     main()

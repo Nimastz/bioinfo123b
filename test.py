@@ -103,7 +103,11 @@ def eval_one(cfg, model, batch, device):
 
         L = xyz_raw.shape[0]
 
-        loss_dist = distogram_loss(dist_raw, xyz_raw)
+        loss_dist = distogram_loss(
+        dist_raw,
+        xyz_raw,
+        n_bins=dist_raw.shape[-1],   # <- make loss use real #bins
+        )
         loss_tors = torsion_l2(tors_raw)
         loss_fape = fape_loss(xyz_raw)
 

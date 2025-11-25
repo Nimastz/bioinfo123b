@@ -29,7 +29,7 @@ data:
   max_len: 192
 
 train:
-  steps: 40000
+  steps: 50000
   lr: 1.0e-4
   weight_decay: 0.01
   warmup_steps: 0
