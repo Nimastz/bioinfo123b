@@ -25,13 +25,5 @@ Thumbs.db
 
 # --- Project output folders ---
 checkpoints/*
-!checkpoints/.gitkeep
-!checkpoints/*.pt
-!checkpoints/*.csv
-!checkpoints/*.json
-
+!checkpoints/.py
 results/*
-!results/.gitkeep
-!results/*.json
-!results/*.csv
-!results/*.pdb
