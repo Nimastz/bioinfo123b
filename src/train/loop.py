@@ -467,10 +467,13 @@ class Trainer:
                         "tors": logs.get("tors", 0.0),
                         "dist": logs.get("dist", 0.0),
                         "fape": logs.get("fape", 0.0),
+                        "mem": logs.get("mem", 0.0),
                         "mem_raw": logs.get("mem_raw", 0.0),
                         "pore": logs.get("pore", 0.0),
                         "pore_raw": logs.get("pore_raw", 0.0),
                         "pore_minA": logs.get("pore_minA", 0.0),
+                        "intf": logs.get("intf", 0.0),
+                        "clash": logs.get("clash", 0.0),
                     }
 
                 loss = loss / accum_steps
@@ -528,12 +531,51 @@ class Trainer:
                     "w_intf_eff": float(logs.get("w_intf_eff", float("nan"))),
                     "w_pore_eff": float(logs.get("w_pore_eff", float("nan"))),
                 }
-                # write every step (or guard with: if step % log_every == 0:)
+                # write every log_every steps: CSV row = BEST of the last window, not last step
                 if step % log_every == 0:
-                    self.csv.log(row)              
-                    src = self.win_best_snapshot if self.win_best_snapshot else logs
+                    if self.win_best_snapshot:
+                        src = self.win_best_snapshot
+                        step_for_row = self.win_best_step
+                    else:
+                        # fallback: if for some reason no best was recorded, use current logs
+                        src = logs
+                        step_for_row = step
+
+                    row = {
+                        "step": int(step_for_row),
+                        "loss": float(src.get("loss", float("nan"))),
+                        "lr": float(lr),
+                        "dist": float(src.get("dist", float("nan"))),
+                        "tors": float(src.get("tors", float("nan"))),
+                        "fape": float(src.get("fape", float("nan"))),
+                        "mem":  float(src.get("mem",  float("nan"))),
+                        "mem_raw":  float(src.get("mem_raw",  float("nan"))),
+                        "pore": float(src.get("pore", float("nan"))),
+                        "pore_raw": float(src.get("pore_raw", float("nan"))),
+                        "intf": float(src.get("intf", float("nan"))),
+                        "clash": float(src.get("clash", float("nan"))),
+                        "z_abs_mean": float(logs.get("z_abs_mean", float("nan"))),
+                        "z_abs_mean_tm": float(logs.get("z_abs_mean_tm", float("nan"))),
+                        "z_abs_mean_unc": float(logs.get("z_abs_mean_unc", float("nan"))),
+                        "pore_minA": float(src.get("pore_minA", float("nan"))),
+                        "gate": float(logs.get("gate", float("nan"))),
+                        "z_tm_min": float(logs.get("z_tm_min", float("nan"))),
+                        "z_tm_max": float(logs.get("z_tm_max", float("nan"))),
+                        "z_tm_range": float(logs.get("z_tm_range", float("nan"))),
+                        "tm_frac": float(logs.get("tm_frac", float("nan"))),
+                        "pw_global": float(logs.get("pw_global", float("nan"))),
+                        "w_mem_lin": float(logs.get("w_mem_lin", float("nan"))),
+                        "w_intf_lin": float(logs.get("w_intf_lin", float("nan"))),
+                        "w_pore_lin": float(logs.get("w_pore_lin", float("nan"))),
+                        "w_mem_eff": float(logs.get("w_mem_eff", float("nan"))),
+                        "w_intf_eff": float(logs.get("w_intf_eff", float("nan"))),
+                        "w_pore_eff": float(logs.get("w_pore_eff", float("nan"))),
+                    }
+
+                    self.csv.log(row)
+
                     show = {
-                        "step": int(self.win_best_step) if self.win_best_step != -1 else None,
+                        "step": int(step_for_row),
                         "loss": src.get("loss", 0.0),
                         "dist": src.get("dist", 0.0),
                         "fape": src.get("fape", 0.0),
@@ -545,15 +587,13 @@ class Trainer:
                         "z_max": logs.get("z_tm_max", 0.0),
                         "tm": logs.get("tm_frac", 0.0),
                     }
-
-                    # Only one refresh every 100 steps
                     pbar.set_postfix(show)
-                
+
                     # reset window-best for the *next* 100-step block
                     self.win_best_metric_value = float("inf")
                     self.win_best_step = -1
                     self.win_best_snapshot = {}
-                    
+
                 if step and (step % eval_every == 0 or step == steps - 1):
                     self.save(step, ckpt_dir)
 
