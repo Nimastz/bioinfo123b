@@ -201,7 +201,7 @@ def main():
     write_fasta(ids, seqs, args.fasta_out)
 
     if not args.skip_af:
-        run_colabfold(args.fasta_out, args.af_out_dir, model_type="monomer")
+        run_colabfold(args.fasta_out, args.af_out_dir)
 
     extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
 
