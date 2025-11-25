@@ -20,7 +20,7 @@ class ViroporinAFMini(nn.Module):
         self.embed = nn.Linear(cfg.get("feat_dim", 480), ds)  # if using ESM; else overwritten
         self.embed_oh = nn.Embedding(21, ds)
         self.evo = EvoformerLite(ds, dp, cfg["evoformer"]["n_blocks"], cfg["evoformer"]["n_attn_heads"])
-        self.ipa = IPA(ds, cfg["ipa"]["n_blocks"], cfg["ipa"]["n_points"], cfg["ipa"]["dropout"])
+        self.ipa = IPA(ds + dp, cfg["ipa"]["n_blocks"], cfg["ipa"]["n_points"], cfg["ipa"]["dropout"])
         self.dist = DistogramHead(dp, cfg["heads"]["distogram_bins"])
         self.tors = TorsionHeadSimple(ds)
         self.conf = ConfidenceHeads(ds, dp)
@@ -50,7 +50,9 @@ class ViroporinAFMini(nn.Module):
         s, z = self.evo(x, z)
 
         # --- IPA and heads ---
-        xyz = self.ipa(s)                      # (B, L, 3)
+        z_row = z.mean(dim=2)                  # (B, L, d_pair)
+        s_ipa = torch.cat([s, z_row], dim=-1)  # (B, L, ds + dp)
+        xyz = self.ipa(s_ipa)                  # (B, L, 3)
         dist_logits = self.dist(z)             # (B, L, L, BINS)
         tors = self.tors(s)                    # (B, L, 3)
         plddt, pae = self.conf(s, z)           # (B, L), (B, L, L)

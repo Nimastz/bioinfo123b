@@ -7,15 +7,16 @@ seed: 123
 device: cuda
 
 model:
-  d_single: 128
-  d_pair: 64
+  feat_dim: 1280
+  d_single: 256
+  d_pair: 128
   heads:
-    distogram_bins: 64
+    distogram_bins: 96
   evoformer:
     n_blocks: 12
     n_attn_heads: 4
   ipa:
-    n_blocks: 8
+    n_blocks: 4
     n_points: 4
     dropout: 0.1
 

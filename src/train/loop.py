@@ -11,7 +11,7 @@ import torch, os
 from tqdm import trange, tqdm
 from src.losses.distogram import distogram_loss
 from src.losses.fape import fape_loss
-from src.losses.torsion import torsion_l2
+from src.geometry.torsion import torsion_loss
 from src.losses.viroporin_priors import (
     membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
 )
@@ -198,11 +198,11 @@ class Trainer:
                 tors_ok = torch.isfinite(tors_ref_b).all(dim=-1)
                 use_t = tors_ok & val_mask
                 if use_t.any():
-                    loss_tors = torsion_l2(tors_b[use_t], tors_ref_b[use_t])
+                    loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
                 else:
-                    loss_tors = torsion_l2(tors_b[val_mask])
+                    loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
             else:
-                loss_tors = torsion_l2(tors_b[val_mask])
+                loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
 
             # --- teacher-aware FAPE ---
             if "xyz_ref" in batch and batch["xyz_ref"] is not None:
