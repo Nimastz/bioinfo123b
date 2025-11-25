@@ -22,3 +22,16 @@ Thumbs.db
 # Environment configs
 .env
 .env.*
+
+# --- Project output folders ---
+checkpoints/*
+!checkpoints/.gitkeep
+!checkpoints/*.pt
+!checkpoints/*.csv
+!checkpoints/*.json
+
+results/*
+!results/.gitkeep
+!results/*.json
+!results/*.csv
+!results/*.pdb

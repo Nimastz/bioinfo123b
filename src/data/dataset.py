@@ -12,20 +12,8 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from src.data.featurize import load_npz
 import torch
-_ILLEGAL = re.compile(r'[<>:"/\\|?*]+')
-def _safe_name(s: str) -> str:
-    return _ILLEGAL.sub("_", s)
-
-def _safe_features_path(raw_path: str) -> str:
-    p = Path(raw_path)
-    if p.is_absolute():
-        parts = list(p.parts)
-        head, tail = parts[0], parts[1:]
-        tail = [_safe_name(x) for x in tail]
-        return str(Path(head).joinpath(*tail))
-    else:
-        parts = [_safe_name(x) for x in p.parts]
-        return str(Path(*parts))
+import numpy as np 
+TEACHER_DIR = Path(os.environ.get("VIROPORIN_TEACHER_ROOT", "alphafold/npz"))
     
 def _normalize_pat(stem: str) -> re.Pattern:
     # Turn 'AAC40516.1_HCV_p7_SRC:NCBI' into a regex like 'AAC40516.*1.*HCV.*p7.*SRC.*NCBI'
@@ -85,7 +73,37 @@ class JsonlSet(Dataset):
             if emb is not None:
                 emb = emb[:self.max_len]
 
-        return {"id": row.get("id", str(i)), "seq_idx": seq_idx, "emb": emb}
+        # ---- NEW: load AlphaFold teacher if available ----
+        xyz_ref = None
+        tors_ref = None
+
+        if TEACHER_DIR is not None and TEACHER_DIR.exists():
+            sid = row.get("id", str(i))
+            tpath = TEACHER_DIR / f"{sid}.npz"
+            if tpath.exists():
+                tnpz = np.load(tpath)
+                # produced by AF_teacher.py
+                xyz_ref = tnpz.get("xyz_ref")   # (L,3)
+                tors_ref = tnpz.get("tors_ref") # (L,3) [phi, psi, omega]
+                if xyz_ref is not None:
+                    xyz_ref = xyz_ref.astype("float32")
+                if tors_ref is not None:
+                    tors_ref = tors_ref.astype("float32")
+
+                # match any max_len truncation
+                L = len(seq_idx)
+                if xyz_ref is not None and xyz_ref.shape[0] > L:
+                    xyz_ref = xyz_ref[:L]
+                if tors_ref is not None and tors_ref.shape[0] > L:
+                    tors_ref = tors_ref[:L]
+
+        return {
+            "id": row.get("id", str(i)),
+            "seq_idx": seq_idx,
+            "emb": emb,
+            "xyz_ref": xyz_ref,
+            "tors_ref": tors_ref,
+        }
 
 def collate(batch):
     import torch
@@ -103,13 +121,35 @@ def collate(batch):
         D = len(batch[0]["emb"][0])
         emb = torch.full((B, L, D), float('nan'), dtype=torch.float32)
 
+    # ---- NEW: teacher tensors (if present) ----
+    have_xyz_ref = any(b.get("xyz_ref") is not None for b in batch)
+    have_tors_ref = any(b.get("tors_ref") is not None for b in batch)
+
+    xyz_ref = None
+    tors_ref = None
+    if have_xyz_ref:
+        xyz_ref = torch.full((B, L, 3), float('nan'), dtype=torch.float32)
+    if have_tors_ref:
+        tors_ref = torch.full((B, L, 3), float('nan'), dtype=torch.float32)
+
     # Fill tensors with data
     for i, b in enumerate(batch):
         l = len(b["seq_idx"])
         seq[i, :l] = torch.as_tensor(b["seq_idx"], dtype=torch.long)
-        if emb is not None:
+
+        if emb is not None and b.get("emb") is not None:
             eb = torch.as_tensor(b["emb"], dtype=torch.float32)
             emb[i, :l] = eb
+
+        if xyz_ref is not None and b.get("xyz_ref") is not None:
+            xr = torch.as_tensor(b["xyz_ref"], dtype=torch.float32)
+            xr = xr[:l]
+            xyz_ref[i, :xr.shape[0]] = xr
+
+        if tors_ref is not None and b.get("tors_ref") is not None:
+            tr = torch.as_tensor(b["tors_ref"], dtype=torch.float32)
+            tr = tr[:l]
+            tors_ref[i, :tr.shape[0]] = tr
 
     # --- Sanitize embeddings for NaN/Inf values and log if any were found ---
     if emb is not None:
@@ -119,7 +159,12 @@ def collate(batch):
             print(f"[collate] Warning: found {num_bad} non-finite values in batch embeddings — sanitized.")
         emb = torch.nan_to_num(emb, nan=0.0, posinf=1e4, neginf=-1e4)
 
-    return {"seq_idx": seq, "emb": emb}
+    out = {"seq_idx": seq, "emb": emb}
+    if xyz_ref is not None:
+        out["xyz_ref"] = xyz_ref
+    if tors_ref is not None:
+        out["tors_ref"] = tors_ref
+    return out
 
 def make_loaders(dc, device=None):
     train = JsonlSet(dc["train_index"], dc.get("max_len"))

@@ -28,22 +28,22 @@ data:
   max_len: 192
 
 train:
-  steps: 30000
+  steps: 40000
   lr: 1.0e-4
   weight_decay: 0.01
-  warmup_steps: 4000
+  warmup_steps: 0
+  gate_min_step: 0
+  gate_dist_thresh: 0         
+  gate_fape_thresh: 0
   grad_clip: 1.0
   amp_enabled: true     
   amp_on_step: 1000
   detect_anomaly: false    
-  eval_every: 100
-  log_every: 1
+  eval_every: 1000
+  log_every: 100
   ckpt_dir: checkpoints
   log_dir: checkpoints/logs
   ema_alpha: 0.1
-  gate_dist_thresh: 5.0
-  gate_fape_thresh: 2.0
-  gate_min_step: 0
   priors_warmup_steps: 2000
   grad_accum_steps: 4
   val_log_dir: checkpoints/logs
@@ -57,19 +57,19 @@ optimizer:
 
 loss_weights:
   distogram: 1.0
-  torsion: 0.01
+  torsion: 0.1
   fape: 0.5
-  priors: 0.01
-  membrane: 0.005
-  interface: 0.005
-  pore: 0.002
+  priors: 0.5
+  membrane: 0.05
+  interface: 0.05
+  pore: 0.05
 
 priors:
-  z_half_thickness: 10.0
+  z_half_thickness: 4.0
   mem_inband_pull: 0.05
   use_cn: true
   n_copies: 4
   ring_radius: 7.0
-  tm_span: [8, 28]
-  pore_target_A: 4.0
+  tm_span: [0.3, 0.7]
+  pore_target_A: 3.5
   cap_A: 6.0

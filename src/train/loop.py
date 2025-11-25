@@ -110,20 +110,7 @@ class Trainer:
             tmp = best_path + ".tmp"
             torch.save(state, tmp)
             os.replace(tmp, best_path)
-            tqdm.write(
-                (
-                f"train: step={step:>6}  "
-                f"({self.best_metric_name})={metric_value:.4f}  "
-                f"dist={logs.get('dist', 0):.3f}  "
-                f"tors={logs.get('tors', 0):.3f}  "
-                f"fape={logs.get('fape', 0):.3f}  "
-                f"mem_raw={logs.get('mem_raw', 0):.3f}  "
-                f"pore_raw={logs.get('pore_raw', 0):.3f}  "
-                f"pore_minA={logs.get('pore_minA', 0):.3f}  "
-                ),
-                end="\r",
-            )
-        # Update 100-step window best (no file copy; just tracking)
+            
         if metric_value < self.win_best_metric_value:
             self.win_best_metric_value = metric_value
             self.win_best_step = step
@@ -173,6 +160,17 @@ class Trainer:
             xyz_b  = xyz[b]            # (L,3)
             dist_b = dist_logits[b]    # (L,L,BINS)
             tors_b = tors_out[b]       # (L,3)
+            
+            
+            # --- enforce CA–CA ≈ 3.8 Å during training ---
+            with torch.no_grad():
+                if xyz_b.shape[0] > 1:
+                    diffs = xyz_b[1:] - xyz_b[:-1]          # (L-1,3)
+                    dists = diffs.norm(dim=-1)              # (L-1)
+                    d_mean = dists.mean()
+                    if d_mean > 1e-6:
+                        scale = (3.8 / d_mean).clamp(0.25, 4.0)  # safety clamp
+                        xyz_b[:] = xyz_b * scale             # in-place update
 
             # valid-residue mask (PAD token = 20)
             if batch["seq_idx"].dim() == 2:
@@ -193,8 +191,31 @@ class Trainer:
 
             # --- Base structural losses on valid residues only ---
             loss_dist = distogram_loss(dist_b, xyz_b, label_smoothing=0.01, pair_mask=pair_mask)
-            loss_tors = torsion_l2(tors_b[val_mask])
-            loss_fape = fape_loss(xyz_b[val_mask])
+
+            # --- teacher-aware TORSION ---
+            if "tors_ref" in batch and batch["tors_ref"] is not None:
+                tors_ref_b = batch["tors_ref"][b]
+                tors_ok = torch.isfinite(tors_ref_b).all(dim=-1)
+                use_t = tors_ok & val_mask
+                if use_t.any():
+                    loss_tors = torsion_l2(tors_b[use_t], tors_ref_b[use_t])
+                else:
+                    loss_tors = torsion_l2(tors_b[val_mask])
+            else:
+                loss_tors = torsion_l2(tors_b[val_mask])
+
+            # --- teacher-aware FAPE ---
+            if "xyz_ref" in batch and batch["xyz_ref"] is not None:
+                xyz_ref_b = batch["xyz_ref"][b]
+                xyz_ok = torch.isfinite(xyz_ref_b).all(dim=-1)
+                use = xyz_ok & val_mask
+                if use.any():
+                    loss_fape = fape_loss(xyz_b[use], xyz_ref_b[use])
+                else:
+                    loss_fape = fape_loss(xyz_b[val_mask])
+            else:
+                loss_fape = fape_loss(xyz_b[val_mask])
+
 
             # nan-guard (kept from your original)
             for name, val in {"distogram": loss_dist, "torsion": loss_tors, "fape": loss_fape}.items():
@@ -216,10 +237,6 @@ class Trainer:
                 tm_mask = tm_mask * val_mask.float()                          
                 tm_frac = float(tm_mask.float().mean().item())
                 logs["tm_frac"] = float(tm_mask.mean().item())
-
-                # keep your tm_frac print cadence
-                if b == 0 and (self.global_step % 100 == 0):
-                    print(f", tm_frac={tm_frac:.2f}")
 
                 # --- robust TM-only centering & diagnostics ---
                 z_all = xyz_b[:, 2]
@@ -266,6 +283,13 @@ class Trainer:
                         logs["pore_minA"] = float(finite_rs.min().item())
 
                 # single compute (unchanged, with your clamps later)
+                # cache z-range for the progress bar (no printing here)
+                logs["z_tm_min"] = float(xyz_centered[:,2].min().item())
+                logs["z_tm_max"] = float(xyz_centered[:,2].max().item())
+                
+                if b == 0 and self.global_step % 100 == 0:
+                    print(f"[dbg] z_centered range: {xyz_centered[:,2].min():.2f}..{xyz_centered[:,2].max():.2f}")
+
                 mem_raw  = membrane_slab_loss(xyz_centered, tm_mask)
                 intf     = interface_contact_loss(olig, cutoff=9.0)
                 clash    = ca_clash_loss(olig, min_dist=3.6)
@@ -275,30 +299,43 @@ class Trainer:
                 pore_raw = pore
 
                 # ---- Smooth prior warmup (your per-term schedule) ----
-                base_mem  = float(self.w.get("membrane",  0.1))
-                base_intf = float(self.w.get("interface", 0.1))
-                base_pore = float(self.w.get("pore",      0.1))
-
+                base_mem  = float(self.w.get("membrane",  0.05))  
+                base_intf = float(self.w.get("interface", 0.05))
+                base_pore = float(self.w.get("pore",      0.05))
+                
                 t = self.global_step
                 W = max(1, int(self.priors_warmup))
                 w_mem_lin  = base_mem  * min(1.0, t / W)                       # ramps 0→base over W
                 w_intf_lin = base_intf * min(1.0, t / (0.5 * W))               # ramps twice as fast
                 w_pore_lin = base_pore * min(1.0, max(0.0, (t - 0.5 * W) / W)) # starts halfway
 
+                # No warm-up: turn them on immediately
+                w_mem_lin  = base_mem
+                w_intf_lin = base_intf
+                w_pore_lin = base_pore
+                
                 # Global cosine warmup × backbone gate (unchanged)
-                dist_th  = float(self.cfg["train"].get("gate_dist_thresh", 2.0))
-                fape_th  = float(self.cfg["train"].get("gate_fape_thresh", 0.5))
-                min_step = int(self.cfg["train"].get("gate_min_step", 0))
+                # dist_th  = float(self.cfg["train"].get("gate_dist_thresh", 2.0))
+                # fape_th  = float(self.cfg["train"].get("gate_fape_thresh", 0.5))
+                # min_step = int(self.cfg["train"].get("gate_min_step", 0))
 
                 pw_global = self._priors_weight()  # (0..loss_weights.priors)
-                gate = 1.0 if ((loss_dist.item() < dist_th)
-                            and (loss_fape.item() < fape_th)
-                            and (self.global_step > min_step)) else 0.0
+                gate = 1.0 # if ((loss_dist.item() < dist_th)
+                            # and (loss_fape.item() < fape_th)
+                            # and (self.global_step > min_step)) else 0.0
 
                 # Final effective weights (unchanged structure)
-                w_mem_eff  = pw_global * gate * w_mem_lin
-                w_intf_eff = pw_global * gate * w_intf_lin
-                w_pore_eff = pw_global * gate * w_pore_lin
+                w_mem_eff  = pw_global * gate * max(w_mem_lin,  base_mem)
+                w_intf_eff = pw_global * gate * max(w_intf_lin, base_intf)
+                w_pore_eff = pw_global * gate * max(w_pore_lin, base_pore)
+                
+                # disable mem if tm_frac is nonsense (unchanged)
+                #if tm_frac < 0.05 or tm_frac > 0.60:
+                #    w_mem_eff = 0.0
+                # fade out version:
+                gate_tm = max(0.0, min(1.0, (tm_frac - 0.02) / (0.8 - 0.02)))
+                w_mem_eff *= float(gate_tm)
+
 
                 logs["pw_global"]  = float(pw_global)
                 logs["w_mem_lin"]  = float(w_mem_lin)
@@ -307,10 +344,7 @@ class Trainer:
                 logs["w_mem_eff"]  = float(w_mem_eff)
                 logs["w_intf_eff"] = float(w_intf_eff)
                 logs["w_pore_eff"] = float(w_pore_eff)
-
-                # disable mem if tm_frac is nonsense (unchanged)
-                if tm_frac < 0.05 or tm_frac > 0.60:
-                    w_mem_eff = 0.0
+                logs["tm_frac"] = float(tm_mask.float().mean().item())
 
                 # ---- your clamps & tanh squashing (unchanged) ----
                 mem_raw  = mem_raw.clamp(-10, 10)
@@ -374,7 +408,7 @@ class Trainer:
         ckpt_dir = self.cfg["train"]["ckpt_dir"]
         accum_steps = int(self.cfg["train"].get("grad_accum_steps", 1))
 
-        pbar = trange(self.start_step, steps, desc="", bar_format="train: {n_fmt}/{total_fmt} {postfix}")
+        pbar = trange(self.start_step, steps, desc="", bar_format="train: {n_fmt}/{total_fmt} {postfix}",miniters=log_every)
         it = iter(train_loader)
         try:
             for step in pbar:
@@ -396,6 +430,10 @@ class Trainer:
                 use_amp = self._amp_active()
                 with torch.autocast(device_type="cuda", dtype=self.amp_dtype, enabled=use_amp):
                     out = self.model(batch["seq_idx"], batch.get("emb"))
+                    if ("xyz" in out) and (not torch.isfinite(out["xyz"]).all()):
+                        print(f"[nan-guard] non-finite xyz @ step {self.global_step} — skipping update")
+                        self.opt.zero_grad(set_to_none=True)
+                        continue
                     for key in ("dist", "xyz", "tors"):
                         if key in out:
                             out[key] = torch.nan_to_num(out[key], nan=0.0, posinf=1e4, neginf=-1e4)
@@ -491,26 +529,31 @@ class Trainer:
                     "w_pore_eff": float(logs.get("w_pore_eff", float("nan"))),
                 }
                 # write every step (or guard with: if step % log_every == 0:)
-                self.csv.log(row)                
                 if step % log_every == 0:
-                    # Prefer to display the best-of-window snapshot; if empty (very early), fall back to current logs
+                    self.csv.log(row)              
                     src = self.win_best_snapshot if self.win_best_snapshot else logs
                     show = {
-                        # headline: window-best metric and the step it occurred
-                        f"step": int(self.win_best_step) if self.win_best_step != -1 else None,
-
-                        # detailed metrics (from the snapshot so they don't flicker each step)
+                        "step": int(self.win_best_step) if self.win_best_step != -1 else None,
                         "loss": src.get("loss", 0.0),
-                        "tors": src.get("tors", 0.0),
                         "dist": src.get("dist", 0.0),
                         "fape": src.get("fape", 0.0),
                         "mem_raw": src.get("mem_raw", 0.0),
                         "pore": src.get("pore", 0.0),
                         "pore_raw": src.get("pore_raw", 0.0),
                         "pore_minA": src.get("pore_minA", 0.0),
+                        "z_min": logs.get("z_tm_min", 0.0),
+                        "z_max": logs.get("z_tm_max", 0.0),
+                        "tm": logs.get("tm_frac", 0.0),
                     }
-                    pbar.set_postfix({k: (f"{v:.3f}" if isinstance(v, (int, float)) and v == v else "-") for k, v in show.items()})
 
+                    # Only one refresh every 100 steps
+                    pbar.set_postfix(show)
+                
+                    # reset window-best for the *next* 100-step block
+                    self.win_best_metric_value = float("inf")
+                    self.win_best_step = -1
+                    self.win_best_snapshot = {}
+                    
                 if step and (step % eval_every == 0 or step == steps - 1):
                     self.save(step, ckpt_dir)
 
@@ -523,11 +566,6 @@ class Trainer:
                     # choose metric and maybe save best.pt
                     metric_value = self._current_metric(step, logs, ema_loss)
                     self._maybe_save_best(step, metric_value, ckpt_dir, logs)
-
-                    # reset the 100-step window best AFTER evaluating this boundary
-                    self.win_best_metric_value = float("inf")
-                    self.win_best_step = -1
-                    self.win_best_snapshot = {}
 
                 # ---- end-of-training summary (written once) ----
                 if (step % 100 == 0) or (step == steps - 1):

@@ -29,25 +29,20 @@ def membrane_z_mask(L, tm_span):
     m[a:b] = 1.0
     return m
 
-def membrane_slab_loss(xyz, tm_mask, z_half_thickness=10.0):
-    # Support (L,3) or (B,L,3)
-    z = xyz[..., 2]  # works for both shapes
-    off = (z.abs() - float(z_half_thickness)).clamp_min(0.0)
+def membrane_slab_loss(xyz, tm_mask, half_thick=4.0):
+    z = xyz[..., 2].abs()                 # (..., L)
+    excess = torch.clamp(z - half_thick, min=0.0)
 
-    if z.dim() == 2:                 # (B, L)
-        tm = tm_mask.to(z.dtype).view(1, -1)   # (1, L), broadcast over B
-        valid = tm.sum()
-        if valid <= 0:
-            return xyz.new_tensor(0.0)
-        loss = (tm * off).sum() / (valid + 1e-6)
-    else:                             # (L,)
-        tm = tm_mask.to(z.dtype)      # (L,)
-        valid = tm.sum()
-        if valid <= 0:
-            return xyz.new_tensor(0.0)
-        loss = (tm * off).sum() / (valid + 1e-6)
+    # match mask shape and dtype
+    tm = tm_mask.to(z.dtype)
+    while tm.dim() < z.dim():
+        tm = tm.unsqueeze(0)
 
-    return torch.clamp(loss, min=0.0, max=1e6)
+    # mean over transmembrane residues, sum over batch if present
+    valid = tm.sum(dim=-1).clamp(min=1.0)
+    loss = (excess * tm).sum(dim=-1) / valid
+
+    return loss.mean()                    # scalar over batch
 
 def interface_contact_loss(olig_xyz, cutoff=8.0):
     n, L, _ = olig_xyz.shape
@@ -98,5 +93,6 @@ def pore_target_loss(olig_xyz, target_A=4.0, reduce="mean"):
     if reduce == "sum":
         return loss
     return loss
+
 
 

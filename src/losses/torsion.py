@@ -5,5 +5,14 @@
 
 import torch
 
-def torsion_l2(pred_rad):
-    return (pred_rad**2).mean()
+def torsion_l2(pred_rad, ref_rad=None):
+    """
+    If ref_rad is None: simple L2 on pred (regularizer).
+    If ref_rad is given: L2 on (pred - ref).
+    """
+    if ref_rad is None:
+        diff = pred_rad
+    else:
+        diff = pred_rad - ref_rad
+
+    return (diff ** 2).mean()
