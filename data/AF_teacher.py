@@ -1,4 +1,5 @@
-#   python AF_teacher.py --index train.jsonl
+# python AF_teacher.py --index train.jsonl
+# python AF_teacher.py --index train.jsonl --fasta_out alphafold/train.fasta --af_out_dir alphafold/pdb --teacher_npz_dir alphafold/npz --max_seqs 50 --chunk_size 4
 
 import json
 import subprocess
@@ -193,12 +194,39 @@ def main():
         action="store_true",
         help="skip running colabfold, just parse existing PDBs"
     )
+    # NEW: limit how many sequences we actually send to ColabFold
+    parser.add_argument(
+        "--max_seqs",
+        type=int,
+        default=200,
+        help="Maximum number of sequences to run through ColabFold. "
+             "If the index has more, they are evenly subsampled."
+    )
+    # NEW: configurable chunk size (less aggressive than fixed 5)
+    parser.add_argument(
+        "--chunk_size",
+        type=int,
+        default=3,
+        help="Number of sequences per ColabFold batch (smaller => less GPU/MSA load)."
+    )
+
     args = parser.parse_args()
 
     # ---- load all sequences ----
     ids, seqs = load_sequences_from_jsonl(args.index)
     n = len(ids)
     print(f"[info] loaded {n} sequences from {args.index}")
+
+    # subsample if we have more sequences than max_seqs
+    original_n = n
+    if args.max_seqs is not None and args.max_seqs > 0 and n > args.max_seqs:
+        # pick evenly spaced sequences to keep diversity
+        step = math.ceil(n / args.max_seqs)
+        ids = ids[::step]
+        seqs = seqs[::step]
+        n = len(ids)
+        print(f"[info] subsampling: original {original_n} → {n} sequences "
+              f"(step={step}, max_seqs={args.max_seqs})")
 
     # Write a master FASTA with all sequences (for record)
     write_fasta(ids, seqs, args.fasta_out)
@@ -209,13 +237,20 @@ def main():
         extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
         return
 
-    # ---- process in chunks of 5 sequences ----
-    chunk_size = 5
+    # ---- process in chunks ----
+    chunk_size = max(1, args.chunk_size)
+    print(f"[info] using chunk_size={chunk_size}")
+
     for start in range(0, n, chunk_size):
         end = min(n, start + chunk_size)
         batch_ids = ids[start:end]
         batch_seqs = seqs[start:end]
-        print(f"[info] processing chunk {start}..{end-1} ({end-start} sequences)")
+
+        # PROGRESS: how many sequences attempted so far
+        attempted = end
+        frac = attempted / n if n > 0 else 0.0
+        print(f"[info] processing chunk {start}..{end-1} ({end-start} sequences) "
+              f"[progress {attempted}/{n} = {frac:.1%}]")
 
         # Per-chunk FASTA, e.g. alphafold/train_chunk_0000_0004.fasta
         base = Path(args.fasta_out)
@@ -237,8 +272,22 @@ def main():
         extract_teacher_from_pdb_dir(args.af_out_dir, args.teacher_npz_dir)
         print(f"[info] finished chunk {start}..{end-1}")
 
-    print("[info] done. You can rerun with --skip_af to regenerate .npz from any PDBs.")
+    # report how many teacher npz we actually have for the used ids
+    teacher_dir = Path(args.teacher_npz_dir)
+    teacher_count = 0
+    for sid in ids:
+        if (teacher_dir / f"{sid}.npz").exists():
+            teacher_count += 1
 
+    if n > 0:
+        frac_teachers = teacher_count / n
+    else:
+        frac_teachers = 0.0
+
+    print(f"[info] teacher coverage: {teacher_count}/{n} sequences "
+        f"({frac_teachers:.1%}) have .npz teachers")
+
+    print("[info] done. You can rerun with --skip_af to regenerate .npz from any PDBs.")
 
 if __name__ == "__main__":
     main()

@@ -5,6 +5,7 @@
 # - fit(): iterates over training steps, updates model weights, logs progress, and saves checkpoints.
 # - save(): safely writes model and optimizer state to disk for resuming or evaluation.
 # Includes automatic mixed precision (AMP) and optional loss warmup for membrane/pore priors.
+#  try: python train.py --config configs/recommended.yaml --ckpt checkpoints/step_25000.pt
 
 import math
 import torch, os
@@ -90,12 +91,19 @@ class Trainer:
         return float(logs.get("loss", float("inf")))
 
     def _maybe_save_best(self, step: int, metric_value: float, ckpt_dir: str, logs: dict):
-        # Update global best
+        """
+        If this step is better than any previous one (global best),
+        save a checkpoint for this step and update best.pt alias.
+        """
         if metric_value < self.best_metric_value:
             self.best_metric_value = metric_value
             self.best_step = step
 
-            # write best.pt
+            # 1) Save a full checkpoint for this step
+            #    -> produces checkpoints/step_{step}.pt
+            self.save(step, ckpt_dir)
+
+            # 2) Also write a best.pt alias (small "best" checkpoint)
             best_path = os.path.join(ckpt_dir, "best.pt")
             state = {
                 "model": self.model.state_dict(),
@@ -110,7 +118,8 @@ class Trainer:
             tmp = best_path + ".tmp"
             torch.save(state, tmp)
             os.replace(tmp, best_path)
-            
+
+        # also track "window-best" for logging/postfix only
         if metric_value < self.win_best_metric_value:
             self.win_best_metric_value = metric_value
             self.win_best_step = step
@@ -594,18 +603,18 @@ class Trainer:
                     self.win_best_step = -1
                     self.win_best_snapshot = {}
 
-                if step and (step % eval_every == 0 or step == steps - 1):
-                    self.save(step, ckpt_dir)
+                    if step and (step % eval_every == 0 or step == steps - 1):
+                        # compute EMA (for "score") like your summary block does
+                        cur = float(loss.item())
+                        self.loss_ema = cur if self.loss_ema is None else (
+                            (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
+                        )
+                        ema_loss = float(self.loss_ema)
 
-                    # compute EMA (for "score") like your summary block does
-                    # reuse existing self.loss_ema update logic so 'ema_loss' is defined
-                    cur = float(loss.item())
-                    self.loss_ema = cur if self.loss_ema is None else (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
-                    ema_loss = float(self.loss_ema)
+                        # choose metric and maybe save best checkpoint
+                        metric_value = self._current_metric(step, logs, ema_loss)
+                        self._maybe_save_best(step, metric_value, ckpt_dir, logs)
 
-                    # choose metric and maybe save best.pt
-                    metric_value = self._current_metric(step, logs, ema_loss)
-                    self._maybe_save_best(step, metric_value, ckpt_dir, logs)
 
                 # ---- end-of-training summary (written once) ----
                 if (step % 100 == 0) or (step == steps - 1):
