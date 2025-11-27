@@ -65,17 +65,22 @@ class Trainer:
         self.best_ema = float("inf")
         self.loss_ema = None
         self.ema_alpha = float(self.cfg["train"].get("ema_alpha", 0.1))
-        
-        # ---- best tracking (global + window) ----
+
+        # ---- best tracking (global) ----
         self.best_metric_name = str(self.cfg["train"].get("best_metric", "loss"))  # "loss" or "score"
         self.best_metric_value = float("inf")
         self.best_step = -1
-        self.win_best_snapshot = {}
 
-        # Window-best (resets every eval_every steps)
+        # ---- window-best for logging (every log_every steps) ----
         self.win_best_metric_value = float("inf")
         self.win_best_step = -1
         self.win_best_snapshot = {}
+
+        # ---- checkpoint window-best (e.g. best of each 1000-step block) ----
+        # default window size = 1000 if not set in YAML
+        self.ckpt_window = int(self.cfg["train"].get("ckpt_window", 1000))
+        self.ckpt_best_metric_value = float("inf")
+        self.ckpt_best_step = -1
 
     def _compute_score(self, ema_loss: float, logs: dict) -> float:
         # same score you already write to summary.json
@@ -468,7 +473,7 @@ class Trainer:
                     self.opt.zero_grad(set_to_none=True)
 
                 # scale loss for accumulation
-                pre_accum_loss = loss.detach().clone().float()  # unscaled, full-precision copy
+                pre_accum_loss = loss.detach().clone().float() 
                 logs["loss"] = float(pre_accum_loss.item()) 
                 # --- update window-best (100-step) every step ---
                 if self.best_metric_name == "score":
@@ -494,9 +499,22 @@ class Trainer:
                         "intf": logs.get("intf", 0.0),
                         "clash": logs.get("clash", 0.0),
                     }
+                # --- NEW: checkpoint-window best (e.g. best of each 1000-step block) ---
+                if self.ckpt_window > 0:
+                    # update best in current ckpt window
+                    if metric_now < self.ckpt_best_metric_value:
+                        self.ckpt_best_metric_value = metric_now
+                        self.ckpt_best_step = step
+
+                    # if we hit the boundary of a window, save that window's best
+                    if step > 0 and (step % self.ckpt_window == 0):
+                        if self.ckpt_best_step >= 0:
+                            self.save(self.ckpt_best_step, ckpt_dir)
+                        # reset for next window
+                        self.ckpt_best_metric_value = float("inf")
+                        self.ckpt_best_step = -1
 
                 loss = loss / accum_steps
-                
 
                 if use_amp:
                     self.scaler.scale(loss).backward()
@@ -613,17 +631,17 @@ class Trainer:
                     self.win_best_step = -1
                     self.win_best_snapshot = {}
 
-                    if step and (step % eval_every == 0 or step == steps - 1):
-                        # compute EMA (for "score") like your summary block does
-                        cur = float(loss.item())
-                        self.loss_ema = cur if self.loss_ema is None else (
-                            (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
-                        )
-                        ema_loss = float(self.loss_ema)
+                if step and (step % eval_every == 0 or step == steps - 1):
+                    # compute EMA (for "score") like your summary block does
+                    cur = float(loss.item())
+                    self.loss_ema = cur if self.loss_ema is None else (
+                        (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
+                    )
+                    ema_loss = float(self.loss_ema)
 
-                        # choose metric and maybe save best checkpoint
-                        metric_value = self._current_metric(step, logs, ema_loss)
-                        self._maybe_save_best(step, metric_value, ckpt_dir, logs)
+                    # choose metric and maybe save best checkpoint
+                    metric_value = self._current_metric(step, logs, ema_loss)
+                    self._maybe_save_best(step, metric_value, ckpt_dir, logs)
 
 
                 # ---- end-of-training summary (written once) ----

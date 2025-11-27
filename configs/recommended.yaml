@@ -44,6 +44,7 @@ train:
   log_every: 100
   ckpt_dir: checkpoints
   log_dir: checkpoints/logs
+  ckpt_window: 1000
   ema_alpha: 0.1
   priors_warmup_steps: 2000
   grad_accum_steps: 4

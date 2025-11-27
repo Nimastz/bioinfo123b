@@ -6,6 +6,7 @@ import subprocess
 from pathlib import Path
 import math
 import numpy as np
+import random  # NEW: for random sampling
 
 def load_sequences_from_jsonl(index_path):
     ids = []
@@ -181,6 +182,108 @@ def extract_teacher_from_pdb_dir(pdb_dir, out_dir):
 
         print(f"[info] wrote teacher npz for {seq_id} → {out_path}")
 
+# NEW: stratified random sampling by family
+FAMILY_TAGS = [
+    "HCV_p7",
+    "HIV_Vpu",
+    "alphavirus_6K",
+    "coronavirus_E",
+    "coronavirus_ORF3a",
+    "influenza_M2",
+    "paramyxo_SH",
+    "picorna_2B",
+    "polyoma_VP4",
+    "rotavirus_NSP4",
+]
+
+def infer_family(seq_id: str) -> str:
+    """
+    Infer viroporin family from ID string by substring match.
+    If none matches, return 'other'.
+    """
+    for tag in FAMILY_TAGS:
+        if tag in seq_id:
+            return tag
+    return "other"
+
+def stratified_sample_by_family(ids, seqs, max_seqs: int):
+    """
+    Randomly sample up to max_seqs sequences, but proportionally
+    to family counts, based on FAMILY_TAGS and infer_family().
+    """
+    n = len(ids)
+    if max_seqs <= 0 or max_seqs >= n:
+        # no subsampling
+        return ids, seqs
+
+    # group indices by family
+    fam_to_indices = {}
+    for i, sid in enumerate(ids):
+        fam = infer_family(sid)
+        fam_to_indices.setdefault(fam, []).append(i)
+
+    # total across all families
+    total = sum(len(v) for v in fam_to_indices.values())
+    if total == 0:
+        # degenerate, just return original
+        return ids, seqs
+
+    # compute proportional quotas
+    fam_quota_float = {}
+    for fam, idxs in fam_to_indices.items():
+        fam_quota_float[fam] = max_seqs * (len(idxs) / total)
+
+    # floor + distribute remainder to largest fractional parts
+    fam_quota = {fam: int(math.floor(q)) for fam, q in fam_quota_float.items()}
+    used = sum(fam_quota.values())
+    remaining = max_seqs - used
+
+    # sort families by fractional part desc
+    fam_by_frac = sorted(
+        fam_quota_float.items(),
+        key=lambda kv: kv[1] - math.floor(kv[1]),
+        reverse=True,
+    )
+    for fam, _ in fam_by_frac:
+        if remaining <= 0:
+            break
+        fam_quota[fam] += 1
+        remaining -= 1
+
+    # sample within each family
+    chosen_indices = []
+    for fam, idxs in fam_to_indices.items():
+        if not idxs:
+            continue
+        k = min(fam_quota.get(fam, 0), len(idxs))
+        if k <= 0:
+            continue
+        # random sample from this family
+        chosen = random.sample(idxs, k)
+        chosen_indices.extend(chosen)
+
+    # in rare case we undershoot due to small families, top up randomly
+    if len(chosen_indices) < max_seqs:
+        remaining_idxs = [i for i in range(n) if i not in chosen_indices]
+        extra_k = min(max_seqs - len(chosen_indices), len(remaining_idxs))
+        if extra_k > 0:
+            chosen_indices.extend(random.sample(remaining_idxs, extra_k))
+
+    # sort to keep stable-ish order (not required, but nice)
+    chosen_indices = sorted(chosen_indices)
+
+    new_ids = [ids[i] for i in chosen_indices]
+    new_seqs = [seqs[i] for i in chosen_indices]
+
+    print("[info] stratified sampling by family:")
+    for fam in sorted(fam_to_indices.keys()):
+        n_fam = len(fam_to_indices[fam])
+        n_pick = sum(1 for i in chosen_indices if infer_family(ids[i]) == fam)
+        print(f"  {fam:18s}: {n_pick}/{n_fam} picked")
+
+    print(f"[info] total sampled: {len(new_ids)} (target max_seqs={max_seqs})")
+    return new_ids, new_seqs
+
 def main():
     import argparse
 
@@ -194,15 +297,15 @@ def main():
         action="store_true",
         help="skip running colabfold, just parse existing PDBs"
     )
-    # NEW: limit how many sequences we actually send to ColabFold
+    # limit how many sequences we actually send to ColabFold
     parser.add_argument(
         "--max_seqs",
         type=int,
         default=200,
         help="Maximum number of sequences to run through ColabFold. "
-             "If the index has more, they are evenly subsampled."
+             "If the index has more, they are stratified by family and randomly subsampled."
     )
-    # NEW: configurable chunk size (less aggressive than fixed 5)
+    # configurable chunk size (less aggressive than fixed 5)
     parser.add_argument(
         "--chunk_size",
         type=int,
@@ -217,16 +320,13 @@ def main():
     n = len(ids)
     print(f"[info] loaded {n} sequences from {args.index}")
 
-    # subsample if we have more sequences than max_seqs
+    # stratified subsample by family if we have more sequences than max_seqs
     original_n = n
     if args.max_seqs is not None and args.max_seqs > 0 and n > args.max_seqs:
-        # pick evenly spaced sequences to keep diversity
-        step = math.ceil(n / args.max_seqs)
-        ids = ids[::step]
-        seqs = seqs[::step]
+        ids, seqs = stratified_sample_by_family(ids, seqs, args.max_seqs)
         n = len(ids)
-        print(f"[info] subsampling: original {original_n} → {n} sequences "
-              f"(step={step}, max_seqs={args.max_seqs})")
+        print(f"[info] stratified subsampling: original {original_n} → {n} sequences "
+              f"(max_seqs={args.max_seqs})")
 
     # Write a master FASTA with all sequences (for record)
     write_fasta(ids, seqs, args.fasta_out)
@@ -285,7 +385,7 @@ def main():
         frac_teachers = 0.0
 
     print(f"[info] teacher coverage: {teacher_count}/{n} sequences "
-        f"({frac_teachers:.1%}) have .npz teachers")
+          f"({frac_teachers:.1%}) have .npz teachers")
 
     print("[info] done. You can rerun with --skip_af to regenerate .npz from any PDBs.")
 
