@@ -17,6 +17,38 @@ def _huber(x, delta=1.0):
     ax = x.abs()
     return torch.where(ax < delta, 0.5 * ax * ax / max(delta, _EPS), ax - 0.5 * delta)
 
+# in src/losses/viroporin_priors.py
+
+def self_ca_clash_loss(xyz: torch.Tensor, min_dist: float = 3.6) -> torch.Tensor:
+    """
+    Simple intra-chain CA–CA clash penalty.
+
+    xyz: (L, 3) backbone CA coordinates. May come in as bf16/fp16 under AMP.
+    Returns a scalar penalty: mean(max(min_dist - d_ij, 0)) over i != j.
+    """
+    # Make sure we’re in a dtype cdist supports on CUDA
+    xyz32 = xyz.to(dtype=torch.float32)
+
+    # Guard tiny chains
+    if xyz32.ndim != 2 or xyz32.shape[0] < 2:
+        return xyz32.new_tensor(0.0)
+
+    # Pairwise distances
+    D = torch.cdist(xyz32, xyz32, p=2)  # (L, L)
+
+    # No self-clash on the diagonal
+    eye = torch.eye(D.shape[0], dtype=torch.bool, device=D.device)
+    D = D.masked_fill(eye, float("inf"))
+
+    # Penalty where residues are closer than min_dist
+    penalty = (float(min_dist) - D).clamp_min(0.0)
+
+    # If everything is non-clashing, return 0
+    if not torch.isfinite(penalty).any():
+        return xyz32.new_tensor(0.0)
+
+    return penalty.mean()
+
 def membrane_z_mask(L, tm_span):
     a, b = int(tm_span[0]), int(tm_span[1])
     a = max(0, min(a, L))
@@ -52,11 +84,15 @@ def interface_contact_loss(olig_xyz, cutoff=8.0):
     pairs = 0
     for i in range(n):
         for j in range(i + 1, n):
-            D = torch.cdist(olig_xyz[i], olig_xyz[j], p=2)
+            # ensure float32 for cdist under AMP
+            Di = olig_xyz[i].to(torch.float32)
+            Dj = olig_xyz[j].to(torch.float32)
+            D = torch.cdist(Di, Dj, p=2)
             frac_far = (D > float(cutoff)).float().mean()
             loss = loss + frac_far
             pairs += 1
     return loss / max(1, pairs)
+
 
 def ca_clash_loss(olig_xyz, min_dist=3.6):
     n, L, _ = olig_xyz.shape
@@ -66,7 +102,10 @@ def ca_clash_loss(olig_xyz, min_dist=3.6):
     pairs = 0
     for i in range(n):
         for j in range(i + 1, n):
-            D = torch.cdist(olig_xyz[i], olig_xyz[j], p=2)
+            # ensure float32 for cdist under AMP
+            Di = olig_xyz[i].to(torch.float32)
+            Dj = olig_xyz[j].to(torch.float32)
+            D = torch.cdist(Di, Dj, p=2)
             penalty = penalty + (float(min_dist) - D).clamp_min(0.0).mean()
             pairs += 1
     return penalty / max(1, pairs)

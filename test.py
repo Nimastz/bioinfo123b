@@ -89,7 +89,7 @@ def load_latest_ckpt(ckpt_dir: str):
 def eval_one(cfg, model, batch, device):
     """
     Single-sample evaluation that mirrors Trainer.step_losses() logic:
-    - CA–CA rescale to ~3.8 Å
+    - CA–CA rescale to ~3.8 Å (like training)
     - valid-mask & pair-mask
     - distogram_loss with label_smoothing
     - torsion_loss with helix bias
@@ -99,16 +99,6 @@ def eval_one(cfg, model, batch, device):
     model.eval()
     with torch.no_grad():  # run eval in full fp32 to avoid AMP under/overflows
         torch.set_float32_matmul_precision("high")
-        
-        if not hasattr(eval_one, "_printed"):
-            print("====== TEST BATCH DEBUG ======")
-            print("seq_idx:", batch["seq_idx"].shape)
-            print("emb:", None if batch.get("emb") is None else batch["emb"].shape)
-            print("msa:", None if batch.get("msa") is None else batch["msa"].shape)
-            print("xyz_ref:", None if batch.get("xyz_ref") is None else batch["xyz_ref"].shape)
-            print("tors_ref:", None if batch.get("tors_ref") is None else batch["tors_ref"].shape)
-            print("=================================")
-            eval_one._printed = True
 
         # forward pass (include MSA like in training)
         out = model(
@@ -117,53 +107,31 @@ def eval_one(cfg, model, batch, device):
             msa=batch.get("msa"),
         )
 
-        xyz_raw = out["xyz"]  # (L,3) or (B,L,3)
-        with torch.no_grad():
-            if xyz.dim() == 3:
-                diffs = xyz[:, 1:] - xyz[:, :-1]
-                dists = diffs.norm(dim=-1)
-                d_mean = dists.mean()
-            else:
-                diffs = xyz[1:] - xyz[:-1]
-                dists = diffs.norm(dim=-1)
-                d_mean = dists.mean()
-
-            if d_mean > 1e-6:
-                scale = (3.8 / d_mean).clamp(0.25, 4.0)
-                xyz = xyz * scale
-
-        # then pass xyz to your PDB writer
-
-        dist_raw = out["dist"]  # (L,L,BINS)
-        tors_raw = out["tors"]  # (L,3)
-
-        # quick debug stats on raw coords
-        mx = torch.nan_to_num(xyz_raw).abs().max().item()
-        sd = torch.nan_to_num(xyz_raw).std().item()
-        print(f"[dbg] xyz_raw.abs().max={mx:.2f}, xyz_raw.std={sd:.2f}")
-
         # ---- normalize to single-sample tensors ----
-        if xyz_raw.dim() == 3:
-            xyz_b = xyz_raw[0]
-            dist_b = dist_raw[0]
-            tors_b = tors_raw[0]
+        xyz_out = out["xyz"]       # (L,3) or (B,L,3)
+        dist_out = out["dist"]     # (L,L,BINS) or (B,L,L,BINS)
+        tors_out = out["tors"]     # (L,3) or (B,L,3)
+
+        if xyz_out.dim() == 3:
+            xyz_b = xyz_out[0]
+            dist_b = dist_out[0]
+            tors_b = tors_out[0]
         else:
-            xyz_b = xyz_raw
-            dist_b = dist_raw
-            tors_b = tors_raw
+            xyz_b = xyz_out
+            dist_b = dist_out
+            tors_b = tors_out
 
         L = xyz_b.shape[0]
         device = xyz_b.device
 
         # ---- enforce CA–CA ≈ 3.8 Å (same as training) ----
-        with torch.no_grad():
-            if L > 1:
-                diffs = xyz_b[1:] - xyz_b[:-1]
-                dists = diffs.norm(dim=-1)
-                d_mean = dists.mean()
-                if d_mean > 1e-6:
-                    scale = (3.8 / d_mean).clamp(0.25, 4.0)
-                    xyz_b[:] = xyz_b * scale
+        if L > 1:
+            diffs = xyz_b[1:] - xyz_b[:-1]
+            dists = diffs.norm(dim=-1)
+            d_mean = dists.mean()
+            if d_mean > 1e-6:
+                scale = (3.8 / d_mean).clamp(0.25, 4.0)
+                xyz_b = xyz_b * scale
 
         # ---- valid residue & pair masks (PAD token = 20) ----
         seq = batch["seq_idx"].to(device)
@@ -172,7 +140,8 @@ def eval_one(cfg, model, batch, device):
         else:
             seq_b = seq
 
-        val_mask = (seq_b != 20)  # (L,)
+        PAD_IDX = 20  # will be overwritten by globals in main(), but safe default
+        val_mask = (seq_b != PAD_IDX)  # (L,)
         n_valid = int(val_mask.sum().item())
         if n_valid < 2:
             # degenerate sample; return zero-ish losses
@@ -188,7 +157,6 @@ def eval_one(cfg, model, batch, device):
         loss_dist = distogram_loss(
             dist_b,
             xyz_b,
-            n_bins=dist_b.shape[-1],
             label_smoothing=0.01,
             pair_mask=pair_mask,
         )
@@ -361,51 +329,50 @@ def check_checkpoint_sanity(ckpt_path: str, max_abs_value: float = 1e5):
     return True
 
 def reconstruct_backbone_from_ca(xyz_ca: torch.Tensor):
-        """
-        Very simple CA -> (N, CA, C, O) reconstruction.
-        xyz_ca: (L, 3) tensor in Å.
-        Returns: dict with "N", "CA", "C", "O" each (L, 3).
-        NOTE: This is a crude approximation for visualization, not
-            a chemically perfect reconstruction.
-        """
-        xyz_ca = xyz_ca.clone()
-        L = xyz_ca.shape[0]
+    """
+    Very simple CA -> (N, CA, C, O) reconstruction.
+    xyz_ca: (L, 3) tensor in Å.
+    Returns: dict with "N", "CA", "C", "O" each (L, 3).
+    NOTE: This is a crude approximation for visualization, not
+        a chemically perfect reconstruction.
+    """
+    xyz_ca = xyz_ca.clone()
+    L = xyz_ca.shape[0]
 
-        # --- approximate local backbone direction (tangent) ---
-        # forward: CA[i+1] - CA[i], backward: CA[i] - CA[i-1]
-        forward = torch.zeros_like(xyz_ca)
-        backward = torch.zeros_like(xyz_ca)
+    # --- approximate local backbone direction (tangent) ---
+    forward = torch.zeros_like(xyz_ca)
+    backward = torch.zeros_like(xyz_ca)
 
-        forward[:-1] = xyz_ca[1:] - xyz_ca[:-1]
-        backward[1:] = xyz_ca[1:] - xyz_ca[:-1]
+    forward[:-1] = xyz_ca[1:] - xyz_ca[:-1]
+    backward[1:] = xyz_ca[1:] - xyz_ca[:-1]
 
-        # average the two to get a smoother tangent
-        tangent = forward + backward
-        tangent = F.normalize(tangent, dim=-1, eps=1e-8)  # (L,3)
+    tangent = forward + backward
 
-        # --- arbitrary "up" vector to define a plane for placing O ---
-        # We'll use a fixed global up, then orthogonalize to tangent
-        up_global = torch.tensor([0.0, 0.0, 1.0], device=xyz_ca.device)
-        up = up_global.expand_as(xyz_ca)
-        # remove component along tangent
-        up = up - (up * tangent).sum(-1, keepdim=True) * tangent
-        up = F.normalize(up, dim=-1, eps=1e-8)
+    # NEW: avoid zero tangent -> choose a default direction
+    tangent = F.normalize(tangent, dim=-1, eps=1e-8)
+    bad = (tangent.norm(dim=-1, keepdim=True) < 1e-3)
+    if bad.any():
+        fallback = torch.tensor([1.0, 0.0, 0.0], device=xyz_ca.device).view(1, 3)
+        tangent = torch.where(bad, fallback, tangent)
 
-        # --- place backbone atoms relative to CA ---
-        # Place C slightly "forward" from CA; N slightly "backward"
-        C  = xyz_ca + BOND_CA_C * tangent
-        N  = xyz_ca - BOND_N_CA  * tangent
+    # --- arbitrary "up" vector to define a plane for placing O ---
+    up_global = torch.tensor([0.0, 0.0, 1.0], device=xyz_ca.device)
+    up = up_global.expand_as(xyz_ca)
+    up = up - (up * tangent).sum(-1, keepdim=True) * tangent
+    up = F.normalize(up, dim=-1, eps=1e-8)
 
-        # Place O offset from C in the (up) direction
-        O  = C + BOND_C_O * up
+    # --- place backbone atoms relative to CA ---
+    C  = xyz_ca + BOND_CA_C * tangent
+    N  = xyz_ca - BOND_N_CA  * tangent
+    O  = C + BOND_C_O * up
 
-        backbone = {
-            "N":  N,
-            "CA": xyz_ca,
-            "C":  C,
-            "O":  O,
-        }
-        return backbone
+    backbone = {
+        "N":  N,
+        "CA": xyz_ca,
+        "C":  C,
+        "O":  O,
+    }
+    return backbone
 
 def write_backbone_pdb(fh, backbone, seq, chain_id="A",
                        serial_start=1, resid_start=1):
@@ -569,9 +536,22 @@ def main():
             model.eval()
             with torch.no_grad():
                 out = model(batch["seq_idx"].to(device), batch.get("emb"), msa=batch.get("msa"))
-                xyz_ca = out["xyz"].detach().cpu()  # (L,3)
+                xyz_ca = out["xyz"].detach().cpu()  # (L,3) or (B,L,3)
 
-                # --- RECENTER (fix stupid 200/300 offset) ---
+                # handle batch dim
+                if xyz_ca.dim() == 3:
+                    xyz_ca = xyz_ca[0]
+
+                # --- CA–CA rescale to ~3.8 Å (same as training/test) ---
+                if xyz_ca.shape[0] > 1:
+                    diffs = xyz_ca[1:] - xyz_ca[:-1]
+                    dists = diffs.norm(dim=-1)
+                    d_mean = dists.mean()
+                    if d_mean > 1e-6:
+                        scale = (3.8 / d_mean).clamp(0.25, 4.0)
+                        xyz_ca = xyz_ca * scale
+
+                # --- RECENTER (remove global offset) ---
                 center = xyz_ca.median(dim=0).values
                 xyz_ca = xyz_ca - center
 

@@ -312,9 +312,16 @@ def main():
         default=3,
         help="Number of sequences per ColabFold batch (smaller => less GPU/MSA load)."
     )
+    parser.add_argument(
+        "--start_idx",
+        type=int,
+        default=0,
+        help="0-based index into the (possibly subsampled) sequence list to start from. "
+             "Useful to continue from where a previous run stopped."
+    )
 
     args = parser.parse_args()
-
+    
     # ---- load all sequences ----
     ids, seqs = load_sequences_from_jsonl(args.index)
     n = len(ids)
@@ -339,12 +346,24 @@ def main():
 
     # ---- process in chunks ----
     chunk_size = max(1, args.chunk_size)
+    start_idx = max(0, min(args.start_idx, n))
+    if start_idx > 0:
+        print(f"[info] skipping first {start_idx} sequences, starting from index {start_idx}")
+
     print(f"[info] using chunk_size={chunk_size}")
 
-    for start in range(0, n, chunk_size):
+    for start in range(start_idx, n, chunk_size):
         end = min(n, start + chunk_size)
         batch_ids = ids[start:end]
         batch_seqs = seqs[start:end]
+
+        attempted = end - start_idx
+        total = n - start_idx if n > start_idx else 1
+        frac = attempted / total
+
+        print(f"[info] processing chunk {start}..{end-1} ({end-start} sequences) "
+              f"[progress {attempted}/{total} = {frac:.1%}]")
+
 
         # PROGRESS: how many sequences attempted so far
         attempted = end

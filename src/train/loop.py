@@ -14,7 +14,7 @@ from src.losses.distogram import distogram_loss
 from src.losses.fape import fape_loss
 from src.geometry.torsion import torsion_loss
 from src.losses.viroporin_priors import (
-    membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
+    membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss, self_ca_clash_loss
 )
 from src.geometry.assembly import assemble_cn
 from src.utils.logger import CSVLogger
@@ -95,41 +95,6 @@ class Trainer:
         # default: "loss"
         return float(logs.get("loss", float("inf")))
 
-    def _maybe_save_best(self, step: int, metric_value: float, ckpt_dir: str, logs: dict):
-        """
-        If this step is better than any previous one (global best),
-        save a checkpoint for this step and update best.pt alias.
-        """
-        if metric_value < self.best_metric_value:
-            self.best_metric_value = metric_value
-            self.best_step = step
-
-            # 1) Save a full checkpoint for this step
-            #    -> produces checkpoints/step_{step}.pt
-            self.save(step, ckpt_dir)
-
-            # 2) Also write a best.pt alias (small "best" checkpoint)
-            best_path = os.path.join(ckpt_dir, "best.pt")
-            state = {
-                "model": self.model.state_dict(),
-                "opt": self.opt.state_dict(),
-                "sched": self.sched.state_dict() if self.sched else None,
-                "scaler": self.scaler.state_dict(),
-                "cfg": self.cfg,
-                "step": int(step),
-                "best_metric": float(metric_value),
-                "best_metric_name": self.best_metric_name,
-            }
-            tmp = best_path + ".tmp"
-            torch.save(state, tmp)
-            os.replace(tmp, best_path)
-
-        # also track "window-best" for logging/postfix only
-        if metric_value < self.win_best_metric_value:
-            self.win_best_metric_value = metric_value
-            self.win_best_step = step
-
- 
     def _amp_active(self):
         return (self.use_cuda
                 and self.amp_enabled_cfg
@@ -168,14 +133,13 @@ class Trainer:
         }
         n_prior = 0
 
-        # -------- [CHANGED] Loop per sample to keep priors on (L,3)/(L,) API --------
+        # -------- Loop per sample to keep priors on (L,3)/(L,) API --------
         for b in range(B):
             # per-sample tensors
             xyz_b  = xyz[b]            # (L,3)
             dist_b = dist_logits[b]    # (L,L,BINS)
             tors_b = tors_out[b]       # (L,3)
-            
-            
+
             # --- enforce CA–CA ≈ 3.8 Å during training ---
             with torch.no_grad():
                 if xyz_b.shape[0] > 1:
@@ -183,27 +147,25 @@ class Trainer:
                     dists = diffs.norm(dim=-1)              # (L-1)
                     d_mean = dists.mean()
                     if d_mean > 1e-6:
-                        scale = (3.8 / d_mean).clamp(0.25, 4.0)  # safety clamp
-                        xyz_b[:] = xyz_b * scale             # in-place update
+                        scale = (3.8 / d_mean).clamp(0.25, 4.0)
+                        xyz_b[:] = xyz_b * scale
 
-            # valid-residue mask (PAD token = 20)
+            # ---- valid-residue mask (PAD token = 20) ----
             if batch["seq_idx"].dim() == 2:
                 val_mask = (batch["seq_idx"][b] != 20)     # (L,)
-                n_valid = int(val_mask.sum().item())
-                if n_valid < 2:
-                    continue
             else:
                 val_mask = (batch["seq_idx"] != 20)        # (L,)
-                n_valid = int(val_mask.sum().item())
-                if n_valid < 2:
-                    continue
 
-            # pair mask for distogram (only valid pairs)
+            n_valid = int(val_mask.sum().item())
+            if n_valid < 2:
+                continue
+
+            # pair mask for distogram
             pair_mask = val_mask[:, None] & val_mask[None, :]
             if pair_mask.sum() == 0:
                 continue
 
-            # --- does this sample have usable teacher xyz? ---
+            # --- teacher xyz? ---
             has_teacher = False
             xyz_ref_b = None
             if "xyz_ref" in batch and batch["xyz_ref"] is not None:
@@ -211,13 +173,13 @@ class Trainer:
                 if xyz_ref_b is not None and torch.isfinite(xyz_ref_b).all():
                     has_teacher = True
 
-            # --- choose target coords for distogram ---
+            # --- target coords for distogram ---
             if has_teacher:
-                xyz_target = xyz_ref_b           # teacher-supervised distogram
+                xyz_target = xyz_ref_b        # teacher-supervised
             else:
-                xyz_target = xyz_b               # self-distogram
+                xyz_target = xyz_b            # self-distogram
 
-            # Use xyz_target instead of xyz_b
+            # --- DISTOGRAM ---
             loss_dist = distogram_loss(
                 dist_b,
                 xyz_target,
@@ -225,7 +187,7 @@ class Trainer:
                 pair_mask=pair_mask,
             )
 
-            # --- teacher-aware TORSION ---
+            # --- TORSION ---
             if "tors_ref" in batch and batch["tors_ref"] is not None:
                 tors_ref_b = batch["tors_ref"][b]
                 tors_ok = torch.isfinite(tors_ref_b).all(dim=-1)
@@ -237,44 +199,54 @@ class Trainer:
             else:
                 loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
 
-            # --- teacher-aware FAPE with different weights ---
+            # --- FAPE ---
             if has_teacher:
-                # full teacher FAPE
-                use = val_mask  # you can keep your xyz_ok & val_mask if you need it
+                use = val_mask
                 loss_fape = fape_loss(xyz_b[use], xyz_ref_b[use])
-                w_fape_eff = self.w["fape"]      # e.g. 0.5
+                w_fape_eff = self.w["fape"]
             else:
-                # self-FAPE for smoothness ONLY, much weaker
-                loss_fape = fape_loss(xyz_b[val_mask])   # uses ref=None path
-                w_fape_eff = 0.05 * self.w["fape"]        # e.g. 0.05 if w["fape"]=0.5
+                loss_fape = fape_loss(xyz_b[val_mask])   # self-FAPE
+                w_fape_eff = 0.05 * self.w["fape"]
 
-            # nan-guard (kept from your original)
+            # nan-guard
             for name, val in {"distogram": loss_dist, "torsion": loss_tors, "fape": loss_fape}.items():
                 if not torch.isfinite(val):
                     raise RuntimeError(f"[nan-guard] {name} is non-finite @ step {self.global_step}, sample {b}")
 
+            # --- base loss ---
             loss_b = (
                 self.w["distogram"] * loss_dist
                 + self.w["torsion"]  * loss_tors
                 + w_fape_eff         * loss_fape
             )
 
-            # ---- Viroporin priors (unchanged logic, now per-sample) ----
-            if self.pr.get("use_cn", True):
-                n, rr = self.pr["n_copies"], self.pr["ring_radius"]
-                olig = assemble_cn(xyz_b, n_copies=n, ring_radius=rr)  # expects (L,3)
+            # --- NEW: self CA–CA clash penalty (within chain) ---
+            if n_valid > 4:  # small guard
+                self_clash = self_ca_clash_loss(xyz_b[val_mask])
+                loss_b = loss_b + 0.05 * self_clash
+                # optional: if you *want* to include this in "clash" metric:
+                # acc["clash"] += float(self_clash.detach().cpu())
 
+            # ---- Viroporin priors (CN assembly + membrane / pore / interface) ----
+            if self.pr.get("use_cn", True):
+                n_copies   = self.pr["n_copies"]
+                ring_radius = self.pr["ring_radius"]
+
+                # build Cn oligomer
+                olig = assemble_cn(xyz_b, n_copies=n_copies, ring_radius=ring_radius)
+
+                # TM mask
                 tm_mask = membrane_z_mask(L, self.pr["tm_span"]).to(device)  # (L,)
-                tm_mask = tm_mask * val_mask.float()                          
+                tm_mask = tm_mask * val_mask.float()
                 tm_frac = float(tm_mask.float().mean().item())
                 logs["tm_frac"] = float(tm_mask.mean().item())
 
                 # --- robust TM-only centering & diagnostics ---
-                z_all = xyz_b[:, 2]
-                tm_bool = (tm_mask > 0.5) & val_mask          # only real TM residues
-                val_bool = val_mask                            # all real residues
-                
-                # center on TM median if available, else on all-valid median
+                z_all   = xyz_b[:, 2]
+                tm_bool = (tm_mask > 0.5) & val_mask
+                val_bool = val_mask
+
+                # center on TM median if possible, else all-valid median
                 if tm_bool.any():
                     z_center = z_all[tm_bool].median().detach()
                 else:
@@ -283,7 +255,7 @@ class Trainer:
                 xyz_centered = xyz_b.clone()
                 xyz_centered[:, 2] -= z_center
 
-                # diagnostics (TM-only preferred; fall back to all-valid)
+                # diagnostics (prefer TM, fall back to all-valid)
                 if tm_bool.any():
                     zc_tm = xyz_centered[tm_bool, 2]
                     logs["z_abs_mean_tm"] = float(zc_tm.abs().mean().item())
@@ -299,13 +271,13 @@ class Trainer:
                 logs["z_tm_max"]   = float(use_z.max().item())
                 logs["z_tm_range"] = float((use_z.max() - use_z.min()).item())
 
-                # uncentered drift (monitoring only)
+                # uncentered drift
                 if tm_bool.any():
                     logs["z_abs_mean_unc"] = float(z_all[tm_bool].abs().mean().item())
                 else:
                     logs["z_abs_mean_unc"] = float(z_all[val_bool].abs().mean().item())
 
-                # get a quick pore proxy:
+                # pore radius profile
                 from src.geometry.assembly import pore_radius_profile_ca
                 zs, rs = pore_radius_profile_ca(olig)
                 if rs.numel() > 0:
@@ -313,14 +285,13 @@ class Trainer:
                     if finite_rs.numel() > 0:
                         logs["pore_minA"] = float(finite_rs.min().item())
 
-                # single compute (unchanged, with your clamps later)
-                # cache z-range for the progress bar (no printing here)
-                logs["z_tm_min"] = float(xyz_centered[:,2].min().item())
-                logs["z_tm_max"] = float(xyz_centered[:,2].max().item())
-                
+                # optional debug
                 if b == 0 and self.global_step % 100 == 0:
-                    print(f"[dbg] z_centered range: {xyz_centered[:,2].min():.2f}..{xyz_centered[:,2].max():.2f}")
+                    zmin = xyz_centered[:, 2].min().item()
+                    zmax = xyz_centered[:, 2].max().item()
+                    print(f"[dbg] z_centered range: {zmin:.2f}..{zmax:.2f}")
 
+                # ---- membrane / interface / pore priors ----
                 mem_raw  = membrane_slab_loss(xyz_centered, tm_mask)
                 intf     = interface_contact_loss(olig, cutoff=9.0)
                 clash    = ca_clash_loss(olig, min_dist=3.6)
@@ -329,40 +300,26 @@ class Trainer:
                     pore = torch.tensor(0.0, device=olig.device)
                 pore_raw = pore
 
-                # ---- Smooth prior warmup (your per-term schedule) ----
-                base_mem  = float(self.w.get("membrane",  0.05))  
+                # ---- prior weights (using your config) ----
+                base_mem  = float(self.w.get("membrane",  0.05))
                 base_intf = float(self.w.get("interface", 0.05))
                 base_pore = float(self.w.get("pore",      0.05))
-                
-                t = self.global_step
-                W = max(1, int(self.priors_warmup))
-                w_mem_lin  = base_mem  * min(1.0, t / W)                       # ramps 0→base over W
-                w_intf_lin = base_intf * min(1.0, t / (0.5 * W))               # ramps twice as fast
-                w_pore_lin = base_pore * min(1.0, max(0.0, (t - 0.5 * W) / W)) # starts halfway
 
-                # No warm-up: turn them on immediately
+                # if you later want true warmup, use priors_warmup; for now turn fully on:
                 w_mem_lin  = base_mem
                 w_intf_lin = base_intf
                 w_pore_lin = base_pore
-                
-                # Global cosine warmup × backbone gate (unchanged)
-                # dist_th  = float(self.cfg["train"].get("gate_dist_thresh", 2.0))
-                # fape_th  = float(self.cfg["train"].get("gate_fape_thresh", 0.5))
-                # min_step = int(self.cfg["train"].get("gate_min_step", 0))
 
-                pw_global = self._priors_weight()  # (0..loss_weights.priors)
-                gate = 1.0 # if ((loss_dist.item() < dist_th)
-                            # and (loss_fape.item() < fape_th)
-                            # and (self.global_step > min_step)) else 0.0
+                pw_global = self._priors_weight()
+                gate = 1.0
 
-                # Final effective weights (unchanged structure)
                 w_mem_eff  = pw_global * gate * max(w_mem_lin,  base_mem)
                 w_intf_eff = pw_global * gate * max(w_intf_lin, base_intf)
                 w_pore_eff = pw_global * gate * max(w_pore_lin, base_pore)
 
-                gate_tm = max(0.0, min(1.0, (tm_frac - 0.02) / (0.8 - 0.02)))
+                # TM-fraction gating
+                gate_tm   = max(0.0, min(1.0, (tm_frac - 0.02) / (0.8 - 0.02)))
                 w_mem_eff *= float(gate_tm)
-
 
                 logs["pw_global"]  = float(pw_global)
                 logs["w_mem_lin"]  = float(w_mem_lin)
@@ -371,22 +328,21 @@ class Trainer:
                 logs["w_mem_eff"]  = float(w_mem_eff)
                 logs["w_intf_eff"] = float(w_intf_eff)
                 logs["w_pore_eff"] = float(w_pore_eff)
-                logs["tm_frac"] = float(tm_mask.float().mean().item())
+                logs["gate"]       = float(gate)
 
-                # ---- your clamps & tanh squashing (unchanged) ----
+                # ---- clamps & tanh smoothing ----
                 mem_raw  = mem_raw.clamp(-10, 10)
                 pore_raw = pore_raw.clamp(-10, 10)
                 mem_eff  = 5.0 * torch.tanh(mem_raw / 5.0)
                 pore_eff = 5.0 * torch.tanh(pore_raw / 5.0)
 
-                # Cap total prior contribution (unchanged)
                 prior_contrib = (w_mem_eff * mem_eff) + (w_intf_eff * intf) + (w_pore_eff * pore_eff)
                 prior_contrib = torch.clamp(prior_contrib, min=-0.5, max=0.5)
 
-                # add priors + clash
+                # add priors + oligomer clash
                 loss_b = loss_b + prior_contrib + 0.1 * clash
 
-                # accumulate logs
+                # accumulate metrics
                 acc["mem"]      += float(mem_eff.detach().cpu())
                 acc["mem_raw"]  += float(mem_raw.detach().cpu())
                 acc["pore"]     += float(pore_eff.detach().cpu())
@@ -395,10 +351,7 @@ class Trainer:
                 acc["clash"]    += float(clash.detach().cpu())
                 n_prior += 1
 
-                # put gate on logs (one value is fine; last sample wins)
-                logs["gate"] = float(gate)
-
-            # accumulate base losses
+            # accumulate base loss metrics
             acc["dist"] += float(loss_dist.detach().cpu())
             acc["tors"] += float(loss_tors.detach().cpu())
             acc["fape"] += float(loss_fape.detach().cpu())
@@ -651,11 +604,6 @@ class Trainer:
                         (1.0 - self.ema_alpha) * self.loss_ema + self.ema_alpha * cur
                     )
                     ema_loss = float(self.loss_ema)
-
-                    # choose metric and maybe save best checkpoint
-                    metric_value = self._current_metric(step, logs, ema_loss)
-                    self._maybe_save_best(step, metric_value, ckpt_dir, logs)
-
 
                 # ---- end-of-training summary (written once) ----
                 if (step % 100 == 0) or (step == steps - 1):
