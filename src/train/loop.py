@@ -426,6 +426,16 @@ class Trainer:
                 except StopIteration:
                     it = iter(train_loader); batch = next(it)
 
+                # ---- one-time batch debug ----
+                if step == self.start_step:
+                    print("\n====== TRAIN BATCH DEBUG ======")
+                    print("seq_idx:", batch["seq_idx"].shape)
+                    print("emb:", None if batch.get("emb") is None else batch["emb"].shape)
+                    print("msa:", None if batch.get("msa") is None else batch["msa"].shape)
+                    print("xyz_ref:", None if batch.get("xyz_ref") is None else batch["xyz_ref"].shape)
+                    print("tors_ref:", None if batch.get("tors_ref") is None else batch["tors_ref"].shape)
+                    print("================================")
+                    
                 # non-blocking H2D copies for CUDA
                 for k in batch:
                     v = batch[k]
@@ -438,7 +448,7 @@ class Trainer:
                 # forward
                 use_amp = self._amp_active()
                 with torch.autocast(device_type="cuda", dtype=self.amp_dtype, enabled=use_amp):
-                    out = self.model(batch["seq_idx"], batch.get("emb"))
+                    out = self.model(batch["seq_idx"], batch.get("emb"),msa=batch.get("msa"))
                     if ("xyz" in out) and (not torch.isfinite(out["xyz"]).all()):
                         print(f"[nan-guard] non-finite xyz @ step {self.global_step} — skipping update")
                         self.opt.zero_grad(set_to_none=True)

@@ -1,0 +1,13 @@
+2025-11-26 21:42:02,045 Running colabfold 1.5.5 (77a8204c17e92930414c5ad956a194e1c3257ca7)
+2025-11-26 21:42:02,291 Running on GPU
+2025-11-26 21:42:02,474 Found 5 citations for tools or databases
+2025-11-26 21:42:02,474 Query 1/1: YP_009020967.1_picorna_2B_SRC_NCBI (length 99)
+2025-11-26 21:42:03,915 Setting max_seq=512, max_extra_seq=302
+2025-11-26 21:42:37,594 alphafold2_model_1_seed_000 recycle=0 pLDDT=62.9
+2025-11-26 21:43:01,831 alphafold2_model_1_seed_000 recycle=1 pLDDT=62.3 tol=0.917
+2025-11-26 21:43:08,794 alphafold2_model_1_seed_000 recycle=2 pLDDT=62.7 tol=4.3
+2025-11-26 21:43:15,745 alphafold2_model_1_seed_000 recycle=3 pLDDT=61.3 tol=4.04
+2025-11-26 21:43:15,746 alphafold2_model_1_seed_000 took 64.2s (3 recycles)
+2025-11-26 21:43:15,753 reranking models by 'plddt' metric
+2025-11-26 21:43:15,753 rank_001_alphafold2_model_1_seed_000 pLDDT=61.3
+2025-11-26 21:43:15,981 Done

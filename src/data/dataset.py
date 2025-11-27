@@ -14,6 +14,127 @@ from src.data.featurize import load_npz
 import torch
 import numpy as np 
 TEACHER_DIR = Path(os.environ.get("VIROPORIN_TEACHER_ROOT", "alphafold/npz"))
+
+# --- MSA helpers -------------------------------------------------
+def resolve_msa_path(seq_id: str) -> Path | None:
+    """
+    Try to find an .a3m for this sequence ID in typical ColabFold layouts.
+    Supports:
+      - raw ID (may contain ':')
+      - Windows-sanitized ID with ':' -> '_'
+      - short ID (accession only, before first '_')
+      - flat ColabFold-style filenames: <ID>_something*.a3m
+    """
+    base = Path("alphafold") / "pdb"
+    candidates: list[Path] = []
+
+    # --- build ID variants we might see on disk ---
+    id_variants: list[str] = []
+
+    # 1) original
+    id_variants.append(seq_id)
+
+    # 2) sanitize ':' -> '_' (Windows filenames)
+    sanitized = seq_id.replace(":", "_")
+    if sanitized not in id_variants:
+        id_variants.append(sanitized)
+
+    # 3) short accession (before first '_'), e.g. 'XXL77201.1'
+    short = seq_id.split("_")[0]
+    if short not in id_variants:
+        id_variants.append(short)
+
+    # --- candidate exact paths for each variant ---
+    for sid in id_variants:
+        candidates.append(base / f"{sid}.a3m")
+        candidates.append(base / sid / f"{sid}.a3m")
+        candidates.append(base / sid / "msas" / f"{sid}.a3m")
+
+    #  --- flat ColabFold-style filenames: <ID>*.a3m ---
+    if base.exists():
+        for f in base.glob("*.a3m"):
+            for sid in id_variants:
+                if f.name.startswith(sid):
+                    candidates.append(f)
+                    break
+
+    # Return the first existing candidate
+    for c in candidates:
+        if c.exists():
+            return c
+
+    return None
+
+_AA_TO_IDX = {
+    "A": 0, "C": 1, "D": 2, "E": 3, "F": 4,
+    "G": 5, "H": 6, "I": 7, "K": 8, "L": 9,
+    "M": 10, "N": 11, "P": 12, "Q": 13, "R": 14,
+    "S": 15, "T": 16, "V": 17, "W": 18, "Y": 19,
+    # Special tokens (you can tweak these if your vocab differs)
+    "-": 20,  # gap
+}
+
+PAD_IDX = 21  # padding for msa (distinct from gap)
+
+
+def _encode_a3m_line(seq: str) -> list[int]:
+    """
+    Convert an A3M sequence line into a list of token IDs.
+    Strips lowercase insertion letters used in A3M format.
+    """
+    tokens = []
+    for ch in seq.strip():
+        # A3M format: lowercase letters = insertions, we skip them
+        if ch.islower():
+            continue
+        if ch in _AA_TO_IDX:
+            tokens.append(_AA_TO_IDX[ch])
+        else:
+            # unknown char -> gap (or you could map to some other index)
+            tokens.append(_AA_TO_IDX["-"])
+    return tokens
+
+
+def load_msa_as_idx(a3m_path: Path, L_max: int | None = None, N_max: int = 32) -> np.ndarray:
+    """
+    Load an A3M file and convert it to an integer array (N_msa, L).
+      - N_msa <= N_max
+      - L <= L_max if provided, else full length of the first sequence
+    """
+    seqs = []
+    with open(a3m_path, "r") as f:
+        cur = []
+        for line in f:
+            line = line.rstrip("\n")
+            if not line:
+                continue
+            if line.startswith(">"):
+                if cur:
+                    seqs.append("".join(cur))
+                    cur = []
+            else:
+                cur.append(line)
+        if cur:
+            seqs.append("".join(cur))
+
+    if not seqs:
+        raise ValueError(f"No sequences found in A3M: {a3m_path}")
+
+    # Encode, keeping at most N_max sequences
+    encoded = [_encode_a3m_line(s) for s in seqs[:N_max]]
+
+    # Determine L (sequence length)
+    L = len(encoded[0])
+    if L_max is not None:
+        L = min(L, L_max)
+
+    N = len(encoded)
+    arr = np.full((N, L), PAD_IDX, dtype=np.int64)
+    for i, seq in enumerate(encoded):
+        for j in range(min(L, len(seq))):
+            arr[i, j] = seq[j]
+
+    return arr  # (N, L)
     
 def _normalize_pat(stem: str) -> re.Pattern:
     # Turn 'AAC40516.1_HCV_p7_SRC:NCBI' into a regex like 'AAC40516.*1.*HCV.*p7.*SRC.*NCBI'
@@ -67,24 +188,29 @@ class JsonlSet(Dataset):
         feats_path = _resolve_features_path(row["features"])
         seq_idx, emb = load_npz(feats_path)
 
+        # full ID from jsonl, e.g. 'XXL77201.1_HIV_Vpu_SRC:NCBI'
+        full_id = row.get("id", str(i))
+        # short ID used for teacher npz, e.g. 'XXL77201.1'
+        short_id = full_id.split("_")[0]
+
         # optional length cap
         if self.max_len and len(seq_idx) > self.max_len:
             seq_idx = seq_idx[:self.max_len]
             if emb is not None:
                 emb = emb[:self.max_len]
 
-        # ---- NEW: load AlphaFold teacher if available ----
+        # ---- load AlphaFold teacher if available ----
         xyz_ref = None
         tors_ref = None
+        tpath = None 
 
         if TEACHER_DIR is not None and TEACHER_DIR.exists():
-            sid = row.get("id", str(i))
-            tpath = TEACHER_DIR / f"{sid}.npz"
+            # teacher files are named like 'XXL77201.1.npz'
+            tpath = TEACHER_DIR / f"{short_id}.npz"
             if tpath.exists():
                 tnpz = np.load(tpath)
-                # produced by AF_teacher.py
                 xyz_ref = tnpz.get("xyz_ref")   # (L,3)
-                tors_ref = tnpz.get("tors_ref") # (L,3) [phi, psi, omega]
+                tors_ref = tnpz.get("tors_ref") # (L,3)
                 if xyz_ref is not None:
                     xyz_ref = xyz_ref.astype("float32")
                 if tors_ref is not None:
@@ -97,13 +223,45 @@ class JsonlSet(Dataset):
                 if tors_ref is not None and tors_ref.shape[0] > L:
                     tors_ref = tors_ref[:L]
 
+
+        msa_idx = None
+        msa_path = resolve_msa_path(full_id)
+        if msa_path is not None and msa_path.exists():
+            msa_idx = load_msa_as_idx(msa_path, L_max=self.max_len, N_max=32)
+        
+        # --- DEBUG LOGGING ---
+        if i < 5:
+            print("\n")
+            print("=" * 70)
+            print(f"[DATASET] Loading ID: {full_id}")
+
+            # Teacher NPZ
+            if tpath is None or not tpath.exists():
+                print("[TEACHER] Not found")
+            else:
+                print(f"[TEACHER] Loaded from: {tpath}")
+                print(f"          xyz_ref.shape={None if xyz_ref is None else xyz_ref.shape}")
+                print(f"          tors_ref.shape={None if tors_ref is None else tors_ref.shape}")
+
+            # MSA
+            if msa_path is None or not msa_path.exists():
+                print("[MSA] Not found")
+            else:
+                print(f"[MSA] Loaded from: {msa_path}")
+                print(f"      msa_idx.shape={msa_idx.shape}")
+
+            print("=" * 70, "\n")
+            self._logged_once = True
+
         return {
             "id": row.get("id", str(i)),
             "seq_idx": seq_idx,
             "emb": emb,
             "xyz_ref": xyz_ref,
             "tors_ref": tors_ref,
+            "msa_idx": msa_idx,
         }
+
 
 def collate(batch):
     import torch
@@ -121,7 +279,7 @@ def collate(batch):
         D = len(batch[0]["emb"][0])
         emb = torch.full((B, L, D), float('nan'), dtype=torch.float32)
 
-    # ---- NEW: teacher tensors (if present) ----
+    # ---- teacher tensors (if present) ----
     have_xyz_ref = any(b.get("xyz_ref") is not None for b in batch)
     have_tors_ref = any(b.get("tors_ref") is not None for b in batch)
 
@@ -150,6 +308,44 @@ def collate(batch):
             tr = torch.as_tensor(b["tors_ref"], dtype=torch.float32)
             tr = tr[:l]
             tors_ref[i, :tr.shape[0]] = tr
+    
+    # ---- NEW: MSA tensor (if present) ----
+    have_msa = any(b.get("msa_idx") is not None for b in batch)
+    msa = None
+    if have_msa:
+        # Determine max N_msa over batch
+        N_max = max(
+            (b["msa_idx"].shape[0] for b in batch if b.get("msa_idx") is not None),
+            default=0
+        )
+        # Use PAD_IDX = 21 for padding (defined above)
+        msa = torch.full((B, N_max, L), PAD_IDX, dtype=torch.long)
+        
+    # Fill tensors with data
+    for i, b in enumerate(batch):
+        l = len(b["seq_idx"])
+        seq[i, :l] = torch.as_tensor(b["seq_idx"], dtype=torch.long)
+
+        if emb is not None and b.get("emb") is not None:
+            eb = torch.as_tensor(b["emb"], dtype=torch.float32)
+            emb[i, :l] = eb
+
+        if xyz_ref is not None and b.get("xyz_ref") is not None:
+            xr = torch.as_tensor(b["xyz_ref"], dtype=torch.float32)
+            xr = xr[:l]
+            xyz_ref[i, :xr.shape[0]] = xr
+
+        if tors_ref is not None and b.get("tors_ref") is not None:
+            tr = torch.as_tensor(b["tors_ref"], dtype=torch.float32)
+            tr = tr[:l]
+            tors_ref[i, :tr.shape[0]] = tr
+
+        if msa is not None and b.get("msa_idx") is not None:
+            m = torch.as_tensor(b["msa_idx"], dtype=torch.long)  # (N_msa_i, L_i)
+            N_i, L_i = m.shape
+            N_i = min(N_i, msa.shape[1])
+            L_i = min(L_i, L)
+            msa[i, :N_i, :L_i] = m[:N_i, :L_i]
 
     # --- Sanitize embeddings for NaN/Inf values and log if any were found ---
     if emb is not None:
@@ -164,6 +360,9 @@ def collate(batch):
         out["xyz_ref"] = xyz_ref
     if tors_ref is not None:
         out["tors_ref"] = tors_ref
+    if msa is not None:
+        out["msa"] = msa
+
     return out
 
 def make_loaders(dc, device=None):

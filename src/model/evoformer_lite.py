@@ -62,6 +62,46 @@ class SingleBlock(nn.Module):
         s = s + self.ff(s)
         return s
 
+class TinyMSAEncoder(nn.Module):
+    def __init__(self, d_msa, vocab_size=22):  # 20 aa + gap + pad
+        super().__init__()
+        self.embed = nn.Embedding(vocab_size, d_msa)
+
+    def forward(self, msa_idx):
+        # msa_idx: (B, N, L)
+        return self.embed(msa_idx)  # (B, N, L, d_msa)
+
+
+class TinyMSABlock(nn.Module):
+    def __init__(self, d_msa, n_heads=4):
+        super().__init__()
+        self.row_attn = nn.MultiheadAttention(
+            embed_dim=d_msa, num_heads=n_heads, batch_first=True
+        )
+        self.col_attn = nn.MultiheadAttention(
+            embed_dim=d_msa, num_heads=n_heads, batch_first=True
+        )
+        self.ln_row = nn.LayerNorm(d_msa)
+        self.ln_col = nn.LayerNorm(d_msa)
+
+    def forward(self, msa_repr):
+        # msa_repr: (B, N, L, d_msa)
+        B, N, L, C = msa_repr.shape
+
+        # --- Row attention: across sequences (N) for each position ---
+        x = msa_repr.permute(0, 2, 1, 3).reshape(B * L, N, C)  # (B*L, N, C)
+        x2, _ = self.row_attn(x, x, x)                        # row-wise
+        x = self.ln_row(x + x2)
+        msa_row = x.reshape(B, L, N, C).permute(0, 2, 1, 3)   # (B, N, L, C)
+
+        # --- Column attention: across positions (L) for each sequence ---
+        y = msa_row.reshape(B * N, L, C)                      # (B*N, L, C)
+        y2, _ = self.col_attn(y, y, y)
+        y = self.ln_col(y + y2)
+        msa_col = y.reshape(B, N, L, C)                       # (B, N, L, C)
+
+        return msa_col
+
 class EvoformerLite(nn.Module):
     def __init__(self, d_single=256, d_pair=128, n_blocks=8, n_attn_heads=4):
         super().__init__()

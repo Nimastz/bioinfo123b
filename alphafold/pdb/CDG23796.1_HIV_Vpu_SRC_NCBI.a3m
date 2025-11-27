@@ -1,0 +1,2009 @@
+#80	1
+>101
+AAEDSGNESDGDTEELSTLLEMGSDNILDNNKFVMLKICGSRYTMGYLCGKMQKLPYFVHQMLKHXIQKCIMSGLHMPLY
+>UniRef100_A0A068RB53	152	1.00	3.794E-40	0	79	80	0	79	80
+AAEDSGNESDGDTEELSTLLEMGSDNILDNNKFVMLKICGSRYTMGYLCGKMQKLPYFVHQMLKHXIQKCIMSGLHMPLY
+>UniRef100_A0A0K1YFJ1	142	0.632	1.038E-36	1	79	80	49	123	132
+-AEDSGNESDGDQEELSALVEMGHHAPWDM----LKKNCGSQSIMGYLCGKKQPPLYFVHQMLKHMIQRYIMFGPHMPVY
+>UniRef100_A0A068R8Z9	130	0.625	1.386E-32	1	79	80	0	79	82
+-AEDSGNESDGDVEELSTMVDTGHLRLLDAKENIMXgGTCGSQFIMGYLCGKKQQLLYFVHQMLKHIRMKCIMFGPHMPVY
+>UniRef100_L7TKB7	129	0.607	4.920E-32	1	79	80	49	124	133
+-AEDSGNESEGDEEELSALVEMGHLAPWVVND---RKKSGSQFIMGYLCGKKQIPPYFAHQMLKHIKQRHITSGLHMPVY
+>UniRef100_B6HXC6	111	0.583	5.571E-26	8	78	80	0	71	72
+--------SDGDAEELSTLVEMGDYDFWnDNNLFACKTLVGHGLLWCDLCGKMQRPPYFVHQTPKHMIQKCIMFGPHMPV-
+>UniRef100_B6HXI0	97	0.617	5.039E-21	33	79	80	2	48	49
+---------------------------------VLRNNCKSQFTMKYLCKKMQRPPYSVHQMLRHMMQKCIMFGXHMPVY
+>UniRef100_A0A068R8U4	93	0.573	1.201E-19	22	79	80	21	81	83
+----------------------GILRLLDANDCIMwggTGTCGSQFIMGYLCGKKQQLLYFVHQMLKHIRMKCIMFGPHMPVY
+>UniRef100_B6HXL0	89	0.813	3.937E-18	33	75	80	24	66	67
+---------------------------------VMLKICGSRSPMGYLCGEMQRPPYFVHQMLRHMMQKCIMSGLH----
+>UniRef100_Q8ADI3	83	0.666	6.311E-16	35	79	80	29	73	82
+-----------------------------------AETCGLLSTMGYLCGKMRRPPYFVHQMRRHMKKKCIMSGLHMPVY
+>UniRef100_B6HXL1	74	0.674	6.813E-13	33	75	80	24	66	67
+---------------------------------CHAEDGGSRSTMGYQCGKTQRPPYFVHQMLKHMTQKYIMSGLH----
+>UniRef100_A0A2S1IT81	72	0.609	2.427E-12	39	79	80	35	75	89
+---------------------------------------GSQSIMGYLCGKKQPPLYFVHQMLKDIVQRLIISGPHMLVY
+>UniRef100_H6D3P0	70	0.648	1.632E-11	43	79	80	35	71	80
+-------------------------------------------YYGYLCGKKQTPLYFVHQMLKHMLQKYITFGPHMPVY
+>UniRef100_Q2NMU8	68	0.500	1.098E-10	1	45	80	49	94	111
+-AEDSGNESEGDQEELSALVEMGHDAPWDiDDLYCWRTIVGHSLLWG----------------------------------
+>UniRef100_A0A068R934	67	0.510	1.508E-10	33	79	80	32	78	80
+---------------------------------CNAKNLWVGVYYRVPVEETQRPPYFVHQRLKHIIQKCIMSGPHMPLY
+>UniRef100_D6P193	62	0.733	1.290E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSTLVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A646QV75	62	0.733	1.290E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSTLVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_K0GZA6	62	0.513	1.290E-08	43	79	80	37	73	82
+-------------------------------------------YYGVPVWKEQQPLYFVHQMLKHMLQRHTMFGPHMPVY
+>UniRef100_A0A2L1KV72	61	0.666	1.773E-08	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A162K5P9	61	0.666	1.773E-08	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_F5CGC0	61	0.666	1.773E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_O73197	61	0.733	1.773E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P141	61	0.666	1.773E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A2Z4G2V8	61	0.700	1.773E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSTLVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_A1DQV1	61	0.700	1.773E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSTLVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_I6N0I1	61	0.666	1.773E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_Q98ZU0	61	0.666	1.773E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_D6P1M6	61	0.733	1.773E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q71900	61	0.666	1.773E-08	1	30	80	53	82	85
+-AEDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_P08804	61	0.700	2.437E-08	1	30	80	13	42	45
+-AEDSGNESEGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A0K1YRK2	61	0.700	2.437E-08	1	30	80	14	43	46
+-AEDSGNESDGDQEELSALVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_F5CIQ3	61	0.633	2.437E-08	1	30	80	24	53	56
+-AEDSGNESEGDQEELSALVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_D6MQL0	61	0.633	2.437E-08	1	30	80	44	73	76
+-AEDSGNESEGDQEELSALVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_Q8AQU0	61	0.666	2.437E-08	1	30	80	48	77	80
+-AEDSGNESEGDQEELSTLVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_L0LDL5	61	0.700	2.437E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6UAS5	61	0.700	2.437E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A0U4FFC7	61	0.733	2.437E-08	1	30	80	48	77	81
+-AEDSGNESEGDQEELSTLMEMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P1L7	61	0.700	2.437E-08	1	30	80	50	79	82
+-AEDSGNESEGDQEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A7L9QJ30	61	0.666	3.349E-08	1	30	80	49	78	80
+-AEDSGNESEGDQEELSALVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_A0A3G1E0H7	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A499ST18	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A6M3H3M1	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_B2CJD1	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_F2YXI6	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSVLVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A1L5K169	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHLAPWDVN-------------------------------------------------
+>UniRef100_Q98ZR4	61	0.700	3.349E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSTLVEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A6H0JXB9	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A221IUK3	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_F2YXV9	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_D6P1B9	61	0.666	3.349E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A161HS83	60	0.633	4.602E-08	1	30	80	26	55	58
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_E5RVY4	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A1V0CPY4	60	0.666	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSTLVEMGHHAPWDID-------------------------------------------------
+>UniRef100_B0FBH6	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P0Y3	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_H6D2F6	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q1WET7	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A5J6SBQ1	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_H6CTP5	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_H6D499	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_H6D049	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7T3PI03	60	0.733	4.602E-08	1	30	80	49	78	81
+-AEDSGNESDGDHEELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q990A1	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P179	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6NSX3	60	0.633	4.602E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A1B2FQ81	60	0.666	4.602E-08	1	30	80	51	80	83
+-AEDSGNESEGDQEELSTLMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7G5WNX1	60	0.633	4.602E-08	1	30	80	52	81	84
+-AEDSGNESEGDQEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P0C3	60	0.655	6.325E-08	2	30	80	29	57	60
+--EDSGNESEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A2L1KWF0	60	0.666	6.325E-08	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A7L9QJ61	60	0.666	6.325E-08	1	30	80	49	78	80
+-AEDSGNESEGDQEELSALVDMGHDAPWDIN-------------------------------------------------
+>UniRef100_A0A1W6L132	60	0.700	6.325E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSILVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A0K1RFB6	60	0.580	6.325E-08	1	31	80	49	79	81
+-AEDSGNESEGDQEELSALMDMGHHAPWDVDE------------------------------------------------
+>UniRef100_Q98ZR5	60	0.700	6.325E-08	1	30	80	49	78	81
+-AEDSGNESDGDQEELSTLMEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A6M3H4F0	60	0.666	6.325E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWDIN-------------------------------------------------
+>UniRef100_A0A166XR24	59	0.633	8.692E-08	1	30	80	23	52	55
+-AEDSGNESEGDQEELSALVEMGHLAPWDVD-------------------------------------------------
+>UniRef100_B5ADH7	59	0.700	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDREELSALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A887EYX2	59	0.633	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDID-------------------------------------------------
+>UniRef100_D6P0N2	59	0.666	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSGLMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_Q2QFJ9	59	0.666	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGYHAPWDVN-------------------------------------------------
+>UniRef100_H6VX02	59	0.633	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWDID-------------------------------------------------
+>UniRef100_D6R013	59	0.666	8.692E-08	1	30	80	49	78	81
+-AEDSGNDSEGDQEELSTLMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_C6KLJ1	59	0.633	8.692E-08	1	30	80	49	78	81
+-AEDSGNDSEGDQEELSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A6H0JW90	59	0.700	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHDAPWDIN-------------------------------------------------
+>UniRef100_Q990A0	59	0.633	8.692E-08	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHLAPWDVD-------------------------------------------------
+>UniRef100_Q5U880	59	0.633	8.692E-08	1	30	80	51	80	83
+-AEDSGNESEGDQEELSALMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7T3U8T9	59	0.700	8.692E-08	1	30	80	52	81	84
+-AEDSGNESDGDREELSALVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q5U8I8	59	0.633	8.692E-08	1	30	80	52	81	84
+-AEDSGNESEGDQEELSALMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P1G5	59	0.633	1.195E-07	1	30	80	21	50	53
+-AEDSGNESEGDHEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A2L1KW52	59	0.633	1.195E-07	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVGMGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A2L1KW83	59	0.666	1.195E-07	1	30	80	48	77	80
+-AEDSGNESDGDQEELSALVEVGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A7L9QJZ1	59	0.666	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDHEELSTLVEMGHHAPWDID-------------------------------------------------
+>UniRef100_G8I1B1	59	0.666	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWDID-------------------------------------------------
+>UniRef100_A0A2I6U9T1	59	0.600	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A076V977	59	0.633	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWNVN-------------------------------------------------
+>UniRef100_Q98ZX8	59	0.666	1.195E-07	1	30	80	49	78	81
+-AEDSGNESDGDQEGLSALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_L0LE66	59	0.666	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWDID-------------------------------------------------
+>UniRef100_D6P0S5	59	0.666	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSXLVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A2I6U9R6	59	0.600	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P0M5	59	0.633	1.195E-07	1	30	80	49	78	81
+-AEDSGNESEGDHEELSALVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_M4N405	59	0.700	1.195E-07	1	30	80	49	78	81
+-AEDSGNESDGDEEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_D6P1A7	59	0.633	1.642E-07	1	30	80	23	52	55
+-AEDSGNESEGDQEELSALVERGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A0K1RGC4	59	0.633	1.642E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWDID-------------------------------------------------
+>UniRef100_M4N8D3	59	0.666	1.642E-07	1	30	80	49	78	81
+-AEDSGNESEGDEEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A1B2FQ40	59	0.666	1.642E-07	1	30	80	49	78	81
+-AEDSGNESDGDHEELSALMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7G8P699	59	0.633	1.642E-07	1	30	80	49	78	81
+-AEDSGNDSEGDQEELSALVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P0Q5	59	0.600	1.642E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAGLVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A7G8P6B6	59	0.633	1.642E-07	1	30	80	49	78	81
+-AEDSGNDSEGDQEELSALVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q8ADX8	59	0.666	1.642E-07	1	30	80	49	78	81
+-AEDSGNESEGDREELSTLMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q1KWW7	59	0.741	1.642E-07	1	31	80	51	81	83
+-AEDSGNESDGDTEELSTMVDMGHLRLLDNNE------------------------------------------------
+>UniRef100_D6P1L5	59	0.633	1.642E-07	1	30	80	52	81	84
+-AEDSGNDSEGDQEELSALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_I6QTC7	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHHAPWPIN-------------------------------------------------
+>UniRef100_A0A385ZZW9	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHAAPWDVN-------------------------------------------------
+>UniRef100_A0A3G8G4H4	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVERGHDAPWDVN-------------------------------------------------
+>UniRef100_Q7ZL57	58	0.633	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSAFVEMGYHAPWDVN-------------------------------------------------
+>UniRef100_L0LFS7	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHDAPWDID-------------------------------------------------
+>UniRef100_Q6EG23	58	0.700	2.256E-07	1	30	80	49	78	81
+-AEDSGNDSDGDQEELATLMEMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P0M8	58	0.633	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSAFVEMGYHAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6UEH6	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWPVN-------------------------------------------------
+>UniRef100_A9U9Q5	58	0.700	2.256E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSILMEMGHDAPWDAN-------------------------------------------------
+>UniRef100_D6P0G2	58	0.666	2.256E-07	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_Q90MJ1	58	0.678	2.256E-07	1	28	80	54	81	82
+-AEDSGNESEGDQEELSALVEMGHHAPWD---------------------------------------------------
+>UniRef100_A0A8E4MN33	58	0.800	3.101E-07	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMDMGHDNLWDHN-------------------------------------------------
+>UniRef100_A0A159C9V6	58	0.666	3.101E-07	1	30	80	49	78	81
+-AEDSGNESEGDEEELSVLMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_D0EMY1	58	0.633	3.101E-07	1	30	80	49	78	81
+-AEDSGNDSDGDQEELSALVEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A6H0MJ22	58	0.633	3.101E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHRAPWDVD-------------------------------------------------
+>UniRef100_X2JB83	58	0.633	3.101E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHPAPWDVD-------------------------------------------------
+>UniRef100_A0A6H0MJR5	58	0.633	3.101E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHRAPWDVD-------------------------------------------------
+>UniRef100_Q5EEJ1	58	0.700	3.101E-07	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMGHLRPLDNN-------------------------------------------------
+>UniRef100_A0A2L1KXU4	57	0.633	4.262E-07	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_F1KAA7	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_Q2NMK0	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEIGHHAPWDVD-------------------------------------------------
+>UniRef100_L0LFH9	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDHEELSALMEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A159CA14	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A0E3EBZ6	57	0.666	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVDMGRDAPWDVN-------------------------------------------------
+>UniRef100_Q7ZL58	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVEMGHLAPWDID-------------------------------------------------
+>UniRef100_Q6Q452	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDHEELSALMEMGHHAPWDID-------------------------------------------------
+>UniRef100_L0LD19	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAGLVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A6B9SJ27	57	0.666	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDEEELSALVEMGHVAPWDVN-------------------------------------------------
+>UniRef100_G8I1Y8	57	0.666	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSTLLEMGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A7D6EII6	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_G8I149	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELEKLVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7G8P691	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNDSEGDQEELAALVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_B7TCE4	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEVGHHAPWDVD-------------------------------------------------
+>UniRef100_A9U9F2	57	0.633	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSGLMEMGHHAPWDID-------------------------------------------------
+>UniRef100_F1K8J4	57	0.666	4.262E-07	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVERGHLAPWDIN-------------------------------------------------
+>UniRef100_F5CFA2	57	0.600	4.262E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWKVD-------------------------------------------------
+>UniRef100_D6P1J4	57	0.633	4.262E-07	1	30	80	50	79	82
+-AEDSGNESEGDQEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_D6P0K9	57	0.677	4.262E-07	1	30	80	49	79	82
+-AEDSGNESDGDQEELSALvVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_Q905I6	57	0.666	4.262E-07	1	30	80	52	81	84
+-AEDSGNESDGDTEELSTLVDMGHLAPWNVD-------------------------------------------------
+>UniRef100_Q3S5J5	57	0.733	4.262E-07	1	30	80	54	83	86
+-AEDSGNESDGDQEELSTLVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_M4QBX5	57	0.766	5.857E-07	1	30	80	48	77	80
+-AEDSGNESEGDTEELSTLVEMGHLRLLDVN-------------------------------------------------
+>UniRef100_Q98ZY7	57	0.600	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHLAPWNVD-------------------------------------------------
+>UniRef100_A0A0D5BFX4	57	0.633	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELMEMGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A0D5BFU2	57	0.633	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELMEMGHLAPWDVD-------------------------------------------------
+>UniRef100_B0FBI5	57	0.633	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDKEELAALVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A7U3RNJ3	57	0.633	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDHEELSALVEMGHNAPWDVD-------------------------------------------------
+>UniRef100_Q7ZL60	57	0.600	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAAFVEMGYHAPWDVN-------------------------------------------------
+>UniRef100_A0A6M4F9T0	57	0.600	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGHHAPWNVD-------------------------------------------------
+>UniRef100_Q1M023	57	0.666	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDEEELSKLVEMGHHALWDVN-------------------------------------------------
+>UniRef100_A0A7D5A3W0	57	0.633	5.857E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVEMGHDAPWPVN-------------------------------------------------
+>UniRef100_A0A0K0VF69	57	0.733	5.857E-07	1	30	80	50	79	82
+-AEDSGNESDGDTEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_UPI00045EDE73	57	0.600	8.050E-07	1	30	80	31	60	63
+-AEDSGNESEGDQEELSALVERGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A650F975	57	0.633	8.050E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHDAPWNID-------------------------------------------------
+>UniRef100_A0A6M3H2K9	57	0.633	8.050E-07	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHLAPWNID-------------------------------------------------
+>UniRef100_I1X6X7	57	0.633	8.050E-07	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVDMGHDAPWVVN-------------------------------------------------
+>UniRef100_I6RBD9	57	0.612	8.050E-07	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6U860	57	0.677	8.050E-07	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVlEMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q905K6	57	0.714	8.050E-07	1	28	80	49	76	82
+-AEDSGNESDGDKEELSTLVDMGHLAPWD---------------------------------------------------
+>UniRef100_D6P0M7	57	0.677	8.050E-07	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVlEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A0M4AR90	57	0.700	8.050E-07	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0EXM1	57	0.677	8.050E-07	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_Q0MXI1	57	0.600	8.050E-07	1	30	80	53	82	85
+-AEDSGNESEGDQEELSTLVDMGHLAPWNID-------------------------------------------------
+>UniRef100_A0A1P8DGF2	57	0.677	8.050E-07	1	31	80	54	84	86
+-AEDSGNESDGDIEELSTMVDMGHLRLLDVNE------------------------------------------------
+>UniRef100_A0A8F0ML38	56	0.733	1.106E-06	1	30	80	19	48	51
+-AEDSGNESDGDTEELSTMVDMGHLRLLDIN-------------------------------------------------
+>UniRef100_A0A2L1KWN5	56	0.740	1.106E-06	1	27	80	48	74	80
+-AEDSGNESEGDQEELSTLVEMGHDAPW----------------------------------------------------
+>UniRef100_A0A2L1KWT8	56	0.666	1.106E-06	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALVEMGHDAPWVIN-------------------------------------------------
+>UniRef100_A0A7L9QUR9	56	0.600	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWAID-------------------------------------------------
+>UniRef100_A0A410JGB0	56	0.600	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGHHAPWIVD-------------------------------------------------
+>UniRef100_Q8AHZ7	56	0.633	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSKLMEMGHPAPWDVD-------------------------------------------------
+>UniRef100_Q5G7A8	56	0.600	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVDMGHDAPWNID-------------------------------------------------
+>UniRef100_A0A499SUU8	56	0.666	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVEMGNDAPWDID-------------------------------------------------
+>UniRef100_B2CJC2	56	0.600	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEEVSALVEMGHRAPWDVD-------------------------------------------------
+>UniRef100_A0A2I6UEW1	56	0.633	1.106E-06	1	30	80	49	78	81
+-AEDSGNESEGDHEELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_A2I7A2	56	0.633	1.106E-06	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVERGHLAPWDID-------------------------------------------------
+>UniRef100_D6P0P7	56	0.548	1.106E-06	1	31	80	49	79	81
+-AEDSGNESEGDQEELSVLVDRGHLAPWDVDE------------------------------------------------
+>UniRef100_C7TQ90	56	0.718	1.106E-06	1	32	80	49	80	81
+-AEDSGNESDGDTEELSALVEMGNHNPWGYNVF-----------------------------------------------
+>UniRef100_A0A7L9QVF0	56	0.666	1.106E-06	1	30	80	49	78	82
+-AEDSGNESEGDQEELSAILEMGHPAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6U4E3	56	0.645	1.106E-06	1	30	80	49	79	82
+-AEDSGNESDGDQEELSALgVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_G1FQI8	56	0.645	1.106E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVDMGHDAPWDVN-------------------------------------------------
+>UniRef100_L7TU13	56	0.478	1.106E-06	1	45	80	54	99	116
+-AEDSGNESEGDTEELATMVDMEHLRLLDaNNLWGDGELVGHSLLWG----------------------------------
+>UniRef100_D6P144	56	0.633	1.521E-06	1	30	80	31	60	63
+-AEDSGNESDGDHEELSALVDMGHLALWDID-------------------------------------------------
+>UniRef100_A0A2L1KY84	56	0.677	1.521E-06	1	31	80	47	77	79
+-AEDSGNESDGDTEELATMVDMGHLRLLDINE------------------------------------------------
+>UniRef100_A0A5J5ZZV6	56	0.633	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSVLVGRGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A6M3GZV8	56	0.666	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDEEELAALVEMGYDAPWDVN-------------------------------------------------
+>UniRef100_A0A6M3H6R8	56	0.600	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDEEELSALVEMGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A410T3I1	56	0.633	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVERGHDAPWNVN-------------------------------------------------
+>UniRef100_A0A6M3H2X0	56	0.700	1.521E-06	1	30	80	49	78	81
+-AEDSGNESDGDAEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A650F900	56	0.600	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSAFVGMGYLAPWDVN-------------------------------------------------
+>UniRef100_A0A6B9SGE9	56	0.633	1.521E-06	1	30	80	49	78	81
+-AEDSGNESEGDREELSALVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A0U4DMQ1	56	0.655	1.521E-06	1	29	80	49	77	82
+-AEDSGNESDGDKEELSTLVDMGHHAPWNV--------------------------------------------------
+>UniRef100_A0A7S6CVJ5	56	0.612	1.521E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A1W6L172	56	0.677	1.521E-06	1	30	80	49	79	82
+-AEDSGNESDGDQEELSALvVDMGHDAPWDAN-------------------------------------------------
+>UniRef100_A0A7S5ZNQ2	56	0.612	1.521E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q2V6C5	56	0.612	1.521E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q9IV13	56	0.866	1.521E-06	1	30	80	52	81	84
+-AEDSGNESDGDTEELSTLLEMGNDDFWDNN-------------------------------------------------
+>UniRef100_A0A0K2DMU9	56	0.700	1.521E-06	1	30	80	54	83	85
+-AEDSGNESEGDTEELSTMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_A0A0K2DMS2	56	0.700	1.521E-06	1	30	80	54	83	85
+-AEDSGNESEGDTEELSTMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_K0H083	56	0.434	1.521E-06	1	45	80	49	94	114
+-AEDSGNESEGDTDELAKLVEMGNFDPWvGDNLXCLRQVVGYSLLWG----------------------------------
+>UniRef100_A0A8F0MKF5	55	0.724	2.090E-06	2	30	80	13	41	44
+--EDSGNESDGDTEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A166XPD5	55	0.645	2.090E-06	1	30	80	17	47	50
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A2L1KV20	55	0.633	2.090E-06	1	30	80	48	77	80
+-AEDSGNESEGDQEELAALVEKGHDAPWDIN-------------------------------------------------
+>UniRef100_A0A076V7A2	55	0.600	2.090E-06	1	30	80	49	78	81
+-AEDSGNESEGDEEQLAALMEMGHHAPWDVN-------------------------------------------------
+>UniRef100_D6P0D8	55	0.600	2.090E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALXEMGHHAPWNID-------------------------------------------------
+>UniRef100_A2I7G3	55	0.566	2.090E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELAGLVEMGHHAPWNVD-------------------------------------------------
+>UniRef100_A1YAZ0	55	0.633	2.090E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELMERGHLAPWDVN-------------------------------------------------
+>UniRef100_F1K1T7	55	0.600	2.090E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELAVLMEMGHHAPWAVN-------------------------------------------------
+>UniRef100_D6P0Y4	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A410SUB0	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_I3RU30	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_A0A410SUS5	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_D6P0E8	55	0.580	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVDMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A516FKD3	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_Q09LA8	55	0.580	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVDMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A2S1J496	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALVlEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A7D4VJD2	55	0.645	2.090E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVlEMGHDAPWDVD-------------------------------------------------
+>UniRef100_T2CZ88	55	0.677	2.090E-06	1	31	80	53	83	85
+-AEDSGNESEGDTEELATLVDMGHLRLLDANE------------------------------------------------
+>UniRef100_A0A2I6UAF2	55	0.628	2.090E-06	1	30	80	49	83	86
+-AEDSGNESDGDQEELSALVerghlEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A6M4F462	55	0.700	2.090E-06	1	30	80	54	83	86
+-AEDSGNESEGDTEELATLVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A6M3H532	55	0.666	2.090E-06	1	30	80	56	85	88
+-AEDSGNESEGDTEELATMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A4D6TD48	55	0.645	2.872E-06	1	30	80	45	75	78
+-AEDSGNESEGDEEELSaALVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_B2YLS3	55	0.600	2.872E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELVGMGHHAPWNIN-------------------------------------------------
+>UniRef100_B2YLT3	55	0.600	2.872E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELVGMGHHAPWNIN-------------------------------------------------
+>UniRef100_A0A6M3H3K2	55	0.633	2.872E-06	1	30	80	49	78	81
+-AEDSGNESDGDQEELSGLMERGHHAPWDID-------------------------------------------------
+>UniRef100_A0A0X8IDG8	55	0.600	2.872E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVETGYHAPWDVD-------------------------------------------------
+>UniRef100_A0A2I6U589	55	0.666	2.872E-06	1	30	80	49	78	81
+-AEDSGNESDGDREELSVLVERGHLAPWDIN-------------------------------------------------
+>UniRef100_A0A6M3H2S2	55	0.600	2.872E-06	1	30	80	49	78	81
+-AEDSGNESEGDEEELSKLVEMGHHAPWNVD-------------------------------------------------
+>UniRef100_B5AEX8	55	0.566	2.872E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEDLEALVGMGHLAPWDVN-------------------------------------------------
+>UniRef100_B3UII1	55	0.666	2.872E-06	1	27	80	49	75	81
+-AEDSGNESEGDQEELSALMEMGHHAPW----------------------------------------------------
+>UniRef100_Q8AC01	55	0.612	2.872E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHHAPWDID-------------------------------------------------
+>UniRef100_B2ZSE8	55	0.655	2.872E-06	1	29	80	49	77	82
+-AEDSGNESEGDKEELSTLMDMGHYAPWDV--------------------------------------------------
+>UniRef100_Q7SPP8	55	0.689	2.872E-06	1	29	80	49	77	82
+-AEDSGNESEGDREELSTLMEMGHPAPWDV--------------------------------------------------
+>UniRef100_G8I1W7	55	0.612	2.872E-06	1	30	80	50	80	83
+-AEDSGNESEGDQEELSALvVDMGHDAPWDVD-------------------------------------------------
+>UniRef100_F5CF29	55	0.566	2.872E-06	1	30	80	51	80	83
+-AEDSGNESEGDQEELAALVEMGHHAPWVVD-------------------------------------------------
+>UniRef100_A0A410T0F5	55	0.633	2.872E-06	1	30	80	52	81	84
+-AEDSGNESEGDQEELSALMERGHDAPWNVN-------------------------------------------------
+>UniRef100_D6P0S4	55	0.588	2.872E-06	1	30	80	49	82	85
+-AEDSGNESEGDQEELSKLveqgVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A0K1H5J5	55	0.700	2.872E-06	1	30	80	54	83	86
+-AEDSGNESDGDTEELATMVDMGHLRLLDGN-------------------------------------------------
+>UniRef100_A0A2I6UAI8	55	0.600	2.872E-06	1	30	80	49	83	86
+-AEDSGNESEGDQEELSALVerghlEMGHDAPWDVN-------------------------------------------------
+>UniRef100_F2YXD6	55	0.555	2.872E-06	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEMgndverGHHAPWDVN-------------------------------------------------
+>UniRef100_D6P0R3	55	0.606	3.948E-06	1	30	80	7	39	42
+-AEDSGNESEGDQEELSVLVDMGqhaHDAPWDVN-------------------------------------------------
+>UniRef100_A0A0A0V3A3	55	0.566	3.948E-06	1	30	80	23	52	55
+-AEDSGNDSEGDQEELSAFVEIGHHAPWDIN-------------------------------------------------
+>UniRef100_D6P0V6	55	0.586	3.948E-06	2	30	80	25	53	56
+--EDSGNESDGXQEELAALVEMGHHAPWNVN-------------------------------------------------
+>UniRef100_A0A6B9SIW2	55	0.666	3.948E-06	1	30	80	49	78	81
+-AEDSGNESEGDREELSTLVEMGYDAPWNVD-------------------------------------------------
+>UniRef100_B2CJC5	55	0.633	3.948E-06	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGHLALWGID-------------------------------------------------
+>UniRef100_Q7ZJF6	55	0.600	3.948E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEDLSALMEMGYHAPWDID-------------------------------------------------
+>UniRef100_C7TQ96	55	0.733	3.948E-06	1	30	80	49	78	81
+-AEDSGNESDGDTEELSALVEMGDHNPWGYN-------------------------------------------------
+>UniRef100_D6P0I2	55	0.620	3.948E-06	1	29	80	49	77	81
+-AEDSGNESEGDHEELAALVEMGHNAPWDV--------------------------------------------------
+>UniRef100_R9WY52	55	0.666	3.948E-06	1	30	80	49	78	81
+-AEDSGNESEGDVEELSTMVDMGHLRLLDGN-------------------------------------------------
+>UniRef100_P05947	55	0.633	3.948E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVGMGHDAPWVIN-------------------------------------------------
+>UniRef100_M1KX20	55	0.633	3.948E-06	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVERGHLAPWPIN-------------------------------------------------
+>UniRef100_A0MGE3	55	0.580	3.948E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A7S5ZKJ7	55	0.580	3.948E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0EXN0	55	0.580	3.948E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A4D6TCS2	55	0.677	3.948E-06	1	30	80	49	79	82
+-AEDSGNESEGDEEELSaALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A4D6TDE4	55	0.677	3.948E-06	1	30	80	49	79	82
+-AEDSGNESEGDEEELSaALVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P0Y5	55	0.606	3.948E-06	1	30	80	49	81	84
+-AEDSGNESEGDQEELSVLVEMGhyaHHAPWDIN-------------------------------------------------
+>UniRef100_Q4U586	55	0.666	3.948E-06	1	30	80	54	83	85
+-AEDSGNESEGDTEELATMVDMGHLRLLDDN-------------------------------------------------
+>UniRef100_A0A6M3H1S8	55	0.666	3.948E-06	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMGHLRLLDDN-------------------------------------------------
+>UniRef100_V9QIS2	54	0.766	5.426E-06	1	30	80	48	77	80
+-AEDSGNESDGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A0A0USJ7	54	0.733	5.426E-06	1	30	80	48	77	80
+-AEDSGNESDGDTEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_U6BGZ4	54	0.642	5.426E-06	1	28	80	48	75	80
+-AEDSGNESEGDREELSALVGMGHLAPWD---------------------------------------------------
+>UniRef100_D6P1F0	54	0.633	5.426E-06	1	30	80	49	78	81
+-AEDSGNEXDGDEEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_Q98ZR6	54	0.633	5.426E-06	1	30	80	49	78	81
+-AEDSGNESDGDQEELSTLVEKGHHAPWGID-------------------------------------------------
+>UniRef100_A0A2S1J4L8	54	0.900	5.426E-06	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLLEMGHDNILDID-------------------------------------------------
+>UniRef100_A0A0X8IDP0	54	0.566	5.426E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALVGTGHHAPWNVN-------------------------------------------------
+>UniRef100_D6P147	54	0.600	5.426E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSGLMEMGHHAPWVVD-------------------------------------------------
+>UniRef100_A1XEN8	54	0.677	5.426E-06	1	31	80	50	80	82
+-AEDSGNESEGDTEELSTMVDMGRLRLLDVNE------------------------------------------------
+>UniRef100_A1XEM9	54	0.766	5.426E-06	1	30	80	50	79	82
+-AEDSGNESDGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_R9WZS4	54	0.766	5.426E-06	1	30	80	50	79	82
+-AEDSGNESDGDTEELSTMVDMGSLRLLDVN-------------------------------------------------
+>UniRef100_M4QEF1	54	0.677	5.426E-06	1	31	80	50	80	82
+-AEDSGNESEGDTEELSTMVDMGRLRLLDVNE------------------------------------------------
+>UniRef100_A0A6B9L250	54	0.612	5.426E-06	1	30	80	49	79	82
+-AEDSGNESEGDQEELSaALMEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A0U4DLK0	54	0.774	5.426E-06	1	31	80	48	78	83
+-AEDSGNESDGDTEELSTLVEMGNLRLLDANL------------------------------------------------
+>UniRef100_I1TUS1	54	0.700	5.426E-06	1	30	80	54	83	84
+-AEDSGNESDGDQEELSTMVEVGHLRLLDAN-------------------------------------------------
+>UniRef100_A0A6M4F6E9	54	0.766	5.426E-06	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_G9IP60	54	0.633	5.426E-06	1	30	80	54	83	86
+-AEDSGNESEGDIEELATMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A6M4F1Y3	54	0.766	5.426E-06	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_Q0H682	54	0.733	5.426E-06	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A1L4ANG4	54	0.689	5.426E-06	2	30	80	59	87	90
+--EDSGNESDGDAEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A166XR73	54	0.586	7.459E-06	2	30	80	15	43	46
+--EDSGNESEGDQEELSALVEMGHLALWNVD-------------------------------------------------
+>UniRef100_A0A0A0USK5	54	0.733	7.459E-06	1	30	80	46	75	78
+-AEDSGNESEGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_V5W3W7	54	0.733	7.459E-06	1	30	80	48	77	80
+-AEDSGNESEGDTEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_Q3S422	54	0.866	7.459E-06	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGHGNILDND-------------------------------------------------
+>UniRef100_I6QM07	54	0.733	7.459E-06	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDMGSLRLLDVN-------------------------------------------------
+>UniRef100_A0A0M4ART7	54	0.633	7.459E-06	1	30	80	49	78	81
+-AEDSGNESDGDREELSAFVGMGYDAPWDVD-------------------------------------------------
+>UniRef100_R9WY90	54	0.700	7.459E-06	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A161CPC3	54	0.600	7.459E-06	1	30	80	49	78	81
+-AEDSGNESEGDQEELSTLVERGHLAPWPID-------------------------------------------------
+>UniRef100_I6R5R9	54	0.612	7.459E-06	1	30	80	49	79	82
+-AEDSGNESEGDEEELSALvVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A2I6PIL5	54	0.700	7.459E-06	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_M4QBY2	54	0.750	7.459E-06	1	28	80	53	80	83
+-AEDSGNESDGDTEELSTMVDMGHLRLLD---------------------------------------------------
+>UniRef100_Q2EQA8	54	0.633	7.459E-06	1	30	80	54	83	86
+-AEDSGNESEGDMEELATMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_Q3S5M1	54	0.655	7.459E-06	2	30	80	55	83	86
+--EDSGNESEGDTEELATMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_I6N010	54	0.527	7.459E-06	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALvgmehhVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A346BLV3	54	0.527	7.459E-06	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEmghhapMGHHAPWDVD-------------------------------------------------
+>UniRef100_D6P0V5	54	0.527	7.459E-06	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEmghhapMGHHAPWDVD-------------------------------------------------
+>UniRef100_D5HML8	53	0.833	1.025E-05	1	30	80	0	29	32
+-AEDSGNESDGDTEELSTLMEMGNLNLLDND-------------------------------------------------
+>UniRef100_I6QQ33	53	0.629	1.025E-05	4	30	80	10	36	39
+----SGNESDGDQEELSAFVEMGYHAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6SJT5	53	0.766	1.025E-05	1	30	80	47	76	78
+-AEDSGNESEGDTEELSTLVEMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A8E4NV95	53	0.733	1.025E-05	1	30	80	49	78	80
+-AEDSGNESDGDTEELSTMVDMGNLRLLDDN-------------------------------------------------
+>UniRef100_A0A1V0CQ66	53	0.700	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDEEALSELLEMGHLAPWDVN-------------------------------------------------
+>UniRef100_C7TQ66	53	0.700	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDAEELSALVEMGDHNPWGYN-------------------------------------------------
+>UniRef100_A0A0A0Y259	53	0.633	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDEEQLSALVERGHLAPWDIN-------------------------------------------------
+>UniRef100_A0A2S1J4H8	53	0.900	1.025E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLLEMGYDNILDND-------------------------------------------------
+>UniRef100_A0A0U3VBW8	53	0.900	1.025E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLLEMGYDNILDND-------------------------------------------------
+>UniRef100_C6L627	53	0.703	1.025E-05	1	27	80	49	75	81
+-AEDSGNESEGDQEELSGLMEMGHDAPW----------------------------------------------------
+>UniRef100_Q6UFM9	53	0.866	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSALMEMGYDNILDND-------------------------------------------------
+>UniRef100_I6R0B1	53	0.700	1.025E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_I3XK12	53	0.700	1.025E-05	1	30	80	50	79	81
+-AEDSGNESDGDTEELSAMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_B2YLT1	53	0.633	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDEEELSELVGMGHHAPWNIN-------------------------------------------------
+>UniRef100_L0LF94	53	0.566	1.025E-05	1	30	80	49	78	81
+-AXDSGNESDGDQEEXSALXEMXHHAPWDVD-------------------------------------------------
+>UniRef100_Q09L71	53	0.600	1.025E-05	1	30	80	49	78	81
+-AEDSGNDSDGDQEELSTLVGMGYHAPWNVD-------------------------------------------------
+>UniRef100_M1KXK4	53	0.600	1.025E-05	1	30	80	49	78	81
+-AEDSGNESEGDHEELSILVDRGHDAPWDID-------------------------------------------------
+>UniRef100_C7TQ72	53	0.700	1.025E-05	1	30	80	49	78	81
+-AEDSGNESDGDAEELSALVEMGDHNPWGYN-------------------------------------------------
+>UniRef100_F5CGK8	53	0.709	1.025E-05	1	30	80	49	79	82
+-AEDSGNESDGDQEELSTLvVEMGYDAPWNVN-------------------------------------------------
+>UniRef100_A0A0D5BHA9	53	0.645	1.025E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVEMgGYDAPWDVD-------------------------------------------------
+>UniRef100_M4QC92	53	0.700	1.025E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTMVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_I3XK15	53	0.700	1.025E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTMVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_A0A286LFX8	53	0.633	1.025E-05	1	30	80	50	79	82
+-AEDSGNESEGDIEELATMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_A0A2I6PIK7	53	0.677	1.025E-05	1	31	80	53	83	85
+-AEDSGNESEGDVEELSTLVDMGNLRLLDVNE------------------------------------------------
+>UniRef100_A0A7T8KPV7	53	0.571	1.025E-05	1	30	80	49	83	86
+-AEDSGNESEGDQEELSALVerghlEMGHNAPWDVN-------------------------------------------------
+>UniRef100_A0A0B5LCT6	53	0.733	1.025E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTMVDMGYIRLLDGN-------------------------------------------------
+>UniRef100_A0A6M4F295	53	0.766	1.025E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTLVDMGNLRLLDIN-------------------------------------------------
+>UniRef100_Q0H674	53	0.733	1.025E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_D2X6I7	53	0.666	1.025E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMGHVRLLDDN-------------------------------------------------
+>UniRef100_Q9DGX0	53	0.700	1.025E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELSTMVDMEHLRLLDVN-------------------------------------------------
+>UniRef100_F1K8W1	53	0.555	1.025E-05	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVevgarlEMGHDAPWDVD-------------------------------------------------
+>UniRef100_D5HML2	53	0.833	1.409E-05	1	30	80	0	29	32
+-AEDSGNESDGDTEELSTLMEMGDLNFLDND-------------------------------------------------
+>UniRef100_A0A8F0SPW6	53	0.600	1.409E-05	1	30	80	31	60	63
+-AEDSGNESEGDREELSVLVEVGHQAPWDVD-------------------------------------------------
+>UniRef100_A0A2L1KVZ2	53	0.600	1.409E-05	1	30	80	48	76	79
+-AEDSGNESEGDQEELAAL-EMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A2L1KVT0	53	0.633	1.409E-05	1	30	80	48	77	80
+-AEDSGNESEGDQEELSALMERGHHAPRDVN-------------------------------------------------
+>UniRef100_A0A0A0UW73	53	0.733	1.409E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A0D5BGX4	53	0.566	1.409E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMELGHHAPWIVD-------------------------------------------------
+>UniRef100_L0LED5	53	0.633	1.409E-05	1	30	80	49	78	81
+-AEDSGNGSEGDQEELSALVEMGXDAPWDXD-------------------------------------------------
+>UniRef100_Q9WSP8	53	0.833	1.409E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLMEMGDDNFFDNN-------------------------------------------------
+>UniRef100_A1XEN4	53	0.733	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A4Y5LAX2	53	0.666	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSAMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_A0A0D5BHD8	53	0.612	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVEMgGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A076V5Q1	53	0.612	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_I3XK21	53	0.700	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_Q8ADG8	53	0.612	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDTEELSAlLVEMGHHAPWNVD-------------------------------------------------
+>UniRef100_F1K218	53	0.580	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVERGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A0B5KUU0	53	0.633	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSAMVDVGHLRLLDVN-------------------------------------------------
+>UniRef100_M1LE61	53	0.580	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSKLvVDMGHLAPWDID-------------------------------------------------
+>UniRef100_M4QFT4	53	0.733	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELSTLVDMGNLRLLDIN-------------------------------------------------
+>UniRef100_Q5EEI2	53	0.633	1.409E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELATMVDMGHLRLSDVN-------------------------------------------------
+>UniRef100_A0A0C5K997	53	0.612	1.409E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALvVEMGNHAPWDVN-------------------------------------------------
+>UniRef100_M4US05	53	0.655	1.409E-05	1	29	80	54	82	86
+-AEDSGNESEGDIEELSTMVDMGHLRLLDV--------------------------------------------------
+>UniRef100_Q4JGL6	53	0.733	1.409E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELSTLVDMGNLRLLDDN-------------------------------------------------
+>UniRef100_D6P126	53	0.571	1.409E-05	1	30	80	49	83	86
+-AEDSGNESEGDQEELSALVerghlEMGHPAPWDVN-------------------------------------------------
+>UniRef100_A0A0H3Y925	53	0.633	1.409E-05	1	30	80	54	83	86
+-AEDSGNESDGDQEELESMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_M4TBN7	53	0.456	1.409E-05	1	45	80	54	99	116
+-AEDSGNESDGDAEELAAMGDVGHLRLLDlNDVYCDGKLVGHSLLWG----------------------------------
+>UniRef100_UPI000E2B3521	53	0.689	1.409E-05	1	29	80	87	115	117
+-AEDSGNESEGDTEELATMVDMGHLKLLDN--------------------------------------------------
+>UniRef100_D8WWX2	53	0.733	1.937E-05	1	30	80	49	78	81
+-AEDSGNESDGDNEELSTLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_Q8AK01	53	0.900	1.937E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGGDNILDND-------------------------------------------------
+>UniRef100_A0A4P8W3A2	53	0.833	1.937E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGNLNFLDND-------------------------------------------------
+>UniRef100_A0A0G3Z7T8	53	0.833	1.937E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLMEIGYDNLLDNN-------------------------------------------------
+>UniRef100_Q5VGQ5	53	0.866	1.937E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGYNNILDND-------------------------------------------------
+>UniRef100_Q990B0	53	0.566	1.937E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEVLSALAXMGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A6M3H4U7	53	0.633	1.937E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSELMELGRLAPWDVN-------------------------------------------------
+>UniRef100_A0A221IXA6	53	0.709	1.937E-05	1	30	80	49	79	82
+-AEDSGNESDGDTEELSALVlEMGHDAPWVVN-------------------------------------------------
+>UniRef100_Q0H676	53	0.666	1.937E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELATMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_A0A1B1P5A1	53	0.700	1.937E-05	1	30	80	51	80	83
+-AEDSGNESDGDHEELSTMVDMGQLRLLDAN-------------------------------------------------
+>UniRef100_Q99BM3	53	0.666	1.937E-05	1	30	80	51	80	83
+-AEDSGNESEGDTEELATMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A3F976	53	0.612	1.937E-05	1	30	80	52	82	85
+-AEDSGNESEGDQEELSGLvVEMGYHAPWDVD-------------------------------------------------
+>UniRef100_A0A286LHD7	53	0.700	1.937E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELSAMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_Q901W4	53	0.666	1.937E-05	1	30	80	54	83	86
+-AEDSGNESEGDAEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_I6YY48	53	0.633	1.937E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDVGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A1L7E6F5	53	0.527	1.937E-05	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEmgnhapMGHHAPWNVN-------------------------------------------------
+>UniRef100_A0A1L7E6E8	53	0.527	1.937E-05	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEmgnhapMGHHAPWNVN-------------------------------------------------
+>UniRef100_A0A884S1V6	52	0.700	2.662E-05	1	30	80	48	77	80
+-AEDSGNESEGDTEELSTMVDMGRVRLLDVN-------------------------------------------------
+>UniRef100_A0A221IUK7	52	0.600	2.662E-05	1	30	80	49	78	81
+-AEDSGNESEGDQDELSALGEMGYLAPWDID-------------------------------------------------
+>UniRef100_Q8JBQ6	52	0.566	2.662E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEELSKMVEVGHPAPWDVD-------------------------------------------------
+>UniRef100_A0A6M4F8D5	52	0.600	2.662E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSKLMELGRLAPWDVD-------------------------------------------------
+>UniRef100_H6VWG1	52	0.700	2.662E-05	1	30	80	49	78	81
+-AEDSGNESDGDQEELSALVEMGDHAPLVIN-------------------------------------------------
+>UniRef100_Q7ZL76	52	0.678	2.662E-05	1	28	80	49	76	81
+-AEDSGNESEGDQEELSALWEMGPHAPWD---------------------------------------------------
+>UniRef100_A0A7D6EKF3	52	0.533	2.662E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSVLVDRGHHAPWVVD-------------------------------------------------
+>UniRef100_A0A6M4F752	52	0.666	2.662E-05	1	30	80	49	78	81
+-AEDSGNESDGDVEELSTMVDMGHLRLLGAN-------------------------------------------------
+>UniRef100_Q90CJ8	52	0.866	2.662E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGYDDILHNN-------------------------------------------------
+>UniRef100_A0A0A0US58	52	0.666	2.662E-05	1	30	80	49	78	81
+-AEDSGNASEGDTEELSTVVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_M4QNI8	52	0.666	2.662E-05	1	30	80	50	79	82
+-AEDSGNESEGDLEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A0U3AAR3	52	0.645	2.662E-05	1	30	80	49	79	82
+-AEDSGNESEGDHEELSTLiVEMGHDAPWSVD-------------------------------------------------
+>UniRef100_A0A6M4F9R5	52	0.724	2.662E-05	1	29	80	54	82	84
+-AEDSGNESEGDTEELSTMVDMGNLRLLDN--------------------------------------------------
+>UniRef100_I1TUX5	52	0.633	2.662E-05	1	30	80	54	83	84
+-AEDSGNESEGDQEELATLVDVGHLRLLDAN-------------------------------------------------
+>UniRef100_G8GPL9	52	0.714	2.662E-05	1	28	80	54	81	84
+-AEDSGNESDGDNEELSTMVDMGHLRLLD---------------------------------------------------
+>UniRef100_A0A410T081	52	0.600	2.662E-05	1	30	80	52	81	84
+-AEDSGNESEGDQEELSALMEKGHAAPWNVN-------------------------------------------------
+>UniRef100_G8GPN0	52	0.758	2.662E-05	1	29	80	54	82	84
+-AEDSGNESEGDTEELSTLVDMGNLRLLDN--------------------------------------------------
+>UniRef100_M4VAH4	52	0.714	2.662E-05	1	28	80	54	81	86
+-AEDSGNESEGDTEELSTLVDMGHLRLMD---------------------------------------------------
+>UniRef100_T2CYJ4	52	0.700	2.662E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELATMVDMGQLRLLDAN-------------------------------------------------
+>UniRef100_Q0H681	52	0.620	2.662E-05	2	30	80	55	83	86
+--EDSGNESEGDTEELAAMVDMGHLRLLDDN-------------------------------------------------
+>UniRef100_M4URN1	52	0.678	2.662E-05	1	28	80	54	81	86
+-AEDSGNESEGDIEELSTMVDMGHLRLLD---------------------------------------------------
+>UniRef100_Q2VAE4	52	0.689	2.662E-05	2	30	80	55	83	86
+--EDSGNESEGDTEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_Q7ZL51	52	0.730	2.662E-05	1	26	80	49	74	91
+-AEDSGNESEGDQEELSTLMEMGHHAP-----------------------------------------------------
+>UniRef100_A0A8F0MLB0	52	0.666	3.659E-05	1	30	80	6	35	38
+-AEDSGNESDGDAEELSAMVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_D6P1G9	52	0.566	3.659E-05	1	30	80	25	54	57
+-AEDSGNESEGDYEEISELVERGHLAPWDVD-------------------------------------------------
+>UniRef100_I6QQC9	52	0.633	3.659E-05	1	30	80	49	76	79
+-AEDSGNESEGDQEEL--LVEMGHPAPWDVN-------------------------------------------------
+>UniRef100_A0A0A0UW66	52	0.633	3.659E-05	1	30	80	48	77	80
+-AEDSGNESEGDAEELSAMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_H9TQ83	52	0.566	3.659E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALMERGHHAPWDVN-------------------------------------------------
+>UniRef100_Q990E4	52	0.633	3.659E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEALSAMLEMGLDAPWDVD-------------------------------------------------
+>UniRef100_A0A650F9F8	52	0.733	3.659E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLMEIEYINPWDNN-------------------------------------------------
+>UniRef100_A0A8E3QSA5	52	0.900	3.659E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLLEMGNDAILDYN-------------------------------------------------
+>UniRef100_A1IM31	52	0.533	3.659E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVGMGHLAPWDVD-------------------------------------------------
+>UniRef100_M4QEE1	52	0.666	3.659E-05	1	30	80	49	78	81
+-AEDSGNESEGDIEELSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_Q7SPQ4	52	0.703	3.659E-05	1	27	80	49	75	82
+-AEDSGNESDGDKEELSTLMDMGHPAPW----------------------------------------------------
+>UniRef100_Q4PTF3	52	0.633	3.659E-05	1	30	80	50	79	82
+-AEDSGNESEGDTEELAAMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_A0A076V4L4	52	0.612	3.659E-05	1	30	80	49	79	82
+-AEDSGNESEGDHEELSALVlEMGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A0D5BHJ7	52	0.612	3.659E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALVEKgGHDAPWDVD-------------------------------------------------
+>UniRef100_L0LG41	52	0.645	3.659E-05	1	30	80	49	79	82
+-AEDSGNESEGDQEELSALvVEMGHDAPWVIN-------------------------------------------------
+>UniRef100_A0A0A0UVW1	52	0.700	3.659E-05	1	30	80	51	80	83
+-AEDSGNESDGDTEELSNMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_M4UT73	52	0.714	3.659E-05	1	28	80	51	78	83
+-AEDSGNESEGDTEELSTLVDMGHLRLVD---------------------------------------------------
+>UniRef100_D6P0Y6	52	0.566	3.659E-05	1	30	80	52	81	84
+-AEDSGNESEGDEEALAALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A2S1IUP8	52	0.600	3.659E-05	1	30	80	52	81	84
+-AEDSGNESDGDQEELSGLMERGHHAPWVVD-------------------------------------------------
+>UniRef100_M4USA2	52	0.714	3.659E-05	1	28	80	54	81	86
+-AEDSGNESEGDTEELSTLVDMGHLRLVD---------------------------------------------------
+>UniRef100_R9TM06	52	0.666	3.659E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_D6P1D0	52	0.514	3.659E-05	1	30	80	49	83	86
+-AEDSGNESEGDQEELSALVgmghlEMGHHAPWNVD-------------------------------------------------
+>UniRef100_Q8UTU0	52	0.666	3.659E-05	1	30	80	54	83	86
+-AEDSGNESDGDQEELATMVDMGRLRLLDTN-------------------------------------------------
+>UniRef100_Q3S5K4	52	0.633	3.659E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMGHLRLLGDN-------------------------------------------------
+>UniRef100_T2CYE6	52	0.633	3.659E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMEHLRLLDVN-------------------------------------------------
+>UniRef100_Q90VI0	52	0.724	3.659E-05	1	29	80	54	82	86
+-AEDSGNESEGDTEELSTMVEMGNLRLLDV--------------------------------------------------
+>UniRef100_M4UWL4	52	0.714	3.659E-05	1	28	80	54	81	86
+-AEDSGNESEGDTEELSTLVDMGHLRLVD---------------------------------------------------
+>UniRef100_D6P0Q2	51	0.566	5.030E-05	1	30	80	17	46	49
+-AEDSGNESEGDXEELXALVEMGHXAPWVVD-------------------------------------------------
+>UniRef100_A0A0A0RB74	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELAALVERGHPAPWNVD-------------------------------------------------
+>UniRef100_E5RVW6	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVDRGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A7U0MPN6	51	0.600	5.030E-05	1	30	80	49	78	81
+-AEDSGNESDGDEEALAALVERGHLAPWDIN-------------------------------------------------
+>UniRef100_D6P0S9	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSAIMERGHLAPWPVD-------------------------------------------------
+>UniRef100_A0A159CA21	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVEVGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A410T0H1	51	0.600	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEKGHAAPWNIN-------------------------------------------------
+>UniRef100_A0A6B9SIM2	51	0.566	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEEVSRLMEMGHLAPWNVD-------------------------------------------------
+>UniRef100_A0A410SSU1	51	0.600	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDQEELSALMEMGRPAPWNVD-------------------------------------------------
+>UniRef100_Q8AEG8	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVDRGHLAPWDVN-------------------------------------------------
+>UniRef100_V9QIR9	51	0.833	5.030E-05	1	30	80	49	78	81
+-AEDSGNESDGDEEELSTLMEIGYDNLLDNN-------------------------------------------------
+>UniRef100_Q8AEG6	51	0.533	5.030E-05	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVDRGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A2I6U471	51	0.580	5.030E-05	1	30	80	49	79	82
+-AEDSGNESDGDQEQLSAlMVEMGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A0K0VF12	51	0.724	5.030E-05	2	30	80	51	79	82
+--EDSGNESEGDTEELSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A0K0VEW7	51	0.689	5.030E-05	1	29	80	52	80	84
+-AEDSGNESEGDTEELSTMVDMGNLRLLDV--------------------------------------------------
+>UniRef100_B5AET3	51	0.700	5.030E-05	1	30	80	54	83	86
+-AEDSGNESDGDHEELSTLVDMGNLRLLDAD-------------------------------------------------
+>UniRef100_F5CFE9	51	0.633	5.030E-05	1	30	80	54	83	86
+-AEDSGNESEGDIEELATMGDMGHLRLLDVN-------------------------------------------------
+>UniRef100_Q994R6	51	0.724	5.030E-05	2	30	80	55	83	86
+--EDSGNESEGDTEELSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A1L7DY57	51	0.500	5.030E-05	1	30	80	49	84	87
+-AEDSGNESEGDQEELSALVEmgnhapMGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A8F0SPW4	51	0.645	6.914E-05	1	31	80	13	43	45
+-AEDSGNDSEGDTEELSTMVDMGNLRLLDFNE------------------------------------------------
+>UniRef100_A0A166XPF7	51	0.580	6.914E-05	1	30	80	14	44	47
+-ADYSGNESEGDQEELSALvVEMGHDAPWDVD-------------------------------------------------
+>UniRef100_D6P0W8	51	0.500	6.914E-05	1	30	80	29	58	61
+-AEDSGNESEGDEEELAAMVERGHLAPWNVD-------------------------------------------------
+>UniRef100_Q8UT74	51	0.642	6.914E-05	1	28	80	42	69	73
+-AEDSGNESEGDIEELSTMVDMGHLRLMD---------------------------------------------------
+>UniRef100_Q9QST4	51	0.766	6.914E-05	1	30	80	48	77	80
+-AEDSGNESDGDTEELSTLVEMGNHNPGYVN-------------------------------------------------
+>UniRef100_C7TQ84	51	0.656	6.914E-05	1	32	80	49	80	81
+-AEDSGNESDGDEEELSAIVEMGNFNPWGYNVF-----------------------------------------------
+>UniRef100_I6NG28	51	0.766	6.914E-05	1	30	80	49	78	81
+-AEDSGNESEGDAEELSTLMEMGYDNIWGYN-------------------------------------------------
+>UniRef100_A0A0C5K7H2	51	0.833	6.914E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELLTLMEMGYDNILDND-------------------------------------------------
+>UniRef100_A0A0U4F121	51	0.827	6.914E-05	1	29	80	49	77	81
+-AEDSGNESDGDTEELSTLMEMGNYALLDN--------------------------------------------------
+>UniRef100_R9QWZ7	51	0.666	6.914E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDMGNLRLLGVN-------------------------------------------------
+>UniRef100_B2YFP5	51	0.800	6.914E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGNYDFLDND-------------------------------------------------
+>UniRef100_Q4PT72	51	0.666	6.914E-05	1	30	80	49	78	81
+-AEGSGNESEGDTEELSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_G1FP49	51	0.900	6.914E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLLEMGYDNILGND-------------------------------------------------
+>UniRef100_A0A0U4EMW0	51	0.718	6.914E-05	1	32	80	49	80	81
+-AEDSGNESDGDKEELSSLMEMGDYHILDNDNW-----------------------------------------------
+>UniRef100_A0A887EUE9	51	0.928	6.914E-05	1	28	80	49	76	81
+-AEDSGNESDGDTEELSILLEMGHDNILD---------------------------------------------------
+>UniRef100_Q7ZMH6	51	0.666	6.914E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELAKLVEMGSHDLWNVD-------------------------------------------------
+>UniRef100_A0A2I6PIN3	51	0.689	6.914E-05	1	29	80	50	78	82
+-AEDSGNESEGDTEELSTMVDMGRLRLLDV--------------------------------------------------
+>UniRef100_A0A0A0UTS2	51	0.700	6.914E-05	1	30	80	50	79	82
+-AEDSGNESDGDMEELSTMVDMGRLGLLDVN-------------------------------------------------
+>UniRef100_A0A6M3H354	51	0.678	6.914E-05	1	28	80	54	81	84
+-AEDSGNESEGDTEELATMVDMGHVRLLD---------------------------------------------------
+>UniRef100_A0A6M3H0A2	51	0.633	6.914E-05	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMEHLRLLDDN-------------------------------------------------
+>UniRef100_M4TTV4	51	0.666	6.914E-05	1	30	80	54	83	86
+-AEDSGNESDGDTEELAAMGDMGHLRLLDLN-------------------------------------------------
+>UniRef100_A0A286LFU2	51	0.750	6.914E-05	1	28	80	55	82	87
+-AEDSGNESDGDTEELSTMVDMGNLRLLD---------------------------------------------------
+>UniRef100_Q8UTB9	51	0.655	6.914E-05	2	30	80	59	87	90
+--EDSGNESEGDTEELATMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_A0A8F0MKX3	51	0.750	9.505E-05	1	28	80	6	33	38
+-AEDSGNESEGDTEELSTLVDMGNLRLLD---------------------------------------------------
+>UniRef100_Q4A3M4	51	0.666	9.505E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSKLVEMGPHDLWNID-------------------------------------------------
+>UniRef100_A0A6B9SDZ0	51	0.629	9.505E-05	1	27	80	49	75	81
+-AEDSGNESEGDQEELSAFVGMGYDAPW----------------------------------------------------
+>UniRef100_D2XKY6	51	0.833	9.505E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLIEVGNYNLLDNN-------------------------------------------------
+>UniRef100_A0A1B1P627	51	0.833	9.505E-05	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEMGNYTILDND-------------------------------------------------
+>UniRef100_A0A808KXE2	51	0.666	9.505E-05	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDVGRLRLLDVN-------------------------------------------------
+>UniRef100_A0A0K0VEU2	51	0.633	9.505E-05	1	30	80	50	79	82
+-AEDSGNESEGDLEELSTMVDMGHLGLLAVN-------------------------------------------------
+>UniRef100_A0A1P8NZP9	51	0.678	9.505E-05	1	28	80	51	78	83
+-AEDSGNEGEGDAEELSTMVEMGHLRLLD---------------------------------------------------
+>UniRef100_D2X6J4	51	0.620	9.505E-05	1	29	80	54	82	86
+-AEDSGNESEGDIEELSTMVDLGHLRLLDV--------------------------------------------------
+>UniRef100_M4UT82	51	0.678	9.505E-05	1	28	80	54	81	86
+-AEDSGNESEGDTEELATLVDMGHLRLVD---------------------------------------------------
+>UniRef100_A0A0K1H590	51	0.633	9.505E-05	1	30	80	54	83	86
+-AEDSGNESEGDIEELATMVDMGQLRLLDAN-------------------------------------------------
+>UniRef100_Q4QX99	51	0.689	9.505E-05	1	29	80	54	82	86
+-AEDSGNESEGDTEELSTMVDMGTLRLLDV--------------------------------------------------
+>UniRef100_A0A6M3H1V4	51	0.666	9.505E-05	1	30	80	54	83	86
+-AEDSGNESDGDMEDLSTMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_Q994H6	51	0.689	9.505E-05	1	29	80	57	85	89
+-AEDSGNESEGDAEELSTMVEMGNLRLLDV--------------------------------------------------
+>UniRef100_K0GSI0	51	0.456	9.505E-05	1	45	80	49	94	114
+-AEDSGNESDGDTDELAKLVEMGDFDHWvGGNVXCLRQLVGYSILWG----------------------------------
+>UniRef100_D5HMH6	50	0.800	1.307E-04	1	30	80	0	29	32
+-AEDSGNESDGDTEELSTLMEMGNLNFPDND-------------------------------------------------
+>UniRef100_A0A2L1KXD3	50	0.633	1.307E-04	1	30	80	47	76	79
+-AEDSGNESEGDQEELSRLMERGYDAPWIVN-------------------------------------------------
+>UniRef100_G8I1U6	50	0.633	1.307E-04	1	30	80	49	76	79
+-AEDSGNESEGDREEL--LVEMGHDAPWDID-------------------------------------------------
+>UniRef100_L0LER3	50	0.533	1.307E-04	1	30	80	48	77	80
+-AEDSGNESEGDEEALAALVEMGHHALWNVD-------------------------------------------------
+>UniRef100_A0A650F8I0	50	0.612	1.307E-04	1	30	80	48	78	81
+-AEDSGNESEGDQEDLSAlLLEMGHPAPWDVD-------------------------------------------------
+>UniRef100_A0A8E3QV02	50	0.793	1.307E-04	2	30	80	50	78	81
+--EDSGNESDGDAEELSTLMEMGDLNFLDND-------------------------------------------------
+>UniRef100_A0A0A0URF4	50	0.666	1.307E-04	1	30	80	49	78	81
+-AEDSGNESEGDIEELSTIVDMGNIRLLDVN-------------------------------------------------
+>UniRef100_Q08KA0	50	0.655	1.307E-04	2	30	80	52	80	83
+--EDSGNESEGDIEELSTMVDMGQLRLLDGN-------------------------------------------------
+>UniRef100_A0A6M3H5H2	50	0.625	1.307E-04	1	31	80	54	85	86
+-AEDSGNESEGDTEELATMVDMGHIRLLvDNDL------------------------------------------------
+>UniRef100_A0A0C5KLH9	50	0.785	1.307E-04	1	28	80	54	81	86
+-AEDSGNESDGDTEELSTLVEMGNLRLMD---------------------------------------------------
+>UniRef100_A0A0H3YAS4	50	0.655	1.307E-04	1	29	80	54	82	86
+-AEDSGNESEGDTEELATMVDMGQLRLLDV--------------------------------------------------
+>UniRef100_A0A1L7DYX0	50	0.666	1.307E-04	1	27	80	49	75	89
+-AEDSGNESEGDEEELAALVEMGHHAPL----------------------------------------------------
+>UniRef100_A0A1L7DZB1	50	0.666	1.307E-04	1	27	80	49	75	89
+-AEDSGNESEGDEEELAALVEMGHHAPL----------------------------------------------------
+>UniRef100_A0A1L7DYV2	50	0.666	1.307E-04	1	27	80	49	75	89
+-AEDSGNESEGDEEELAALVEMGHHAPL----------------------------------------------------
+>UniRef100_B5ADD5	50	0.600	1.796E-04	1	30	80	49	76	79
+-AEDSGNESEGDREEL--LMEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A6G5NID0	50	0.750	1.796E-04	1	28	80	50	77	80
+-AEDSGNESEGDTEELSTLVDMGNIRLLD---------------------------------------------------
+>UniRef100_A0A482KKY4	50	0.600	1.796E-04	1	30	80	49	77	80
+-AEDSGNESDGDQEEL-AFLEMGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A6M4FBT2	50	0.866	1.796E-04	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEIGDDNILDYN-------------------------------------------------
+>UniRef100_T2CGV8	50	0.533	1.796E-04	1	30	80	49	78	81
+-AEDSGNDSEGDEEALSALVERGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A808KXL4	50	0.758	1.796E-04	1	29	80	49	77	81
+-AEDSGNESDGDTEELSTLVELGNLRLLDV--------------------------------------------------
+>UniRef100_A0A7S6BCU9	50	0.666	1.796E-04	1	30	80	49	78	81
+-AEDSGNDSDGDMEELSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A6M3H3D8	50	0.566	1.796E-04	1	30	80	49	78	82
+-AEDSGNESEGDEEELSALGGMGHHAPWVVD-------------------------------------------------
+>UniRef100_A0A650F7S5	50	0.655	1.796E-04	1	29	80	50	78	82
+-AEDSGNESEGDAEELSTMVDMGRLRLLDV--------------------------------------------------
+>UniRef100_Q00F94	50	0.349	1.796E-04	23	79	80	11	73	82
+-----------------------HLWRWGTMLLGMLMICKAaenlwvTVYYGVPVWKEAPLLYFVPQMLKLMRQRYIMFGPHMPVY
+>UniRef100_A0A4P1LV10	50	0.700	1.796E-04	1	30	80	51	80	83
+-AEDSGNESDGDTEELGTIMDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A2S1E6G8	50	0.678	1.796E-04	1	28	80	54	81	84
+-AEDSGNESEGDTEELSTMVDMEHLRLLD---------------------------------------------------
+>UniRef100_A0A2S1E6P2	50	0.678	1.796E-04	1	28	80	54	81	84
+-AEDSGNESEGDTEELSTMVDMEHLRLLD---------------------------------------------------
+>UniRef100_A0A1P8DFW0	50	0.633	1.796E-04	1	30	80	54	83	86
+-AEDSGNESEGDLEELSTMVDLGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A887F2N3	50	0.666	1.796E-04	1	27	80	49	75	88
+-AEDSGNESEGDQEELSALVERGHLAPL----------------------------------------------------
+>UniRef100_A0A887F870	50	0.629	1.796E-04	1	27	80	49	75	88
+-AEDSGNESEGDQEELSAMVERGHLAPL----------------------------------------------------
+>UniRef100_A0A2L1KYI9	49	0.533	2.469E-04	1	30	80	48	77	80
+-AEDSGNESEGDQEELAALERMGHPAPWNVD-------------------------------------------------
+>UniRef100_A0A0A0UTD3	49	0.689	2.469E-04	1	29	80	48	76	80
+-AEDSGNESEGDTEELSTVVDMGRLRLLDV--------------------------------------------------
+>UniRef100_A0A410S5P7	49	0.633	2.469E-04	1	30	80	49	78	81
+-AEDSGNESEGDMEELSTMVDMGHVGLLAVN-------------------------------------------------
+>UniRef100_A0A2S1J4R7	49	0.633	2.469E-04	1	30	80	49	78	81
+-AEDSGNESEGDEEALSALLDMGHLAPRDVN-------------------------------------------------
+>UniRef100_D2XKX7	49	0.800	2.469E-04	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLVEMGDYDFLVNN-------------------------------------------------
+>UniRef100_M4QFR9	49	0.666	2.469E-04	1	30	80	50	79	82
+-AEDSGNESEGDMEDLSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_M4QFT0	49	0.666	2.469E-04	1	30	80	50	79	82
+-AEDSGNESEGDMEELSTMVDMGNIGLLDAN-------------------------------------------------
+>UniRef100_A0A0H4D105	49	0.600	2.469E-04	1	30	80	50	79	82
+-AEDSGDESEGDAEELSAMGDMGHLRLLDVN-------------------------------------------------
+>UniRef100_Q4PTG2	49	0.678	2.469E-04	1	28	80	54	81	84
+-AEDSGNESEGDTEELATMVDMGQLRLLD---------------------------------------------------
+>UniRef100_Q2EQ72	49	0.677	2.469E-04	1	30	80	54	84	85
+-AEDSGNESEGDTEELSTMVDMEHLRLLvDNN-------------------------------------------------
+>UniRef100_A0A6M6B3F4	49	0.620	2.469E-04	1	29	80	54	82	86
+-AEDSGNESEGDTEELAAMVDMGQLRLLDV--------------------------------------------------
+>UniRef100_A0A6M4F900	49	0.620	2.469E-04	2	30	80	55	83	86
+--EDSGNESEGDIEELSAMVDMGNLRLLDDN-------------------------------------------------
+>UniRef100_A0A6M6B5E2	49	0.678	2.469E-04	1	28	80	54	81	86
+-AEDSGNESEGDIEELSTMVDMGNLRLLD---------------------------------------------------
+>UniRef100_A0A0M3PN82	49	0.714	2.469E-04	1	28	80	54	81	86
+-AEDSGNESEGDTEELATLVDMGNLRLLD---------------------------------------------------
+>UniRef100_A0ZVK9	49	0.653	2.469E-04	1	26	80	49	74	87
+-AEDSGNESEGDQEELSALVEVGHHAP-----------------------------------------------------
+>UniRef100_A0A8F0MKF1	49	0.740	3.394E-04	2	28	80	11	37	42
+--EDSGNESEGDTEELSTLVDMGNLRLLD---------------------------------------------------
+>UniRef100_L0LFY5	49	0.566	3.394E-04	1	30	80	49	75	78
+-AEDSGNESEGDQE---LLVEMGHHAPWDIN-------------------------------------------------
+>UniRef100_A0A410S650	49	0.733	3.394E-04	1	30	80	47	76	79
+-AEDSGNESDGDTEELSTMVDMGSLGLLVVN-------------------------------------------------
+>UniRef100_A0A410S558	49	0.666	3.394E-04	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTMVDMGRLGLLAVN-------------------------------------------------
+>UniRef100_K0GHS3	49	0.533	3.394E-04	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVDGGHNAPWDVN-------------------------------------------------
+>UniRef100_Q8AU87	49	0.703	3.394E-04	1	27	80	49	75	81
+-AEDSGNESEGDTEELATMLEMGDFDPW----------------------------------------------------
+>UniRef100_D6P113	49	0.720	3.394E-04	1	25	80	49	73	81
+-AEDSGNESEGDQEELSALMEMGHHA------------------------------------------------------
+>UniRef100_A0A6M3H4A0	49	0.740	3.394E-04	2	28	80	55	81	84
+--EDSGNESEGDTEELSTLVDMGNLRLLD---------------------------------------------------
+>UniRef100_Q90CH4	49	0.740	3.394E-04	1	27	80	52	78	84
+-AEDSGNESDGDTEELSTLVEFGDFDPW----------------------------------------------------
+>UniRef100_L7TTA2	49	0.633	3.394E-04	1	30	80	54	83	86
+-AEDSGNESDGDTEELAAMGDMGHLRLLAVN-------------------------------------------------
+>UniRef100_D6P167	49	0.633	4.665E-04	1	30	80	20	49	52
+-AEDSGNESEGDTDELXKLVEMGPDDLWNVN-------------------------------------------------
+>UniRef100_K4MKB1	49	0.566	4.665E-04	1	30	80	49	75	78
+-AEDSGNESDGDQE---ALMEMGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A7T7WVF8	49	0.733	4.665E-04	1	30	80	49	78	81
+-AEDSGNESEGDEEELSTLMEVGNYVPLDNN-------------------------------------------------
+>UniRef100_A0A3S5GPZ8	49	0.666	4.665E-04	1	27	80	49	75	81
+-AEDSGNESEGDTEELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_T1PTH6	49	0.666	4.665E-04	1	27	80	49	75	81
+-AEDSGNESEGDTEELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_A0A2S1J514	49	0.633	4.665E-04	1	30	80	49	78	81
+-AEDSGNESEGDTEELAKLVEMGPDDLWNID-------------------------------------------------
+>UniRef100_A0A6M3GZA7	49	0.612	4.665E-04	1	30	80	49	79	82
+-AEDSGNESEGDNEELSSLgVEMGTHAPWDID-------------------------------------------------
+>UniRef100_A0A0A0UYH2	49	0.645	4.665E-04	1	31	80	52	82	84
+-AEDSGNESEGDVEELSTMVDMGSLRLLVDNE------------------------------------------------
+>UniRef100_A0A0H3YAB3	49	0.600	4.665E-04	1	30	80	54	83	86
+-AEDSGNESEGDMEDLSTMVDMEHLRLLDDN-------------------------------------------------
+>UniRef100_F5CGG8	49	0.678	4.665E-04	1	28	80	54	81	86
+-AEDSGNESDGDHEELSKMVDMGNLRLLD---------------------------------------------------
+>UniRef100_A0A088SUF9	49	0.633	4.665E-04	1	30	80	54	83	86
+-AEDSGNESEGDTEELATMVDMDQLRLLDDN-------------------------------------------------
+>UniRef100_D6P170	49	0.513	4.665E-04	1	30	80	49	85	88
+-AEDSGNESDGDQEELAlvqmgqhAHLEMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q08JX4	49	0.655	4.665E-04	2	30	80	59	87	90
+--EDSGNESDGDIEDLSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A2S1IR48	48	0.348	6.413E-04	8	45	80	0	42	59
+--------SEGDQDELSALvVEMGHHAPWDiNDLWYCkrvRKVVGHSLLWG----------------------------------
+>UniRef100_A0A2I6SJQ7	48	0.642	6.413E-04	1	28	80	48	75	79
+-AEDSGNESEGDAEELSALVDMDHLRLLD---------------------------------------------------
+>UniRef100_A0A7U0MP44	48	0.566	6.413E-04	1	30	80	49	78	81
+-AEDSGNDSEGDQEELSALMDRGHDAPXNIN-------------------------------------------------
+>UniRef100_Q90RG8	48	0.777	6.413E-04	1	27	80	49	75	81
+-AEDSGNESDGDTEELSTLLELGDFDPW----------------------------------------------------
+>UniRef100_Q90CG8	48	0.807	6.413E-04	1	26	80	49	74	81
+-AEDSGNESDGDTEELSRLVEMGNHNP-----------------------------------------------------
+>UniRef100_A0A0K1RG79	48	0.516	6.413E-04	1	30	80	49	79	82
+-AEDSGNESDGNQEELAALgVELGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A0H3YCT7	48	0.600	6.413E-04	1	30	80	53	82	84
+-AEDSGNESEGDVEELSTMVDIRHLRLLDIN-------------------------------------------------
+>UniRef100_A0A6M4F9Z6	48	0.666	6.413E-04	1	30	80	52	81	84
+-AEDSGNESEGDTEELSALVDMGNYDLGDDN-------------------------------------------------
+>UniRef100_Q1KWB3	48	0.642	6.413E-04	2	29	80	55	82	85
+--EDSGNESEGDIEELATMVDMGQLRLLDN--------------------------------------------------
+>UniRef100_A0A161CVV2	48	0.628	6.413E-04	1	30	80	49	83	86
+-AEDSGNESDGDQEELSALVerghlEMGHDVPRDIN-------------------------------------------------
+>UniRef100_A0A286LH46	48	0.714	6.413E-04	1	28	80	54	81	86
+-AEDSGNESDGDTEELSTMVDRGNLRLLD---------------------------------------------------
+>UniRef100_A0A1L7DZ59	48	0.666	6.413E-04	1	27	80	49	75	89
+-AEDSGNESEGDEEELAALVEMGHQAPL----------------------------------------------------
+>UniRef100_M4NYV3	48	0.620	8.816E-04	1	29	80	49	76	80
+-AEDSGNESDGDQEELSAL-ELGHLAPWNV--------------------------------------------------
+>UniRef100_A0A218MK36	48	0.600	8.816E-04	1	30	80	49	77	80
+-AEDSGNESDGDQEELLAL-EMGHLAPWNAD-------------------------------------------------
+>UniRef100_A0A8E3TYW1	48	0.800	8.816E-04	1	30	80	49	78	81
+-AEDSGNESDGDTEELSILTEVGDYNLLDNN-------------------------------------------------
+>UniRef100_A0A6M3H5A7	48	0.612	8.816E-04	1	30	80	49	79	82
+-AEDSGNESEGDREELSVLMeEMGYDAPWNVD-------------------------------------------------
+>UniRef100_A0A0A0URP5	48	0.600	8.816E-04	1	30	80	50	79	82
+-AEDSGHESEGDPDELSTMVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_O09528	48	0.642	8.816E-04	1	28	80	54	81	83
+-AEXSXNESEGDTEELATLVDMGHLRLLD---------------------------------------------------
+>UniRef100_A0A286LG04	48	0.678	8.816E-04	1	28	80	54	81	86
+-AEDSGNESDGDTEELSAMVDLGNLRLLD---------------------------------------------------
+>UniRef100_D2X6E5	48	0.600	8.816E-04	1	30	80	54	83	86
+-AEDSGNESEGDIEELATMVDMEQLRLLDVN-------------------------------------------------
+>UniRef100_A0A286LG64	48	0.678	8.816E-04	2	29	80	55	82	86
+--EDSGNESEGDTEELATLVDMGTLRLLDV--------------------------------------------------
+>UniRef100_C7G276	48	0.689	8.816E-04	1	29	80	54	82	86
+-AEDSGNESDGDTEELATVVGMGNLRLLDV--------------------------------------------------
+>UniRef100_M4UVV8	48	0.678	8.816E-04	1	28	80	54	81	86
+-AEDSGNESEGDTEELSILVDMGYLRLVD---------------------------------------------------
+>UniRef100_F5CFP4	48	0.600	8.816E-04	1	30	80	56	85	88
+-AEDSGNESEGDEEELAALVEMGHPAPGNIN-------------------------------------------------
+>UniRef100_T2CYK6	48	0.666	8.816E-04	1	28	80	54	86	91
+-AEDSGNESDGDTEELSTLVDMglvdlGHLRLLD---------------------------------------------------
+>UniRef100_B5ADX5	48	0.434	8.816E-04	1	45	80	50	95	112
+-AEDXGDXSDGDTDDLAALIEMGNYDLgIDNNLXCYRQIVGYCLLWG----------------------------------
+>UniRef100_A0A0H4SIJ1	48	0.625	1.212E-03	7	30	80	0	23	26
+-------ESDGDHEELSAFVEMGHDAPWDVN-------------------------------------------------
+>UniRef100_A0A142DBF5	48	0.625	1.212E-03	7	30	80	0	23	27
+-------ESDGDQEELSTLVERGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A2L1KXQ4	48	0.600	1.212E-03	1	30	80	48	74	77
+-AEDSGNESEGDQEE---LLEMGHLVPWDVD-------------------------------------------------
+>UniRef100_A0A2L1KX97	48	0.620	1.212E-03	2	30	80	46	74	77
+--EDSGNESEGDMEDLATLVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A6H0JUA4	48	0.633	1.212E-03	1	30	80	49	76	79
+-AEDSGNESEGDEEALSVL--MGHDAPWDVN-------------------------------------------------
+>UniRef100_Q7ZL64	48	0.566	1.212E-03	1	30	80	49	78	81
+-AEDSGNESEGDQEELSAIMELGHLVPGDID-------------------------------------------------
+>UniRef100_Q1ERT6	48	0.793	1.212E-03	1	29	80	49	77	81
+-AEDSGNESDGDTEELSMLVEVGDYNLLDN--------------------------------------------------
+>UniRef100_Q0MXK8	48	0.700	1.212E-03	1	30	80	49	78	81
+-AEDSGNESEGDAEELSTLMEVGNYALLDDN-------------------------------------------------
+>UniRef100_A0A0U3VB15	48	0.629	1.212E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAALVEMGNFDPW----------------------------------------------------
+>UniRef100_A0A0K0VF48	48	0.600	1.212E-03	1	30	80	53	82	85
+-AEDSGNESEGDMEELSTMVDVEHLGLLDVN-------------------------------------------------
+>UniRef100_R9QXH5	48	0.628	1.212E-03	1	30	80	50	84	87
+-AEDSGNESEGDTEELSTLVDMglvdvGRLRLLDVN-------------------------------------------------
+>UniRef100_G3BPF6	47	0.583	1.666E-03	7	30	80	0	23	26
+-------ESEGDQEELSALVDMGYDAPWDVN-------------------------------------------------
+>UniRef100_D6P0T6	47	0.629	1.666E-03	1	27	80	31	57	63
+-AEDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_Q09L93	47	0.600	1.666E-03	1	30	80	47	75	78
+-AEDSGNESEGDEEELAAL-EMGRLAPWDVD-------------------------------------------------
+>UniRef100_Q8JC27	47	0.750	1.666E-03	1	31	80	48	79	80
+-AEDSGNESDGDTEELSTLMEMGNYDLgADNNL------------------------------------------------
+>UniRef100_A0A411KFP5	47	0.600	1.666E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEELETMVDMDHLGLLAVN-------------------------------------------------
+>UniRef100_Q9IJR8	47	0.629	1.666E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_Q6UFE4	47	0.851	1.666E-03	1	27	80	49	75	81
+-AEDSGNESDGDTEELSTLLEMGDYALL----------------------------------------------------
+>UniRef100_A0A6J3WAL1	47	0.629	1.666E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_M4GQ39	47	0.700	1.666E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEELSKLMEGGNLALLDNN-------------------------------------------------
+>UniRef100_Q00M39	47	0.629	1.666E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_T1PT14	47	0.629	1.666E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_Q1ERU5	47	0.633	1.666E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEKLSTLMEVGDYIPWNDN-------------------------------------------------
+>UniRef100_A0A7T7WWC0	47	0.666	1.666E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEELSTLMGMGNLAFVDDN-------------------------------------------------
+>UniRef100_A0A0K0VET1	47	0.633	1.666E-03	1	30	80	50	79	82
+-AEDSGNESDGDMEELSTMVDMDHLGLLVVN-------------------------------------------------
+>UniRef100_A0A1P8DHT7	47	0.678	1.666E-03	1	28	80	51	78	83
+-AEDSGNESEGDTEELSTLVDLGNLRLMD---------------------------------------------------
+>UniRef100_Q5EE78	47	0.607	1.666E-03	1	28	80	54	81	84
+-AEDSGNESEGDTEELATMVDMEHLRLVD---------------------------------------------------
+>UniRef100_A0A0U3C6W2	47	0.633	1.666E-03	1	30	80	53	82	85
+-AEDSGNESDGDQEELSALMERGHLAHRDID-------------------------------------------------
+>UniRef100_Q8UT47	47	0.666	1.666E-03	1	27	80	54	80	85
+-AEDSGNESEGDTEELATMVDMGQLRLL----------------------------------------------------
+>UniRef100_A0A6M6B3T8	47	0.620	1.666E-03	1	29	80	54	82	86
+-AEDSGNESEGDTEELATMVDMDQLRLLDV--------------------------------------------------
+>UniRef100_D6R049	47	0.600	1.666E-03	1	30	80	55	83	86
+-AEDSGNESEGDEEELAAL-EMGRLAPWDVD-------------------------------------------------
+>UniRef100_A0A0K0V0F2	47	0.583	2.290E-03	7	30	80	0	23	26
+-------ESDGDQEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A0H4T187	47	0.625	2.290E-03	7	30	80	0	23	26
+-------ESEGDHEELSALVEMGHDALWDVN-------------------------------------------------
+>UniRef100_A0A0A0URQ1	47	0.600	2.290E-03	1	30	80	48	77	80
+-AEDSGHESERDTEEFSTMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_A0A1L4AMR3	47	0.666	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEELSXLMDGGNLALLDNN-------------------------------------------------
+>UniRef100_K0GVH6	47	0.629	2.290E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGNFDPW----------------------------------------------------
+>UniRef100_A0A1B1P5Y8	47	0.766	2.290E-03	1	30	80	49	78	81
+-AEDSGNESDGDTEEVCALMEMGYDNILAND-------------------------------------------------
+>UniRef100_A0A650F8E8	47	0.800	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLLEMGSNNFGDID-------------------------------------------------
+>UniRef100_G9IQB8	47	0.500	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALVEKGHLAPWNID-------------------------------------------------
+>UniRef100_Q0ZLY5	47	0.466	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDQEDLAALVGRGQLAPWNVD-------------------------------------------------
+>UniRef100_K0GHT3	47	0.517	2.290E-03	1	29	80	49	77	81
+-AEDSGNESEGDEEALAALVDGGHNAPWDV--------------------------------------------------
+>UniRef100_Q905G6	47	0.703	2.290E-03	1	27	80	49	75	81
+-AEDSGNESEGDTEELSTLMELGDFDLW----------------------------------------------------
+>UniRef100_A0A650F8V2	47	0.800	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLLEMGSNNFGDID-------------------------------------------------
+>UniRef100_B2YFN5	47	0.766	2.290E-03	1	30	80	49	78	81
+-AEDSGNESDGDTEELSILMEVGDYNFLDDN-------------------------------------------------
+>UniRef100_A0A0M4APC7	47	0.700	2.290E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLMEMGNLDFRNAN-------------------------------------------------
+>UniRef100_L0LE29	47	0.548	2.290E-03	1	30	80	49	79	82
+-AEDSGNESEGDQEELAALvVERGHLAPXDID-------------------------------------------------
+>UniRef100_A0A286LG90	47	0.740	2.290E-03	2	28	80	55	81	86
+--EDSGNESDGDTEELSTLVDRGNLRLLD---------------------------------------------------
+>UniRef100_A0A6B9SGV2	47	0.700	2.290E-03	1	30	80	54	83	86
+-AEDSGNESDGDTEELSALIGMGNLNLGNVN-------------------------------------------------
+>UniRef100_D7S279	46	0.541	3.149E-03	7	30	80	0	23	26
+-------ESDGDQEQLSALMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A2P1GZP5	46	0.500	3.149E-03	7	30	80	0	23	26
+-------ESEGDQEELSAMVERGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A0H4SMD0	46	0.625	3.149E-03	7	30	80	0	23	26
+-------ESEGDHEELSALVEMGYDAPWDVN-------------------------------------------------
+>UniRef100_A0A077H0Z5	46	0.521	3.149E-03	7	29	80	0	22	27
+-------ESEGDQEELSAFVEMGHHAPWDV--------------------------------------------------
+>UniRef100_Q79298	46	0.533	3.149E-03	1	30	80	49	75	78
+-AEDSGNESEGDQE---ALREMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A6H0JU71	46	0.600	3.149E-03	1	30	80	49	76	79
+-AEDSGNESEGDEEALAVL--MGHDAPWDVN-------------------------------------------------
+>UniRef100_D2XKS3	46	0.769	3.149E-03	1	26	80	49	74	81
+-AEDSGNDSDGDTEELSRLVEMGNHNP-----------------------------------------------------
+>UniRef100_A0A3G5NE92	46	0.629	3.149E-03	1	27	80	54	80	81
+-AEDSGNESEGDTEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A1L4AMV1	46	0.656	3.149E-03	1	31	80	49	80	81
+-AEDSGNESEGDEEELSALVEVGNYAPLhDNNL------------------------------------------------
+>UniRef100_A0A0A1EFE0	46	0.566	3.149E-03	1	30	80	49	78	81
+-AEYSGHESDGHQEELSAMVDMGNLRLLDVN-------------------------------------------------
+>UniRef100_D6P0C7	46	0.566	3.149E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEALAELMERGRLAPWDVN-------------------------------------------------
+>UniRef100_A0A6M6B2P5	46	0.586	3.149E-03	1	29	80	54	82	86
+-AEDSGNESEGDTEELAAMVDMDQLRLLDV--------------------------------------------------
+>UniRef100_A0A6M3H1R0	46	0.666	3.149E-03	1	30	80	54	83	86
+-AEDSGNESEGDTEELSTMVDVESLGLLDVN-------------------------------------------------
+>UniRef100_A0A6M6B3Q8	46	0.586	3.149E-03	1	29	80	54	82	86
+-AEDSGNESEGDTEELAAMVDMDQLRLLDV--------------------------------------------------
+>UniRef100_Q5QCU0	46	0.666	3.149E-03	1	27	80	57	83	87
+-AEDSGNESEGDTEELETMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A077H8I6	46	0.541	4.329E-03	7	30	80	0	23	25
+-------ESDGDQEELSAMVERGHLAPWDIN-------------------------------------------------
+>UniRef100_A0A0K0UX57	46	0.541	4.329E-03	7	30	80	0	23	26
+-------ESDGDQEELSAMVEKGHLAPWDVN-------------------------------------------------
+>UniRef100_F2YPK5	46	0.500	4.329E-03	7	30	80	0	23	26
+-------ESDGDQEELAAFMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A142DBI3	46	0.583	4.329E-03	7	30	80	0	23	27
+-------ESDGDQEELSALMERGHLAPWDVN-------------------------------------------------
+>UniRef100_P08806	46	0.629	4.329E-03	1	27	80	26	52	58
+-AEDSGNESEGDTGELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_UPI0018F6AFB9	46	0.733	4.329E-03	1	30	80	40	69	72
+-AEDSGNESDGDTEELSTLMGRGHYNVLVND-------------------------------------------------
+>UniRef100_Q9Q6V9	46	0.533	4.329E-03	1	30	80	49	75	78
+-AEDSGNESEGDQE---ALMEMGHLVPWDAD-------------------------------------------------
+>UniRef100_Q30BU9	46	0.533	4.329E-03	1	30	80	49	75	78
+-AEDSGNESEGDQE---ALMEMGHLVPWDAD-------------------------------------------------
+>UniRef100_A0A2L1KXS2	46	0.833	4.329E-03	1	30	80	48	76	79
+-AEDSGNESDGDEEELSTLMELGY-NILDNN-------------------------------------------------
+>UniRef100_A0A1D9J128	46	0.678	4.329E-03	1	28	80	50	77	80
+-AEDSGNESEGDTEELSTLVDMEQLRLFD---------------------------------------------------
+>UniRef100_A0A3G5NH46	46	0.629	4.329E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELATMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A6M4F926	46	0.666	4.329E-03	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLIDMGNYDLGNDN-------------------------------------------------
+>UniRef100_A0A3G5NL15	46	0.629	4.329E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELATMGDMGHLRLL----------------------------------------------------
+>UniRef100_B2CJC8	46	0.466	4.329E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEALAILVDRGHLAPWNID-------------------------------------------------
+>UniRef100_I6NH08	46	0.666	4.329E-03	1	27	80	49	75	81
+-AEDSGNESEGDTEELSILMEVGDFDPW----------------------------------------------------
+>UniRef100_K4N7N6	46	0.629	4.329E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGHFDHW----------------------------------------------------
+>UniRef100_B2YSN4	46	0.541	5.951E-03	7	30	80	0	23	26
+-------ESEGDQEELSKLVERGHLAPWDVN-------------------------------------------------
+>UniRef100_G3DID7	46	0.541	5.951E-03	7	30	80	0	23	26
+-------ESEGDQEELSALVEKGHLAPWDVN-------------------------------------------------
+>UniRef100_A0A8F0MKG7	46	0.666	5.951E-03	1	30	80	24	53	56
+-AEDSGNESEGDTEELSKLIDMGNHGLGINN-------------------------------------------------
+>UniRef100_L0LBN8	46	0.566	5.951E-03	1	30	80	49	75	78
+-AEDSGNESDGDQEE---LLKLGHLAPWDVD-------------------------------------------------
+>UniRef100_D6P0Z5	46	0.533	5.951E-03	1	30	80	49	76	79
+-AEDSGNESEGDQEELAAL--GGHLAPWDID-------------------------------------------------
+>UniRef100_I6REH9	46	0.566	5.951E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEALAALMERGIRAPWDVN-------------------------------------------------
+>UniRef100_K0GYZ9	46	0.615	5.951E-03	2	27	80	50	75	81
+--EDSGNESEGDTDELAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_A0A6M6LU09	46	0.666	5.951E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEELSTLMEVGNYVPVDDN-------------------------------------------------
+>UniRef100_A0A8E4HGZ4	46	0.800	5.951E-03	1	30	80	49	78	81
+-AEDSGNESDGDTEELSTLMEVGDYNILVND-------------------------------------------------
+>UniRef100_A0A7T7WWH0	46	0.666	5.951E-03	1	30	80	49	78	81
+-AEDSGNESEGDEEELSTLMEVGNLALLHDN-------------------------------------------------
+>UniRef100_A0A0A1EA83	46	0.633	5.951E-03	1	30	80	50	79	82
+-AENSGNESEGDTEELSTMGDMGRLRLLEAN-------------------------------------------------
+>UniRef100_B3UD93	45	0.583	8.181E-03	7	30	80	0	23	26
+-------ESDGDQEDLSALMEMGHDAPWDID-------------------------------------------------
+>UniRef100_A0A2P1GXL1	45	0.541	8.181E-03	7	30	80	0	23	26
+-------ESEGDQEELSALVERGHLAPWDTN-------------------------------------------------
+>UniRef100_B2YN57	45	0.541	8.181E-03	7	30	80	0	23	26
+-------ESDGDHEDLSALMEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A1I9WE55	45	0.541	8.181E-03	7	30	80	0	23	27
+-------ESEGDHEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_D6P171	45	0.566	8.181E-03	1	30	80	28	57	60
+-AEDSGNESEGDQDELSALVEVGXLVPRDXD-------------------------------------------------
+>UniRef100_A0A2I6SJR2	45	0.700	8.181E-03	1	30	80	47	75	77
+-AEDSGNESEGDTEELAIL-EMGNLRLLDVN-------------------------------------------------
+>UniRef100_A0A3G5NR04	45	0.592	8.181E-03	1	27	80	51	77	78
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_B4YNK4	45	0.566	8.181E-03	1	30	80	49	76	79
+-AEDSGNESDGDQEELLAL--GGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A3G5N7J8	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A0E3EEV5	45	0.666	8.181E-03	1	27	80	49	75	81
+-AEDSGNESEGDTEELAKLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A3G5NPK0	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NQC1	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDVEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5N555	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NPQ9	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NDS4	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NRG5	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDVEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NQT2	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5N7N0	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A0H4LK72	45	0.666	8.181E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELATLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A3G5N672	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NPL6	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NIE1	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NF28	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A0E3E828	45	0.666	8.181E-03	1	27	80	49	75	81
+-AEDSGNESEGDTDELATLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A3G5NP57	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDVEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NMH3	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A1B1P5J0	45	0.629	8.181E-03	1	27	80	49	75	81
+-AEDSGNESEGDTEELATLVDMVXFEPW----------------------------------------------------
+>UniRef100_A0A3G5NFE6	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NQ63	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NNJ3	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDVEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5N7Y0	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NPX2	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5N7B7	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NJK0	45	0.592	8.181E-03	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_O73562	45	0.529	8.181E-03	1	30	80	49	79	82
+-AEDSGNESEG---ELSALvemgVEMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A6B9SHZ4	45	0.769	8.181E-03	1	26	80	51	76	83
+-AEDSGNESEGDTEELATLVEMGNYNL-----------------------------------------------------
+>UniRef100_A0A076V8U7	45	0.437	8.181E-03	1	45	80	55	102	119
+-AEDSGNESEGDAEELAALGDMGPLiigNIYKNCRGLCRGQVGHSLLWG----------------------------------
+>UniRef100_G3DC12	45	0.583	1.125E-02	7	30	80	0	23	26
+-------ESEGDQEELSALVGMGRDAPWDVN-------------------------------------------------
+>UniRef100_A0A142DB76	45	0.541	1.125E-02	7	30	80	0	23	27
+-------EGDGDQEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_B2YTT5	45	0.565	1.125E-02	8	30	80	1	23	27
+--------SDGDQEELSALVERGHLAPWDVN-------------------------------------------------
+>UniRef100_Q8JDL8	45	0.450	1.125E-02	7	45	80	0	39	56
+-------ESEGDTDELSKLIEMGNYDLGnDNNLQCCRKLVGYCLLWG----------------------------------
+>UniRef100_A0A3G5NML1	45	0.592	1.125E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMDDMGHLRLL----------------------------------------------------
+>UniRef100_M4GQ42	45	0.689	1.125E-02	1	29	80	49	77	81
+-AEDSGNESEGDEEELSKLMEGGNLALLDN--------------------------------------------------
+>UniRef100_Q6UF48	45	0.666	1.125E-02	1	30	80	49	78	81
+-AEDSGNESEGDTEELSTLVEVGDYDLFVND-------------------------------------------------
+>UniRef100_A0A3G5NHZ5	45	0.592	1.125E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMDDMGHLRLL----------------------------------------------------
+>UniRef100_A0A6B9SGS0	45	0.733	1.125E-02	1	30	80	49	78	81
+-AEDSGNESDGDTEELSSLVGMGNVNLGFNN-------------------------------------------------
+>UniRef100_A0A3G5NRV1	45	0.592	1.125E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMDDMGHLRLL----------------------------------------------------
+>UniRef100_B3UKD5	44	0.541	1.546E-02	7	30	80	0	23	26
+-------ESDGDQEELSALVERGHFAPWDVD-------------------------------------------------
+>UniRef100_A0A077H2Z2	44	0.500	1.546E-02	7	30	80	0	23	26
+-------ESEGDQEELSALVERGHLAPWDID-------------------------------------------------
+>UniRef100_G3DFD2	44	0.500	1.546E-02	7	30	80	0	23	26
+-------ESDGDQEDLAALMEMGHHAPWDID-------------------------------------------------
+>UniRef100_E0AAN1	44	0.565	1.546E-02	7	29	80	0	22	27
+-------ESDGDQEELSALVERGHLAPWDV--------------------------------------------------
+>UniRef100_A0A8F0MKA7	44	0.633	1.546E-02	1	30	80	22	51	54
+-AEDSGNESEGDTEELAALIEMGNYDLGNDN-------------------------------------------------
+>UniRef100_B5ADI1	44	0.600	1.546E-02	1	30	80	49	75	78
+-AEDSGNESEGD-EEL--LVEMGYHAPWDID-------------------------------------------------
+>UniRef100_A0A0A0UVX4	44	0.642	1.546E-02	1	28	80	50	77	80
+-AEDSGNESEGDTEELSTMVDMERLGLID---------------------------------------------------
+>UniRef100_A0MPR5	44	0.600	1.546E-02	1	30	80	48	77	80
+-AEDSGNESEGDAEELEALGEMGHLILRDID-------------------------------------------------
+>UniRef100_A0MPP7	44	0.600	1.546E-02	1	30	80	48	77	80
+-AEDSGNESEGDAEELEALGEMGHLILRDID-------------------------------------------------
+>UniRef100_A0A0H4LE95	44	0.769	1.546E-02	1	26	80	48	73	80
+-AEDSGNESDGDTEELSILVEGGNHNP-----------------------------------------------------
+>UniRef100_A0A3G5Q3U9	44	0.666	1.546E-02	1	30	80	49	77	80
+-AEDSGNESEGDQEELSAL-EMGDHVPLVIN-------------------------------------------------
+>UniRef100_Q5C9Y4	44	0.730	1.546E-02	1	26	80	49	74	81
+-AEDSGYESEGDTEELSKLMEMGNHNP-----------------------------------------------------
+>UniRef100_A0A076V5C3	44	0.466	1.546E-02	1	30	80	49	78	81
+-AKDSGNESKGDQKKLSALKKMEHHAPWNVN-------------------------------------------------
+>UniRef100_Q908L4	44	0.653	1.546E-02	1	26	80	49	74	81
+-AEDSGNESEGDAEELAALGEMGHLIP-----------------------------------------------------
+>UniRef100_A0A0C5GXP4	44	0.592	1.546E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDESAKLVEMGDFDPW----------------------------------------------------
+>UniRef100_A0A7T0I8H5	44	0.666	2.126E-02	7	30	80	0	23	26
+-------ESDGDTEELSTMVDMGHIRLLDAN-------------------------------------------------
+>UniRef100_A0A2S1ISE7	44	0.541	2.126E-02	7	30	80	0	23	26
+-------ESDGDQEEISELVERGHLAPWDVN-------------------------------------------------
+>UniRef100_U6BSC8	44	0.541	2.126E-02	7	30	80	0	23	26
+-------ESDGDQEQLSALVERGHLAPWDIN-------------------------------------------------
+>UniRef100_G3DN05	44	0.583	2.126E-02	7	30	80	0	23	26
+-------ESDGDQEELSALAERGHLAPWDIN-------------------------------------------------
+>UniRef100_A0A0K0UT44	44	0.541	2.126E-02	7	30	80	0	23	26
+-------ESEGDHEELSTLVERGHLAPWDID-------------------------------------------------
+>UniRef100_B2YN41	44	0.500	2.126E-02	7	30	80	0	23	26
+-------ESDGDQEDLSALMEMGHHAPWNVD-------------------------------------------------
+>UniRef100_A0A1I9WE23	44	0.500	2.126E-02	7	30	80	0	23	27
+-------ESEGDHEELSALVERGHLAPWDVD-------------------------------------------------
+>UniRef100_B2YMS3	44	0.518	2.126E-02	7	30	80	0	26	29
+-------ESEGDQEELSALVDMGqhaHDAPWDVN-------------------------------------------------
+>UniRef100_Q4A3K7	44	0.677	2.126E-02	1	31	80	49	79	80
+-AEDSGNESDGDTEELSTLMEGGHNILVIDNL------------------------------------------------
+>UniRef100_A0A411KEP4	44	0.633	2.126E-02	1	30	80	49	78	81
+-AEDSGNESEGDAEELSMVMEVGDHALLLNN-------------------------------------------------
+>UniRef100_A0A3G5NAV9	44	0.592	2.126E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELASMDDMGHLRLL----------------------------------------------------
+>UniRef100_A0A2I6SJP4	44	0.769	2.126E-02	1	26	80	49	74	81
+-AEDSGNESDGDTEELSTLVEIGDYDL-----------------------------------------------------
+>UniRef100_D8X0W6	44	0.629	2.126E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDQW----------------------------------------------------
+>UniRef100_F5B0E7	44	0.625	2.922E-02	7	30	80	0	23	26
+-------ESDGDTEELSTMVDMGHLRLMDAN-------------------------------------------------
+>UniRef100_G3DA54	44	0.500	2.922E-02	7	30	80	0	23	26
+-------ESEGDQEELAELVERGHLAPWDVN-------------------------------------------------
+>UniRef100_B3UKB6	44	0.541	2.922E-02	7	30	80	0	23	26
+-------ESDGDPEELSALVERGHLAPWDVD-------------------------------------------------
+>UniRef100_F6M540	44	0.708	2.922E-02	7	30	80	0	23	26
+-------ESDGDTEELSTLVDMGHVRLLDAN-------------------------------------------------
+>UniRef100_G3BNP3	44	0.481	2.922E-02	7	30	80	0	26	29
+-------ESEGDQEELSALVEMGhyaHHAPWDVD-------------------------------------------------
+>UniRef100_D5HMH0	44	0.700	2.922E-02	2	31	80	1	29	31
+--EDSGNESDGDTEEL-XXVEMGNLNFLDNDE------------------------------------------------
+>UniRef100_B3UJQ9	44	0.466	2.922E-02	7	30	80	0	29	32
+-------ESEGDQEELSALVEmghhapMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A3G5NEV6	44	0.576	2.922E-02	2	27	80	52	77	78
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_U3LJ42	44	0.466	2.922E-02	1	30	80	49	75	78
+-AEDSGNESEGDQE---ALMELGHLAPWNVD-------------------------------------------------
+>UniRef100_A0A3G5NDU4	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5N4W9	44	0.592	2.922E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGNMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NKJ9	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDVEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_Q90MM4	44	0.633	2.922E-02	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEMGPLVLGDVN-------------------------------------------------
+>UniRef100_D6P1B7	44	0.600	2.922E-02	1	29	80	49	77	81
+-AEDSGNESEGELEELSALgVEMGH-APWNN--------------------------------------------------
+>UniRef100_A0A3G5NGS7	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A0E3E7V1	44	0.629	2.922E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A3G5NKA9	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NIZ0	44	0.592	2.922E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEELAAMGNMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NDN0	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A3G5NBP8	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A2I7C9	44	0.500	2.922E-02	1	30	80	49	78	81
+-AEDSGNESEGDQEALMELGHYAHLAPWDVN-------------------------------------------------
+>UniRef100_A0A0E3EBV0	44	0.629	2.922E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A2H4IBW1	44	0.629	2.922E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFDHW----------------------------------------------------
+>UniRef100_A0A3G5NN50	44	0.576	2.922E-02	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_D6P0X4	44	0.516	2.922E-02	1	30	80	49	79	82
+-AEDSGNESEGDEEALgELLVERGHXAPWDVD-------------------------------------------------
+>UniRef100_A0A286LGF0	44	0.700	2.922E-02	1	30	80	51	80	83
+-AEDSGNESDGDTEELSILIAMGDDDFGNDN-------------------------------------------------
+>UniRef100_R4VGT5	43	0.625	4.018E-02	7	30	80	0	23	26
+-------ESDGDMEELSTMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_T2CQ92	43	0.625	4.018E-02	7	30	80	0	23	26
+-------ESDGETEELSTMVDMGHLRLLDAN-------------------------------------------------
+>UniRef100_G3DC08	43	0.541	4.018E-02	7	30	80	0	23	26
+-------ESEGDHEELSALVGKGHDAPWDVN-------------------------------------------------
+>UniRef100_F2YXU0	43	0.533	4.018E-02	1	30	80	49	75	78
+-AEDSGNESEGDQE---ALMELGYDAPWNVN-------------------------------------------------
+>UniRef100_A0A411KEK8	43	0.678	4.018E-02	1	28	80	49	76	81
+-AEDSGNESEGDEEELSTIMEGGNLALLD---------------------------------------------------
+>UniRef100_K0GWN1	43	0.576	4.018E-02	2	27	80	50	75	81
+--EDSGNESEGDTDELAKPVEMGDFDPW----------------------------------------------------
+>UniRef100_A0A3Q8GNF0	43	0.633	4.018E-02	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEMGPFIPGDIN-------------------------------------------------
+>UniRef100_A0A3G5NPQ3	43	0.555	4.018E-02	1	27	80	54	80	81
+-AEDSGNDSEGDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_L0LFM1	43	0.500	4.018E-02	1	30	80	49	79	82
+-AEDSGNESEG---ELSALVEmgapMGHHAPWDID-------------------------------------------------
+>UniRef100_L0LBS9	43	0.529	4.018E-02	1	30	80	49	79	82
+-AEDSGNESEG---ELSALVEmgvpMGYHAPWDVN-------------------------------------------------
+>UniRef100_A0A077H4D4	43	0.521	5.523E-02	8	30	80	1	23	26
+--------SDGDQEELSALVERGHLAPWDID-------------------------------------------------
+>UniRef100_B3UJ94	43	0.500	5.523E-02	7	30	80	0	23	26
+-------ESDGDEEELSAMVERGHLAPWDID-------------------------------------------------
+>UniRef100_F6M5V8	43	0.583	5.523E-02	7	30	80	0	23	26
+-------ESDGEIEELSTMVDMGHLRLLDVN-------------------------------------------------
+>UniRef100_A0A2H4I301	43	0.458	5.523E-02	7	30	80	0	23	26
+-------ESDGDQEKLSAFMEMGHHAPWNVD-------------------------------------------------
+>UniRef100_U6BUF2	43	0.458	5.523E-02	7	30	80	0	23	26
+-------ESEGDLEEVSALVGMGHLAPWDVD-------------------------------------------------
+>UniRef100_G3C597	43	0.483	5.523E-02	7	30	80	22	52	55
+-------ESEGDQEELSALVemghddpEMGHDAPWDVN-------------------------------------------------
+>UniRef100_D6P0X6	43	0.818	5.523E-02	1	22	80	24	45	60
+-AEDSGNESXGDQEELSKLVEMG---------------------------------------------------------
+>UniRef100_A0A2L1KWF3	43	0.600	5.523E-02	1	30	80	48	74	77
+-AEDSGNESDGDQEQ---LLEMGHYDPWVND-------------------------------------------------
+>UniRef100_A0A4D6TEX4	43	0.600	5.523E-02	1	30	80	49	76	79
+-AEDSGNESEGDQEQL--LLEMGHLALGDVD-------------------------------------------------
+>UniRef100_A0A3S7MHW3	43	0.633	5.523E-02	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEMGPFIPGDLN-------------------------------------------------
+>UniRef100_A0A0H4LHY5	43	0.592	5.523E-02	1	27	80	49	75	81
+-AEDSGNESEGDTEELAQLVDMVDFDLW----------------------------------------------------
+>UniRef100_A0A0E3E678	43	0.629	5.523E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVEMGDFYHW----------------------------------------------------
+>UniRef100_Q90RE8	43	0.600	5.523E-02	1	30	80	49	78	81
+-AEDSGNESEGDEEELASLGEMGHLILGNIN-------------------------------------------------
+>UniRef100_P05923	43	0.451	5.523E-02	1	30	80	48	78	81
+-AEDSGNESEGEISALVEMgVEMGHHAPWDID-------------------------------------------------
+>UniRef100_A0A2Z2TZ96	43	0.451	5.523E-02	1	30	80	48	78	81
+-AEDSGNESEGEISALVEMgVEMGHHAPWDID-------------------------------------------------
+>UniRef100_Q990D6	43	0.451	5.523E-02	1	30	80	49	79	82
+-AEDSGNESEGEVSALVEMgVEMGHHAPWDID-------------------------------------------------
+>UniRef100_D7RZQ4	42	0.541	7.593E-02	7	30	80	0	23	26
+-------ESDGDQEELSELVERGHLAPWHVN-------------------------------------------------
+>UniRef100_A0A2S1IU22	42	0.500	7.593E-02	7	30	80	0	23	26
+-------ESDGDQEEVPALVERGHLAPWDIN-------------------------------------------------
+>UniRef100_B2YUI5	42	0.500	7.593E-02	7	30	80	0	23	26
+-------ESDGDQEELSALVERGHLAPWNID-------------------------------------------------
+>UniRef100_T2CQM5	42	0.583	7.593E-02	7	30	80	0	23	26
+-------ESEGDIEELSTMVDMGHIRLLDAN-------------------------------------------------
+>UniRef100_A0A0K0UXA7	42	0.458	7.593E-02	7	30	80	0	23	26
+-------ESDGDQEELSAMVEKGHLAPWNVD-------------------------------------------------
+>UniRef100_B2YTQ8	42	0.521	7.593E-02	8	30	80	1	23	27
+--------SDGDQEELSAIMERGHLAPWDVN-------------------------------------------------
+>UniRef100_B3URV3	42	0.444	7.593E-02	7	30	80	0	26	29
+-------ESEGDQEELAALVEMGhhaHHAPWDVD-------------------------------------------------
+>UniRef100_M9Z5C6	42	0.541	7.593E-02	7	30	80	0	23	32
+-------ESEGDQEELSALVEMGHHAPMGHN-------------------------------------------------
+>UniRef100_B3UJV5	42	0.466	7.593E-02	7	30	80	0	29	32
+-------ESKGDQEELSALVEmgqhapMGHHAPWDVN-------------------------------------------------
+>UniRef100_M9Z8Q0	42	0.433	7.593E-02	7	30	80	0	29	32
+-------ESEGDQEELSALVEmgqhapMGHHAPWDVD-------------------------------------------------
+>UniRef100_B2YS22	42	0.406	7.593E-02	7	30	80	0	31	34
+-------ESEGDQEELSalvdmghhALVDMGHHAPWDVN-------------------------------------------------
+>UniRef100_A0A6B9SFD9	42	0.533	7.593E-02	1	30	80	49	75	78
+-AEDSGNESEGDXEE---LMEMGHPAPWIVD-------------------------------------------------
+>UniRef100_A0A2L1KXE5	42	0.612	7.593E-02	1	31	80	48	78	79
+-AEDSGNESDGDTEELATLVDRNFDPWVGDNL------------------------------------------------
+>UniRef100_V9QHR7	42	0.555	7.593E-02	1	27	80	49	75	81
+-AEDSGNESEGDTDELAKLVGMEDIDPW----------------------------------------------------
+>UniRef100_A0A0H4LVZ3	42	0.769	7.593E-02	1	26	80	49	74	81
+-AEDSGNESDGDTEELSKLVEVGNYNL-----------------------------------------------------
+>UniRef100_A0A7T7WUY3	42	0.600	7.593E-02	1	30	80	49	78	81
+-AEDSGNESEGDEEELSILMGVGNLAFVDDN-------------------------------------------------
+>UniRef100_A0A3G5NP94	42	0.555	7.593E-02	1	27	80	54	80	81
+-AEDSGNESEGDAEESAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A4Y5LBC3	42	0.600	7.593E-02	1	30	80	49	78	81
+-AEDSGNESEGDTDELALLVDMGDYNLGNEN-------------------------------------------------
+>UniRef100_C3VHP9	42	0.566	7.593E-02	1	30	80	49	78	81
+-AEDSGNESEGDEEELSKLVGVGNLAFVDDD-------------------------------------------------
+>UniRef100_L0LBB0	42	0.500	7.593E-02	1	30	80	49	79	82
+-AEDSGNESEG---ELSALVExgapMGHXAPWDVD-------------------------------------------------
+>UniRef100_A0A6J3W8U7	42	0.586	7.593E-02	1	27	80	49	77	83
+-AEDSGNESEGDTDELAKLVEmgMGDFDPW----------------------------------------------------
+>UniRef100_B3UFS2	42	0.521	1.044E-01	7	29	80	0	22	26
+-------ESEGDEEELSALVERGHLAPWDV--------------------------------------------------
+>UniRef100_A0A077H0X8	42	0.444	1.044E-01	7	30	80	0	26	29
+-------ESEGEQEELSALVEMGHHahdAPWDVD-------------------------------------------------
+>UniRef100_A0A161CW39	42	0.592	1.044E-01	1	27	80	49	72	78
+-AEDSGNESDGDQE---ALAEMGYHAPW----------------------------------------------------
+>UniRef100_A0A499T1F4	42	0.600	1.044E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEMGPFLPGDID-------------------------------------------------
+>UniRef100_A0A0A0UW34	42	0.600	1.044E-01	1	30	80	50	79	82
+-AEDSGNESEKDTEELSTMADTGRLRLSDAN-------------------------------------------------
+>UniRef100_A0A7T0I4W2	42	0.666	1.435E-01	7	30	80	0	23	26
+-------ESDGDTEELSTMVDMGRLRLLDAN-------------------------------------------------
+>UniRef100_A0A7T0IDK3	42	0.541	1.435E-01	7	30	80	0	23	26
+-------ESDGDQEELSGLVERGNLAPWDVD-------------------------------------------------
+>UniRef100_E0AB08	42	0.478	1.435E-01	7	29	80	0	22	27
+-------ESEGDQEELSALVERGHLAPWNV--------------------------------------------------
+>UniRef100_B2YMV5	42	0.518	1.435E-01	7	30	80	0	26	29
+-------ESEGDQEELSALVDMGqhaHDVPWDDN-------------------------------------------------
+>UniRef100_M9Z230	42	0.466	1.435E-01	7	30	80	0	29	32
+-------ESEGDQEELSALVEmgqhapMGHNAPWDVN-------------------------------------------------
+>UniRef100_G3DMM9	42	0.406	1.435E-01	7	30	80	0	31	34
+-------ESEGDQEELSALvevghhapVEMGHHAPWDVD-------------------------------------------------
+>UniRef100_A0A3G5N480	42	0.555	1.435E-01	1	27	80	54	80	81
+-AEDSGNESEEDAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_A0A7D4ZQZ8	42	0.600	1.435E-01	1	30	80	49	78	81
+-AEDSGNESEGDEEELSTLMGVGNLAFVGDN-------------------------------------------------
+>UniRef100_A0A481WNL8	42	0.451	1.435E-01	1	30	80	48	78	81
+-AEDSGNESEGEISALVEMgVEMGYHAPWDVD-------------------------------------------------
+>UniRef100_A0A1P8P9P2	41	0.416	1.973E-01	7	30	80	0	23	26
+-------ESDGDQEDLAALVDRGHLAPWDID-------------------------------------------------
+>UniRef100_T2CQ50	41	0.625	1.973E-01	7	30	80	0	23	26
+-------ESDGETEELSTMVDMGQLRLLDVN-------------------------------------------------
+>UniRef100_G3BNT1	41	0.444	1.973E-01	7	30	80	0	26	29
+-------ESEGDQEELSALVEMGhhaHHAPWNVD-------------------------------------------------
+>UniRef100_B2YRX0	41	0.375	1.973E-01	7	30	80	0	31	34
+-------ESEGDQEELSalvdmehhALVDMGHHAPWDVD-------------------------------------------------
+>UniRef100_Q905F8	41	0.666	1.973E-01	1	27	80	49	72	78
+-AEDSGNESDGDTEELSTLVDF---DPW----------------------------------------------------
+>UniRef100_A0A3S7RKT3	41	0.566	1.973E-01	1	30	80	49	75	78
+-AEDSGNESEGDQEE---LLEMGILAPWIVD-------------------------------------------------
+>UniRef100_A0A6M3H1Z5	41	0.600	1.973E-01	1	30	80	49	75	78
+-AEDSGNESEGD-EEL--LEEMGYHAPWNVN-------------------------------------------------
+>UniRef100_A0A2L1KXV0	41	0.566	1.973E-01	1	30	80	48	76	79
+-AEDSGNESEGDTEELATLVDR-DFDPWVGN-------------------------------------------------
+>UniRef100_A0A0A0UYK9	41	0.566	1.973E-01	1	30	80	48	77	80
+-AEDSGNESDGDTRNYQHVVDMGNIRLLDVN-------------------------------------------------
+>UniRef100_A0A6M3H6T7	41	0.692	1.973E-01	1	26	80	49	74	81
+-AEDSGNESDGDTEELSALADLGDYDL-----------------------------------------------------
+>UniRef100_G3DF97	41	0.458	2.713E-01	7	30	80	0	23	26
+-------ESDGDQEDLAALMEVGHLAPWDID-------------------------------------------------
+>UniRef100_G8E2E2	41	0.444	2.713E-01	7	30	80	0	26	29
+-------ESEGDQGELSALVEMGhhaHHAPWDVD-------------------------------------------------
+>UniRef100_U6BFZ6	41	0.730	2.713E-01	1	26	80	49	74	81
+-AEDSGNESDGDTDELAELMGMGNDNL-----------------------------------------------------
+>UniRef100_A0A6M3H2T4	41	0.720	2.713E-01	1	25	80	49	73	81
+-AEDSGNESEGDEEELSKLVGMGNYN------------------------------------------------------
+>UniRef100_G3DFS5	40	0.500	3.730E-01	7	30	80	0	23	26
+-------ESEGDHEELSAILERGHLAPWDID-------------------------------------------------
+>UniRef100_D7RZ52	40	0.545	3.730E-01	7	28	80	0	21	26
+-------ESDGDQEELSRFMERGHLAPWD---------------------------------------------------
+>UniRef100_E5Q832	40	0.583	3.730E-01	7	30	80	0	23	26
+-------ESEGDAEELSTMVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_A0A4Y5LBJ8	40	0.600	3.730E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEVGPFIPGDIN-------------------------------------------------
+>UniRef100_A0A3G5NEE2	40	0.576	3.730E-01	2	27	80	55	80	81
+--EDSGNESEGDAEELAAMGDMGRLRLL----------------------------------------------------
+>UniRef100_C6GAS4	40	0.600	3.730E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEVGPFIPGDIN-------------------------------------------------
+>UniRef100_A0A4Y5TKK5	40	0.419	3.730E-01	1	30	80	49	79	82
+-AEDSGNESEGEVSALVEMgVEMGHHAPWNID-------------------------------------------------
+>UniRef100_A0A4Y5TLR1	40	0.419	3.730E-01	1	30	80	49	79	82
+-AEDSGNESEGEVSALVEMgVEMGHHAPWNID-------------------------------------------------
+>UniRef100_A0A1L4AL65	40	0.500	5.127E-01	7	30	80	0	23	26
+-------ESDGDQEKLSALGERGHLAPWDID-------------------------------------------------
+>UniRef100_A0A3G2KUG7	40	0.869	5.127E-01	7	29	80	0	22	26
+-------ESDGDTEELYTLMEMGDDNILDN--------------------------------------------------
+>UniRef100_E5RF17	40	0.375	5.127E-01	7	30	80	0	23	26
+-------ESEGDQDELAEMVERGHLAPWDID-------------------------------------------------
+>UniRef100_A0A0H4LGB0	40	0.600	5.127E-01	1	30	80	21	50	53
+-AEDSGNESEGDAEELAALGEVGPFIPGDLN-------------------------------------------------
+>UniRef100_A0A8E3TYY3	40	0.629	5.127E-01	1	27	80	49	72	78
+-AEDSGNESDGDAEELSTLVDF---DPW----------------------------------------------------
+>UniRef100_A0A3S7TTJ0	40	0.566	5.127E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGDMGPLILGNIN-------------------------------------------------
+>UniRef100_A2I6Z1	40	0.566	5.127E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGDMGPLILGNIN-------------------------------------------------
+>UniRef100_T1PTN0	40	0.555	5.127E-01	1	27	80	49	75	81
+-AEDSGNESEGDKDELAKLVELGDFDHW----------------------------------------------------
+>UniRef100_D6P178	40	0.562	5.127E-01	1	30	80	49	80	83
+-AEDSGNESDGDQEELlmEMGXEMGHLVPGDID-------------------------------------------------
+>UniRef100_D7S0Q5	40	0.625	7.049E-01	7	30	80	0	23	26
+-------ESDGEHEELSTLVDMGNLRLLDAN-------------------------------------------------
+>UniRef100_D5FTP0	40	0.653	7.049E-01	1	26	80	49	74	81
+-AEDSGNESEGDAEELAALGEMGPFIP-----------------------------------------------------
+>UniRef100_A2I6Y3	40	0.533	7.049E-01	1	30	80	49	78	81
+-AEDSGNESEGEAEELAALGEMGLLIPGNVD-------------------------------------------------
+>UniRef100_A0A4Y5TK46	40	0.419	7.049E-01	1	30	80	49	79	82
+-AEDSGNESEGEISALVEMgMEMGHHAPWNID-------------------------------------------------
+>UniRef100_G3DAP2	39	0.406	9.691E-01	7	30	80	0	31	34
+-------ESEGDQEELSALVERGHLalvdrghvAPWDVN-------------------------------------------------
+>UniRef100_A0A076V4C7	39	0.772	9.691E-01	1	22	80	48	69	80
+-AEDSGNESEGDAEELAALGEMG---------------------------------------------------------
+>UniRef100_A2I791	39	0.566	9.691E-01	1	30	80	49	78	81
+-AEDSGNESEGDAEELEALGDMGPLVLGNIN-------------------------------------------------
+>UniRef100_Q00G48	39	0.615	9.691E-01	1	26	80	49	74	81
+-AEDSGNESEGDAEELAAFGEMGLLIP-----------------------------------------------------
+>UniRef100_A0A2S1J483	39	0.818	9.691E-01	1	22	80	51	72	83
+-AEDSGNESDGDEEELAALGEMG---------------------------------------------------------
+>UniRef100_D7S2K9	39	0.500	1.332E+00	7	30	80	0	23	26
+-------ESKRDQEELSALVGMGHDAPWVIN-------------------------------------------------
+>UniRef100_G3DD15	39	0.458	1.332E+00	7	30	80	0	23	26
+-------ESDGDQDELSELVERGHLAPWSID-------------------------------------------------
+>UniRef100_F6M5Y0	39	0.583	1.332E+00	7	30	80	0	23	26
+-------ESDGELEELSTMVDMGNIRLLDVN-------------------------------------------------
+>UniRef100_A0A3G1DXG4	39	0.428	1.332E+00	7	30	80	0	27	30
+-------ESEGDQEELSALVGMghdvGHDAPWNVD-------------------------------------------------
+>UniRef100_A0A0K0V5H6	39	0.571	1.332E+00	7	27	80	0	20	34
+-------ESEGDEEELAALVEMGHHAPL----------------------------------------------------
+>UniRef100_A0A7L8YTB3	39	0.727	1.332E+00	1	22	80	49	70	81
+-AEDSGNESEGDAEELAALGDMG---------------------------------------------------------
+>UniRef100_A0A0A1ECW6	39	0.500	1.332E+00	1	30	80	49	78	81
+-AKNSGNESDGNPQKLSTMVDMGRLGLLGVN-------------------------------------------------
+>UniRef100_D2XL07	39	0.633	1.332E+00	1	30	80	49	78	81
+-AEDSGNKSDGDTEKLSTLIGLRNLGFLDYN-------------------------------------------------
+>UniRef100_A0A0A0UW52	39	0.500	1.332E+00	1	30	80	50	79	82
+-AEDSGNESEGDPRNSPPWVDMGRLRLLDVN-------------------------------------------------
+>UniRef100_A0A3G2KUC3	38	0.791	1.832E+00	7	30	80	0	23	26
+-------ESDGDTEELFTLMERGDDDILDNN-------------------------------------------------
+>UniRef100_A0A077H3U1	38	0.375	1.832E+00	7	30	80	0	31	34
+-------ESEGEQEELSklvgedfpALMEMGHLAPWDVD-------------------------------------------------
+>UniRef100_A0A1S6Q275	38	0.586	1.832E+00	2	30	80	48	76	79
+--EDSGNESEGDEEELAALGEVGPFIPGDIN-------------------------------------------------
+>UniRef100_A0A3G5N696	38	0.555	1.832E+00	1	27	80	54	79	80
+-AEDSGNESE-DAEELAAMGDMGHLRLL----------------------------------------------------
+>UniRef100_C6L5L8	38	0.633	1.832E+00	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEVGPFVIGDIN-------------------------------------------------
+>UniRef100_A0A076V3L3	38	0.727	1.832E+00	1	22	80	49	70	81
+-AEDSGNESEGDEEELAALGDMG---------------------------------------------------------
+>UniRef100_A0A0A0UYH8	38	0.516	1.832E+00	1	31	80	50	80	82
+-AEDGGDDSEGDTEEFSPMEDMGLLIFLDVNE------------------------------------------------
+>UniRef100_A0A2H4HXP0	38	0.500	2.518E+00	7	30	80	0	22	25
+-------ESDGDQEEL-AFMEMGRHAPWDVD-------------------------------------------------
+>UniRef100_A0A3G2KUE6	38	0.833	2.518E+00	7	30	80	0	23	26
+-------ESDGDTEELLTLMEMGDDNILGNN-------------------------------------------------
+>UniRef100_F6M5V2	38	0.625	2.518E+00	7	30	80	0	23	26
+-------ESDGELEELSTMVDMGSIRLLDAN-------------------------------------------------
+>UniRef100_A0A6B9SHD4	38	0.533	2.518E+00	1	30	80	49	73	76
+-AEDSGNESEGDREAL-----MGMDAPWDID-------------------------------------------------
+>UniRef100_A0A0A0UTF4	38	0.419	2.518E+00	1	31	80	48	78	80
+-AEDSGYESEGDIRNCQHMVDMGHLGLLAVNE------------------------------------------------
+>UniRef100_A0A8E3QQX6	38	0.555	2.518E+00	1	27	80	49	75	81
+-AKDSGNESEGDTNELAILVERGNFDAW----------------------------------------------------
+>UniRef100_A0A3Q8GNI2	38	0.566	2.518E+00	1	30	80	49	78	81
+-AEDSGNESEGDAEELAALGEVGPFIPGNIN-------------------------------------------------
+>UniRef100_A0A6B9SIG4	38	0.600	2.518E+00	1	30	80	54	83	86
+-AEDSGNESDGDTDELAQLIGVGNYNLGNDN-------------------------------------------------
+>UniRef100_F6M5Y2	38	0.583	3.462E+00	7	30	80	0	23	26
+-------ESDGELEELSTMVDMGNVRLLDIN-------------------------------------------------
+>UniRef100_A0A140ED53	38	0.551	3.462E+00	1	28	80	53	81	86
+-AEDSGNESEGDTAGIVYLgVDMGHLRLLD---------------------------------------------------
+>UniRef100_D5HVQ4	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_D5HY88	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_D5HW26	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_D5HTU9	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_D5HWH3	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_D5HVU2	37	1.00	4.759E+00	1	18	80	49	66	67
+-AEDSGNESDGDTEELSTL-------------------------------------------------------------
+>UniRef100_A0A2L1KVM3	37	0.692	4.759E+00	1	26	80	48	71	78
+-AEDSGNDSDGDTEELSKLV--GFHNP-----------------------------------------------------
+>UniRef100_G3DFB3	37	0.416	6.543E+00	7	30	80	0	23	26
+-------ESDGDQEDLAALMEVGHLVPWNID-------------------------------------------------
+>UniRef100_G3DN84	37	0.375	6.543E+00	7	30	80	0	23	26
+-------ESDGDQKELSAFMDRGHYAPWNID-------------------------------------------------
+>UniRef100_A0A888VNG7	37	0.652	6.543E+00	1	23	80	49	71	78
+-AEDSGNESDGDTDELANLVDFDH--------------------------------------------------------
+>UniRef100_A0A6H0JTI8	37	0.466	6.543E+00	1	30	80	49	76	79
+-AENSGNESKGNKEALSVLI--GHNAPWNVN-------------------------------------------------
+>UniRef100_Q6WH85	37	0.576	6.543E+00	1	26	80	49	74	81
+-AEDSGNESEGDAEELAALGENEHLIP-----------------------------------------------------
+>UniRef100_A0A221IUP6	37	0.615	6.543E+00	1	26	80	49	74	81
+-AEDSGNESEGDAEELAALGEVGPFIP-----------------------------------------------------
+>UniRef100_A2I6Z5	37	0.576	6.543E+00	1	26	80	49	74	81
+-AEDSGNESEGDEEELAAFGNMGLLIP-----------------------------------------------------
+>UniRef100_A0A0K0UYU6	36	0.480	8.995E+00	7	30	80	0	24	27
+-------ESEGDHEELSVLVGMeQHDAPWDID-------------------------------------------------
+>UniRef100_G3DFR9	36	0.406	8.995E+00	7	30	80	0	31	34
+-------ESEGDYEELSAlverghleLVERGHLAPWDIN-------------------------------------------------
+>UniRef100_A0A221IUW3	36	0.727	8.995E+00	1	22	80	49	70	80
+-AEDSGNESEGDAEELAALGEVG---------------------------------------------------------
+>UniRef100_K0GCN3	36	0.538	8.995E+00	2	27	80	50	75	81
+--EDSGNESEGDKDELARLVEDGDFDSW----------------------------------------------------
+>101
+AAEDSGNESDGDTEELSTLLEMGSDNILDNNKFVMLKICGSRYTMGYLCGKMQKLPYFVHQMLKHXIQKCIMSGLHMPLY
+>A0A068RB53	146	1.00	4.243E-38	0	79	80	0	79	80
+AAEDSGNESDGDTEELSTLLEMGSDNILDNNKFVMLKICGSRYTMGYLCGKMQKLPYFVHQMLKHXIQKCIMSGLHMPLY
+>L7TKB7	139	0.607	9.228E-36	1	79	80	49	124	133
+-AEDSGNESEGDEEELSALVEMGHLAPWVVND---RKKSGSQFIMGYLCGKKQIPPYFAHQMLKHIKQRHITSGLHMPVY
+>UniRef100_L7TKB7	139	0.607	9.228E-36	1	79	80	49	124	133
+-AEDSGNESEGDEEELSALVEMGHLAPWVVND---RKKSGSQFIMGYLCGKKQIPPYFAHQMLKHIKQRHITSGLHMPVY
+>A0A0K1YFJ1	137	0.632	8.466E-35	1	79	80	49	123	132
+-AEDSGNESDGDQEELSALVEMGHHAPWD----MLKKNCGSQSIMGYLCGKKQPPLYFVHQMLKHMIQRYIMFGPHMPVY
+>B6HXC6	104	0.583	3.059E-23	8	78	80	0	71	72
+--------SDGDAEELSTLVEMGDYDFWnDNNLFACKTLVGHGLLWCDLCGKMQRPPYFVHQTPKHMIQKCIMFGPHMPV-
+>A0A068R8U4	104	0.573	3.059E-23	22	79	80	21	81	83
+----------------------GILRLLDANDCIMwggTGTCGSQFIMGYLCGKKQQLLYFVHQMLKHIRMKCIMFGPHMPVY
+>UniRef100_A0A068R8U4	104	0.573	3.059E-23	22	79	80	21	81	83
+----------------------GILRLLDANDCIMwggTGTCGSQFIMGYLCGKKQQLLYFVHQMLKHIRMKCIMFGPHMPVY
+>B6HXL0	83	0.813	4.453E-16	33	75	80	24	66	67
+---------------------------------VMLKICGSRSPMGYLCGEMQRPPYFVHQMLRHMMQKCIMSGLH----
+>Q8ADI3	81	0.681	1.585E-15	36	79	80	30	73	82
+------------------------------------ETCGLLSTMGYLCGKMRRPPYFVHQMRRHMKKKCIMSGLHMPVY
+>B6HXI0	81	0.617	2.991E-15	33	79	80	2	48	49
+---------------------------------VLRNNCKSQFTMKYLCKKMQRPPYSVHQMLRHMMQKCIMFGXHMPVY
+>B2LVV1	77	0.590	7.152E-14	36	79	80	32	75	89
+------------------------------------KSRGSQSIMGYLCGKKQPPLYFVHQMLKDIVQRLIISGPHMLVY
+>UniRef100_H6D252	73	0.478	1.246E-12	1	45	80	49	94	111
+-AEDSGNESEGDHEELSMLVEMGHHAPWDIDDLqCCRKFVGYSLLWG----------------------------------
+>H6D3P0	71	0.685	6.099E-12	45	79	80	37	71	80
+---------------------------------------------GYLCGKKQTPLYFVHQMLKHMLQKYITFGPHMPVY
+>B6HXL1	71	0.783	8.380E-12	39	75	80	30	66	67
+---------------------------------------GSRSTMGYQCGKTQRPPYFVHQMLKHMTQKYIMSGLH----
+>UniRef100_A0A076V8U7	68	0.437	7.744E-11	1	45	80	55	102	119
+-AEDSGNESEGDAEELAALGDMGPLiigNIYKNCRGLCRGQVGHSLLWG----------------------------------
+>A0A076V8U7	68	0.437	7.744E-11	1	45	80	55	102	119
+-AEDSGNESEGDAEELAALGDMGPLiigNIYKNCRGLCRGQVGHSLLWG----------------------------------
+>Q2NN97	63	0.444	6.624E-09	2	45	80	50	94	111
+--EDPGNESGGDQDVLSALVEMGHDAPWDINvLYCCRTIVGHSLLWG----------------------------------
+>A0A068R934	62	0.821	9.102E-09	52	79	80	51	78	80
+----------------------------------------------------QRPPYFVHQRLKHIIQKCIMSGPHMPLY
+>M4TBN7	59	0.456	1.158E-07	1	45	80	54	99	116
+-AEDSGNESDGDAEELAAMGDVGHLRLLDLNDvYCDGKLVGHSLLWG----------------------------------
+>A0A0E3EG00	59	0.580	1.591E-07	1	31	80	49	79	81
+-AEDSGNDSEGDQEELSALVDMGHDAPWNVND------------------------------------------------
+>U5YPT4	58	0.580	2.187E-07	1	31	80	54	84	86
+-AEDSGNGSEGDQEELSALMEMGHHAPWDVDD------------------------------------------------
+>Q2L842	57	0.677	7.802E-07	1	31	80	54	84	86
+-AEDSGNESDGDQEELSTMVDMGHLRLLDAND------------------------------------------------
+>UniRef100_D6P168	57	0.516	7.802E-07	1	31	80	59	89	91
+-AEDSGNESEGDQEELSALVGRGHLAPWNIDD------------------------------------------------
+>D6P168	57	0.516	7.802E-07	1	31	80	59	89	91
+-AEDSGNESEGDQEELSALVGRGHLAPWNIDD------------------------------------------------
+>L0LG43	55	0.580	3.827E-06	1	31	80	49	79	81
+-AEDSGNESEGDLEELAGLVEMGHDAPWXIDD------------------------------------------------
+>A0A286LHM7	54	0.612	5.260E-06	1	31	80	49	79	81
+-AEDSGNESEGDTEELAHLVEMGPHDLWNVND------------------------------------------------
+>Q7ZL51	54	0.487	5.260E-06	1	31	80	49	89	91
+-AEDSGNESEGDQEELSTLmemghhapapMEMGHHAPWDVDD------------------------------------------------
+>D5HLC8	54	0.862	7.229E-06	3	31	80	0	28	30
+---DSGNESDGDTEELSTLLEMGPDNIWDNDD------------------------------------------------
+>D6P0P9	54	0.516	7.229E-06	1	31	80	49	79	81
+-AEDSGNESDGDQEELSAFMDRGHYAPWNIDD------------------------------------------------
+>A0A0A6ZLJ3	54	0.645	7.229E-06	1	31	80	49	79	81
+-AEDSGNESEGDIEELSTMVDMGNLRLLDVND------------------------------------------------
+>A0A0A0UYG6	54	0.612	7.229E-06	1	31	80	52	82	85
+-AEDSGNESDGDQEELSEYLEMGPLAPWNVDD------------------------------------------------
+>A0A0H3YCW1	52	0.612	2.580E-05	1	31	80	54	84	86
+-AEDSGNESEGDIEELATVVDMGQLRLLDVND------------------------------------------------
+>A0A0K0UZT2	51	0.480	9.212E-05	7	31	80	0	24	26
+-------ESEGDQEELSALVDMGHLAPWNVND------------------------------------------------
+>A0A0H3YAN8	51	0.533	9.212E-05	2	31	80	55	84	86
+--EDSGNESEGDIEELATMVDMAHLRLMDAND------------------------------------------------
+>A0A0B5KV56	51	0.655	9.212E-05	2	30	80	55	83	86
+--EDSGNESEGDFEELSTMVDMGYLRLLDVN-------------------------------------------------
+>A0A0U4EMW0	50	0.718	1.266E-04	1	32	80	49	80	81
+-AEDSGNESDGDKEELSSLMEMGDYHILDNDNW-----------------------------------------------
+>A0A1I9WD75	50	0.709	1.741E-04	1	31	80	49	79	81
+-AEDSGNESDGDTEELAKLVEMGNYDIWDDNN------------------------------------------------
+>K0GSI0	50	0.456	1.741E-04	1	45	80	49	94	114
+-AEDSGNESDGDTDELAKLVEMGDFDHWVgGNVXCLRQLVGYSILWG----------------------------------
+>Q5MH13	49	0.806	4.522E-04	1	31	80	49	79	81
+-AEDSGNESDGDTEELSLLMEMGYDNILDTDN------------------------------------------------
+>A0A0K0VF48	49	0.580	4.522E-04	1	31	80	53	83	85
+-AEDSGNESEGDMEELSTMVDVEHLGLLDVND------------------------------------------------
+>A0A1P8PBR3	48	0.600	6.216E-04	7	31	80	0	24	26
+-------ESEGDLEELSTLVEMGHHALWDVND------------------------------------------------
+>Q8UTA1	48	0.600	8.545E-04	1	30	80	62	91	93
+-AEDSGNESEGDLEELSTLVDVEHLRLVDIN-------------------------------------------------
+>A0A0H4SMQ4	47	0.600	1.615E-03	7	31	80	0	24	26
+-------ESDGDLEELSGLVEMGHLAPWDVND------------------------------------------------
+>G3DK55	47	0.480	2.220E-03	7	31	80	0	24	26
+-------ESEGDQEDLAALMEMGHDAPWDVDD------------------------------------------------
+>Q90RF2	47	0.548	2.220E-03	1	31	80	49	79	81
+-AEDSGNESEGDAEELAELGELGHLILGDVDN------------------------------------------------
+>D3GG01	47	0.612	2.220E-03	1	31	80	49	79	81
+-AEDSGNESDGDTDELANLVEMGDFDPWVGNN------------------------------------------------
+>G3D7W3	46	0.500	3.052E-03	7	31	80	0	25	27
+-------ESEGDHEELSALVlEMGHHAPWDVDD------------------------------------------------
+>A0A286KB89	46	0.580	3.052E-03	1	31	80	49	79	81
+-AEDSGNESEGDAEELAALGEVGPFIPGDINN------------------------------------------------
+>A0A076V5C3	46	0.451	3.052E-03	1	31	80	49	79	81
+-AKDSGNESKGDQKKLSALKKMEHHAPWNVNN------------------------------------------------
+>F2YPH5	46	0.480	5.768E-03	7	31	80	0	24	26
+-------ESDGDQEKLSAFMEMGHHAPWDVDD------------------------------------------------
+>F1K3L3	46	0.545	5.768E-03	1	31	80	49	81	83
+-AEDSGNESDGDQEELLQMGhpEMGLDAPWNVDD------------------------------------------------
+>F2W1F9	45	0.583	7.929E-03	7	30	80	0	23	26
+-------ESEGDTEELATLEDMGHLRLLDVD-------------------------------------------------
+>K0GQI7	45	0.580	7.929E-03	1	31	80	49	79	81
+-AEDSGNESEGDTDDLAKLLEMGNFDPWVGNN------------------------------------------------
+>A0A1P8P3Q1	45	0.423	1.090E-02	7	31	80	0	25	27
+-------ESEGDHEELSKLVlDMGHHAPWNVDD------------------------------------------------
+>B2YRY6	45	0.363	1.090E-02	7	31	80	0	32	34
+-------ESEGDQEELSalvdmghhALVDMGHHAPWDVDD------------------------------------------------
+>I6YYD3	45	0.533	1.090E-02	2	31	80	50	79	81
+--EDSGNESEGDTEELAALVDVGDFDLWIGNN------------------------------------------------
+>B3UV44	44	0.500	1.499E-02	7	31	80	0	29	31
+-------ESDGDQEELSALVerghlEMGHHAPWDVND------------------------------------------------
+>A0A075DL07	44	0.700	1.499E-02	2	31	80	50	79	81
+--EDSGNESDGDVEELSTLMEVGNYALLDDNN------------------------------------------------
+>A0A1P8P3H5	44	0.461	2.060E-02	7	31	80	0	25	27
+-------ESEGDQEELSKLVlDLGHHAPWDVND------------------------------------------------
+>UniRef100_B2YRY2	44	0.363	2.832E-02	7	31	80	0	32	34
+-------ESEGDQEELSalvdmehhALVDMGPHAPWDVDD------------------------------------------------
+>D7RZK9	43	0.440	3.894E-02	7	31	80	0	24	26
+-------ESEGDQEELLALVEMGPHDLWNVDD------------------------------------------------
+>B2YP56	43	0.440	3.894E-02	7	31	80	0	24	26
+-------ESEGDEEALSALMDRGHIAPWDVND------------------------------------------------
+>MGYP001033589177	43	0.437	3.894E-02	1	31	80	48	79	81
+-AEDSGNESEGEVSALVEMgVEMGHHAPWDIDD------------------------------------------------
+>A0A140ECM6	43	0.600	3.894E-02	1	30	80	54	83	86
+-AEDSGNESDGDTAGIITMVDMGQLRLLDVN-------------------------------------------------
+>M1KBH0	43	0.516	5.353E-02	1	31	80	49	78	80
+-AEDSGNDSDGDQEELSAFLEV-HHAPWVVSD------------------------------------------------
+>A0A076V438	43	0.548	5.353E-02	1	31	80	49	79	81
+-AEDSGNESERDAEELAALGEVGPFIPGDINN------------------------------------------------
+>A9Y0C3	43	0.516	5.353E-02	1	31	80	49	79	81
+-AEDSGNESEGDTDDLAKLVEMGDFDAWVGDN------------------------------------------------
+>U6BUA2	42	0.520	1.012E-01	7	31	80	0	24	26
+-------ESEGDQEELSELMEMGYNAPWVVND------------------------------------------------
+>A0A0K0UXD5	42	0.440	1.012E-01	7	31	80	0	24	26
+-------ESDGDQEELSAMVEKGHLALWGVDD------------------------------------------------
+>B2YNZ3	42	0.400	1.012E-01	7	31	80	0	24	26
+-------ESEGDEEALAVLMDRGHIAPWDVND------------------------------------------------
+>D2SSD6	42	0.645	1.012E-01	1	31	80	49	79	80
+-AEDSGNESDGDAEEISKLMEMGNLNFGFVND------------------------------------------------
+>J7M6G2	42	0.612	1.012E-01	1	31	80	52	82	84
+-AEDSGNESDGDTDELAKLVEMGDYDLGNDNN------------------------------------------------
+>G3DFD6	42	0.440	1.391E-01	7	31	80	0	24	26
+-------ESDGDQEDLAALMEVGHLVPWDIDD------------------------------------------------
+>A0A077H3F6	42	0.393	1.391E-01	7	31	80	0	32	34
+-------ESEGEQEELSklvgedfpTLMEMGHLAPWDVDD------------------------------------------------
+>G3DAW2	42	0.393	1.391E-01	7	31	80	0	32	34
+-------ESEGDQEELSALVERGHLalverghvAPWDVND------------------------------------------------
+>G3DAU6	42	0.393	1.391E-01	7	31	80	0	32	34
+-------ESEGDQEELSALVERGHLalvdrghvAPWDVND------------------------------------------------
+>D2EAS2	42	0.516	1.391E-01	1	31	80	49	79	81
+-AEDSANXSEGDAEKVAALGEMGHXILGDNNN------------------------------------------------
+>D6P0V2	41	0.346	1.913E-01	6	31	80	46	71	73
+------NESEGDQEELLVSMDRGHLALWVVDD------------------------------------------------
+>T1WJF4	40	0.545	3.615E-01	7	28	80	0	21	26
+-------ESEGDVEELATIVDMGHLRLLD---------------------------------------------------
+>K7WZ04	40	0.440	3.615E-01	7	31	80	0	24	26
+-------ESEGDNEELAAMVDMGQLRLFDVND------------------------------------------------
+>G3DFZ2	40	0.363	3.615E-01	7	31	80	0	32	34
+-------ESEGDHEELSAlverghleLVERGHLAPWDIDD------------------------------------------------
+>A0A1S6Q231	40	0.451	3.615E-01	1	31	80	49	79	81
+-AKNSGNESEGDTNELANLGERGDFDPWVGDN------------------------------------------------
+>I6R0A5	40	0.500	3.615E-01	4	31	80	52	79	81
+----SGNESEGDTHELGKLVEMGDFDPWVGDN------------------------------------------------
+>F2W225	40	0.545	4.970E-01	7	28	80	0	21	26
+-------ESEGDIEELATVGDMGHLRLLD---------------------------------------------------
+>A0A0H4LE60	40	0.677	4.970E-01	1	31	80	49	79	81
+-AEESGNDSDGDTEGLSTLMGMGYEYILDNEN------------------------------------------------
+>F6M5R8	39	0.480	1.291E+00	7	31	80	0	24	26
+-------ESEGDNEELATMVGLGHLRLLDGND------------------------------------------------
+>G8E291	39	0.354	1.291E+00	7	31	80	0	30	32
+-------ESEGDQEELSELVERGHlapmgyHAPWVVDD------------------------------------------------
+>A0A0A1ECW6	38	0.483	1.775E+00	1	31	80	49	79	81
+-AKNSGNESDGNPQKLSTMVDMGRLGLLGVND------------------------------------------------
+>B2YPA8	38	0.360	3.355E+00	7	31	80	0	24	26
+-------ESEGDEKALAELMDRGHIALWDVND------------------------------------------------

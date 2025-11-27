@@ -18,7 +18,7 @@ from src.data.dataset import JsonlSet, collate
 from src.model.viroporin_net import ViroporinAFMini
 from src.losses.distogram import distogram_loss
 from src.losses.fape import fape_loss
-from src.losses.torsion import torsion_l2
+from src.geometry.torsion import torsion_loss
 from src.geometry.assembly import assemble_cn
 from src.losses.viroporin_priors import (
     membrane_z_mask, membrane_slab_loss, interface_contact_loss, ca_clash_loss, pore_target_loss
@@ -87,79 +87,236 @@ def load_latest_ckpt(ckpt_dir: str):
     return paths[-1]
 
 def eval_one(cfg, model, batch, device):
+    """
+    Single-sample evaluation that mirrors Trainer.step_losses() logic:
+    - CA–CA rescale to ~3.8 Å
+    - valid-mask & pair-mask
+    - distogram_loss with label_smoothing
+    - torsion_loss with helix bias
+    - teacher-aware FAPE if xyz_ref is present
+    - same membrane/interface/pore priors weighting as training (no warmup)
+    """
     model.eval()
     with torch.no_grad():  # run eval in full fp32 to avoid AMP under/overflows
         torch.set_float32_matmul_precision("high")
+        
+        if not hasattr(eval_one, "_printed"):
+            print("====== TEST BATCH DEBUG ======")
+            print("seq_idx:", batch["seq_idx"].shape)
+            print("emb:", None if batch.get("emb") is None else batch["emb"].shape)
+            print("msa:", None if batch.get("msa") is None else batch["msa"].shape)
+            print("xyz_ref:", None if batch.get("xyz_ref") is None else batch["xyz_ref"].shape)
+            print("tors_ref:", None if batch.get("tors_ref") is None else batch["tors_ref"].shape)
+            print("=================================")
+            eval_one._printed = True
 
-        out = model(batch["seq_idx"].to(device), batch.get("emb"))
-        xyz_raw  = out["xyz"]
-        dist_raw = out["dist"]
-        tors_raw = out["tors"]
+        # forward pass (include MSA like in training)
+        out = model(
+            batch["seq_idx"].to(device),
+            batch.get("emb"),
+            msa=batch.get("msa"),
+        )
+
+        xyz_raw  = out["xyz"]   # (L,3)
+        dist_raw = out["dist"]  # (L,L,BINS)
+        tors_raw = out["tors"]  # (L,3)
 
         # quick debug stats on raw coords
         mx = torch.nan_to_num(xyz_raw).abs().max().item()
         sd = torch.nan_to_num(xyz_raw).std().item()
         print(f"[dbg] xyz_raw.abs().max={mx:.2f}, xyz_raw.std={sd:.2f}")
 
-        L = xyz_raw.shape[0]
+        # ---- normalize to single-sample tensors ----
+        if xyz_raw.dim() == 3:
+            xyz_b = xyz_raw[0]
+            dist_b = dist_raw[0]
+            tors_b = tors_raw[0]
+        else:
+            xyz_b = xyz_raw
+            dist_b = dist_raw
+            tors_b = tors_raw
 
+        L = xyz_b.shape[0]
+        device = xyz_b.device
+
+        # ---- enforce CA–CA ≈ 3.8 Å (same as training) ----
+        with torch.no_grad():
+            if L > 1:
+                diffs = xyz_b[1:] - xyz_b[:-1]
+                dists = diffs.norm(dim=-1)
+                d_mean = dists.mean()
+                if d_mean > 1e-6:
+                    scale = (3.8 / d_mean).clamp(0.25, 4.0)
+                    xyz_b[:] = xyz_b * scale
+
+        # ---- valid residue & pair masks (PAD token = 20) ----
+        seq = batch["seq_idx"].to(device)
+        if seq.dim() == 2:
+            seq_b = seq[0]
+        else:
+            seq_b = seq
+
+        val_mask = (seq_b != 20)  # (L,)
+        n_valid = int(val_mask.sum().item())
+        if n_valid < 2:
+            # degenerate sample; return zero-ish losses
+            return 0.0, {"dist": 0.0, "tors": 0.0, "fape": 0.0}
+
+        pair_mask = val_mask[:, None] & val_mask[None, :]
+        if pair_mask.sum() == 0:
+            return 0.0, {"dist": 0.0, "tors": 0.0, "fape": 0.0}
+
+        logs = {}
+
+        # ---- distogram (with label smoothing + pair_mask) ----
         loss_dist = distogram_loss(
-        dist_raw,
-        xyz_raw,
-        n_bins=dist_raw.shape[-1],   # <- make loss use real #bins
+            dist_b,
+            xyz_b,
+            n_bins=dist_b.shape[-1],
+            label_smoothing=0.01,
+            pair_mask=pair_mask,
         )
-        loss_tors = torsion_l2(tors_raw)
-        loss_fape = fape_loss(xyz_raw)
+
+        # ---- torsion loss (helix-biased, same as training) ----
+        loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
+
+        # ---- FAPE: use AlphaFold teacher if present, else self-consistency ----
+        if "xyz_ref" in batch and batch["xyz_ref"] is not None:
+            xyz_ref = batch["xyz_ref"].to(device)
+            xyz_ref_b = xyz_ref[0] if xyz_ref.dim() == 3 else xyz_ref
+            xyz_ok = torch.isfinite(xyz_ref_b).all(dim=-1)
+            use = xyz_ok & val_mask
+            if use.any():
+                loss_fape = fape_loss(xyz_b[use], xyz_ref_b[use])
+            else:
+                loss_fape = fape_loss(xyz_b[val_mask])
+        else:
+            loss_fape = fape_loss(xyz_b[val_mask])
+
+        # base losses
+        logs["dist"] = float(loss_dist)
+        logs["tors"] = float(loss_tors)
+        logs["fape"] = float(loss_fape)
 
         total = (
             cfg["loss_weights"]["distogram"] * loss_dist
-            + cfg["loss_weights"]["torsion"]   * loss_tors
-            + cfg["loss_weights"]["fape"]      * loss_fape
-        )
-        logs = dict(
-            distogram=float(loss_dist),
-            torsion=float(loss_tors),
-            fape=float(loss_fape),
+            + cfg["loss_weights"]["torsion"] * loss_tors
+            + cfg["loss_weights"]["fape"] * loss_fape
         )
 
+        # ---- Viroporin priors: mirror training logic but with full priors weight ----
         if cfg["priors"].get("use_cn", True):
             n  = cfg["priors"]["n_copies"]
             rr = cfg["priors"]["ring_radius"]
-            olig = assemble_cn(xyz_raw, n_copies=n, ring_radius=rr)
+            olig = assemble_cn(xyz_b, n_copies=n, ring_radius=rr)
 
-            tm_mask = membrane_z_mask(L, cfg["priors"]["tm_span"]).to(xyz_raw.device)
+            # TM mask & fraction
+            tm_mask = membrane_z_mask(L, cfg["priors"]["tm_span"]).to(device)
+            tm_mask = tm_mask * val_mask.float()
             tm_frac = float(tm_mask.float().mean().item())
+            logs["tm_frac"] = tm_frac
 
-            xyz = xyz_raw.clone()
-            z = xyz[:, 2]
-            z_tm = z[tm_mask > 0.5]
-            z_center = (z_tm.median() if z_tm.numel() > 0 else z.median())
-            if not torch.isfinite(z_center):
-                z_center = torch.tensor(0.0, device=z.device)
-            xyz[:, 2] -= z_center.detach()
+            # center on TM median if possible, else all-valid median
+            z_all = xyz_b[:, 2]
+            tm_bool = (tm_mask > 0.5) & val_mask
+            val_bool = val_mask
 
-            mem   = membrane_slab_loss(xyz, tm_mask)
-            intf  = interface_contact_loss(olig, cutoff=9.0)
-            clash = ca_clash_loss(olig, min_dist=3.6)
-            pore  = pore_target_loss(olig, target_A=cfg["priors"]["pore_target_A"])
+            if tm_bool.any():
+                z_center = z_all[tm_bool].median().detach()
+            else:
+                z_center = z_all[val_bool].median().detach()
 
+            xyz_centered = xyz_b.clone()
+            xyz_centered[:, 2] -= z_center
+
+            # diagnostics
+            if tm_bool.any():
+                zc_tm = xyz_centered[tm_bool, 2]
+                logs["z_abs_mean_tm"] = float(zc_tm.abs().mean().item())
+            else:
+                zc_tm = None
+                logs["z_abs_mean_tm"] = float("nan")
+
+            zc_all = xyz_centered[val_bool, 2]
+            logs["z_abs_mean"] = float(zc_all.abs().mean().item())
+
+            use_z = zc_tm if zc_tm is not None else zc_all
+            logs["z_tm_min"]   = float(use_z.min().item())
+            logs["z_tm_max"]   = float(use_z.max().item())
+            logs["z_tm_range"] = float((use_z.max() - use_z.min()).item())
+
+            if tm_bool.any():
+                logs["z_abs_mean_unc"] = float(z_all[tm_bool].abs().mean().item())
+            else:
+                logs["z_abs_mean_unc"] = float(z_all[val_bool].abs().mean().item())
+
+            # pore radius profile for pore_minA
             zs, rs = pore_radius_profile_ca(olig)
             if rs.numel() > 0:
                 finite_rs = rs[torch.isfinite(rs)]
-                pore_minA = float(finite_rs.min().item()) if finite_rs.numel() > 0 else float("nan")
+                if finite_rs.numel() > 0:
+                    logs["pore_minA"] = float(finite_rs.min().item())
+                else:
+                    logs["pore_minA"] = float("nan")
             else:
-                pore_minA = float("nan")
+                logs["pore_minA"] = float("nan")
 
-            logs.update(
-                mem=float(mem),
-                intf=float(intf),
-                clash=float(clash),
-                pore=float(pore),
-                tm_frac=float(tm_frac),
-                pore_minA=float(pore_minA),
-            )
+            # priors raw terms
+            mem_raw  = membrane_slab_loss(xyz_centered, tm_mask)
+            intf     = interface_contact_loss(olig, cutoff=9.0)
+            clash    = ca_clash_loss(olig, min_dist=3.6)
+            pore     = pore_target_loss(olig, target_A=cfg["priors"]["pore_target_A"])
+            if not torch.isfinite(pore):
+                pore = torch.tensor(0.0, device=olig.device)
+            pore_raw = pore
 
-            total = total + cfg["loss_weights"]["priors"] * (0.3*mem + 0.4*intf + 0.3*pore) + 0.1*clash
+            # same base weights as training (no warmup here)
+            base_mem  = float(cfg["loss_weights"].get("membrane",  0.05))
+            base_intf = float(cfg["loss_weights"].get("interface", 0.05))
+            base_pore = float(cfg["loss_weights"].get("pore",      0.05))
+
+            w_mem_lin  = base_mem
+            w_intf_lin = base_intf
+            w_pore_lin = base_pore
+
+            # global priors weight (fully on at eval)
+            pw_global = float(cfg["loss_weights"].get("priors", 0.0))
+            gate = 1.0
+
+            w_mem_eff  = pw_global * gate * max(w_mem_lin,  base_mem)
+            w_intf_eff = pw_global * gate * max(w_intf_lin, base_intf)
+            w_pore_eff = pw_global * gate * max(w_pore_lin, base_pore)
+
+            # fade mem based on TM fraction, as in training
+            gate_tm = max(0.0, min(1.0, (tm_frac - 0.02) / (0.8 - 0.02)))
+            w_mem_eff *= float(gate_tm)
+
+            logs["pw_global"]  = float(pw_global)
+            logs["w_mem_lin"]  = float(w_mem_lin)
+            logs["w_intf_lin"] = float(w_intf_lin)
+            logs["w_pore_lin"] = float(w_pore_lin)
+            logs["w_mem_eff"]  = float(w_mem_eff)
+            logs["w_intf_eff"] = float(w_intf_eff)
+            logs["w_pore_eff"] = float(w_pore_eff)
+            logs["gate"]       = float(gate)
+
+            # clamp + tanh squash, same as training
+            mem_raw  = mem_raw.clamp(-10, 10)
+            pore_raw = pore_raw.clamp(-10, 10)
+            mem_eff  = 5.0 * torch.tanh(mem_raw / 5.0)
+            pore_eff = 5.0 * torch.tanh(pore_raw / 5.0)
+
+            prior_contrib = (w_mem_eff * mem_eff) + (w_intf_eff * intf) + (w_pore_eff * pore_eff)
+            prior_contrib = torch.clamp(prior_contrib, min=-0.5, max=0.5)
+
+            total = total + prior_contrib + 0.1 * clash
+
+            logs["mem"]      = float(mem_eff.detach().cpu())
+            logs["mem_raw"]  = float(mem_raw.detach().cpu())
+            logs["pore"]     = float(pore_eff.detach().cpu())
+            logs["pore_raw"] = float(pore_raw.detach().cpu())
+            logs["intf"]     = float(intf.detach().cpu())
+            logs["clash"]    = float(clash.detach().cpu())
 
         return float(total), logs
 
@@ -395,7 +552,7 @@ def main():
 
             model.eval()
             with torch.no_grad():
-                out = model(batch["seq_idx"].to(device), batch.get("emb"))
+                out = model(batch["seq_idx"].to(device), batch.get("emb"), msa=batch.get("msa"))
                 xyz_ca = out["xyz"].detach().cpu()  # (L,3)
 
                 # --- RECENTER (fix stupid 200/300 offset) ---
