@@ -59,7 +59,7 @@ optimizer:
 
 loss_weights:
   distogram: 1.0
-  torsion: 0.1
+  torsion: 0.5
   fape: 0.5
   priors: 0.5
   membrane: 0.05

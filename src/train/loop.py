@@ -203,8 +203,27 @@ class Trainer:
             if pair_mask.sum() == 0:
                 continue
 
-            # --- Base structural losses on valid residues only ---
-            loss_dist = distogram_loss(dist_b, xyz_b, label_smoothing=0.01, pair_mask=pair_mask)
+            # --- does this sample have usable teacher xyz? ---
+            has_teacher = False
+            xyz_ref_b = None
+            if "xyz_ref" in batch and batch["xyz_ref"] is not None:
+                xyz_ref_b = batch["xyz_ref"][b]
+                if xyz_ref_b is not None and torch.isfinite(xyz_ref_b).all():
+                    has_teacher = True
+
+            # --- choose target coords for distogram ---
+            if has_teacher:
+                xyz_target = xyz_ref_b           # teacher-supervised distogram
+            else:
+                xyz_target = xyz_b               # self-distogram
+
+            # Use xyz_target instead of xyz_b
+            loss_dist = distogram_loss(
+                dist_b,
+                xyz_target,
+                label_smoothing=0.01,
+                pair_mask=pair_mask,
+            )
 
             # --- teacher-aware TORSION ---
             if "tors_ref" in batch and batch["tors_ref"] is not None:
@@ -218,18 +237,16 @@ class Trainer:
             else:
                 loss_tors = torsion_loss(tors_b[val_mask], helix_bias=True)
 
-            # --- teacher-aware FAPE ---
-            if "xyz_ref" in batch and batch["xyz_ref"] is not None:
-                xyz_ref_b = batch["xyz_ref"][b]
-                xyz_ok = torch.isfinite(xyz_ref_b).all(dim=-1)
-                use = xyz_ok & val_mask
-                if use.any():
-                    loss_fape = fape_loss(xyz_b[use], xyz_ref_b[use])
-                else:
-                    loss_fape = fape_loss(xyz_b[val_mask])
+            # --- teacher-aware FAPE with different weights ---
+            if has_teacher:
+                # full teacher FAPE
+                use = val_mask  # you can keep your xyz_ok & val_mask if you need it
+                loss_fape = fape_loss(xyz_b[use], xyz_ref_b[use])
+                w_fape_eff = self.w["fape"]      # e.g. 0.5
             else:
-                loss_fape = fape_loss(xyz_b[val_mask])
-
+                # self-FAPE for smoothness ONLY, much weaker
+                loss_fape = fape_loss(xyz_b[val_mask])   # uses ref=None path
+                w_fape_eff = 0.05 * self.w["fape"]        # e.g. 0.05 if w["fape"]=0.5
 
             # nan-guard (kept from your original)
             for name, val in {"distogram": loss_dist, "torsion": loss_tors, "fape": loss_fape}.items():
@@ -239,7 +256,7 @@ class Trainer:
             loss_b = (
                 self.w["distogram"] * loss_dist
                 + self.w["torsion"]  * loss_tors
-                + self.w["fape"]     * loss_fape
+                + w_fape_eff         * loss_fape
             )
 
             # ---- Viroporin priors (unchanged logic, now per-sample) ----
@@ -342,11 +359,7 @@ class Trainer:
                 w_mem_eff  = pw_global * gate * max(w_mem_lin,  base_mem)
                 w_intf_eff = pw_global * gate * max(w_intf_lin, base_intf)
                 w_pore_eff = pw_global * gate * max(w_pore_lin, base_pore)
-                
-                # disable mem if tm_frac is nonsense (unchanged)
-                #if tm_frac < 0.05 or tm_frac > 0.60:
-                #    w_mem_eff = 0.0
-                # fade out version:
+
                 gate_tm = max(0.0, min(1.0, (tm_frac - 0.02) / (0.8 - 0.02)))
                 w_mem_eff *= float(gate_tm)
 
@@ -684,8 +697,16 @@ class Trainer:
         }
         fn = os.path.join(ckpt_dir, f"step_{step}.pt")
         tmp = fn + ".tmp"
-        torch.save(state, tmp)
-        os.replace(tmp, fn)  
+        try:
+            torch.save(state, tmp)
+            os.replace(tmp, fn)
+        except Exception as e:
+            print(f"[warn] failed to save checkpoint at step {step}: {e}")
+            if os.path.exists(tmp):
+                try:
+                    os.remove(tmp)
+                except Exception:
+                    pass 
     
     def _priors_weight(self):
         w = float(self.w["priors"])

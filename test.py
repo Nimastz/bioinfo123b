@@ -117,7 +117,23 @@ def eval_one(cfg, model, batch, device):
             msa=batch.get("msa"),
         )
 
-        xyz_raw  = out["xyz"]   # (L,3)
+        xyz_raw = out["xyz"]  # (L,3) or (B,L,3)
+        with torch.no_grad():
+            if xyz.dim() == 3:
+                diffs = xyz[:, 1:] - xyz[:, :-1]
+                dists = diffs.norm(dim=-1)
+                d_mean = dists.mean()
+            else:
+                diffs = xyz[1:] - xyz[:-1]
+                dists = diffs.norm(dim=-1)
+                d_mean = dists.mean()
+
+            if d_mean > 1e-6:
+                scale = (3.8 / d_mean).clamp(0.25, 4.0)
+                xyz = xyz * scale
+
+        # then pass xyz to your PDB writer
+
         dist_raw = out["dist"]  # (L,L,BINS)
         tors_raw = out["tors"]  # (L,3)
 
